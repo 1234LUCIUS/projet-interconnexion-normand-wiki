@@ -6,6 +6,12 @@ Le Projet d’Interconnexion Normand fédère des personnes qui expérimentent e
 
 Le réseau est communautaire : chaque nœud peut améliorer la couverture, mais chaque émission partage un spectre radio avec d’autres utilisateurs. La qualité dépend donc autant de la hauteur et de l’antenne que de la discipline collective.
 
+## Migration progressive vers MeshCore
+
+Le Projet d’Interconnexion Normand bascule petit à petit vers **MeshCore**. Cette transition est progressive afin de laisser le temps de tester les répéteurs, accompagner les utilisateurs et documenter les profils radio et les scopes départementaux. Meshtastic reste présent dans le projet pendant cette période et continue d’être documenté pour les appareils déjà déployés ou les usages qui en ont besoin.
+
+Un appareil Meshtastic et un appareil MeshCore ne communiquent pas directement simplement parce qu’ils utilisent tous les deux LoRa. Pour participer à la partie MeshCore du projet, suivez le profil MeshCore France / Normandie et choisissez le firmware Companion ou Repeater adapté. Ne reflashez pas un appareil en production sans sauvegarde et sans vérifier le rôle prévu.
+
 ## Vocabulaire minimal
 
 - **Nœud / node :** appareil radio participant au réseau.

@@ -6,6 +6,8 @@ Bienvenue dans le wiki open source du **Projet d’Interconnexion Normand**. Ce 
 
 > **Objectif :** permettre à chacun de mettre en service un nœud, rejoindre proprement le réseau normand, comprendre les limites radio et contribuer à une infrastructure utile, documentée et respectueuse.
 
+> **Évolution du projet :** le Projet d’Interconnexion Normand bascule progressivement vers **MeshCore**. Meshtastic reste documenté et utilisé pendant la période de transition. Les deux environnements doivent être configurés séparément, car ils ne sont pas directement interopérables.
+
 ## Parcours conseillé
 
 1. Lire [les principes et règles du projet](docs/00-bienvenue.md).

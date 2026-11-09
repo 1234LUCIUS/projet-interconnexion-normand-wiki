@@ -4,6 +4,8 @@
 
 MeshCore est un firmware et un ensemble d’outils open source pour créer des réseaux LoRa à routage multi-sauts. Son approche utilise des rôles explicites et des clients dédiés. Il ne faut pas supposer qu’un nœud MeshCore rejoint directement un réseau Meshtastic.
 
+Le Projet d’Interconnexion Normand migre progressivement vers MeshCore. Pendant cette transition, certains nœuds peuvent encore fonctionner sous Meshtastic. Vérifiez le logiciel utilisé par le groupe ou le relais que vous souhaitez rejoindre avant de flasher votre appareil.
+
 ## 1. Vérifier la compatibilité
 
 Consultez le [Web Flasher officiel MeshCore](https://flasher.meshcore.io/) et identifiez le modèle exact de votre carte. Une variante proche n’est pas forcément compatible. Préparez un câble USB de données et branchez l’antenne avant d’alimenter la radio.
