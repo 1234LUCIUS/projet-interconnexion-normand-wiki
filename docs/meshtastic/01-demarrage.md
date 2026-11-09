@@ -8,6 +8,8 @@ Vous allez installer le firmware, connecter l’appareil, définir la région, c
 
 Utilisez l’application officielle Meshtastic pour Android, iOS/iPadOS/macOS, ou l’interface Web officielle. Pour les opérations répétables, la CLI Python peut être installée avec :
 
+Pour installer ou mettre à jour le firmware depuis un navigateur, utilisez le [Web Flasher officiel Meshtastic](https://flasher.meshtastic.org/). Branchez l’appareil en USB avec un câble de données et sélectionnez le modèle exact.
+
 ```bash
 python3 -m pip install --upgrade meshtastic
 ```

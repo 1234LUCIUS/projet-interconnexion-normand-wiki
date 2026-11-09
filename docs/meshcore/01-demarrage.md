@@ -6,11 +6,11 @@ MeshCore est un firmware et un ensemble d’outils open source pour créer des r
 
 ## 1. Vérifier la compatibilité
 
-Consultez la liste du Web Flasher et identifiez le modèle exact de votre carte. Une variante proche n’est pas forcément compatible. Préparez un câble USB de données et branchez l’antenne avant d’alimenter la radio.
+Consultez le [Web Flasher officiel MeshCore](https://flasher.meshcore.io/) et identifiez le modèle exact de votre carte. Une variante proche n’est pas forcément compatible. Préparez un câble USB de données et branchez l’antenne avant d’alimenter la radio.
 
 ## 2. Flasher
 
-Utilisez le flasher officiel : [meshcore.io/flasher](https://meshcore.io/flasher). Choisissez le matériel puis le rôle : **Companion**, **Repeater** ou **Room Server**. N’utilisez pas un binaire trouvé dans une conversation sans vérifier sa provenance.
+Utilisez le [Web Flasher officiel MeshCore](https://flasher.meshcore.io/). Choisissez le matériel puis le rôle : **Companion**, **Repeater** ou **Room Server**. N’utilisez pas un binaire trouvé dans une conversation sans vérifier sa provenance.
 
 ## 3. Connecter un Companion
 

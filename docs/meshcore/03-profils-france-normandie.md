@@ -6,6 +6,11 @@ Cette page propose des profils de départ pour la bande européenne utilisée en
 
 Pour la France, choisissez un matériel et un firmware **868 MHz / EU**. Ne sélectionnez pas US/915 MHz. Vérifiez toujours que la fréquence, la bande passante, le facteur d’étalement et le coding rate sont autorisés pour votre matériel et votre usage.
 
+### Flashers officiels
+
+- [Web Flasher officiel Meshtastic](https://flasher.meshtastic.org/)
+- [Web Flasher officiel MeshCore](https://flasher.meshcore.io/)
+
 La documentation MeshCore CLI expose la commande générale :
 
 ```text
