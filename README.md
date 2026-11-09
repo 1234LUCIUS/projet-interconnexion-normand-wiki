@@ -14,7 +14,7 @@ Bienvenue dans le wiki open source du **Projet d’Interconnexion Normand**. Ce 
 4. Choisir son logiciel : [Meshtastic](docs/meshtastic/01-demarrage.md) ou [MeshCore](docs/meshcore/01-demarrage.md).
 5. Pour MeshCore en France, lire [les profils France / Normandie](docs/meshcore/03-profils-france-normandie.md).
 6. Choisir un emplacement avec [le guide de couverture](docs/terrain/03-simulateurs-couverture.md).
-7. Consulter [la carte interactive des nœuds](docs/map.html) et proposer son nœud.
+7. Consulter [la carte interactive des nœuds](docs/map.html), lire [la procédure de recensement](docs/04-carte-interactive.md) et proposer son nœud.
 8. Effectuer le [test de portée et de qualité radio](docs/terrain/01-test-radio.md).
 
 ## Choisir entre Meshtastic et MeshCore
@@ -48,6 +48,7 @@ La [carte interactive](docs/map.html) affiche uniquement les nœuds validés dan
 - [MeshCore — profils France / Normandie](docs/meshcore/03-profils-france-normandie.md)
 - [MeshCore — rôles et déploiement](docs/meshcore/02-roles-deploiement.md)
 - [Dépannage commun](docs/03-depannage.md)
+- [Carte interactive et recensement des nœuds](docs/04-carte-interactive.md)
 - [Test radio de terrain](docs/terrain/01-test-radio.md)
 - [Outils de simulation et couverture](docs/terrain/03-simulateurs-couverture.md)
 - [Déployer un relais](docs/terrain/02-deployer-un-relais.md)
