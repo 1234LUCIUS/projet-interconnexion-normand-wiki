@@ -10,16 +10,17 @@ Bienvenue dans le wiki open source du **Projet d’Interconnexion Normand**. Ce 
 
 ## Parcours conseillé
 
-1. Lire [les principes et règles du projet](docs/00-bienvenue.md).
-2. Lire [l’état actuel du projet](docs/06-etat-actuel.md) et [son historique](docs/05-historique-du-projet.md). Pour un nouveau déploiement, partez directement sur MeshCore.
-3. Choisir son environnement avec [le guide Meshtastic ou MeshCore](docs/01-choisir-son-reseau.md).
-4. Choisir son matériel avec [le guide matériel](docs/02-materiel.md).
-5. Préparer son appareil avec [la checklist de mise en service](docs/01-checklist-materiel.md).
-6. Choisir son logiciel : [Meshtastic](docs/meshtastic/01-demarrage.md) ou [MeshCore](docs/meshcore/01-demarrage.md).
-7. Pour MeshCore en France, lire [les profils France / Normandie](docs/meshcore/03-profils-france-normandie.md).
-8. Choisir un emplacement avec [le guide de couverture](docs/terrain/03-simulateurs-couverture.md).
-9. Consulter [la carte interactive des nœuds](docs/map.html), lire [la procédure de recensement](docs/04-carte-interactive.md) et proposer son nœud.
-10. Effectuer le [test de portée et de qualité radio](docs/terrain/01-test-radio.md).
+1. Commencer par le [guide débutant : mon premier nœud](docs/guide-debutant.md).
+2. Lire [les principes et règles du projet](docs/00-bienvenue.md).
+3. Lire [l’état actuel du projet](docs/06-etat-actuel.md) et [son historique](docs/05-historique-du-projet.md). Pour un nouveau déploiement, partez directement sur MeshCore.
+4. Comprendre [les régions et scopes MeshCore](docs/meshcore/04-regions-et-scopes.md).
+5. Choisir son matériel avec [le guide matériel](docs/02-materiel.md).
+6. Préparer son appareil avec [la checklist de mise en service](docs/01-checklist-materiel.md).
+7. Choisir son logiciel : [Meshtastic](docs/meshtastic/01-demarrage.md) ou [MeshCore](docs/meshcore/01-demarrage.md).
+8. Pour MeshCore en France, lire [les profils France / Normandie](docs/meshcore/03-profils-france-normandie.md).
+9. Choisir un emplacement avec [le guide de couverture](docs/terrain/03-simulateurs-couverture.md).
+10. Consulter [la carte interactive des nœuds](docs/map.html), lire [la procédure de recensement](docs/04-carte-interactive.md) et proposer son nœud.
+11. Effectuer le [test de portée et de qualité radio](docs/terrain/01-test-radio.md).
 
 ## Choisir entre Meshtastic et MeshCore
 
@@ -54,6 +55,7 @@ Pour poser une question, demander de l’aide ou échanger avec les membres du p
 - [Bienvenue, vocabulaire et règles du projet](docs/00-bienvenue.md)
 - [État actuel du projet et parcours recommandé](docs/06-etat-actuel.md)
 - [Historique du Projet d’Interconnexion Normand](docs/05-historique-du-projet.md)
+- [Guide débutant : mon premier nœud](docs/guide-debutant.md)
 - [Choisir entre Meshtastic et MeshCore](docs/01-choisir-son-reseau.md)
 - [Quel matériel choisir ?](docs/02-materiel.md)
 - [Checklist matériel et préparation](docs/01-checklist-materiel.md)
@@ -62,6 +64,7 @@ Pour poser une question, demander de l’aide ou échanger avec les membres du p
 - [Meshtastic — canaux et sécurité](docs/meshtastic/03-canaux-securite.md)
 - [MeshCore — démarrage](docs/meshcore/01-demarrage.md)
 - [MeshCore — profils France / Normandie](docs/meshcore/03-profils-france-normandie.md)
+- [MeshCore — régions et scopes](docs/meshcore/04-regions-et-scopes.md)
 - [MeshCore — rôles et déploiement](docs/meshcore/02-roles-deploiement.md)
 - [Dépannage commun](docs/03-depannage.md)
 - [Carte interactive et recensement des nœuds](docs/04-carte-interactive.md)
