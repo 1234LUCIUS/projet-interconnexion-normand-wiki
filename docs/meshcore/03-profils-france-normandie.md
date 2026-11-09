@@ -44,7 +44,7 @@ Utilisez ce profil uniquement si le groupe auquel vous souhaitez vous connecter 
 
 La configuration suivante est le profil opérationnel fourni par le Projet d’Interconnexion Normand pour ses répéteurs MeshCore à partir du firmware 1.16. Elle doit être appliquée à **tous les répéteurs du réseau**, avec le département adapté à l’emplacement du répéteur.
 
-Exemple pour le Calvados, département 14 :
+Configuration de base utilisée pour le secteur normand :
 
 ```text
 set radio 869.618,62.5,8,8
@@ -57,7 +57,7 @@ set path.hash.mode 1
 set loop.detect minimal
 set flood.max.unscoped 5
 set flood.max.advert 6
-region def eu fr fr-nor fr-14
+region def eu fr fr-nor fr-14 fr-50 fr-61
 region default fr
 region home fr
 region save
@@ -65,14 +65,14 @@ reboot
 clock sync
 ```
 
-Pour un répéteur situé dans un autre département normand, remplacez uniquement le scope départemental :
+Cette configuration de base déclare les scopes `fr-14`, `fr-50` et `fr-61`. Pour un répéteur situé dans un autre département normand, adaptez la ligne `region def` selon le secteur réellement couvert :
 
 - Manche : `fr-50`
 - Orne : `fr-61`
 - Seine-Maritime : `fr-76`
 - Eure : `fr-27`
 
-Le Calvados utilise `fr-14`. La commande complète devient donc, par exemple, `region def eu fr fr-nor fr-50` pour un répéteur situé dans la Manche. Ne copiez pas une configuration départementale sur un relais installé ailleurs.
+Le Calvados utilise `fr-14`, la Manche `fr-50`, l’Orne `fr-61`, la Seine-Maritime `fr-76` et l’Eure `fr-27`. Ne copiez pas une configuration départementale sur un relais installé ailleurs sans vérifier les scopes attendus par le réseau.
 
 ### À quoi servent les réglages principaux ?
 
@@ -84,19 +84,16 @@ Le profil radio aligne le répéteur sur le profil **EU/UK Narrow** du projet. L
 
 Le département d’installation est la région locale du répéteur, mais ce n’est pas forcément la seule région qu’il doit connaître. Un répéteur situé dans le Calvados peut aussi ajouter `fr-61`, `fr-50` ou `fr-27` si des nœuds de l’Orne, de la Manche ou de l’Eure sont réellement reçus depuis ce site. On ajoute uniquement les départements confirmés par des mesures ou des échanges radio fiables ; la proximité géographique seule ne suffit pas.
 
-Exemple pour un répéteur situé dans le Calvados qui couvre également l’Orne, la Manche et l’Eure :
+Si le réseau conserve la configuration de base ci-dessus, utilisez directement :
 
 ```text
-region def eu fr fr-nor fr-14
-region put fr-61 fr-nor
-region put fr-50 fr-nor
-region put fr-27 fr-nor
+region def eu fr fr-nor fr-14 fr-50 fr-61
 region default fr
 region home fr
 region save
 ```
 
-Le répéteur garde `fr` comme région par défaut et `fr` comme région d’accueil. Les régions départementales supplémentaires décrivent les zones voisines effectivement atteintes par le relais ; elles ne changent pas sa fréquence et ne créent pas une couverture radio qui n’existe pas. Pour un relais du Calvados qui ne reçoit que le Calvados, gardez uniquement `fr-14`. Après modification, redémarrez et vérifiez l’arbre avec la commande `region` disponible dans votre version.
+Le répéteur garde `fr` comme région par défaut et `fr` comme région d’accueil. Si un relais doit aussi déclarer `fr-27` ou `fr-76`, ajoutez ces scopes selon la procédure validée par les mainteneurs. Les régions départementales décrivent les zones effectivement atteintes par le relais ; elles ne changent pas sa fréquence et ne créent pas une couverture radio qui n’existe pas. Après modification, redémarrez et vérifiez l’arbre avec la commande `region` disponible dans votre version.
 
 Après `reboot`, exécutez `clock sync` et vérifiez le résultat avec les commandes de diagnostic disponibles dans votre version. Faites une sauvegarde de la configuration et gardez un accès USB local avant toute modification d’un relais distant.
 

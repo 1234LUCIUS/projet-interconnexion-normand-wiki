@@ -34,16 +34,16 @@ Ces noms sont les conventions du Projet d’Interconnexion Normand. Ils doivent 
 
 ## Les commandes du répéteur
 
-Sur un répéteur MeshCore du projet, la hiérarchie est créée par :
+Sur un répéteur MeshCore du projet, la configuration de base est créée par :
 
 ```text
-region def eu fr fr-nor fr-14
+region def eu fr fr-nor fr-14 fr-50 fr-61
 region default fr
 region home fr
 region save
 ```
 
-Pour un autre département, remplacez le dernier élément :
+Cette base déclare `fr-14`, `fr-50` et `fr-61`. Pour une implantation différente, adaptez la ligne `region def` selon le secteur couvert par le répéteur :
 
 ```text
 region def eu fr fr-nor fr-50
@@ -53,19 +53,16 @@ ou `fr-61`, `fr-76` ou `fr-27` selon l’emplacement du répéteur. La commande 
 
 ### Un répéteur peut couvrir plusieurs départements
 
-Le département où se trouve le répéteur reste son scope local et sa région d’accueil. Mais un répéteur peut aussi déclarer les départements voisins qu’il reçoit réellement. Par exemple, un répéteur du Calvados peut garder `fr-14` et ajouter `fr-61`, `fr-50` et `fr-27` si des liaisons radio vers l’Orne, la Manche et l’Eure sont confirmées :
+Le département où se trouve le répéteur reste son scope local et sa région d’accueil. Mais un répéteur peut aussi déclarer les départements voisins qu’il reçoit réellement. La configuration de base du projet pour un secteur incluant le Calvados, la Manche et l’Orne est celle indiquée ci-dessus. Si le relais reçoit également l’Eure ou la Seine-Maritime, ces scopes peuvent être ajoutés selon la procédure validée par les mainteneurs.
 
 ```text
-region def eu fr fr-nor fr-14
-region put fr-61 fr-nor
-region put fr-50 fr-nor
-region put fr-27 fr-nor
+region def eu fr fr-nor fr-14 fr-50 fr-61
 region default fr
 region home fr
 region save
 ```
 
-`region put nom parent` ajoute une région sous son parent. Ici, `fr-61`, `fr-50` et `fr-27` sont ajoutées sous `fr-nor`. Ne déclarez pas tous les départements limitrophes par principe : ajoutez seulement ceux qui sont effectivement reçus ou reliés par ce répéteur. Ajouter un scope ne crée pas de portée radio ; cela organise la propagation des paquets déjà atteignables.
+Ne déclarez pas tous les départements limitrophes par principe : ajoutez seulement ceux qui sont effectivement reçus ou reliés par ce répéteur. Ajouter un scope ne crée pas de portée radio ; cela organise la propagation des paquets déjà atteignables.
 
 Dans le profil complet du projet, ces commandes sont exécutées avant `reboot` puis `clock sync`.
 
