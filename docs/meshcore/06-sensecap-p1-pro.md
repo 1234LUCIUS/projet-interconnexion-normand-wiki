@@ -4,7 +4,7 @@
 
 Le **SenseCAP Solar Node P1-Pro** est un nœud LoRa autonome conçu pour une installation extérieure. Il possède un panneau solaire, une batterie, un GPS et un boîtier prévu pour être fixé sur un support. C’est un matériel particulièrement intéressant pour un **Repeater MeshCore** installé sur un point haut.
 
-La fiche officielle Seeed Studio du modèle **P1-Pro for MeshCore** indique qu’il est livré pré-flashé avec le firmware **MeshCore Repeater**. Si votre appareil est vendu comme modèle MeshCore et fonctionne déjà, **ne le reflashez pas sans raison** : commencez par le configurer, le tester sur table et vérifier sa version.
+Pour éviter toute ambiguïté, ce guide part du principe que le P1-Pro est **vierge, préconfiguré pour un autre firmware ou que son firmware est inconnu**. Le parcours normal est donc : flash du firmware MeshCore Repeater, configuration du projet, test sur table, puis installation extérieure. Si vous avez la preuve que votre appareil possède déjà le bon firmware et la bonne configuration, vous pouvez passer directement aux vérifications, mais ce n’est pas le scénario de référence de cette page.
 
 ## Caractéristiques utiles
 
@@ -27,18 +27,15 @@ Le P1-Pro possède la batterie et le GPS intégrés. Le P1 standard peut nécess
 
 Le Web Flasher MeshCore peut afficher la cible sous le nom de famille **Seeed Studio SenseCAP Solar Node P1** plutôt que « P1-Pro ». Ne sélectionnez cette cible que si elle correspond à votre matériel et à la documentation MeshCore/Seeed de votre version. Si aucune cible compatible n’est proposée, arrêtez-vous et demandez confirmation sur le Discord du projet.
 
-## Si le P1-Pro est déjà livré avec MeshCore
+## Préparer le P1-Pro avant le flash
 
 1. Connectez l’antenne LoRa.
 2. Placez l’interrupteur sur marche.
 3. Branchez temporairement le câble USB-C pour activer ou réveiller l’appareil lors de la première utilisation.
-4. Attendez que les voyants et le nœud soient stables.
-5. Connectez-vous avec l’application MeshCore ou la console USB.
-6. Vérifiez le rôle : il doit être **Repeater**.
-7. Vérifiez la version du firmware, la fréquence, le profil radio et les scopes.
-8. Faites un test sur table avant l’installation extérieure.
+4. Vérifiez que l’ordinateur détecte le port USB et que le câble est un câble de données.
+5. Gardez l’appareil sur table pendant toute la procédure de flash.
 
-Évitez un chargeur rapide non adapté. Si le P1-Pro ne réagit pas au bouton, chargez-le avec une alimentation USB-C stable et consultez la documentation Seeed avant de forcer un redémarrage.
+Évitez un chargeur rapide non adapté. Si le P1-Pro ne réagit pas au bouton, chargez-le avec une alimentation USB-C stable et consultez la documentation Seeed avant de forcer un redémarrage. Ne coupez pas l’alimentation pendant l’effacement ou l’écriture du firmware.
 
 ## Reflasher le P1-Pro en Repeater
 
@@ -64,6 +61,8 @@ Ne reflashez que si le firmware est absent, corrompu, incorrect ou si une migrat
 ![Écran de connexion du configurateur USB MeshCore](../../assets/meshcore-flasher/05-configurateur-usb.webp)
 
 *Après le flash, ouvrez le configurateur USB, cliquez sur « Connect » et choisissez le port série du SenseCAP. La console permet ensuite d’envoyer la configuration du projet.*
+
+Après le flash et la configuration, vérifiez le rôle **Repeater**, la version du firmware, la fréquence, le profil radio, les scopes et les annonces. Faites un test sur table avec un Companion avant toute installation extérieure.
 
 Pour les captures et les explications générales, consultez [Flasher son appareil MeshCore](05-flasher-companion-repeater.md).
 

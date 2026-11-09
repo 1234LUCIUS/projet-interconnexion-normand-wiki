@@ -121,7 +121,7 @@ Pour la configuration par console USB, le [configurateur MeshCore](https://confi
 
 *Cliquez sur « Connect », sélectionnez le port série du répéteur, puis utilisez la console pour appliquer les commandes de configuration. Ne débranchez pas le répéteur pendant l’écriture.*
 
-Pour le matériel solaire Seeed, consultez aussi la page dédiée au [SenseCAP Solar Node P1-Pro](06-sensecap-p1-pro.md). Le P1-Pro vendu pour MeshCore est généralement livré pré-flashé en Repeater.
+Pour le matériel solaire Seeed, consultez aussi la page dédiée au [SenseCAP Solar Node P1-Pro](06-sensecap-p1-pro.md). Dans ce wiki, nous partons du principe que le P1-Pro n’est pas pré-flashé ou que son firmware doit être vérifié : suivez donc la procédure complète de flash Repeater avant la configuration.
 
 ## Étape 3 — Appliquer la configuration normande
 
