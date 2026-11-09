@@ -25,3 +25,5 @@ Ne commitez jamais de clé, mot de passe, QR code de configuration, position exa
 ## Gouvernance
 
 Les décisions qui changent le canal, le preset, la politique de position, les passerelles Internet ou les rôles des relais nécessitent une discussion préalable et une trace dans le journal de configuration.
+
+Pour échanger avec les contributeurs, rejoignez le [serveur Discord du projet](https://discord.gg/HnAfYUSU82). Les demandes générales peuvent aussi être envoyées à [projet.interconnection.normand@gmail.com](mailto:projet.interconnection.normand@gmail.com).

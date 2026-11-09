@@ -31,6 +31,10 @@ En France, les bandes dites libres ne nécessitent pas d’autorisation individu
 
 Les pages marquées **À valider localement** décrivent une décision propre au Projet d’Interconnexion Normand. Elles ne doivent pas être inventées à partir de la documentation générique. Un mainteneur doit les compléter avec le nom du canal, le preset, les zones couvertes et la procédure d’adhésion réellement adoptés.
 
+## Contacts du projet
+
+La communauté se retrouve sur le [serveur Discord du Projet d’Interconnexion Normand](https://discord.gg/HnAfYUSU82). Pour une demande générale ou une question liée au projet, vous pouvez également écrire à [projet.interconnection.normand@gmail.com](mailto:projet.interconnection.normand@gmail.com).
+
 ## Références officielles
 
 - [Documentation Meshtastic](https://meshtastic.org/docs/)

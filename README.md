@@ -26,7 +26,14 @@ Les deux écosystèmes utilisent LoRa, mais ils ne sont pas automatiquement inte
 
 ## Carte des nœuds
 
-La [carte interactive](docs/map.html) affiche uniquement les nœuds validés dans le fichier public `docs/data/nodes.json`. Pour ajouter un nœud, utilisez le modèle d’issue **Proposer un nœud sur la carte**. Publiez une position approximative, jamais l’adresse d’un domicile ou une clé de configuration.
+La [carte interactive](docs/map.html) affiche uniquement les nœuds validés dans le fichier public `docs/data/nodes.json`. Pour ajouter un nœud, utilisez le modèle d’issue **Proposer un nœud sur la carte**. Publiez une position approximative, jamais l’adresse d’un domicile ou d’un relais sensible.
+
+## Rejoindre la communauté
+
+Pour poser une question, demander de l’aide ou échanger avec les membres du projet :
+
+- [Serveur Discord du Projet d’Interconnexion Normand](https://discord.gg/HnAfYUSU82)
+- E-mail du projet : [projet.interconnection.normand@gmail.com](mailto:projet.interconnection.normand@gmail.com)
 
 ## Règles essentielles
 
