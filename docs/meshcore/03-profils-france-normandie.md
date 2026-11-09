@@ -80,6 +80,24 @@ Le profil radio aligne le répéteur sur le profil **EU/UK Narrow** du projet. L
 
 `path.hash.mode 1` active les identifiants de chemin sur deux octets. `loop.detect minimal` limite les boucles avec un coût réduit. Les valeurs `flood.max.unscoped 5` et `flood.max.advert 6` bornent la propagation des floods et des annonces. Les commandes `region` définissent la hiérarchie de scopes : Europe, France, Normandie, puis département.
 
+### Ajouter les départements effectivement couverts
+
+Le département d’installation est la région locale du répéteur, mais ce n’est pas forcément la seule région qu’il doit connaître. Un répéteur situé dans le Calvados peut aussi ajouter `fr-61`, `fr-50` ou `fr-27` si des nœuds de l’Orne, de la Manche ou de l’Eure sont réellement reçus depuis ce site. On ajoute uniquement les départements confirmés par des mesures ou des échanges radio fiables ; la proximité géographique seule ne suffit pas.
+
+Exemple pour un répéteur situé dans le Calvados qui couvre également l’Orne, la Manche et l’Eure :
+
+```text
+region def eu fr fr-nor fr-14
+region put fr-61 fr-nor
+region put fr-50 fr-nor
+region put fr-27 fr-nor
+region default fr
+region home fr
+region save
+```
+
+Le répéteur garde `fr` comme région par défaut et `fr` comme région d’accueil. Les régions départementales supplémentaires décrivent les zones voisines effectivement atteintes par le relais ; elles ne changent pas sa fréquence et ne créent pas une couverture radio qui n’existe pas. Pour un relais du Calvados qui ne reçoit que le Calvados, gardez uniquement `fr-14`. Après modification, redémarrez et vérifiez l’arbre avec la commande `region` disponible dans votre version.
+
 Après `reboot`, exécutez `clock sync` et vérifiez le résultat avec les commandes de diagnostic disponibles dans votre version. Faites une sauvegarde de la configuration et gardez un accès USB local avant toute modification d’un relais distant.
 
 ## Profil Europe Long Range — pour les liaisons difficiles

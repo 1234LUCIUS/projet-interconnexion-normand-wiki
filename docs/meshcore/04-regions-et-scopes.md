@@ -51,6 +51,22 @@ region def eu fr fr-nor fr-50
 
 ou `fr-61`, `fr-76` ou `fr-27` selon l’emplacement du répéteur. La commande `region def` crée ou met à jour l’arbre. `region default` choisit le scope utilisé par défaut. `region home` indique la région d’origine du nœud. `region save` conserve les changements après un redémarrage.
 
+### Un répéteur peut couvrir plusieurs départements
+
+Le département où se trouve le répéteur reste son scope local et sa région d’accueil. Mais un répéteur peut aussi déclarer les départements voisins qu’il reçoit réellement. Par exemple, un répéteur du Calvados peut garder `fr-14` et ajouter `fr-61`, `fr-50` et `fr-27` si des liaisons radio vers l’Orne, la Manche et l’Eure sont confirmées :
+
+```text
+region def eu fr fr-nor fr-14
+region put fr-61 fr-nor
+region put fr-50 fr-nor
+region put fr-27 fr-nor
+region default fr
+region home fr
+region save
+```
+
+`region put nom parent` ajoute une région sous son parent. Ici, `fr-61`, `fr-50` et `fr-27` sont ajoutées sous `fr-nor`. Ne déclarez pas tous les départements limitrophes par principe : ajoutez seulement ceux qui sont effectivement reçus ou reliés par ce répéteur. Ajouter un scope ne crée pas de portée radio ; cela organise la propagation des paquets déjà atteignables.
+
 Dans le profil complet du projet, ces commandes sont exécutées avant `reboot` puis `clock sync`.
 
 ## Les commandes ne font pas la même chose
