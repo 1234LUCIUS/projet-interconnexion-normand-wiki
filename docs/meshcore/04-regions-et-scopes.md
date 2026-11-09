@@ -34,7 +34,7 @@ Ces noms sont les conventions du Projet d’Interconnexion Normand. Ils doivent 
 
 ## Les commandes du répéteur
 
-Sur un répéteur MeshCore du projet, la configuration de base est créée par :
+Voici un exemple pour un répéteur situé dans le **Calvados**. Chaque membre doit adapter la ligne `region def` à son département et aux départements réellement reçus par son propre répéteur :
 
 ```text
 region def eu fr fr-nor fr-14 fr-50 fr-61
@@ -43,7 +43,7 @@ region home fr
 region save
 ```
 
-Cette base déclare `fr-14`, `fr-50` et `fr-61`. Pour une implantation différente, adaptez la ligne `region def` selon le secteur couvert par le répéteur :
+Cet exemple déclare `fr-14`, `fr-50` et `fr-61`. Pour une implantation différente, adaptez la ligne `region def` selon le secteur couvert par le répéteur :
 
 ```text
 region def eu fr fr-nor fr-50
@@ -63,6 +63,8 @@ region save
 ```
 
 Ne déclarez pas tous les départements limitrophes par principe : ajoutez seulement ceux qui sont effectivement reçus ou reliés par ce répéteur. Ajouter un scope ne crée pas de portée radio ; cela organise la propagation des paquets déjà atteignables.
+
+Si vous ne savez pas quel département ou quel scope utiliser, demandez conseil sur le [serveur Discord du Projet d’Interconnexion Normand](https://discord.gg/HnAfYUSU82) ou par e-mail à [projet.interconnection.normand@gmail.com](mailto:projet.interconnection.normand@gmail.com).
 
 Dans le profil complet du projet, ces commandes sont exécutées avant `reboot` puis `clock sync`.
 

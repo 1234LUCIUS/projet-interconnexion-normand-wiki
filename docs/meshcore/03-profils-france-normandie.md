@@ -44,7 +44,7 @@ Utilisez ce profil uniquement si le groupe auquel vous souhaitez vous connecter 
 
 La configuration suivante est le profil opérationnel fourni par le Projet d’Interconnexion Normand pour ses répéteurs MeshCore à partir du firmware 1.16. Elle doit être appliquée à **tous les répéteurs du réseau**, avec le département adapté à l’emplacement du répéteur.
 
-Configuration de base utilisée pour le secteur normand :
+Exemple de configuration pour un répéteur situé dans le **Calvados**. Chaque personne doit adapter la ligne `region def` à son département et aux départements réellement couverts par son répéteur. Ne copiez pas automatiquement cet exemple sur un relais installé ailleurs.
 
 ```text
 set radio 869.618,62.5,8,8
@@ -73,6 +73,8 @@ Cette configuration de base déclare les scopes `fr-14`, `fr-50` et `fr-61`. Pou
 - Eure : `fr-27`
 
 Le Calvados utilise `fr-14`, la Manche `fr-50`, l’Orne `fr-61`, la Seine-Maritime `fr-76` et l’Eure `fr-27`. Ne copiez pas une configuration départementale sur un relais installé ailleurs sans vérifier les scopes attendus par le réseau.
+
+En cas de doute sur le département, les scopes ou la portée réellement couverte, posez votre question sur le [serveur Discord du Projet d’Interconnexion Normand](https://discord.gg/HnAfYUSU82) ou écrivez à [projet.interconnection.normand@gmail.com](mailto:projet.interconnection.normand@gmail.com).
 
 ### À quoi servent les réglages principaux ?
 
