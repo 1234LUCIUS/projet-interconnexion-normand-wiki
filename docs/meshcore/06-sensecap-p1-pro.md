@@ -48,15 +48,17 @@ Ne reflashez que si le firmware est absent, corrompu, incorrect ou si une migrat
 5. Recherchez la cible Seeed Studio SenseCAP Solar Node P1 ou la désignation P1-Pro compatible affichée par le flasher.
 6. Vérifiez que le modèle sélectionné correspond réellement à votre carte.
 7. Choisissez le rôle **Repeater**.
-8. Choisissez une version stable compatible avec les réglages du projet.
+8. Sélectionnez précisément la version **MeshCore 1.17.1** dans la liste des versions.
 9. Lancez l’effacement seulement si vous acceptez de perdre la configuration existante.
 10. Cliquez sur **Flash!** et ne débranchez pas le câble pendant toute l’opération.
 11. Redémarrez lorsque le flasher le demande.
 12. Ouvrez la console du flasher ou le [configurateur MeshCore](https://config.meshcore.io/).
 
-![Écran de flash du firmware Repeater MeshCore](../../assets/meshcore-flasher/04-repeater-version-flash.webp)
+![Écran réel du SenseCAP Solar Node P1 en mode Repeater avec MeshCore 1.17.1](../../assets/meshcore-flasher/06-sensecap-p1-repeater-v1.17.1.webp)
 
-*Dans cet écran, contrôlez le modèle, le rôle « Repeater », la version et l’option d’effacement avant de cliquer sur « Flash! ». L’image utilise une Heltec v4 comme exemple d’interface ; le principe est le même pour le SenseCAP lorsque la cible est sélectionnée.*
+*Capture du Web Flasher officiel sur la cible affichée « Seeed Studio SenseCAP Solar Node P1 ». Pour le P1-Pro, sélectionnez cette cible, le rôle « Repeater », puis la version 1.17.1. Contrôlez également les boutons « Enter DFU mode », « Erase Flash » et « Flash! » avant de commencer.*
+
+Le flasher affiche parfois le P1-Pro sous le nom **SenseCAP Solar Node P1**. Il s’agit de la cible à sélectionner lorsque votre P1-Pro correspond à cette famille matérielle. La page officielle affiche aussi une recommandation OTAFIX si vous prévoyez des mises à jour OTA Bluetooth ; ne l’installez pas sans lire la documentation et sans décider si ce mode de maintenance est nécessaire.
 
 ![Écran de connexion du configurateur USB MeshCore](../../assets/meshcore-flasher/05-configurateur-usb.webp)
 
