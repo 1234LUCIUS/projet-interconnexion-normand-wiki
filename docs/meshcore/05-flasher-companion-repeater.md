@@ -13,6 +13,10 @@ Préparez un ordinateur équipé d’un navigateur compatible Web Serial, de pr�
 
 Vérifiez le modèle exact de la carte dans le [Web Flasher officiel MeshCore](https://flasher.meshcore.io/). Une carte qui ressemble à votre modèle peut utiliser une autre puce ou une autre mémoire. Ne sélectionnez pas un modèle “proche”.
 
+![Écran de sélection du matériel dans le Web Flasher MeshCore](../../assets/meshcore-flasher/01-choisir-le-materiel.webp)
+
+*Exemple visuel avec une carte Heltec v4. Votre liste peut être différente : sélectionnez toujours le modèle imprimé sur votre appareil.*
+
 Branchez l’antenne avant d’alimenter la radio. Retirez les autres appareils USB qui pourraient utiliser le même port série. Fermez les applications de terminal, PlatformIO, Arduino IDE ou tout autre programme qui pourrait bloquer le port.
 
 ## Sauvegarder avant de flasher
@@ -36,11 +40,19 @@ Choisissez **Companion** pour votre premier appareil, pour un nœud porté avec 
 5. Choisissez le firmware **Companion**.
 6. Choisissez BLE si le téléphone doit se connecter en Bluetooth, ou USB Serial si l’appareil sera relié par câble à un ordinateur ou à un client compatible.
 
+![Écran de choix du rôle dans le Web Flasher MeshCore](../../assets/meshcore-flasher/02-choisir-le-role.webp)
+
+*Pour un nœud personnel, choisissez « Companion Bluetooth » ou « Companion USB ». Le bouton « Repeater » est réservé au relais permanent.*
+
 Ne débranchez pas l’appareil pendant l’effacement ou l’écriture du firmware. Si le navigateur affiche un journal, conservez-le uniquement après avoir retiré les clés, adresses privées et informations sensibles.
 
 ## Étape 2 — Premier démarrage
 
 Après le flash, redémarrez l’appareil si le flasher le demande. Ouvrez l’application MeshCore ou le client Web officiel [app.meshcore.nz](https://app.meshcore.nz/), puis connectez le Companion par BLE ou USB selon le firmware choisi.
+
+![Écran de flash du Companion Bluetooth MeshCore](../../assets/meshcore-flasher/03-companion-version-flash.webp)
+
+*Vérifiez la version affichée, laissez « Erase device » activé uniquement si vous acceptez l’effacement, puis cliquez sur « Flash! ».*
 
 Donnez au nœud un nom court qui ne révèle pas votre nom complet, votre adresse ou votre position. Vérifiez que l’antenne est bien connectée et que l’appareil ne chauffe pas anormalement.
 
@@ -98,6 +110,10 @@ Utilisez un appareil dédié. Ne transformez pas votre seul Companion en Repeate
 5. Lancez l’effacement et l’installation.
 6. Attendez la fin complète du flash et ne débranchez pas l’appareil pendant l’opération.
 7. Redémarrez lorsque le flasher le demande.
+
+![Écran de flash du Repeater MeshCore](../../assets/meshcore-flasher/04-repeater-version-flash.webp)
+
+*L’écran Repeater affiche le rôle, la version et le bouton « Flash! ». La configuration du relais se fait ensuite via la console ou le configurateur.*
 
 Pour la configuration par console USB, le [configurateur MeshCore](https://config.meshcore.io/) et la fonction console du flasher peuvent être utilisés selon le matériel et la version installée.
 
