@@ -19,3 +19,7 @@ Faites un test local, puis un test depuis plusieurs directions. Comparez les ré
 ## Repli
 
 Prévoyez une procédure pour couper, récupérer ou remplacer le relais. Une installation sans responsable identifié devient rapidement une dette technique et un risque de sécurité.
+
+## Une question ?
+
+Vous pouvez à tout moment rejoindre le [serveur Discord officiel du Projet d’Interconnexion Normand](https://discord.gg/HnAfYUSU82) ou nous contacter par e-mail à [projet.interconnection.normand@gmail.com](mailto:projet.interconnection.normand@gmail.com).

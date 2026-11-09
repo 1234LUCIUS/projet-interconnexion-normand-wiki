@@ -49,3 +49,7 @@ python3 -m json.tool docs/data/nodes.json >/dev/null
 ```
 
 La carte n’est pas une preuve de couverture. Pour une décision d’installation, complétez-la avec une simulation dans [MeshLab-RF](https://github.com/1234LUCIUS/meshlab-rf/) et un test radio réel.
+
+## Une question ?
+
+Vous pouvez à tout moment rejoindre le [serveur Discord officiel du Projet d’Interconnexion Normand](https://discord.gg/HnAfYUSU82) ou nous contacter par e-mail à [projet.interconnection.normand@gmail.com](mailto:projet.interconnection.normand@gmail.com).

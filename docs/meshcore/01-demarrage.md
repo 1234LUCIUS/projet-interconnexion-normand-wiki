@@ -31,3 +31,7 @@ Notez le modèle, le rôle, la version et la date du flash. Conservez les inform
 ## Différence importante avec Meshtastic
 
 Les applications, formats de configuration et rôles ne sont pas interchangeables. Pour un projet mixte, documentez séparément les canaux, les appareils et les procédures de dépannage. Une passerelle entre systèmes doit être traitée comme un composant de sécurité et de fiabilité, pas comme un simple réglage.
+
+## Une question ?
+
+Vous pouvez à tout moment rejoindre le [serveur Discord officiel du Projet d’Interconnexion Normand](https://discord.gg/HnAfYUSU82) ou nous contacter par e-mail à [projet.interconnection.normand@gmail.com](mailto:projet.interconnection.normand@gmail.com).

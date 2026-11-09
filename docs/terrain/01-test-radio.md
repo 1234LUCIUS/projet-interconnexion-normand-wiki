@@ -36,3 +36,7 @@ Observations :
 ## Interprétation
 
 Un lien stable à un endroit n’implique pas une couverture uniforme. Pour déclarer une zone utile, accumulez plusieurs mesures et indiquez les limites. Ne publiez pas la position exacte d’un particulier ou d’un relais sensible.
+
+## Une question ?
+
+Vous pouvez à tout moment rejoindre le [serveur Discord officiel du Projet d’Interconnexion Normand](https://discord.gg/HnAfYUSU82) ou nous contacter par e-mail à [projet.interconnection.normand@gmail.com](mailto:projet.interconnection.normand@gmail.com).

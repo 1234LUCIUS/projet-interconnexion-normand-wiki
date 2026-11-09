@@ -40,3 +40,7 @@ Achetez une antenne 868 MHz adaptée, un câble USB de données, une batterie pr
 - [Web Flasher MeshCore](https://flasher.meshcore.io/)
 
 Les liens ci-dessus sont des références de compatibilité. Les prix, vendeurs et révisions changent ; vérifiez le modèle exact et la bande 868 MHz avant commande.
+
+## Une question ?
+
+Vous pouvez à tout moment rejoindre le [serveur Discord officiel du Projet d’Interconnexion Normand](https://discord.gg/HnAfYUSU82) ou nous contacter par e-mail à [projet.interconnection.normand@gmail.com](mailto:projet.interconnection.normand@gmail.com).

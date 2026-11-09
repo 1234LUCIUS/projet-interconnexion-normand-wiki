@@ -33,3 +33,7 @@ Ne publiez pas publiquement l’adresse exacte d’un relais privé. Le wiki peu
 ## Maintenance
 
 Planifiez un contrôle périodique : tension, température, boîtier, connecteurs, état de l’antenne, journal de redémarrage et version logicielle. Toute modification doit être testée sur un appareil de laboratoire avant déploiement quand c’est possible.
+
+## Une question ?
+
+Vous pouvez à tout moment rejoindre le [serveur Discord officiel du Projet d’Interconnexion Normand](https://discord.gg/HnAfYUSU82) ou nous contacter par e-mail à [projet.interconnection.normand@gmail.com](mailto:projet.interconnection.normand@gmail.com).

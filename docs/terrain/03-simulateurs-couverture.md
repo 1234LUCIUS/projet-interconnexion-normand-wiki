@@ -37,3 +37,7 @@ Les couleurs de couverture sont des mesures locales, pas une garantie pour tout 
 ## Confidentialité
 
 Pour une carte publique, publiez une zone ou une cellule approximative plutôt que les coordonnées exactes d’un domicile. N’ajoutez jamais de clé privée, mot de passe, QR code ou détail qui faciliterait l’accès à un relais.
+
+## Une question ?
+
+Vous pouvez à tout moment rejoindre le [serveur Discord officiel du Projet d’Interconnexion Normand](https://discord.gg/HnAfYUSU82) ou nous contacter par e-mail à [projet.interconnection.normand@gmail.com](mailto:projet.interconnection.normand@gmail.com).

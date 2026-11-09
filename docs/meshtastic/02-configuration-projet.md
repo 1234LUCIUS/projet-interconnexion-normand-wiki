@@ -44,3 +44,7 @@ Chaque changement important doit indiquer : date, auteur, version firmware, anci
 - Politique MQTT et passerelles.
 - Zones ou relais de référence.
 - Contact de maintenance.
+
+## Une question ?
+
+Vous pouvez à tout moment rejoindre le [serveur Discord officiel du Projet d’Interconnexion Normand](https://discord.gg/HnAfYUSU82) ou nous contacter par e-mail à [projet.interconnection.normand@gmail.com](mailto:projet.interconnection.normand@gmail.com).

@@ -56,3 +56,7 @@ Exportez la configuration si le client le permet et conservez-la hors dépôt pu
 - Nœuds visibles mais messages illisibles : vérifier le nom du canal et la PSK.
 - Portée faible : tester l’emplacement, l’orientation et l’antenne avant d’augmenter quoi que ce soit.
 - Appareil muet après flash : vérifier le modèle exact et refaire la procédure officielle de récupération.
+
+## Une question ?
+
+Vous pouvez à tout moment rejoindre le [serveur Discord officiel du Projet d’Interconnexion Normand](https://discord.gg/HnAfYUSU82) ou nous contacter par e-mail à [projet.interconnection.normand@gmail.com](mailto:projet.interconnection.normand@gmail.com).

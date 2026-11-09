@@ -25,3 +25,7 @@ Un appareil perdu doit être considéré comme compromis. Révoquez ou remplacez
 ## Limites
 
 Le chiffrement ne protège pas contre les erreurs de destinataire, les captures d’écran, la compromission du téléphone, l’analyse du trafic ou la localisation radio. N’utilisez pas le mesh pour des informations dont la divulgation mettrait quelqu’un en danger.
+
+## Une question ?
+
+Vous pouvez à tout moment rejoindre le [serveur Discord officiel du Projet d’Interconnexion Normand](https://discord.gg/HnAfYUSU82) ou nous contacter par e-mail à [projet.interconnection.normand@gmail.com](mailto:projet.interconnection.normand@gmail.com).

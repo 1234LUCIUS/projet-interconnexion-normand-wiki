@@ -49,3 +49,7 @@ Si vous hésitez, commencez par un Companion de test. Ne reflashez pas un appare
 ## Important pendant la migration
 
 Meshtastic et MeshCore utilisent tous les deux LoRa mais ne sont pas directement interopérables. Un changement de logiciel ne doit donc pas être présenté comme une simple mise à jour : il peut modifier les canaux, les rôles, les chemins, les clés et la manière dont le réseau se comporte.
+
+## Une question ?
+
+Vous pouvez à tout moment rejoindre le [serveur Discord officiel du Projet d’Interconnexion Normand](https://discord.gg/HnAfYUSU82) ou nous contacter par e-mail à [projet.interconnection.normand@gmail.com](mailto:projet.interconnection.normand@gmail.com).
