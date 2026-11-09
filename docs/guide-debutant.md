@@ -24,6 +24,8 @@ Pour un Companion, privilégiez une carte compacte avec Bluetooth et batterie. P
 
 Le profil complet des répéteurs et les scopes départementaux sont expliqués dans [Profils MeshCore France / Normandie](meshcore/03-profils-france-normandie.md).
 
+Pour la procédure détaillée, consultez [Flasher son appareil MeshCore](meshcore/05-flasher-companion-repeater.md). Elle contient une partie dédiée au Companion et une autre au Repeater, avec la préparation, les commandes, les vérifications et le dépannage.
+
 ## Où commencer ?
 
 Faites votre premier test dans un endroit dégagé, à quelques mètres d’un autre appareil connu. Ensuite, déplacez-vous dans votre quartier ou votre commune. Notez ce qui fonctionne et ce qui ne fonctionne pas. Ne concluez pas qu’un réseau est “absent” après un seul essai.

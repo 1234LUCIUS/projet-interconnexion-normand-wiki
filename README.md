@@ -16,11 +16,12 @@ Bienvenue dans le wiki open source du **Projet d’Interconnexion Normand**. Ce 
 4. Comprendre [les régions et scopes MeshCore](docs/meshcore/04-regions-et-scopes.md).
 5. Choisir son matériel avec [le guide matériel](docs/02-materiel.md).
 6. Préparer son appareil avec [la checklist de mise en service](docs/01-checklist-materiel.md).
-7. Choisir son logiciel : [Meshtastic](docs/meshtastic/01-demarrage.md) ou [MeshCore](docs/meshcore/01-demarrage.md).
-8. Pour MeshCore en France, lire [les profils France / Normandie](docs/meshcore/03-profils-france-normandie.md).
-9. Choisir un emplacement avec [le guide de couverture](docs/terrain/03-simulateurs-couverture.md).
-10. Consulter [la carte interactive des nœuds](docs/map.html), lire [la procédure de recensement](docs/04-carte-interactive.md) et proposer son nœud.
-11. Effectuer le [test de portée et de qualité radio](docs/terrain/01-test-radio.md).
+7. Flasher son appareil avec le guide [Companion et Repeater](docs/meshcore/05-flasher-companion-repeater.md).
+8. Choisir son logiciel : [Meshtastic](docs/meshtastic/01-demarrage.md) ou [MeshCore](docs/meshcore/01-demarrage.md).
+9. Pour MeshCore en France, lire [les profils France / Normandie](docs/meshcore/03-profils-france-normandie.md).
+10. Choisir un emplacement avec [le guide de couverture](docs/terrain/03-simulateurs-couverture.md).
+11. Consulter [la carte interactive des nœuds](docs/map.html), lire [la procédure de recensement](docs/04-carte-interactive.md) et proposer son nœud.
+12. Effectuer le [test de portée et de qualité radio](docs/terrain/01-test-radio.md).
 
 ## Choisir entre Meshtastic et MeshCore
 
@@ -56,6 +57,7 @@ Pour poser une question, demander de l’aide ou échanger avec les membres du p
 - [État actuel du projet et parcours recommandé](docs/06-etat-actuel.md)
 - [Historique du Projet d’Interconnexion Normand](docs/05-historique-du-projet.md)
 - [Guide débutant : mon premier nœud](docs/guide-debutant.md)
+- [Flasher son Companion ou son Repeater MeshCore](docs/meshcore/05-flasher-companion-repeater.md)
 - [Choisir entre Meshtastic et MeshCore](docs/01-choisir-son-reseau.md)
 - [Quel matériel choisir ?](docs/02-materiel.md)
 - [Checklist matériel et préparation](docs/01-checklist-materiel.md)
