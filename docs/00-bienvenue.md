@@ -12,6 +12,8 @@ Le Projet d’Interconnexion Normand bascule petit à petit vers **MeshCore**. C
 
 Un appareil Meshtastic et un appareil MeshCore ne communiquent pas directement simplement parce qu’ils utilisent tous les deux LoRa. Pour participer à la partie MeshCore du projet, suivez le profil MeshCore France / Normandie et choisissez le firmware Companion ou Repeater adapté. Ne reflashez pas un appareil en production sans sauvegarde et sans vérifier le rôle prévu.
 
+Pour connaître le choix recommandé aujourd’hui, consultez [l’état actuel du projet](06-etat-actuel.md). Pour comprendre l’origine de cette évolution, consultez [l’historique public](05-historique-du-projet.md).
+
 ## Vocabulaire minimal
 
 - **Nœud / node :** appareil radio participant au réseau.

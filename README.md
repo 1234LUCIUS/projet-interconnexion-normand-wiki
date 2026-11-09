@@ -11,7 +11,7 @@ Bienvenue dans le wiki open source du **Projet d’Interconnexion Normand**. Ce 
 ## Parcours conseillé
 
 1. Lire [les principes et règles du projet](docs/00-bienvenue.md).
-2. Lire [l’historique du projet](docs/05-historique-du-projet.md).
+2. Lire [l’état actuel du projet](docs/06-etat-actuel.md) et [son historique](docs/05-historique-du-projet.md).
 3. Choisir son environnement avec [le guide Meshtastic ou MeshCore](docs/01-choisir-son-reseau.md).
 4. Choisir son matériel avec [le guide matériel](docs/02-materiel.md).
 5. Préparer son appareil avec [la checklist de mise en service](docs/01-checklist-materiel.md).
@@ -50,6 +50,7 @@ Pour poser une question, demander de l’aide ou échanger avec les membres du p
 ## Documentation
 
 - [Bienvenue, vocabulaire et règles du projet](docs/00-bienvenue.md)
+- [État actuel du projet et parcours recommandé](docs/06-etat-actuel.md)
 - [Historique du Projet d’Interconnexion Normand](docs/05-historique-du-projet.md)
 - [Choisir entre Meshtastic et MeshCore](docs/01-choisir-son-reseau.md)
 - [Quel matériel choisir ?](docs/02-materiel.md)
