@@ -57,6 +57,14 @@ Ne reflashez que si le firmware est absent, corrompu, incorrect ou si une migrat
 11. Redémarrez lorsque le flasher le demande.
 12. Ouvrez la console du flasher ou le [configurateur MeshCore](https://config.meshcore.io/).
 
+![Écran de flash du firmware Repeater MeshCore](../../assets/meshcore-flasher/04-repeater-version-flash.webp)
+
+*Dans cet écran, contrôlez le modèle, le rôle « Repeater », la version et l’option d’effacement avant de cliquer sur « Flash! ». L’image utilise une Heltec v4 comme exemple d’interface ; le principe est le même pour le SenseCAP lorsque la cible est sélectionnée.*
+
+![Écran de connexion du configurateur USB MeshCore](../../assets/meshcore-flasher/05-configurateur-usb.webp)
+
+*Après le flash, ouvrez le configurateur USB, cliquez sur « Connect » et choisissez le port série du SenseCAP. La console permet ensuite d’envoyer la configuration du projet.*
+
 Pour les captures et les explications générales, consultez [Flasher son appareil MeshCore](05-flasher-companion-repeater.md).
 
 ## Configuration du projet — exemple Calvados

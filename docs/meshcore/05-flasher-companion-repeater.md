@@ -117,6 +117,10 @@ Utilisez un appareil dédié. Ne transformez pas votre seul Companion en Repeate
 
 Pour la configuration par console USB, le [configurateur MeshCore](https://config.meshcore.io/) et la fonction console du flasher peuvent être utilisés selon le matériel et la version installée.
 
+![Écran de connexion du configurateur USB MeshCore](../../assets/meshcore-flasher/05-configurateur-usb.webp)
+
+*Cliquez sur « Connect », sélectionnez le port série du répéteur, puis utilisez la console pour appliquer les commandes de configuration. Ne débranchez pas le répéteur pendant l’écriture.*
+
 Pour le matériel solaire Seeed, consultez aussi la page dédiée au [SenseCAP Solar Node P1-Pro](06-sensecap-p1-pro.md). Le P1-Pro vendu pour MeshCore est généralement livré pré-flashé en Repeater.
 
 ## Étape 3 — Appliquer la configuration normande
