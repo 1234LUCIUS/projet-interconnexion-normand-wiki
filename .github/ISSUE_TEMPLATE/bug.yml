@@ -1,0 +1,36 @@
+name: Signaler une erreur ou un problème
+description: Signaler une erreur dans la documentation ou une procédure reproductible
+title: "[Bug] "
+labels: [documentation, triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ne joignez aucune clé, QR code, adresse privée ou position précise.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problème observé
+      description: Décrivez le résultat attendu et le résultat obtenu.
+    validations:
+      required: true
+  - type: input
+    id: software
+    attributes:
+      label: Logiciel et version
+      placeholder: Meshtastic 2.x ou MeshCore x.y
+  - type: input
+    id: hardware
+    attributes:
+      label: Matériel
+      placeholder: Modèle exact de la carte et de l’antenne
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Étapes pour reproduire
+      description: Listez les étapes et les réglages non sensibles.
+  - type: textarea
+    id: logs
+    attributes:
+      label: Journaux nettoyés
+      description: Supprimez les identifiants, clés et positions précises avant de coller un journal.

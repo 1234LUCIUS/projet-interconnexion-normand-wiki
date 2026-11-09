@@ -1,0 +1,47 @@
+# Projet d’Interconnexion Normand — Wiki radio maillée
+
+![Logo du Projet d’Interconnexion Normand](assets/logo-projet-interconnexion-normand.png)
+
+Bienvenue dans le wiki open source du **Projet d’Interconnexion Normand**. Ce guide accompagne les nouveaux arrivants qui souhaitent découvrir, configurer et exploiter un réseau radio maillé basé sur **Meshtastic** et **MeshCore**.
+
+> **Objectif :** permettre à chacun de mettre en service un nœud, rejoindre proprement le réseau normand, comprendre les limites radio et contribuer à une infrastructure utile, documentée et respectueuse.
+
+## Parcours conseillé
+
+1. Lire [les principes et règles du projet](docs/00-bienvenue.md).
+2. Préparer son matériel avec [la checklist de mise en service](docs/01-checklist-materiel.md).
+3. Choisir son logiciel : [Meshtastic](docs/meshtastic/01-demarrage.md) ou [MeshCore](docs/meshcore/01-demarrage.md).
+4. Effectuer le [test de portée et de qualité radio](docs/terrain/01-test-radio.md).
+5. Enregistrer son nœud et contribuer via [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Choisir entre Meshtastic et MeshCore
+
+- **Meshtastic** est souvent le chemin le plus simple pour débuter : application mobile mature, télémétrie, position, canaux et nombreux appareils compatibles.
+- **MeshCore** propose une architecture légère avec des rôles explicites — Companion, Repeater et Room Server — adaptée aux déploiements où l’on veut maîtriser le routage et la consommation.
+
+Les deux écosystèmes utilisent LoRa, mais ils ne sont pas automatiquement interopérables. Un appareil Meshtastic ne rejoint pas directement un réseau MeshCore sans passerelle ou projet spécifique.
+
+## Règles essentielles
+
+- Configurer la **région radio correcte** avant toute émission.
+- Ne jamais publier une clé privée, une clé de canal ou un QR code de configuration.
+- Ne pas installer de relais sur un terrain ou un bâtiment sans autorisation.
+- Respecter les limites de puissance, de taux d’occupation et les autres règles applicables en France.
+- Documenter les changements et préférer une configuration reproductible.
+
+## Documentation
+
+- [Bienvenue, vocabulaire et règles du projet](docs/00-bienvenue.md)
+- [Checklist matériel et préparation](docs/01-checklist-materiel.md)
+- [Meshtastic — démarrage](docs/meshtastic/01-demarrage.md)
+- [Meshtastic — configuration normande](docs/meshtastic/02-configuration-projet.md)
+- [Meshtastic — canaux et sécurité](docs/meshtastic/03-canaux-securite.md)
+- [MeshCore — démarrage](docs/meshcore/01-demarrage.md)
+- [MeshCore — rôles et déploiement](docs/meshcore/02-roles-deploiement.md)
+- [Dépannage commun](docs/03-depannage.md)
+- [Test radio de terrain](docs/terrain/01-test-radio.md)
+- [Déployer un relais](docs/terrain/02-deployer-un-relais.md)
+
+## Licence
+
+Le contenu de ce wiki est publié sous [CC BY-SA 4.0](LICENSE). Les exemples et scripts sont également réutilisables sous [MIT](LICENSE-CODE), sauf indication contraire. Les marques Meshtastic et MeshCore appartiennent à leurs projets respectifs.
