@@ -2,7 +2,7 @@
 
 ![Choix du réseau selon l’usage](../assets/choisir-meshtastic-ou-meshcore.png)
 
-Le Projet d’Interconnexion Normand utilise encore les deux environnements pendant sa migration progressive, mais le choix recommandé dépend de la durée, de la taille et du niveau d’infrastructure attendu.
+Le Projet d’Interconnexion Normand utilise encore les deux environnements pendant sa migration progressive. Pour toute nouvelle contribution à l’infrastructure normande, l’orientation recommandée est **MeshCore** ; Meshtastic reste pertinent pour certains usages mobiles ou ponctuels et pour les appareils déjà en service.
 
 ## Meshtastic pour les usages ponctuels
 
@@ -42,7 +42,7 @@ Pour un réseau appelé à être maintenu, étendu et transmis à de nouveaux me
 
 ## Règle de décision rapide
 
-Choisissez **Meshtastic** si vous partez en groupe, organisez une activité ponctuelle ou voulez apprendre rapidement avec un téléphone. Choisissez **MeshCore** si vous déployez un répéteur permanent, plusieurs points hauts ou une infrastructure régionale maintenue dans le temps.
+Pour un nouveau membre, commencez par **MeshCore Companion** si votre objectif est de rejoindre durablement le réseau normand. Choisissez **Meshtastic** si vous partez en groupe, organisez une activité ponctuelle, devez rester compatible avec un parc existant ou voulez découvrir le principe avec un téléphone. Choisissez impérativement **MeshCore** si vous déployez un répéteur permanent, plusieurs points hauts ou une infrastructure régionale maintenue dans le temps.
 
 Si vous hésitez, commencez par un Companion de test. Ne reflashez pas un appareil déjà déployé avant d’avoir vérifié le rôle, la sauvegarde, le profil radio et le relais que vous souhaitez rejoindre.
 

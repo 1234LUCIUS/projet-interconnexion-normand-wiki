@@ -2,7 +2,7 @@
 
 ## En une phrase
 
-Le Projet d’Interconnexion Normand est une initiative communautaire de communication hors réseau en Normandie. Le projet a commencé avec Meshtastic et évolue progressivement vers MeshCore pour les infrastructures permanentes, tout en conservant Meshtastic pour les usages individuels, mobiles et ponctuels.
+Le Projet d’Interconnexion Normand est une initiative communautaire de communication hors réseau en Normandie. Le projet a commencé avec Meshtastic et évolue progressivement vers MeshCore. Pour toute nouvelle infrastructure, le projet encourage désormais clairement l’adoption de MeshCore, tout en conservant Meshtastic pour les usages individuels, mobiles, ponctuels et les appareils déjà déployés.
 
 ## Ce qui est historique
 
@@ -23,6 +23,8 @@ Les appareils Meshtastic existants ne doivent pas être reflashes simplement par
 ### MeshCore devient la référence pour
 
 MeshCore est le choix privilégié pour un répéteur permanent, un réseau régional, plusieurs points hauts ou une infrastructure que le projet doit maintenir et étendre dans la durée.
+
+Un nouveau membre qui souhaite investir dans du matériel ou contribuer à la couverture régionale devrait donc choisir un **Companion MeshCore** pour commencer. Un nouveau Repeater MeshCore doit être réservé à un appareil dédié, un emplacement autorisé et un responsable de maintenance identifié.
 
 Les nouveaux répéteurs normands doivent suivre la [configuration MeshCore France / Normandie](meshcore/03-profils-france-normandie.md), qui utilise le profil EU/UK Narrow, les scopes `fr`, `fr-nor` et départementaux, ainsi que le réglage sur deux octets pour les chemins.
 

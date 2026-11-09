@@ -4,6 +4,8 @@
 
 Le Projet d’Interconnexion Normand fédère des personnes qui expérimentent et déploient des communications LoRa maillées en Normandie, sans dépendre en permanence d’un opérateur mobile ou d’un accès Internet.
 
+Pour les nouveaux déploiements et les nouveaux membres qui souhaitent contribuer à l’infrastructure régionale, **MeshCore est le chemin recommandé**. Meshtastic reste disponible pour la transition, les appareils existants et les usages mobiles ou ponctuels.
+
 Le réseau est communautaire : chaque nœud peut améliorer la couverture, mais chaque émission partage un spectre radio avec d’autres utilisateurs. La qualité dépend donc autant de la hauteur et de l’antenne que de la discipline collective.
 
 ## Migration progressive vers MeshCore

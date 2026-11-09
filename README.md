@@ -6,12 +6,12 @@ Bienvenue dans le wiki open source du **Projet d’Interconnexion Normand**. Ce 
 
 > **Objectif :** permettre à chacun de mettre en service un nœud, rejoindre proprement le réseau normand, comprendre les limites radio et contribuer à une infrastructure utile, documentée et respectueuse.
 
-> **Évolution du projet :** le Projet d’Interconnexion Normand bascule progressivement vers **MeshCore**. Meshtastic reste documenté et utilisé pendant la période de transition. Les deux environnements doivent être configurés séparément, car ils ne sont pas directement interopérables.
+> **Orientation du projet :** pour tout nouveau déploiement durable, tout nouveau répéteur et toute infrastructure régionale, le Projet d’Interconnexion Normand recommande désormais de partir sur **MeshCore**. Meshtastic reste documenté et utilisé pendant la période de transition, notamment pour les appareils existants et les usages mobiles ou ponctuels.
 
 ## Parcours conseillé
 
 1. Lire [les principes et règles du projet](docs/00-bienvenue.md).
-2. Lire [l’état actuel du projet](docs/06-etat-actuel.md) et [son historique](docs/05-historique-du-projet.md).
+2. Lire [l’état actuel du projet](docs/06-etat-actuel.md) et [son historique](docs/05-historique-du-projet.md). Pour un nouveau déploiement, partez directement sur MeshCore.
 3. Choisir son environnement avec [le guide Meshtastic ou MeshCore](docs/01-choisir-son-reseau.md).
 4. Choisir son matériel avec [le guide matériel](docs/02-materiel.md).
 5. Préparer son appareil avec [la checklist de mise en service](docs/01-checklist-materiel.md).
@@ -25,6 +25,8 @@ Bienvenue dans le wiki open source du **Projet d’Interconnexion Normand**. Ce 
 
 - **Meshtastic** est souvent le chemin le plus simple pour débuter : application mobile mature, télémétrie, position, canaux et nombreux appareils compatibles.
 - **MeshCore** propose une architecture légère avec des rôles explicites — Companion, Repeater et Room Server — adaptée aux déploiements où l’on veut maîtriser le routage et la consommation.
+
+Pour les nouveaux arrivants qui souhaitent contribuer à l’infrastructure normande, le choix recommandé est **MeshCore**. Meshtastic reste un excellent outil pour apprendre, se déplacer avec un Companion, participer à un événement ou conserver un appareil déjà configuré, mais les nouveaux répéteurs et les extensions régionales doivent suivre MeshCore.
 
 Les deux écosystèmes utilisent LoRa, mais ils ne sont pas automatiquement interopérables. Un appareil Meshtastic ne rejoint pas directement un réseau MeshCore sans passerelle ou projet spécifique.
 
