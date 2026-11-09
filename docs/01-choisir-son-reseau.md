@@ -2,7 +2,9 @@
 
 ![Choix du réseau selon l’usage](../assets/choisir-meshtastic-ou-meshcore.png)
 
-Le Projet d’Interconnexion Normand utilise encore les deux environnements pendant sa migration progressive. Pour toute nouvelle contribution à l’infrastructure normande, l’orientation recommandée est **MeshCore** ; Meshtastic reste pertinent pour certains usages mobiles ou ponctuels et pour les appareils déjà en service.
+Le Projet d’Interconnexion Normand utilise encore les deux environnements, mais il **bascule de plus en plus vers MeshCore**. Cette évolution est progressive : pour toute nouvelle contribution à l’infrastructure normande, l’orientation recommandée est **MeshCore** ; Meshtastic reste pertinent pour certains usages mobiles ou ponctuels et pour les appareils déjà en service.
+
+**En pratique :** si vous achetez aujourd’hui un appareil pour rejoindre durablement le projet, choisissez un **Companion MeshCore**. Si vous installez un nouveau répéteur ou un point haut, partez sur **MeshCore Repeater**. Meshtastic reste maintenu pendant la transition, mais il n’est plus le choix privilégié pour les nouvelles infrastructures du projet.
 
 ## Meshtastic pour les usages ponctuels
 
