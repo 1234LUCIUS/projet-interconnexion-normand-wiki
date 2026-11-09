@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Carte des nœuds — Projet d’Interconnexion Normand</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <style>
+    :root { color-scheme: light; font-family: system-ui, sans-serif; }
+    body { margin: 0; color: #18351d; background: #f4f7ef; }
+    header { padding: 1rem 1.25rem; background: #18351d; color: white; }
+    h1 { margin: 0 0 .35rem; font-size: 1.35rem; }
+    header p { margin: 0; max-width: 70rem; }
+    main { max-width: 1100px; margin: 0 auto; padding: 1rem; }
+    #map { height: 68vh; min-height: 420px; border-radius: .6rem; box-shadow: 0 2px 12px #0002; }
+    .panel { background: white; padding: .85rem 1rem; margin-bottom: 1rem; border-radius: .6rem; }
+    .panel a { color: #126b35; font-weight: 650; }
+    .meta { font-size: .92rem; color: #4b5d4d; }
+    .legend { line-height: 1.5; }
+    footer { padding: 1rem; text-align: center; font-size: .85rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Carte des nœuds — Projet d’Interconnexion Normand</h1>
+    <p>Carte communautaire des nœuds Meshtastic et MeshCore validés dans ce dépôt.</p>
+  </header>
+  <main>
+    <section class="panel">
+      <p><strong>Ajouter votre nœud :</strong> utilisez le modèle d’issue <a href="https://github.com/1234LUCIUS/projet-interconnexion-normand-wiki/issues/new?template=node.yml">Proposer un nœud sur la carte</a>. Donnez une position de zone ou de commune, pas l’adresse exacte d’un domicile ou d’un relais sensible. Un mainteneur valide ensuite l’entrée dans <code>site/data/nodes.json</code>.</p>
+      <p class="meta" id="status">Chargement des données…</p>
+    </section>
+    <div id="map" aria-label="Carte interactive des nœuds"></div>
+    <section class="panel legend">
+      <strong>Confidentialité :</strong> cette carte ne doit pas être utilisée pour déduire la position d’une personne. Les nœuds peuvent être déplacés vers le centre d’une commune ou une zone de couverture. Les données publiques sont sous licence CC BY-SA 4.0.
+    </section>
+  </main>
+  <footer><a href="../README.md">Retour au wiki</a> · <a href="https://github.com/1234LUCIUS/projet-interconnexion-normand-wiki">Modifier la documentation</a></footer>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    const map = L.map('map').setView([49.2, 0.2], 8);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19, attribution: '&copy; OpenStreetMap contributors' }).addTo(map);
+    fetch('data/nodes.json', { cache: 'no-store' })
+      .then(response => response.json())
+      .then(data => {
+        const nodes = Array.isArray(data.nodes) ? data.nodes : [];
+        const bounds = [];
+        nodes.forEach(node => {
+          if (!Number.isFinite(node.lat) || !Number.isFinite(node.lon)) return;
+          const marker = L.marker([node.lat, node.lon]).addTo(map);
+          const name = node.name || 'Nœud sans nom';
+          const type = node.type || 'non précisé';
+          const software = node.software || 'non précisé';
+          const profile = node.profile || 'non précisé';
+          marker.bindPopup(`<strong>${escapeHtml(name)}</strong><br>Type : ${escapeHtml(type)}<br>Logiciel : ${escapeHtml(software)}<br>Profil : ${escapeHtml(profile)}<br><span class="meta">Zone approximative — ${escapeHtml(node.updated_at || '')}</span>`);
+          bounds.push([node.lat, node.lon]);
+        });
+        if (bounds.length) map.fitBounds(bounds, { padding: [30, 30] });
+        document.getElementById('status').textContent = `${nodes.length} nœud(s) affiché(s) · Données mises à jour le ${data.updated_at || 'date inconnue'}.`;
+      })
+      .catch(() => { document.getElementById('status').textContent = 'Impossible de charger les données publiques des nœuds.'; });
+    function escapeHtml(value) { return String(value).replace(/[&<>'"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c])); }
+  </script>
+</body>
+</html>

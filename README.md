@@ -9,10 +9,13 @@ Bienvenue dans le wiki open source du **Projet d’Interconnexion Normand**. Ce 
 ## Parcours conseillé
 
 1. Lire [les principes et règles du projet](docs/00-bienvenue.md).
-2. Préparer son matériel avec [la checklist de mise en service](docs/01-checklist-materiel.md).
-3. Choisir son logiciel : [Meshtastic](docs/meshtastic/01-demarrage.md) ou [MeshCore](docs/meshcore/01-demarrage.md).
-4. Effectuer le [test de portée et de qualité radio](docs/terrain/01-test-radio.md).
-5. Enregistrer son nœud et contribuer via [CONTRIBUTING.md](CONTRIBUTING.md).
+2. Choisir son matériel avec [le guide matériel](docs/02-materiel.md).
+3. Préparer son appareil avec [la checklist de mise en service](docs/01-checklist-materiel.md).
+4. Choisir son logiciel : [Meshtastic](docs/meshtastic/01-demarrage.md) ou [MeshCore](docs/meshcore/01-demarrage.md).
+5. Pour MeshCore en France, lire [les profils France / Normandie](docs/meshcore/03-profils-france-normandie.md).
+6. Choisir un emplacement avec [le guide de couverture](docs/terrain/03-simulateurs-couverture.md).
+7. Consulter [la carte interactive des nœuds](site/map.html) et proposer son nœud.
+8. Effectuer le [test de portée et de qualité radio](docs/terrain/01-test-radio.md).
 
 ## Choisir entre Meshtastic et MeshCore
 
@@ -20,6 +23,10 @@ Bienvenue dans le wiki open source du **Projet d’Interconnexion Normand**. Ce 
 - **MeshCore** propose une architecture légère avec des rôles explicites — Companion, Repeater et Room Server — adaptée aux déploiements où l’on veut maîtriser le routage et la consommation.
 
 Les deux écosystèmes utilisent LoRa, mais ils ne sont pas automatiquement interopérables. Un appareil Meshtastic ne rejoint pas directement un réseau MeshCore sans passerelle ou projet spécifique.
+
+## Carte des nœuds
+
+La [carte interactive](site/map.html) affiche uniquement les nœuds validés dans le fichier public `site/data/nodes.json`. Pour ajouter un nœud, utilisez le modèle d’issue **Proposer un nœud sur la carte**. Publiez une position approximative, jamais l’adresse d’un domicile ou une clé de configuration.
 
 ## Règles essentielles
 
@@ -32,14 +39,17 @@ Les deux écosystèmes utilisent LoRa, mais ils ne sont pas automatiquement inte
 ## Documentation
 
 - [Bienvenue, vocabulaire et règles du projet](docs/00-bienvenue.md)
+- [Quel matériel choisir ?](docs/02-materiel.md)
 - [Checklist matériel et préparation](docs/01-checklist-materiel.md)
 - [Meshtastic — démarrage](docs/meshtastic/01-demarrage.md)
 - [Meshtastic — configuration normande](docs/meshtastic/02-configuration-projet.md)
 - [Meshtastic — canaux et sécurité](docs/meshtastic/03-canaux-securite.md)
 - [MeshCore — démarrage](docs/meshcore/01-demarrage.md)
+- [MeshCore — profils France / Normandie](docs/meshcore/03-profils-france-normandie.md)
 - [MeshCore — rôles et déploiement](docs/meshcore/02-roles-deploiement.md)
 - [Dépannage commun](docs/03-depannage.md)
 - [Test radio de terrain](docs/terrain/01-test-radio.md)
+- [Outils de simulation et couverture](docs/terrain/03-simulateurs-couverture.md)
 - [Déployer un relais](docs/terrain/02-deployer-un-relais.md)
 
 ## Licence

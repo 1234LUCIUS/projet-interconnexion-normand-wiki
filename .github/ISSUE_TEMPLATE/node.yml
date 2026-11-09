@@ -1,0 +1,72 @@
+name: Proposer un nœud sur la carte
+description: Demander l’ajout d’un nœud Meshtastic ou MeshCore avec une position publique approximative
+title: "[Carte] "
+labels: [carte, validation]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ne donnez pas l’adresse exacte d’un domicile, d’un lieu privé ou d’un relais sensible. Utilisez le centre d’une commune, une zone large ou un point décalé de plusieurs centaines de mètres.
+  - type: input
+    id: name
+    attributes:
+      label: Nom public du nœud
+      placeholder: Exemple — Relais Rouen Nord
+    validations:
+      required: true
+  - type: dropdown
+    id: software
+    attributes:
+      label: Logiciel
+      options:
+        - Meshtastic
+        - MeshCore
+        - Les deux sur des appareils séparés
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type de nœud
+      options:
+        - Companion / Client
+        - Repeater / Relais
+        - Room Server
+        - Nœud de test
+    validations:
+      required: true
+  - type: input
+    id: area
+    attributes:
+      label: Commune ou zone générale
+      placeholder: Exemple — secteur de Caen, sans adresse
+    validations:
+      required: true
+  - type: input
+    id: lat
+    attributes:
+      label: Latitude approximative
+      placeholder: Centre de la commune ou point décalé
+    validations:
+      required: true
+  - type: input
+    id: lon
+    attributes:
+      label: Longitude approximative
+      placeholder: Centre de la commune ou point décalé
+    validations:
+      required: true
+  - type: input
+    id: profile
+    attributes:
+      label: Profil radio public
+      placeholder: Exemple — MeshCore EU/UK Narrow, ou Meshtastic preset du projet
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: Consentement
+      options:
+        - label: Je confirme que cette position est volontairement approximative et ne révèle pas une information sensible.
+          required: true
+        - label: J’accepte la publication de ces informations sous CC BY-SA 4.0 dans la carte du projet.
+          required: true
