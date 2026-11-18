@@ -85,7 +85,7 @@ Choisissez ensuite le scope du canal selon l’usage : `fr` pour `#fr`, `fr-nor`
 
 Faites un premier test à quelques mètres d’un autre appareil MeshCore connu. Envoyez un message court et non sensible. Vérifiez que le nœud est visible, que le message est reçu et que le chemin est cohérent.
 
-Puis testez dans un second emplacement. Notez le modèle, le firmware, le profil radio, le scope, l’antenne et le résultat. Pour contribuer à la couverture, consultez le [guide de test radio](../terrain/01-test-radio.md) et la [carte des nœuds](../map.html).
+Puis testez dans un second emplacement. Notez le modèle, le firmware, le profil radio, le scope, l’antenne et le résultat. Pour contribuer à la couverture, consultez le [guide de test radio](../terrain/01-test-radio.md) et les [cartes officielles des nœuds et de la couverture](../04-carte-interactive.md).
 
 # Partie 2 — Flasher un Repeater
 

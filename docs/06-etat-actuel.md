@@ -36,7 +36,7 @@ Les nouveaux répéteurs normands doivent suivre la [configuration MeshCore Fran
 4. Pour MeshCore, choisir Companion pour commencer, ou Repeater uniquement pour un appareil dédié et un site autorisé.
 5. Appliquer le profil radio et le scope annoncés par le projet ; ne pas mélanger la configuration Meshtastic historique et la configuration MeshCore.
 6. Faire un test à courte distance, puis un test de terrain avant toute installation permanente.
-7. Ajouter une position approximative dans la [carte des nœuds](map.html), sans publier d’adresse privée ni de secret.
+7. Consulter les [cartes officielles des nœuds et de la couverture](04-carte-interactive.md), sans publier d’adresse privée ni de secret.
 
 ## Règles de transition
 

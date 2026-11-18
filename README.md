@@ -56,7 +56,7 @@ Pour une présentation complète destinée aux mairies, départements, intercomm
 10. Pour MeshCore en France, lire [les profils France / Normandie](docs/meshcore/03-profils-france-normandie.md).
 11. Si vous utilisez un matériel solaire, lire [le guide SenseCAP P1-Pro](docs/meshcore/06-sensecap-p1-pro.md).
 12. Choisir un emplacement avec [le guide de couverture](docs/terrain/03-simulateurs-couverture.md).
-13. Consulter [la carte interactive des nœuds](docs/map.html), lire [la procédure de recensement](docs/04-carte-interactive.md) et proposer son nœud.
+13. Consulter les [cartes officielles des nœuds et de la couverture](docs/04-carte-interactive.md) : MeshCore, RelayLens et MeshQual.
 14. Effectuer le [test de portée et de qualité radio](docs/terrain/01-test-radio.md).
 
 ## Choisir entre Meshtastic et MeshCore
@@ -68,9 +68,9 @@ Pour les nouveaux arrivants qui souhaitent contribuer à l’infrastructure norm
 
 Les deux écosystèmes utilisent LoRa, mais ils ne sont pas automatiquement interopérables. Un appareil Meshtastic ne rejoint pas directement un réseau MeshCore sans passerelle ou projet spécifique.
 
-## Carte des nœuds
+## Cartes officielles des nœuds
 
-La [carte interactive](docs/map.html) affiche uniquement les nœuds validés dans le fichier public `docs/data/nodes.json`. Pour ajouter un nœud, utilisez le modèle d’issue **Proposer un nœud sur la carte**. Publiez une position approximative, jamais l’adresse d’un domicile ou d’un relais sensible.
+La carte locale GitHub a été retirée du parcours principal. Utilisez désormais les [cartes officielles et communautaires recommandées](docs/04-carte-interactive.md) : [map.meshcore.io](https://map.meshcore.io/?lat=7.0000&lon=25.0000&zoom=3), [RelayLens Companions](https://relaylens.mesh.chaun14.fr/companions) et [MeshQual](https://meshqual.pmrs.fr/). Comparez les résultats et confirmez toujours la couverture par un test réel.
 
 ## Rejoindre la communauté
 
