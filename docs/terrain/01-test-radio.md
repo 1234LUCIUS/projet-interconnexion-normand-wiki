@@ -55,27 +55,6 @@ Une carte de mesures montre des observations réalisées par des appareils préc
 
 Dans un compte rendu, séparez les faits observés des hypothèses. Indiquez la période du test, les appareils, le profil radio, les antennes, les emplacements approximatifs, les obstacles et les limites rencontrées. Si vous comparez deux configurations, précisez exactement le paramètre changé. Une simulation peut aider à choisir où tester, mais elle ne remplace pas une mesure réelle.
 
-## Fiche de relevé
-
-```text
-Date et plage horaire :
-Zone générale (pas d’adresse privée) :
-But du test :
-Système et application / version :
-Appareils, firmware et rôles :
-Profil radio / canal ou scope :
-Antennes et emplacement (intérieur, extérieur, hauteur approximative) :
-Alimentation et état des batteries :
-Méthode (messages contrôlés, MeshMapper : Passive / Trace / Hybrid, ou Range Test Meshtastic) :
-Conditions météo et obstacles :
-Points ou parcours testés :
-Messages reçus / réponses observées :
-RSSI / SNR / relais observés, si disponibles :
-Ce qui a été modifié entre les essais :
-Résultat et limites :
-Données téléversées vers un service public ? :
-```
-
 Arrêtez l’émission répétée à la fin de l’essai et remettez les appareils dans leur configuration d’usage. Un résultat négatif est également utile s’il est décrit avec ses limites ; il ne permet pas, à lui seul, d’affirmer qu’un secteur ne sera jamais couvert.
 
 ## Sources et documentation
