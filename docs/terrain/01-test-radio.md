@@ -28,6 +28,10 @@ Pour comparer deux emplacements, répétez le même parcours dans l’autre sens
 
 MeshMapper est une application de wardriving et de cartographie communautaire du réseau MeshCore. Pour un parcours en ligne, il faut un Companion MeshCore compatible, le téléphone avec le GPS activé et une région MeshMapper disponible. Les régions doivent être configurées sur le service. En mode hors ligne, l’application peut enregistrer localement des observations en Passive ou Trace, mais les pings de canal flood — Send Ping, Active et Hybrid — ne sont pas disponibles. Suivez le [guide de connexion](https://wiki.meshmapper.net/app_connection_guide/) si le Companion n’apparaît pas.
 
+![Capture MeshMapper montrant des observations de couverture du réseau MeshCore autour du Havre](../../assets/illustrations/meshmapper-le-havre.png)
+
+*Exemple de relevé MeshMapper fourni par le projet, autour du Havre. Les cellules représentent des observations faites pendant les parcours ; elles ne décrivent pas une couverture uniforme et ne garantissent pas qu’une liaison fonctionnera à chaque endroit.*
+
 Après connexion, choisissez le mode en fonction de l’objectif et de l’autorisation donnée par les responsables locaux :
 
 - **Passive** observe le trafic entendu et envoie des requêtes de découverte à zéro saut. Il n’émet pas les messages de canal qui inondent le mesh, mais ce n’est pas un mode totalement silencieux.
