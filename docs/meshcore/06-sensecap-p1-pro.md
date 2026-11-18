@@ -2,6 +2,10 @@
 
 ![Répéteur solaire MeshCore sur un point haut normand](../../assets/illustrations/radio-coverage.png)
 
+![Photo produit du Seeed SenseCAP Solar Node P1-Pro](../../assets/meshcore-materiel/sensecap-p1-pro.jpg)
+
+*Photo produit : [Seeed Studio](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-Pro-for-Meshcore-p-6741.html).*
+
 ## À quoi sert le P1-Pro ?
 
 Le **SenseCAP Solar Node P1-Pro** est un nœud LoRa autonome conçu pour une installation extérieure. Il possède un panneau solaire, une batterie, un GPS et un boîtier prévu pour être fixé sur un support. C’est un matériel particulièrement intéressant pour un **Repeater MeshCore** installé sur un point haut.

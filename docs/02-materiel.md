@@ -4,6 +4,8 @@
 
 Le bon premier appareil est celui dont le modèle exact est supporté par le firmware, qui possède une antenne adaptée à la bande utilisée et que vous pouvez récupérer physiquement en cas d’échec de mise à jour. Ne choisissez pas uniquement sur la puissance annoncée.
 
+Pour voir des exemples illustrés de nœuds, d’installations sur points hauts et d’antennes 868 MHz, consultez le [guide visuel matériel, antennes et installations](08-materiel-antennes-installations.md).
+
 ## Le choix simple pour débuter
 
 Pour Meshtastic, les cartes avec radio Semtech SX126x ou LR11xx sont à privilégier d’après la documentation officielle. Les appareils nRF52 consomment généralement moins que les ESP32. Les ESP32 restent intéressants si vous voulez du Wi-Fi, davantage de mémoire ou une alimentation secteur.

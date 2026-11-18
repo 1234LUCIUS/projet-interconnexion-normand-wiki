@@ -50,14 +50,15 @@ Pour une présentation complète destinée aux mairies, départements, intercomm
 4. Lire [l’état actuel du projet](docs/06-etat-actuel.md) et [son historique](docs/05-historique-du-projet.md). Pour un nouveau déploiement, partez directement sur MeshCore.
 5. Comprendre [les régions et scopes MeshCore](docs/meshcore/04-regions-et-scopes.md).
 6. Choisir son matériel avec [le guide matériel](docs/02-materiel.md).
-7. Préparer son appareil avec [la checklist de mise en service](docs/01-checklist-materiel.md).
-8. Flasher son appareil avec le guide [Companion et Repeater](docs/meshcore/05-flasher-companion-repeater.md).
-9. Choisir son logiciel : [Meshtastic](docs/meshtastic/01-demarrage.md) ou [MeshCore](docs/meshcore/01-demarrage.md).
-10. Pour MeshCore en France, lire [les profils France / Normandie](docs/meshcore/03-profils-france-normandie.md).
-11. Si vous utilisez un matériel solaire, lire [le guide SenseCAP P1-Pro](docs/meshcore/06-sensecap-p1-pro.md).
-12. Choisir un emplacement avec [le guide de couverture](docs/terrain/03-simulateurs-couverture.md).
-13. Consulter les [cartes officielles des nœuds et de la couverture](docs/04-carte-interactive.md) : MeshCore, RelayLens et MeshQual.
-14. Effectuer le [test de portée et de qualité radio](docs/terrain/01-test-radio.md).
+7. Voir les [modèles, antennes et installations sur points hauts](docs/08-materiel-antennes-installations.md).
+8. Préparer son appareil avec [la checklist de mise en service](docs/01-checklist-materiel.md).
+9. Flasher son appareil avec le guide [Companion et Repeater](docs/meshcore/05-flasher-companion-repeater.md).
+10. Choisir son logiciel : [Meshtastic](docs/meshtastic/01-demarrage.md) ou [MeshCore](docs/meshcore/01-demarrage.md).
+11. Pour MeshCore en France, lire [les profils France / Normandie](docs/meshcore/03-profils-france-normandie.md).
+12. Si vous utilisez un matériel solaire, lire [le guide SenseCAP P1-Pro](docs/meshcore/06-sensecap-p1-pro.md).
+13. Choisir un emplacement avec [le guide de couverture](docs/terrain/03-simulateurs-couverture.md).
+14. Consulter les [cartes officielles des nœuds et de la couverture](docs/04-carte-interactive.md) : MeshCore, RelayLens, MeshQual et MeshStats.
+15. Effectuer le [test de portée et de qualité radio](docs/terrain/01-test-radio.md).
 
 ## Choisir entre Meshtastic et MeshCore
 

@@ -16,6 +16,8 @@ Obtenez l’accord écrit du propriétaire ou de l’exploitant du site. Évalue
 
 Utilisez un matériel compatible avec le rôle choisi, une antenne adaptée et un boîtier approprié. Vérifiez l’étanchéité, le soulagement mécanique du câble et l’absence de contrainte sur les connecteurs. Configurez le nœud sur table, puis testez-le avant de le placer sur site.
 
+Voir aussi le [guide visuel des nœuds, antennes et installations sur points hauts](../08-materiel-antennes-installations.md) avant de choisir le support, l’antenne et le boîtier.
+
 ## Mise en service
 
 Faites un test local, puis un test depuis plusieurs directions. Comparez les résultats avec et sans relais. Documentez la zone générale, la date, la configuration et le responsable. Ne publiez pas l’adresse exacte si elle crée un risque.
