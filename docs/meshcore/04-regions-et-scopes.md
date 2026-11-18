@@ -13,6 +13,20 @@ Une région n’est pas :
 
 La fréquence et la modulation disent **comment la radio parle**. Le canal et la clé disent **qui peut lire**. Le scope régional dit **dans quelle zone le paquet peut être propagé**.
 
+## L’analogie du standard téléphonique
+
+![Illustration des régions MeshCore comparées aux lignes d’un standard téléphonique](../../assets/illustrations/regions-meshcore-standard-telephonique.png)
+
+*Dans le schéma, `fr-nor` et `fr-14` représentent des scopes régionaux ; `#fr-nor` et `#fr-14` sont les canaux utilisés dans l’exemple. Un canal et son scope sont deux réglages distincts, même si le projet les associe souvent par convention.*
+
+Imaginez le Repeater comme un standard de tri : il reçoit un paquet radio marqué d’un scope régional, puis vérifie si ce scope fait partie de ceux qu’il est configuré et autorisé à relayer. Si le flood est permis et que ses limites ne sont pas atteintes, il rediffuse le paquet par radio. Les répéteurs voisins appliquent à leur tour leurs propres règles. Le message peut ainsi traverser les relais configurés pour ce scope, au lieu d’être relayé partout. [Filtrage régional MeshCore](https://blog.meshcore.io/2026/01/20/region-filtering) [Commandes régionales du Repeater](https://docs.meshcore.io/cli_commands/)
+
+Les scopes sont comparés exactement : autoriser `fr-nor` ne signifie pas automatiquement autoriser `fr-14`. Un Repeater situé à la limite de plusieurs zones doit être configuré avec chacun des scopes qu’il doit relayer. L’arborescence aide à organiser les régions, mais un parent n’autorise pas implicitement ses sous-régions. [Filtrage régional MeshCore](https://blog.meshcore.io/2026/01/20/region-filtering)
+
+**Limite de l’analogie :** le scope ne choisit pas un interlocuteur individuel. Pour un message de groupe, le canal et sa clé définissent qui peut le lire ; pour un message direct, le paquet contient le destinataire. Le scope limite la propagation d’un paquet floodé, mais ne garantit pas sa livraison. [Format des paquets MeshCore](https://docs.meshcore.io/packet_format/) [Format des payloads MeshCore](https://docs.meshcore.io/payloads/)
+
+Le filtrage dépend aussi du firmware : les Repeaters antérieurs à la version 1.10.0 peuvent relayer des floods avec scope sans appliquer correctement ce filtre. [Filtrage régional MeshCore](https://blog.meshcore.io/2026/01/20/region-filtering)
+
 ## L’arbre des régions normandes
 
 Le projet utilise une hiérarchie simple :
@@ -110,4 +124,7 @@ Vous ne savez pas quoi choisir : laissez le scope `fr` sur votre Companion et de
 
 - [MeshCore CLI — gestion officielle des régions](https://docs.meshcore.io/cli_commands/)
 - [MeshCore FAQ — floods, annonces et chemins sur plusieurs octets](https://docs.meshcore.io/faq/)
+- [MeshCore — filtrage régional expliqué par le développeur du firmware](https://blog.meshcore.io/2026/01/20/region-filtering)
+- [MeshCore — format officiel des paquets](https://docs.meshcore.io/packet_format/)
+- [MeshCore — format officiel des payloads](https://docs.meshcore.io/payloads/)
 - [Configuration MeshCore France / Normandie du projet](03-profils-france-normandie.md)
