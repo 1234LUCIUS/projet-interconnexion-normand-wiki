@@ -44,6 +44,38 @@ Pour un premier arrivant, privilégiez un Companion supporté par MeshCore : app
 
 Consultez [le guide matériel général](02-materiel.md) et [le guide de flash Companion / Repeater](meshcore/05-flasher-companion-repeater.md) avant tout achat ou flash.
 
+## Matériel conseillé pour MeshCore et Meshtastic
+
+Voici les appareils que je conseille selon l’usage. Les quatre modèles ci-dessous sont compatibles avec Meshtastic et MeshCore lorsque le firmware correspondant à leur révision est installé. Un appareil n’exécute qu’un seul firmware mesh à la fois, et les deux protocoles ne communiquent pas directement entre eux. Les versions vendues peuvent arriver avec des firmwares différents : vérifiez le choix au moment de l’achat. En France, choisissez la variante radio **868 MHz / EU868** et le firmware adapté.
+
+### SenseCAP Solar Node P1-Pro — relais solaire fixe
+
+Seeed propose le P1-Pro avec le firmware Meshtastic ou avec le firmware Repeater MeshCore préinstallé. Il s’agit d’un candidat pour un nœud extérieur fixe : le fabricant indique un panneau solaire de 5 W, quatre batteries 18650, un GPS L76K et une radio SX1262. Choisissez la version correspondant au réseau voulu : [P1-Pro Meshtastic][1] ou [P1-Pro MeshCore][2]. [3]
+
+### LILYGO T-Beam — expérimentation et nœud mobile
+
+Le T-Beam réunit une radio LoRa, un GPS, un écran OLED selon l’option choisie et un support de batterie 18650. La fiche propose plusieurs bandes : prenez la version **868 MHz** pour un usage en France ; selon la carte, la batterie peut être à fournir et l’écran à souder. Meshtastic et MeshCore publient des firmwares pour des révisions T-Beam compatibles, notamment les variantes SX1262 et T-Beam 1.2 SX1276 : sélectionnez la cible correspondant exactement à la carte. [Le T-Beam chez LILYGO][4] [5] [6]
+
+### LILYGO T-Echo SoftRF — format portable basse consommation
+
+Le T-Echo est compact et intègre un écran à encre électronique, un GPS, une radio SX1262 et une batterie. Le lien fourni correspond à la variante **SoftRF préinstallée** : SoftRF est un firmware distinct, donc il faut installer Meshtastic ou MeshCore avant de l’utiliser dans l’un de ces réseaux. Le matériel T-Echo est pris en charge par les deux firmwares ; choisissez la variante radio 868 MHz et la cible T-Echo appropriée. [T-Echo SoftRF chez LILYGO][7] [8] [9] [5]
+
+### Seeed Wio Tracker L1 Pro — Companion portable prêt à l’emploi
+
+Le Wio Tracker L1 Pro associe une radio SX1262, un GPS L76K, un écran OLED de 1,3 pouce et une batterie intégrée de 2 000 mAh. Seeed vend une version préchargée MeshCore Companion et une autre préchargée Meshtastic : [Wio Tracker L1 Pro MeshCore][10] ou [Wio Tracker L1 Pro Meshtastic][11]. Vérifiez le firmware indiqué sur la fiche afin de recevoir la variante souhaitée.
+
+[1]: https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-Pro-for-Meshtastic-LoRa-p-6412.html "Seeed Studio — SenseCAP Solar Node P1-Pro pour Meshtastic"
+[2]: https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-Pro-for-Meshcore-p-6741.html "Seeed Studio — SenseCAP Solar Node P1-Pro pour MeshCore"
+[3]: https://meshtastic.org/docs/hardware/devices/seeed-studio/sensecap/solar-node/ "Meshtastic — documentation SenseCAP Solar Node"
+[4]: https://www.lilygo.cc/products/t-beam-meshtastic?bg_ref=H49A0e6lBD "LILYGO — T-Beam Meshtastic"
+[5]: https://wiki.lilygo.cc/open-source/meshcore/ "LILYGO — appareils compatibles MeshCore"
+[6]: https://meshtastic.org/docs/hardware/devices/lilygo/tbeam/ "Meshtastic — documentation T-Beam"
+[7]: https://www.lilygo.cc/products/t-echo-softrf-firmware?bg_ref=H49A0e6lBD "LILYGO — T-Echo avec firmware SoftRF"
+[8]: https://wiki.lilygo.cc/products/t-echo-series/t-echo/ "LILYGO — documentation T-Echo"
+[9]: https://meshtastic.org/docs/hardware/devices/lilygo/techo/ "Meshtastic — documentation T-Echo"
+[10]: https://www.seeedstudio.com/Wio-Tracker-L1-Pro-for-Meshcore-p-6717.html "Seeed Studio — Wio Tracker L1 Pro pour MeshCore"
+[11]: https://www.seeedstudio.com/Wio-Tracker-L1-Pro-p-6454.html "Seeed Studio — Wio Tracker L1 Pro pour Meshtastic"
+
 ## Antennes recommandées en 868 MHz
 
 ### Recommandation simple pour un Companion
