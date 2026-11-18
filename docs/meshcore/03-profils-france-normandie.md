@@ -99,27 +99,6 @@ Le répéteur garde `fr` comme région par défaut et `fr` comme région d’acc
 
 Après `reboot`, exécutez `clock sync` et vérifiez le résultat avec les commandes de diagnostic disponibles dans votre version. Faites une sauvegarde de la configuration et gardez un accès USB local avant toute modification d’un relais distant.
 
-## Profil Europe Long Range — pour les liaisons difficiles
-
-Ce profil privilégie la sensibilité et la portée au prix d’un débit plus faible et d’un temps d’occupation plus long :
-
-```text
-Fréquence : 869.525 MHz
-Bande passante : 250 kHz
-Spreading Factor : 11
-Coding Rate : 5
-Rôle Companion : Companion BLE ou USB selon le client
-Rôle relais : Repeater dédié, même profil radio
-```
-
-Commande console :
-
-```text
-set radio 869.525,250,11,5
-```
-
-Ne mélangez pas Narrow et Long Range dans le même segment en espérant qu’ils s’entendent. Pour un premier réseau normand, choisissez un seul profil communautaire et documentez-le dans la page de configuration du projet.
-
 ## Configuration d’un Companion
 
 1. Flasher le firmware Companion depuis le [Web Flasher officiel](https://flasher.meshcore.io/).
