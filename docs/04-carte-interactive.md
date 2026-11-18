@@ -16,6 +16,12 @@ Cette carte permet d’explorer les nœuds MeshCore et de naviguer vers la zone 
 
 RelayLens permet de consulter les Companions et les informations de relais associées lorsqu’elles sont disponibles. C’est une ressource utile pour comprendre les appareils actifs, les chemins observés et les zones où des essais ont été réalisés.
 
+### RelayLens — Observers
+
+**[Ouvrir RelayLens Observers](https://relaylens.mesh.chaun14.fr/observers)**
+
+Cette vue permet de consulter les Observers qui alimentent les analyses RelayLens, leur présence et les informations disponibles sur leurs observations. Elle aide à comprendre depuis quels points du territoire les nœuds et paquets sont entendus.
+
 ### MeshQual
 
 **[Ouvrir MeshQual](https://meshqual.pmrs.fr/)**
