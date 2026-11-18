@@ -8,6 +8,8 @@ Le **Projet d’Interconnexion Normand** a pour ambition de connecter les person
 
 Le projet repose sur des appareils LoRa basse consommation qui peuvent communiquer directement entre eux et relayer certains messages de nœud en nœud. Un appareil peut être utilisé par une personne — rôle **Companion** — ou installé sur un point fixe pour étendre la couverture — rôle **Repeater**.
 
+![Companion, Repeater et Room Server dans un réseau radio maillé normand](../assets/illustrations/meshcore-roles.webp)
+
 > **Notre ambition :** rendre les communications locales plus résilientes, compréhensibles et participatives, en documentant chaque étape et en gardant les habitants au centre du projet.
 
 ## Une capacité de continuité pour le territoire

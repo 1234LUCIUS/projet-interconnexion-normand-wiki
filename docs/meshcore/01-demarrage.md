@@ -1,6 +1,7 @@
 # MeshCore — démarrage rapide
 
-![Paysage normand et réseau MeshCore en préparation](../../assets/illustrations/hero-normandie-mesh.png)
+![Préparer un premier nœud LoRa pour le démarrage MeshCore](../../assets/illustrations/first-node-setup.webp)
+
 
 ## Comprendre MeshCore
 

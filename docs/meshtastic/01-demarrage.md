@@ -1,5 +1,7 @@
 # Meshtastic — démarrage rapide
 
+![Préparer un premier nœud LoRa pour le démarrage Meshtastic](../../assets/illustrations/first-node-setup.webp)
+
 ## Ce que vous allez faire
 
 Vous allez installer le firmware, connecter l’appareil, définir la région, choisir le preset utilisé par le projet, puis envoyer un premier message de test.

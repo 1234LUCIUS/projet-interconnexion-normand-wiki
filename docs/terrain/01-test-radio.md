@@ -1,5 +1,7 @@
 # Test radio de terrain
 
+![Bénévoles mesurant une liaison radio à travers le bocage normand](../../assets/illustrations/field-radio-test.webp)
+
 ## But
 
 Mesurer la qualité d’un lien sans transformer une observation ponctuelle en promesse de couverture. Le résultat dépend du relief, des bâtiments, de la végétation, de la météo, du bruit radio et du trafic du mesh.

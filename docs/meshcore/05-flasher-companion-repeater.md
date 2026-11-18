@@ -1,5 +1,7 @@
 # Flasher son appareil MeshCore
 
+![Préparer un nœud LoRa avant de choisir et flasher son firmware](../../assets/illustrations/first-node-setup.webp)
+
 Ce guide explique comment installer MeshCore sur un appareil LoRa compatible. Il distingue deux usages :
 
 - **Companion** : votre nœud personnel, relié au téléphone ou à l’ordinateur ;

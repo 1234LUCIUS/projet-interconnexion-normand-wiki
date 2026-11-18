@@ -1,6 +1,6 @@
 # MeshCore — rôles et déploiement
 
-![Companion et Repeater dans un réseau MeshCore normand](../../assets/illustrations/companion-repeater.png)
+![Les rôles Companion, Repeater et Room Server de MeshCore](../../assets/illustrations/meshcore-roles.webp)
 
 ## Companion
 

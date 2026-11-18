@@ -1,6 +1,6 @@
 # Déployer un relais
 
-![Répéteur LoRa solaire installé sur un point haut normand](../../assets/illustrations/radio-coverage.png)
+![Bénévoles inspectant au sol un répéteur solaire autorisé sur un point haut normand](../../assets/illustrations/authorized-repeater-installation.webp)
 
 ## Décider si un relais est nécessaire
 

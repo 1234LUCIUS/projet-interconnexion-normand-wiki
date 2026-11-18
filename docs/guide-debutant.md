@@ -1,6 +1,6 @@
 # Guide débutant : mon premier nœud
 
-![Paysage normand et réseau radio maillé pour débuter](../assets/illustrations/hero-normandie-mesh.png)
+![Préparer un premier nœud LoRa : antenne, câble USB et téléphone](../assets/illustrations/first-node-setup.webp)
 
 Ce guide est volontairement simple. Si vous ne connaissez pas encore LoRa, MeshCore ou Meshtastic, commencez ici.
 

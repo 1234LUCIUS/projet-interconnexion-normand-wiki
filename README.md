@@ -60,6 +60,8 @@ Pour une présentation complète destinée aux mairies, départements, intercomm
 14. Consulter les [cartes officielles des nœuds et de la couverture](docs/04-carte-interactive.md) : MeshCore, RelayLens, MeshQual et MeshStats.
 15. Effectuer le [test de portée et de qualité radio](docs/terrain/01-test-radio.md).
 
+![Companion, Repeater et Room Server dans un réseau MeshCore normand](assets/illustrations/meshcore-roles.webp)
+
 ## Choisir entre Meshtastic et MeshCore
 
 - **Meshtastic** est souvent le chemin le plus simple pour débuter : application mobile mature, télémétrie, position, canaux et nombreux appareils compatibles.
