@@ -14,11 +14,13 @@ Bienvenue dans le wiki open source du **Projet d’Interconnexion Normand**. Ce 
 
 ## Le projet en quelques mots
 
-Le **Projet d’Interconnexion Normand** est une initiative open source et citoyenne qui expérimente des communications radio maillées en Normandie. Des nœuds LoRa peuvent échanger des messages courts et, selon leur rôle et leur configuration, relayer ces messages de nœud en nœud. L’objectif est de construire progressivement une infrastructure locale complémentaire, compréhensible et documentée, sans dépendre en permanence d’un réseau mobile ou d’un accès Internet.
+Le **Projet d’Interconnexion Normand** a pour ambition de connecter les personnes entre elles en toutes circonstances, y compris lorsque l’accès à Internet ou les réseaux mobiles sont interrompus. C’est une initiative open source et citoyenne qui expérimente des communications radio maillées en Normandie : des nœuds LoRa peuvent échanger des messages courts et, selon leur rôle et leur configuration, relayer ces messages de nœud en nœud.
+
+L’objectif est de maintenir un lien local lorsque les moyens habituels ne fonctionnent plus, notamment lors d’événements météorologiques majeurs comme ceux cités par le projet — Irma ou Austen — ou lors d’une panne étendue des réseaux mobiles. À terme, le projet souhaite travailler avec les mairies, les collectivités et les services de secours afin de contribuer à tenir les habitants informés, dans un cadre autorisé, coordonné et complémentaire des réseaux professionnels.
 
 Le projet s’adresse aux habitants, associations, clubs radio, établissements scolaires, mairies, intercommunalités, départements, propriétaires de points hauts et autres partenaires qui souhaitent apprendre, tester ou accueillir une expérimentation encadrée. Il peut servir à étudier la couverture radio, organiser un événement, relier temporairement des équipes de terrain ou créer un relais local autorisé.
 
-Ce projet ne remplace ni les secours, ni les réseaux professionnels, ni les moyens réglementaires des collectivités. Il ne promet pas une couverture partout et ne doit pas transporter de données sensibles. Sa valeur vient de la démarche : tester sur le terrain, mesurer les limites, documenter les résultats et transmettre les compétences.
+Ce projet ne remplace ni les secours, ni les réseaux professionnels, ni les moyens réglementaires des collectivités. Il ne garantit pas une communication dans toutes les situations, ne promet pas une couverture partout et ne doit pas transporter de données sensibles. Sa valeur vient de la démarche : tester sur le terrain, mesurer les limites, documenter les résultats et transmettre les compétences pour construire une capacité locale supplémentaire.
 
 ### Pourquoi s’y intéresser ?
 

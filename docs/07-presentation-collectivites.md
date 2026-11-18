@@ -4,11 +4,19 @@
 
 ![Paysage normand traversé par un réseau radio maillé](../assets/illustrations/hero-normandie-mesh.png)
 
-Le **Projet d’Interconnexion Normand** est une initiative open source et citoyenne qui expérimente des communications radio maillées en Normandie. Son objectif est de créer, avec les habitants, les associations, les collectivités et les propriétaires de sites, une infrastructure locale complémentaire pour échanger des messages courts et des informations de situation sans dépendre en permanence d’un réseau mobile ou d’un accès Internet.
+Le **Projet d’Interconnexion Normand** a pour ambition de connecter les personnes entre elles en toutes circonstances, y compris lorsque l’accès à Internet ou les réseaux mobiles sont interrompus. C’est une initiative open source et citoyenne qui expérimente des communications radio maillées en Normandie. Son objectif est de créer, avec les habitants, les associations, les collectivités et les propriétaires de sites, une infrastructure locale complémentaire pour échanger des messages courts et des informations de situation.
 
 Le projet repose sur des appareils LoRa basse consommation qui peuvent communiquer directement entre eux et relayer certains messages de nœud en nœud. Un appareil peut être utilisé par une personne — rôle **Companion** — ou installé sur un point fixe pour étendre la couverture — rôle **Repeater**.
 
 > **Notre ambition :** rendre les communications locales plus résilientes, compréhensibles et participatives, en documentant chaque étape et en gardant les habitants au centre du projet.
+
+## Une capacité de continuité pour le territoire
+
+Lorsqu’une tempête majeure — comme les événements cités par le projet, **Irma ou Austen** — ou une panne étendue perturbe l’électricité, Internet ou les réseaux mobiles, les habitants peuvent perdre une partie de leurs moyens habituels pour échanger. Le projet cherche à maintenir un lien radio local entre des personnes équipées, des bénévoles et des équipes de terrain, lorsque la couverture et l’alimentation disponibles le permettent.
+
+Cette ambition ne constitue pas une promesse de fonctionnement dans toutes les circonstances. La portée dépend du relief, des antennes, de l’alimentation, des points hauts, de la météo et de la maintenance. Les messages doivent rester courts, non sensibles et adaptés à un réseau communautaire.
+
+À terme, nous souhaitons intégrer davantage les **mairies, intercommunalités, départements et services de secours** dans une démarche de coopération. L’objectif serait de contribuer à tenir les habitants informés, dans un cadre défini avec les autorités compétentes, en complément des réseaux professionnels et des procédures officielles — jamais en remplacement de ceux-ci.
 
 ## Pourquoi ce projet ?
 
@@ -24,7 +32,7 @@ Le projet répond à plusieurs besoins :
 - transmettre des compétences techniques aux nouveaux arrivants ;
 - construire progressivement une infrastructure open source maintenable et réutilisable.
 
-Il ne s’agit pas de promettre une couverture partout ni de remplacer les services de secours, les réseaux professionnels ou les moyens réglementaires des collectivités. Le projet est un **complément expérimental et communautaire**, qui doit être présenté avec ses limites.
+Il ne s’agit pas de promettre une couverture partout ni de remplacer les services de secours, les réseaux professionnels ou les moyens réglementaires des collectivités. Le projet est un **complément expérimental et communautaire**, qui doit être présenté avec ses limites et testé avec les acteurs compétents avant tout usage institutionnel.
 
 ## En quoi consiste concrètement le réseau ?
 

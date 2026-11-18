@@ -4,7 +4,7 @@
 
 ## Le projet en une phrase
 
-Le Projet d’Interconnexion Normand fédère des personnes qui expérimentent et déploient des communications LoRa maillées en Normandie, sans dépendre en permanence d’un opérateur mobile ou d’un accès Internet.
+Le Projet d’Interconnexion Normand fédère des personnes qui expérimentent et déploient des communications LoRa maillées en Normandie afin de maintenir un lien entre les habitants, même lorsque l’accès à Internet ou les réseaux mobiles sont interrompus. À terme, le projet souhaite coopérer avec les mairies, les collectivités et les services de secours pour contribuer à tenir les habitants informés, dans un cadre autorisé et complémentaire des réseaux professionnels.
 
 Pour les nouveaux déploiements et les nouveaux membres qui souhaitent contribuer à l’infrastructure régionale, **MeshCore est le chemin recommandé**. Meshtastic reste disponible pour la transition, les appareils existants et les usages mobiles ou ponctuels.
 
