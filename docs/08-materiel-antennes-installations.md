@@ -75,6 +75,8 @@ Le Wio Tracker L1 Pro associe une radio SX1262, un GPS L76K, un écran OLED de 1
 [9]: https://meshtastic.org/docs/hardware/devices/lilygo/techo/ "Meshtastic — documentation T-Echo"
 [10]: https://www.seeedstudio.com/Wio-Tracker-L1-Pro-for-Meshcore-p-6717.html "Seeed Studio — Wio Tracker L1 Pro pour MeshCore"
 [11]: https://www.seeedstudio.com/Wio-Tracker-L1-Pro-p-6454.html "Seeed Studio — Wio Tracker L1 Pro pour Meshtastic"
+[12]: https://betafpv.com/products/betafpv-moxon-antenna "BETAFPV — spécifications de l’antenne Moxon"
+[13]: https://www.unmannedtechshop.co.uk/fr/products/betafpv-moxon-antenna-2x-pack-2-4ghz-868mhz?variant=56578243199357&country=FR&currency=GBP "Unmanned Tech Shop — pack Moxon BETAFPV, variante 868 MHz"
 
 ## Antennes recommandées en 868 MHz
 
@@ -92,13 +94,13 @@ Pour un Repeater qui doit couvrir plusieurs directions, choisissez en priorité 
 
 Pour la Normandie, une antenne omnidirectionnelle verticale est le choix de départ le plus polyvalent pour un point haut qui doit desservir plusieurs azimuts. Le gain le plus élevé n’est pas toujours le meilleur : le diagramme vertical devient plus étroit, les zones proches peuvent être moins bien desservies et les efforts au vent augmentent.
 
-### Antenne directionnelle pour une liaison ciblée
+### Antenne directionnelle BETAFPV Moxon pour une liaison ciblée
 
-![Antenne directionnelle Taoglas THDRLR8 pour la bande 868 MHz](../assets/meshcore-materiel/antenne-directionnelle-868-taoglas.png)
+![Antenne directionnelle BETAFPV Moxon dans sa variante 868 MHz avec connecteur SMA](../assets/meshcore-materiel/betafpv-moxon-868.webp)
 
-*Exemple d’antenne directionnelle : [Taoglas THDRLR8](https://www.taoglas.com/product/thunder-integrated-directional-868mhz-antenna-for-lora-devices/). La fiche fabricant la décrit pour 868 MHz, avec un gain annoncé de 12,5 dBi et un montage extérieur orientable. Ce type d’antenne est adapté à une liaison ou un secteur identifié, pas à un Repeater qui doit couvrir uniformément tout son voisinage.*
+*La variante choisie est le [pack de deux BETAFPV Moxon 868 MHz](https://www.unmannedtechshop.co.uk/fr/products/betafpv-moxon-antenna-2x-pack-2-4ghz-868mhz?variant=56578243199357&country=FR&currency=GBP). La fiche BETAFPV annonce un gain de 5,7 dBi vers l’avant, un câble de 72 mm et un connecteur SMA mâle. [12] [13]*
 
-Utilisez une antenne directionnelle uniquement après avoir identifié la direction à privilégier. Elle doit être alignée, fixée solidement et intégrée dans un bilan de liaison. Elle ne remplace pas une étude d’emplacement.
+Cette antenne directionnelle peut convenir à une liaison ciblée : orientez l’avant vers le correspondant et vérifiez que le connecteur SMA s’adapte à votre nœud. La fiche BETAFPV ne précise pas d’indice d’étanchéité : pour une pose permanente à l’extérieur, prévoyez une protection contre les intempéries sans masquer l’antenne.
 
 ## Checklist antenne et coaxial
 
@@ -132,7 +134,7 @@ Ne changez pas d’antenne pour compenser une mauvaise position sans mesurer le 
 - SenseCAP P1-Pro : [Seeed Studio — fiche officielle](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-Pro-for-Meshcore-p-6741.html).
 - RAK WisMesh Repeater : [RAKwireless — fiche officielle](https://store.rakwireless.com/products/wismesh-meshtastic-solar-repeater).
 - Antenne omnidirectionnelle : [Taoglas Barracuda OMB.868.B08F21](https://www.taoglas.com/product/barracuda-omb-868-08f21-868mhz-8dbi-omni-directional-outdoor-antenna/).
-- Antenne directionnelle : [Taoglas THDRLR8](https://www.taoglas.com/product/thunder-integrated-directional-868mhz-antenna-for-lora-devices/).
+- Antenne directionnelle BETAFPV Moxon 868 MHz : [fiche fabricant](https://betafpv.com/products/betafpv-moxon-antenna) et [pack 2 antennes, variante 868 MHz](https://www.unmannedtechshop.co.uk/fr/products/betafpv-moxon-antenna-2x-pack-2-4ghz-868mhz?variant=56578243199357&country=FR&currency=GBP).
 
 Les visuels de fabricants restent soumis aux conditions de leurs ayants droit. Ils sont utilisés ici pour la documentation et l’identification des produits ; vérifiez les conditions de réutilisation avant toute redistribution commerciale.
 
