@@ -22,13 +22,19 @@ Le projet s’adresse aux habitants, associations, clubs radio, établissements 
 
 Ce projet ne remplace ni les secours, ni les réseaux professionnels, ni les moyens réglementaires des collectivités. Il ne garantit pas une communication dans toutes les situations, ne promet pas une couverture partout et ne doit pas transporter de données sensibles. Sa valeur vient de la démarche : tester sur le terrain, mesurer les limites, documenter les résultats et transmettre les compétences pour construire une capacité locale supplémentaire.
 
-### Pourquoi s’y intéresser ?
+### Pourquoi s’y intéresser ? Une vocation d’utilité publique
 
-- **Pour le territoire :** mieux comprendre l’effet du relief, de la hauteur, des antennes et des obstacles sur les communications locales.
-- **Pour les habitants :** découvrir la radio, participer à un projet concret et contribuer à une carte de couverture responsable.
-- **Pour les associations :** disposer d’un support d’expérimentation pour les randonnées, événements, ateliers et activités de plein air.
-- **Pour les collectivités :** étudier un test limité, sobre et documenté avant d’envisager une coopération plus large.
-- **Pour les partenaires techniques :** contribuer à une infrastructure open source, réutilisable et améliorable collectivement.
+Le projet porte une **vocation d’intérêt général et d’utilité publique** : contribuer à maintenir un lien entre les personnes lorsque Internet ou les réseaux mobiles sont indisponibles, et aider les territoires à mieux se préparer à des situations de rupture. Une communication locale complémentaire peut être précieuse lors d’une tempête, d’une panne étendue, d’un événement ou d’un exercice, à condition d’être testée, autorisée et présentée avec ses limites.
+
+- **Pour le territoire :** renforcer la résilience locale, identifier les zones blanches et mieux comprendre l’effet du relief, de la hauteur, des antennes et des obstacles.
+- **Pour les habitants :** préserver un lien de proximité, découvrir la radio, participer à un projet citoyen concret et contribuer à une carte de couverture responsable.
+- **Pour les personnes isolées :** disposer, lorsque la couverture le permet, d’un moyen complémentaire pour transmettre un message court ou une information de situation.
+- **Pour les associations :** organiser des randonnées, événements, ateliers et activités de plein air avec un outil d’expérimentation adapté au terrain.
+- **Pour les mairies et collectivités :** étudier une solution locale, sobre et documentée pouvant contribuer à informer les habitants, avant une éventuelle coopération avec les acteurs compétents.
+- **Pour les services de secours :** ouvrir à terme un dialogue sur la complémentarité, les points hauts et les conditions d’une coopération encadrée, sans remplacer leurs réseaux ni leurs procédures.
+- **Pour les partenaires techniques :** contribuer à une infrastructure open source, réutilisable, auditable et améliorable collectivement.
+
+Cette formulation décrit la **finalité collective** du projet ; elle ne constitue pas automatiquement une reconnaissance administrative officielle d’utilité publique. Toute coopération institutionnelle doit être validée par les autorités et organismes concernés.
 
 Le projet **bascule de plus en plus vers MeshCore** pour ses nouveaux déploiements durables et ses infrastructures régionales. Meshtastic reste utile pendant la transition, pour les appareils déjà en service et pour les usages mobiles ou ponctuels.
 

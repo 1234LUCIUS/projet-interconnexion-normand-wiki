@@ -18,21 +18,29 @@ Cette ambition ne constitue pas une promesse de fonctionnement dans toutes les c
 
 À terme, nous souhaitons intégrer davantage les **mairies, intercommunalités, départements et services de secours** dans une démarche de coopération. L’objectif serait de contribuer à tenir les habitants informés, dans un cadre défini avec les autorités compétentes, en complément des réseaux professionnels et des procédures officielles — jamais en remplacement de ceux-ci.
 
-## Pourquoi ce projet ?
+## Pourquoi s’y intéresser ? Une vocation d’utilité publique
 
-Les territoires normands sont variés : zones rurales, bocage, littoral, vallées, forêts, bourgs éloignés et secteurs où la couverture mobile peut être inégale. Dans ces contextes, les habitants, bénévoles et équipes de terrain peuvent avoir intérêt à disposer d’un moyen complémentaire pour transmettre un message court, un point de rendez-vous ou une information de situation.
+Le Projet d’Interconnexion Normand porte une **vocation d’intérêt général et d’utilité publique** : contribuer à ce que les personnes puissent continuer à se parler et à recevoir des informations utiles lorsque les moyens habituels deviennent indisponibles. Cette mission prend tout son sens dans les territoires ruraux, le bocage, le littoral, les vallées, les forêts, les bourgs éloignés et les secteurs où la couverture mobile peut être inégale.
 
-Le projet répond à plusieurs besoins :
+Une communication locale qui reste possible pendant une coupure Internet, une panne mobile ou une tempête majeure peut aider à maintenir un lien entre habitants, bénévoles, associations, équipes municipales et acteurs de terrain. Le projet ne promet pas que chaque message passera dans toutes les situations ; il construit une capacité supplémentaire, testée et documentée, qui peut renforcer la résilience d’un territoire.
 
-- expérimenter une technologie accessible et peu énergivore ;
-- mieux comprendre l’effet du relief, de la hauteur et des antennes sur les communications ;
-- favoriser les liens entre habitants, clubs radio, associations et collectivités ;
-- tester des moyens de communication locaux lors d’événements ou d’exercices ;
-- documenter les points hauts et les zones de couverture de manière responsable ;
-- transmettre des compétences techniques aux nouveaux arrivants ;
-- construire progressivement une infrastructure open source maintenable et réutilisable.
+### Une utilité concrète pour chacun
 
-Il ne s’agit pas de promettre une couverture partout ni de remplacer les services de secours, les réseaux professionnels ou les moyens réglementaires des collectivités. Le projet est un **complément expérimental et communautaire**, qui doit être présenté avec ses limites et testé avec les acteurs compétents avant tout usage institutionnel.
+- **Pour le territoire :** mieux comprendre les zones blanches, les effets du relief, de la hauteur, des antennes et des obstacles afin d’identifier des solutions locales de continuité.
+- **Pour les habitants :** préserver un moyen de lien de proximité, découvrir la radio, participer à une démarche citoyenne et contribuer à une carte de couverture responsable.
+- **Pour les personnes isolées ou éloignées :** disposer, lorsque la couverture le permet, d’un moyen complémentaire pour transmettre un message court, un point de rendez-vous ou une information de situation.
+- **Pour les associations :** organiser des randonnées, événements, ateliers et activités de plein air avec une expérimentation radio adaptée au terrain.
+- **Pour les collectivités :** étudier une solution sobre, locale, documentée et progressive avant d’envisager une coopération plus large ou un exercice avec les acteurs compétents.
+- **Pour les mairies et départements :** mieux connaître les capacités et les limites d’un réseau citoyen pouvant contribuer à relayer des informations publiques, selon des procédures préalablement définies.
+- **Pour les services de secours :** ouvrir à terme un dialogue sur la complémentarité, la cartographie des points hauts et les conditions strictes d’une éventuelle coopération — sans remplacer leurs réseaux ni leurs procédures.
+- **Pour les partenaires techniques :** contribuer à une infrastructure open source, réutilisable, auditable et améliorable collectivement.
+- **Pour les jeunes et les établissements scolaires :** apprendre concrètement les bases de la radio, de l’énergie, de la cartographie, de la coopération et de la gestion responsable de l’information.
+
+L’utilité publique du projet se mesure dans ses résultats : des personnes formées, des zones mieux documentées, des tests reproductibles, des partenaires mieux préparés et une communauté capable de s’entraider. Chaque nœud autorisé, chaque mesure de terrain et chaque contribution documentée peut renforcer la connaissance collective du territoire.
+
+> **Précision importante :** l’expression « vocation d’utilité publique » décrit la finalité collective du projet. Elle ne signifie pas que l’association ou l’initiative bénéficie automatiquement d’une reconnaissance administrative officielle d’utilité publique. Toute coopération institutionnelle doit être validée par les autorités et organismes concernés.
+
+Il ne s’agit donc pas de promettre une couverture partout ni de remplacer les services de secours, les réseaux professionnels ou les moyens réglementaires des collectivités. Le projet est un **complément citoyen, expérimental et d’intérêt général**, qui doit être testé avec les acteurs compétents, encadré par des responsabilités claires et présenté avec ses limites avant tout usage institutionnel.
 
 ## En quoi consiste concrètement le réseau ?
 
