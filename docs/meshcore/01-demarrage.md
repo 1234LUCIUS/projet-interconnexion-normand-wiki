@@ -1,5 +1,7 @@
 # MeshCore — démarrage rapide
 
+![Paysage normand et réseau MeshCore en préparation](../../assets/illustrations/hero-normandie-mesh.png)
+
 ## Comprendre MeshCore
 
 MeshCore est un firmware et un ensemble d’outils open source pour créer des réseaux LoRa à routage multi-sauts. Son approche utilise des rôles explicites et des clients dédiés. Il ne faut pas supposer qu’un nœud MeshCore rejoint directement un réseau Meshtastic.
@@ -32,6 +34,6 @@ Notez le modèle, le rôle, la version et la date du flash. Conservez les inform
 
 Les applications, formats de configuration et rôles ne sont pas interchangeables. Pour un projet mixte, documentez séparément les canaux, les appareils et les procédures de dépannage. Une passerelle entre systèmes doit être traitée comme un composant de sécurité et de fiabilité, pas comme un simple réglage.
 
-## Une question ?
+## Besoin d’aide ?
 
-Vous pouvez à tout moment rejoindre le [serveur Discord officiel du Projet d’Interconnexion Normand](https://discord.gg/HnAfYUSU82) ou nous contacter par e-mail à [projet.interconnection.normand@gmail.com](mailto:projet.interconnection.normand@gmail.com).
+Vous pouvez poser vos questions à tout moment sur le [serveur Discord officiel du Projet d’Interconnexion Normand](https://discord.gg/HnAfYUSU82) ou par e-mail à [projet.interconnection.normand@gmail.com](mailto:projet.interconnection.normand@gmail.com).

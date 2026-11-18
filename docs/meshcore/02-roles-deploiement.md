@@ -1,5 +1,7 @@
 # MeshCore — rôles et déploiement
 
+![Companion et Repeater dans un réseau MeshCore normand](../../assets/illustrations/companion-repeater.png)
+
 ## Companion
 
 Le Companion relie une personne ou une application au réseau. Il ne doit pas être considéré comme un relais permanent. C’est le rôle recommandé pour les premiers essais, les déplacements et la validation d’une zone.
@@ -34,6 +36,6 @@ Ne publiez pas publiquement l’adresse exacte d’un relais privé. Le wiki peu
 
 Planifiez un contrôle périodique : tension, température, boîtier, connecteurs, état de l’antenne, journal de redémarrage et version logicielle. Toute modification doit être testée sur un appareil de laboratoire avant déploiement quand c’est possible.
 
-## Une question ?
+## Besoin d’aide ?
 
-Vous pouvez à tout moment rejoindre le [serveur Discord officiel du Projet d’Interconnexion Normand](https://discord.gg/HnAfYUSU82) ou nous contacter par e-mail à [projet.interconnection.normand@gmail.com](mailto:projet.interconnection.normand@gmail.com).
+Vous pouvez poser vos questions à tout moment sur le [serveur Discord officiel du Projet d’Interconnexion Normand](https://discord.gg/HnAfYUSU82) ou par e-mail à [projet.interconnection.normand@gmail.com](mailto:projet.interconnection.normand@gmail.com).

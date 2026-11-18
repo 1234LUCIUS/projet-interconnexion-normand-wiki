@@ -45,6 +45,6 @@ Chaque changement important doit indiquer : date, auteur, version firmware, anci
 - Zones ou relais de référence.
 - Contact de maintenance.
 
-## Une question ?
+## Besoin d’aide ?
 
-Vous pouvez à tout moment rejoindre le [serveur Discord officiel du Projet d’Interconnexion Normand](https://discord.gg/HnAfYUSU82) ou nous contacter par e-mail à [projet.interconnection.normand@gmail.com](mailto:projet.interconnection.normand@gmail.com).
+Vous pouvez poser vos questions à tout moment sur le [serveur Discord officiel du Projet d’Interconnexion Normand](https://discord.gg/HnAfYUSU82) ou par e-mail à [projet.interconnection.normand@gmail.com](mailto:projet.interconnection.normand@gmail.com).

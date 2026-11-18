@@ -2,9 +2,13 @@
 
 ![Logo du Projet d’Interconnexion Normand](assets/logo-projet-interconnexion-normand.png)
 
+![Paysage normand traversé par un réseau radio maillé](assets/illustrations/hero-normandie-mesh.png)
+
 Bienvenue dans le wiki open source du **Projet d’Interconnexion Normand**. Ce guide accompagne les nouveaux arrivants qui souhaitent découvrir, configurer et exploiter un réseau radio maillé basé sur **Meshtastic** et **MeshCore**.
 
 > **Objectif :** permettre à chacun de mettre en service un nœud, rejoindre proprement le réseau normand, comprendre les limites radio et contribuer à une infrastructure utile, documentée et respectueuse.
+
+> **Besoin d’aide ?** Vous pouvez rejoindre à tout moment le [serveur Discord officiel du projet](https://discord.gg/HnAfYUSU82) ou écrire à [projet.interconnection.normand@gmail.com](mailto:projet.interconnection.normand@gmail.com). Il n’y a pas de question « trop débutante ».
 
 > **Orientation du projet :** pour tout nouveau déploiement durable, tout nouveau répéteur et toute infrastructure régionale, le Projet d’Interconnexion Normand recommande désormais de partir sur **MeshCore**. Meshtastic reste documenté et utilisé pendant la période de transition, notamment pour les appareils existants et les usages mobiles ou ponctuels.
 

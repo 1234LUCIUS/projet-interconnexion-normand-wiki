@@ -1,5 +1,7 @@
 # Quel matériel choisir ?
 
+![Nœuds radio et relais maillés dans le paysage normand](../assets/illustrations/hero-normandie-mesh.png)
+
 Le bon premier appareil est celui dont le modèle exact est supporté par le firmware, qui possède une antenne adaptée à la bande utilisée et que vous pouvez récupérer physiquement en cas d’échec de mise à jour. Ne choisissez pas uniquement sur la puissance annoncée.
 
 ## Le choix simple pour débuter
@@ -41,6 +43,6 @@ Achetez une antenne 868 MHz adaptée, un câble USB de données, une batterie pr
 
 Les liens ci-dessus sont des références de compatibilité. Les prix, vendeurs et révisions changent ; vérifiez le modèle exact et la bande 868 MHz avant commande.
 
-## Une question ?
+## Besoin d’aide ?
 
-Vous pouvez à tout moment rejoindre le [serveur Discord officiel du Projet d’Interconnexion Normand](https://discord.gg/HnAfYUSU82) ou nous contacter par e-mail à [projet.interconnection.normand@gmail.com](mailto:projet.interconnection.normand@gmail.com).
+Vous pouvez poser vos questions à tout moment sur le [serveur Discord officiel du Projet d’Interconnexion Normand](https://discord.gg/HnAfYUSU82) ou par e-mail à [projet.interconnection.normand@gmail.com](mailto:projet.interconnection.normand@gmail.com).

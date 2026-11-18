@@ -1,6 +1,10 @@
 # Guide débutant : mon premier nœud
 
+![Paysage normand et réseau radio maillé pour débuter](../assets/illustrations/hero-normandie-mesh.png)
+
 Ce guide est volontairement simple. Si vous ne connaissez pas encore LoRa, MeshCore ou Meshtastic, commencez ici.
+
+> **Vous pouvez poser vos questions à chaque étape :** rejoignez le [serveur Discord officiel](https://discord.gg/HnAfYUSU82) ou écrivez à [projet.interconnection.normand@gmail.com](mailto:projet.interconnection.normand@gmail.com). Indiquez simplement le modèle de votre appareil et l’étape où vous êtes bloqué.
 
 ## Le choix recommandé
 

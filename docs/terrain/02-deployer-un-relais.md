@@ -1,8 +1,12 @@
 # Déployer un relais
 
+![Répéteur LoRa solaire installé sur un point haut normand](../../assets/illustrations/radio-coverage.png)
+
 ## Décider si un relais est nécessaire
 
 Commencez par cartographier les zones où des Companions ou Clients échouent. Un relais peut réduire les zones mortes, mais il ajoute du trafic, une responsabilité de maintenance et un point de compromission. Testez d’abord une installation temporaire.
+
+> **Avant de vous lancer :** faites relire votre idée d’installation sur le [Discord officiel du projet](https://discord.gg/HnAfYUSU82) ou envoyez-la à [projet.interconnection.normand@gmail.com](mailto:projet.interconnection.normand@gmail.com). Une question posée avant la pose peut éviter une mauvaise implantation.
 
 ## Autorisation et sécurité
 

@@ -57,6 +57,6 @@ Exportez la configuration si le client le permet et conservez-la hors dépôt pu
 - Portée faible : tester l’emplacement, l’orientation et l’antenne avant d’augmenter quoi que ce soit.
 - Appareil muet après flash : vérifier le modèle exact et refaire la procédure officielle de récupération.
 
-## Une question ?
+## Besoin d’aide ?
 
-Vous pouvez à tout moment rejoindre le [serveur Discord officiel du Projet d’Interconnexion Normand](https://discord.gg/HnAfYUSU82) ou nous contacter par e-mail à [projet.interconnection.normand@gmail.com](mailto:projet.interconnection.normand@gmail.com).
+Vous pouvez poser vos questions à tout moment sur le [serveur Discord officiel du Projet d’Interconnexion Normand](https://discord.gg/HnAfYUSU82) ou par e-mail à [projet.interconnection.normand@gmail.com](mailto:projet.interconnection.normand@gmail.com).

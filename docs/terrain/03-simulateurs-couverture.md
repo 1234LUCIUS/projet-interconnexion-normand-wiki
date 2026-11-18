@@ -1,6 +1,10 @@
 # Où installer son nœud ?
 
+![Point haut normand avec visibilité dégagée pour une couverture radio maillée](../../assets/illustrations/radio-coverage.png)
+
 Un bon emplacement n’est pas forcément le point le plus haut disponible. Il faut combiner hauteur, visibilité radio, accès autorisé, alimentation, sécurité, météo et possibilité de maintenance.
+
+> **Vous avez trouvé un spot ?** Partagez une photo non sensible ou demandez un avis sur le [Discord officiel du projet](https://discord.gg/HnAfYUSU82). Vous pouvez aussi écrire à [projet.interconnection.normand@gmail.com](mailto:projet.interconnection.normand@gmail.com) avant d’installer votre nœud.
 
 ## Pour un Companion
 

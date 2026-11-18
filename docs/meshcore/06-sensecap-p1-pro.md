@@ -1,5 +1,7 @@
 # Seeed Studio SenseCAP Solar Node P1-Pro
 
+![Répéteur solaire MeshCore sur un point haut normand](../../assets/illustrations/radio-coverage.png)
+
 ## À quoi sert le P1-Pro ?
 
 Le **SenseCAP Solar Node P1-Pro** est un nœud LoRa autonome conçu pour une installation extérieure. Il possède un panneau solaire, une batterie, un GPS et un boîtier prévu pour être fixé sur un support. C’est un matériel particulièrement intéressant pour un **Repeater MeshCore** installé sur un point haut.
@@ -59,6 +61,8 @@ Ne reflashez que si le firmware est absent, corrompu, incorrect ou si une migrat
 *Capture du Web Flasher officiel sur la cible affichée « Seeed Studio SenseCAP Solar Node P1 ». Pour le P1-Pro, sélectionnez cette cible, le rôle « Repeater », puis la version 1.17.1. Contrôlez également les boutons « Enter DFU mode », « Erase Flash » et « Flash! » avant de commencer.*
 
 Le flasher affiche parfois le P1-Pro sous le nom **SenseCAP Solar Node P1**. Il s’agit de la cible à sélectionner lorsque votre P1-Pro correspond à cette famille matérielle. La page officielle affiche aussi une recommandation OTAFIX si vous prévoyez des mises à jour OTA Bluetooth ; ne l’installez pas sans lire la documentation et sans décider si ce mode de maintenance est nécessaire.
+
+> **Un doute avant de flasher ?** Demandez confirmation sur le [Discord officiel du Projet d’Interconnexion Normand](https://discord.gg/HnAfYUSU82) ou par e-mail à [projet.interconnection.normand@gmail.com](mailto:projet.interconnection.normand@gmail.com), en précisant la référence exacte inscrite sur votre appareil.
 
 ![Écran de connexion du configurateur USB MeshCore](../../assets/meshcore-flasher/05-configurateur-usb.webp)
 
