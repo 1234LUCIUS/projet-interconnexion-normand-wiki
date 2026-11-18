@@ -70,7 +70,7 @@ Les deux écosystèmes utilisent LoRa, mais ils ne sont pas automatiquement inte
 
 ## Cartes officielles des nœuds
 
-La carte locale GitHub a été retirée du parcours principal. Utilisez désormais les [cartes officielles et communautaires recommandées](docs/04-carte-interactive.md) : [map.meshcore.io](https://map.meshcore.io/?lat=7.0000&lon=25.0000&zoom=3), [RelayLens Companions](https://relaylens.mesh.chaun14.fr/companions) et [MeshQual](https://meshqual.pmrs.fr/). Comparez les résultats et confirmez toujours la couverture par un test réel.
+La carte locale GitHub a été retirée du parcours principal. Utilisez désormais les [cartes officielles et communautaires recommandées](docs/04-carte-interactive.md) : [map.meshcore.io](https://map.meshcore.io/?lat=7.0000&lon=25.0000&zoom=3), [RelayLens Companions](https://relaylens.mesh.chaun14.fr/companions), [MeshQual](https://meshqual.pmrs.fr/) et [MeshStats](https://meshstats.serveurperso.in/#/live). Ces services sont alimentés par des **Observers MeshCore** : des nœuds qui écoutent localement le réseau et remontent les données autorisées vers des outils d’analyse. Comparez les résultats et confirmez toujours la couverture par un test réel.
 
 ## Rejoindre la communauté
 

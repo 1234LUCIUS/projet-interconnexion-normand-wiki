@@ -22,6 +22,45 @@ RelayLens permet de consulter les Companions et les informations de relais assoc
 
 MeshQual complète les autres cartes avec des informations de qualité et de visibilité du réseau. Consultez les indications disponibles avant de conclure qu’une zone est couverte ou absente du réseau.
 
+### MeshStats
+
+**[Ouvrir MeshStats](https://meshstats.serveurperso.in/#/live)**
+
+MeshStats propose des vues en direct et des outils d’analyse autour des paquets, nœuds, canaux, observateurs et statistiques MeshCore. Utilisez notamment les sections **Live**, **Map**, **Nodes**, **Observers** et **Analytics** pour comprendre ce qui est entendu et mesuré par le réseau.
+
+## Comment les cartes obtiennent-elles leurs données ?
+
+Les cartes MeshCore, RelayLens, MeshQual et les outils comme MeshStats ne voient pas automatiquement tous les appareils présents dans une région. Ils sont alimentés par des **Observers MeshCore** qui entendent localement des paquets radio et transmettent certaines informations à un service d’analyse ou à un broker MQTT par une connexion Internet.
+
+Un Observer peut être :
+
+- un Repeater MeshCore équipé ou configuré pour observer ;
+- un Room Server ;
+- un Companion ;
+- un appareil dédié avec un firmware Observer ;
+- un nœud relié en USB, BLE ou Wi-Fi à un ordinateur ou un Raspberry Pi qui assure le pont vers le service d’observation.
+
+L’Observer écoute ce qui arrive à sa position : annonces de nœuds, paquets entendus, voisins, chemins ou mesures autorisées par sa configuration. Il transmet ensuite les données sélectionnées au service concerné. Certains Observers ne partagent que les annonces, ce qui suffit à faire apparaître un nœud sur une carte sans partager le contenu des messages. Un propriétaire peut limiter ou arrêter le partage des données.
+
+### Pourquoi les Observers sont-ils importants ?
+
+Un Observer est le point de mesure qui transforme une présence radio locale en information exploitable à distance. Plusieurs Observers répartis dans des communes et sur des points hauts permettent de :
+
+- savoir quels nœuds sont réellement entendus depuis différents endroits ;
+- comparer la couverture et les chemins observés ;
+- repérer les zones où un Repeater pourrait être utile ;
+- suivre la qualité et la stabilité d’un réseau ;
+- comprendre la différence entre un nœud actif et un nœud simplement configuré ;
+- alimenter des cartes, des historiques et des outils d’analyse communautaires.
+
+Un Observer ne crée pas automatiquement de couverture radio et ne remplace pas un Repeater. Dans de nombreuses configurations, il fonctionne en **remontée de données uniquement** : il rapporte ce qu’il entend, mais ne relaie pas les paquets pour étendre le maillage. Le rôle exact dépend du matériel, du firmware et des réglages locaux.
+
+Sans Observer, un nœud peut fonctionner correctement tout en restant absent d’une carte publique. À l’inverse, la présence d’un nœud sur une carte prouve seulement qu’un Observer l’a entendu ou qu’une donnée a été publiée ; elle ne garantit pas qu’il sera joignable maintenant, partout ou dans un bâtiment.
+
+### Confidentialité des Observers
+
+Avant de connecter un Observer à un service, vérifiez ce qui est partagé : annonces seulement, métadonnées, paquets, voisins ou contenu éventuel. Ne transmettez jamais de clé privée, de mot de passe, de QR code ou de message sensible. Utilisez une position générale pour les sites privés et demandez conseil sur le [Discord officiel du Projet d’Interconnexion Normand](https://discord.gg/HnAfYUSU82) ou par e-mail à [projet.interconnection.normand@gmail.com](mailto:projet.interconnection.normand@gmail.com).
+
 ## Comment utiliser ces cartes ?
 
 1. Commencez par rechercher votre commune ou votre zone générale.
