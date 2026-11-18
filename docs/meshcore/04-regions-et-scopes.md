@@ -17,6 +17,8 @@ La fréquence et la modulation disent **comment la radio parle**. Le canal et la
 
 ![Illustration des régions MeshCore comparées aux lignes d’un standard téléphonique](../../assets/illustrations/regions-meshcore-standard-telephonique.png)
 
+*Illustration réalisée par Thomas Van Nieuwenberg, initiateur du Projet d’Interconnexion Normand.*
+
 *Dans le schéma, `fr-nor` et `fr-14` représentent des scopes régionaux ; `#fr-nor` et `#fr-14` sont les canaux utilisés dans l’exemple. Un canal et son scope sont deux réglages distincts, même si le projet les associe souvent par convention.*
 
 Imaginez le Repeater comme un standard de tri : il reçoit un paquet radio marqué d’un scope régional, puis vérifie si ce scope fait partie de ceux qu’il est configuré et autorisé à relayer. Si le flood est permis et que ses limites ne sont pas atteintes, il rediffuse le paquet par radio. Les répéteurs voisins appliquent à leur tour leurs propres règles. Le message peut ainsi traverser les relais configurés pour ce scope, au lieu d’être relayé partout. [Filtrage régional MeshCore](https://blog.meshcore.io/2026/01/20/region-filtering) [Commandes régionales du Repeater](https://docs.meshcore.io/cli_commands/)
