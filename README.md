@@ -12,21 +12,44 @@ Bienvenue dans le wiki open source du **Projet d’Interconnexion Normand**. Ce 
 
 > **Orientation du projet :** pour tout nouveau déploiement durable, tout nouveau répéteur et toute infrastructure régionale, le Projet d’Interconnexion Normand recommande désormais de partir sur **MeshCore**. Meshtastic reste documenté et utilisé pendant la période de transition, notamment pour les appareils existants et les usages mobiles ou ponctuels.
 
+## Le projet en quelques mots
+
+Le **Projet d’Interconnexion Normand** est une initiative open source et citoyenne qui expérimente des communications radio maillées en Normandie. Des nœuds LoRa peuvent échanger des messages courts et, selon leur rôle et leur configuration, relayer ces messages de nœud en nœud. L’objectif est de construire progressivement une infrastructure locale complémentaire, compréhensible et documentée, sans dépendre en permanence d’un réseau mobile ou d’un accès Internet.
+
+Le projet s’adresse aux habitants, associations, clubs radio, établissements scolaires, mairies, intercommunalités, départements, propriétaires de points hauts et autres partenaires qui souhaitent apprendre, tester ou accueillir une expérimentation encadrée. Il peut servir à étudier la couverture radio, organiser un événement, relier temporairement des équipes de terrain ou créer un relais local autorisé.
+
+Ce projet ne remplace ni les secours, ni les réseaux professionnels, ni les moyens réglementaires des collectivités. Il ne promet pas une couverture partout et ne doit pas transporter de données sensibles. Sa valeur vient de la démarche : tester sur le terrain, mesurer les limites, documenter les résultats et transmettre les compétences.
+
+### Pourquoi s’y intéresser ?
+
+- **Pour le territoire :** mieux comprendre l’effet du relief, de la hauteur, des antennes et des obstacles sur les communications locales.
+- **Pour les habitants :** découvrir la radio, participer à un projet concret et contribuer à une carte de couverture responsable.
+- **Pour les associations :** disposer d’un support d’expérimentation pour les randonnées, événements, ateliers et activités de plein air.
+- **Pour les collectivités :** étudier un test limité, sobre et documenté avant d’envisager une coopération plus large.
+- **Pour les partenaires techniques :** contribuer à une infrastructure open source, réutilisable et améliorable collectivement.
+
+Le projet **bascule de plus en plus vers MeshCore** pour ses nouveaux déploiements durables et ses infrastructures régionales. Meshtastic reste utile pendant la transition, pour les appareils déjà en service et pour les usages mobiles ou ponctuels.
+
+Pour une présentation complète destinée aux mairies, départements, intercommunalités et partenaires, consultez la page [Présentation aux collectivités et partenaires](docs/07-presentation-collectivites.md).
+
+> **Envie d’en discuter ?** Rejoignez le [Discord officiel du projet](https://discord.gg/HnAfYUSU82) ou écrivez à [projet.interconnection.normand@gmail.com](mailto:projet.interconnection.normand@gmail.com). Les questions des débutants, des associations et des collectivités sont les bienvenues.
+
 ## Parcours conseillé
 
-1. Commencer par le [guide débutant : mon premier nœud](docs/guide-debutant.md).
-2. Lire [les principes et règles du projet](docs/00-bienvenue.md).
-3. Lire [l’état actuel du projet](docs/06-etat-actuel.md) et [son historique](docs/05-historique-du-projet.md). Pour un nouveau déploiement, partez directement sur MeshCore.
-4. Comprendre [les régions et scopes MeshCore](docs/meshcore/04-regions-et-scopes.md).
-5. Choisir son matériel avec [le guide matériel](docs/02-materiel.md).
-6. Préparer son appareil avec [la checklist de mise en service](docs/01-checklist-materiel.md).
-7. Flasher son appareil avec le guide [Companion et Repeater](docs/meshcore/05-flasher-companion-repeater.md).
-8. Choisir son logiciel : [Meshtastic](docs/meshtastic/01-demarrage.md) ou [MeshCore](docs/meshcore/01-demarrage.md).
-9. Pour MeshCore en France, lire [les profils France / Normandie](docs/meshcore/03-profils-france-normandie.md).
-10. Si vous utilisez un matériel solaire, lire [le guide SenseCAP P1-Pro](docs/meshcore/06-sensecap-p1-pro.md).
-11. Choisir un emplacement avec [le guide de couverture](docs/terrain/03-simulateurs-couverture.md).
-12. Consulter [la carte interactive des nœuds](docs/map.html), lire [la procédure de recensement](docs/04-carte-interactive.md) et proposer son nœud.
-13. Effectuer le [test de portée et de qualité radio](docs/terrain/01-test-radio.md).
+1. Pour une mairie, un département, une association ou un partenaire, lire [la présentation institutionnelle](docs/07-presentation-collectivites.md).
+2. Commencer par le [guide débutant : mon premier nœud](docs/guide-debutant.md).
+3. Lire [les principes et règles du projet](docs/00-bienvenue.md).
+4. Lire [l’état actuel du projet](docs/06-etat-actuel.md) et [son historique](docs/05-historique-du-projet.md). Pour un nouveau déploiement, partez directement sur MeshCore.
+5. Comprendre [les régions et scopes MeshCore](docs/meshcore/04-regions-et-scopes.md).
+6. Choisir son matériel avec [le guide matériel](docs/02-materiel.md).
+7. Préparer son appareil avec [la checklist de mise en service](docs/01-checklist-materiel.md).
+8. Flasher son appareil avec le guide [Companion et Repeater](docs/meshcore/05-flasher-companion-repeater.md).
+9. Choisir son logiciel : [Meshtastic](docs/meshtastic/01-demarrage.md) ou [MeshCore](docs/meshcore/01-demarrage.md).
+10. Pour MeshCore en France, lire [les profils France / Normandie](docs/meshcore/03-profils-france-normandie.md).
+11. Si vous utilisez un matériel solaire, lire [le guide SenseCAP P1-Pro](docs/meshcore/06-sensecap-p1-pro.md).
+12. Choisir un emplacement avec [le guide de couverture](docs/terrain/03-simulateurs-couverture.md).
+13. Consulter [la carte interactive des nœuds](docs/map.html), lire [la procédure de recensement](docs/04-carte-interactive.md) et proposer son nœud.
+14. Effectuer le [test de portée et de qualité radio](docs/terrain/01-test-radio.md).
 
 ## Choisir entre Meshtastic et MeshCore
 
