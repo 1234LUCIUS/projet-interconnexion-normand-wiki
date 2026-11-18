@@ -4,7 +4,7 @@
 
 ## Companion
 
-Le Companion relie une personne ou une application au réseau. Il ne doit pas être considéré comme un relais permanent. C’est le rôle recommandé pour les premiers essais, les déplacements et la validation d’une zone.
+Le Companion relie une personne au réseau. Il ne doit pas être considéré comme un relais permanent. C’est le rôle recommandé pour les premiers essais, les déplacements et la validation d’une zone.
 
 Bonnes pratiques : batterie surveillée, antenne adaptée, nom court non personnel et aucune clé d’administration partagée inutilement.
 
