@@ -16,6 +16,16 @@ Cherchez une hauteur utile avec une ligne de vue vers plusieurs zones, pas seule
 
 Un relais placé trop près d’une source de bruit radio ou avec une mauvaise alimentation peut être moins utile qu’un nœud plus bas mais mieux dégagé.
 
+## À 868 MHz : garder la zone de Fresnel dégagée
+
+La **ligne de visée géométrique** est le segment direct entre les antennes. Pour une liaison radio, ce segment ne suffit pas à décrire le trajet : l’onde occupe aussi un volume autour de lui, appelé **première zone de Fresnel**. Un relief, un bâtiment ou une végétation qui pénètre dans ce volume peut atténuer ou faire varier le signal, même si les deux antennes semblent se voir. À l’inverse, une liaison peut parfois encore fonctionner lorsque le relief masque le segment direct, grâce à la diffraction, mais avec des pertes qui dépendent de la forme et de la position de l’obstacle.
+
+En pratique, on cherche généralement à dégager au moins **60 % du rayon de la première zone de Fresnel** sur l’ensemble du trajet. À 868 MHz, la longueur d’onde est d’environ 34,5 cm. Le rayon varie avec la fréquence et avec les distances de part et d’autre de chaque point : `r₁ = √(λ × d₁ × d₂ / (d₁ + d₂))`, avec les distances en mètres. À titre d’exemple, pour une liaison de 13,6 km, le rayon au milieu du trajet est d’environ **34 m** ; la marge de dégagement de 60 % représente environ **21 m** autour de la ligne directe à cet endroit. C’est un ordre de grandeur géométrique, pas une hauteur d’antenne universelle : le profil réel, le relief et les obstacles comptent tout au long du trajet. Voir aussi la [recommandation ITU-R P.526-16](https://www.itu.int/dms_pubrec/itu-r/rec/p/R-REC-P.526-16-202511-I!!PDF-E.pdf) sur la diffraction et la note [Line of Sight Obstruction de Campbell Scientific](https://s.campbellsci.com/documents/au/technical-papers/line-of-sight-obstruction.pdf).
+
+![Profil topographique estimé d’une liaison radio dans le secteur Vire–Vassy, Calvados, avec la ligne directe et la première zone de Fresnel](../../assets/illustrations/fresnel-vire-vassy.png)
+
+*Exemple de profil Vire–Vassy : environ 13,6 km, avec des antennes indiquées à 6 m et 10 m. Le profil signale que la ligne de visée directe est masquée, mais l’outil affiche une marge calculée de +28,7 dB : une obstruction géométrique n’implique donc pas nécessairement une absence totale de signal. Cette valeur reste une estimation du modèle, ni une mesure radio de terrain ni une garantie de liaison. Les coordonnées précises et l’identifiant du répéteur ont été masqués dans la capture.*
+
 ## Méthode en cinq étapes
 
 1. Dessiner la zone à couvrir et les utilisateurs prioritaires.
