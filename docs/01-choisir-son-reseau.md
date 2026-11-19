@@ -13,6 +13,8 @@ Le Projet d’Interconnexion Normand utilise encore les deux environnements, mai
 
 **En pratique :** si vous achetez aujourd’hui un appareil pour rejoindre durablement le projet, choisissez un **Companion MeshCore**. Si vous installez un nouveau répéteur ou un point haut, partez sur **MeshCore Repeater**. Meshtastic reste maintenu pendant la transition, mais il n’est plus le choix privilégié pour les nouvelles infrastructures du projet.
 
+Pour comparer les clients mobiles et trouver leurs liens officiels de téléchargement, consultez [Applications mobiles](09-applications-mobiles.html).
+
 > **Besoin d’un conseil pour choisir ?** Demandez un avis sur le [serveur Discord officiel](https://discord.gg/HnAfYUSU82) ou écrivez à [projet.interconnection.normand@gmail.com](mailto:projet.interconnection.normand@gmail.com) en indiquant votre matériel et votre usage.
 
 ## Meshtastic pour les usages ponctuels

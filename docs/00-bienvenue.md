@@ -13,6 +13,8 @@ Le Projet d’Interconnexion Normand fédère des personnes qui expérimentent e
 
 Pour les nouveaux déploiements et les nouveaux membres qui souhaitent contribuer à l’infrastructure régionale, **MeshCore est le chemin recommandé**. Meshtastic reste disponible pour la transition, les appareils existants et les usages mobiles ou ponctuels.
 
+Pour choisir et télécharger l’application adaptée à votre radio, consultez la page [Applications mobiles](09-applications-mobiles.html), qui présente MeshCore, Meshtastic et Nelos.
+
 Le réseau est communautaire : chaque nœud peut améliorer la couverture, mais chaque émission partage un spectre radio avec d’autres utilisateurs. La qualité dépend donc autant de la hauteur et de l’antenne que de la discipline collective.
 
 > **Vous débutez ou vous hésitez ?** Posez votre question sur le [Discord officiel du projet](https://discord.gg/HnAfYUSU82) ou par e-mail à [projet.interconnection.normand@gmail.com](mailto:projet.interconnection.normand@gmail.com). La communauté peut vous aider avant le flash ou l’installation.

@@ -48,11 +48,13 @@ En pratique, on cherche généralement à dégager au moins **60 % du rayon de l
 - **[MeshMap](https://meshmap.net/)** : carte communautaire de nœuds Meshtastic visibles via MQTT. La présence d’un nœud dépend de sa politique de position et de sa connexion éventuelle à Internet.
 - **[Calculateur LoRa de Semtech](https://www.semtech.com/design-support/lora-calculator)** : outil de bilan radio ; utile pour comprendre la sensibilité et le compromis débit/portée.
 
-## Section “Antenna coverage” dans l’application MeshCore
+## Couverture estimée dans l’application MeshCore
 
-L’application MeshCore propose une fonction de couverture d’antenne lorsqu’elle est disponible pour la version et le client utilisés. Ouvrez la section **Antenna coverage** ou l’outil de cartographie associé, connectez votre Companion par Bluetooth et réalisez un trajet en gardant le GPS du téléphone actif. Consultez aussi [mapme.sh](https://mapme.sh/), qui documente le fonctionnement du mapping et les niveaux RSSI.
+Le client MeshCore comprend un outil **Antenna Coverage** et un outil **Line of Sight**. Ils servent à examiner une couverture estimée et la visibilité entre des points à partir de la carte, de couches importables et de paramètres tels que la hauteur d’antenne. Le journal officiel de l’application documente les couches multiples, leur import/export et l’ouverture de l’outil de visibilité depuis la carte de couverture : [changelog MeshCore](https://app.meshcore.nz/assets/CHANGELOG.md).
 
-Les couleurs de couverture sont des mesures locales, pas une garantie pour tout appareil. Un changement d’antenne, de hauteur ou de profil radio peut modifier le résultat.
+Ces vues sont des outils de planification, pas des relevés radio effectués pendant un trajet. Les résultats dépendent des hauteurs et données de relief disponibles; les bâtiments et la végétation peuvent être absents ou simplifiés dans les modèles. La couverture affichée n’est donc pas une promesse de liaison. Pour comprendre la visibilité et le dégagement de la première zone de Fresnel, consultez la section **À 868 MHz : garder la zone de Fresnel dégagée** plus haut dans cette page, ainsi que la page [Applications mobiles](../09-applications-mobiles.html).
+
+Pour relever des signaux réellement reçus en déplacement, utilisez un outil de cartographie de terrain comme [mapme.sh](https://mapme.sh/) ou [MeshMapper](https://meshmapper.net/). Ces outils communautaires associent des observations de signal à une position; ils ne sont pas le même outil que **Antenna Coverage** intégré au client MeshCore. Consultez le [guide de test radio et wardriving](01-test-radio.html) avant d’enregistrer ou de publier des traces.
 
 ## Confidentialité
 
