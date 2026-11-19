@@ -11,6 +11,12 @@ title: "Meshtastic — démarrage rapide"
 
 Vous allez installer le firmware, connecter l’appareil, définir la région, choisir le preset utilisé par le projet, puis envoyer un premier message de test.
 
+## Comment les messages circulent ?
+
+L’application prépare le message; c’est la **radio de votre nœud** qui l’émet. Meshtastic n’utilise pas une route fixe : les radios qui entendent le paquet peuvent le retransmettre. Elles attendent brièvement pour éviter les doublons, puis diminuent le **hop limit** (nombre maximal de retransmissions). À zéro, le paquet n’est plus relayé.
+
+Le rôle indique qui relaie : un **Client** retransmet si aucun autre nœud ne l’a déjà fait; un **Router** ou **Repeater** relaie une fois les paquets admissibles; un **Client Mute** ne relaie pas. Le chemin dépend donc des nœuds qui s’entendent au moment de l’envoi. Voir l’[algorithme officiel](https://meshtastic.org/docs/overview/mesh-algo/) et les [rôles des appareils](https://meshtastic.org/docs/configuration/radio/device/).
+
 ## 1. Installer le client
 
 Utilisez l’application officielle Meshtastic pour Android, iOS/iPadOS/macOS, ou l’interface Web officielle. Pour les opérations répétables, la CLI Python peut être installée avec :
@@ -48,12 +54,6 @@ Ne changez pas le preset d’un relais en production sans fenêtre de maintenanc
 ## 5. Régler le rôle
 
 Pour un premier appareil, utilisez le rôle **Client**. Les rôles Repeater ou Router sont réservés aux appareils dédiés, avec alimentation, emplacement et maintenance maîtrisés.
-
-### Qui émet et comment le message progresse ?
-
-L’application prépare le message, mais c’est la **radio Meshtastic** qui l’émet. Meshtastic n’utilise pas un itinéraire fixe enregistré à l’avance : il diffuse le paquet par *managed flooding*. Les nœuds qui l’entendent attendent brièvement pour voir si un autre l’a déjà retransmis. Si le paquet peut encore avancer, ils le relaient et diminuent son **hop limit** (le nombre maximal de retransmissions). Cette limite borne la diffusion; le destinataire peut recevoir le paquet pendant qu’il se propage.
-
-Le rôle du nœud détermine s’il aide à relayer : un **Client** retransmet si aucun autre nœud ne l’a déjà fait; un **Router** ou **Repeater** retransmet chaque paquet admissible une fois; un **Client Mute** ne relaie pas. Le chemin réel dépend donc des radios qui s’entendent au moment de l’envoi, pas d’une liste fixe de relais. Voir l’[algorithme officiel](https://meshtastic.org/docs/overview/mesh-algo/) et les [rôles des appareils](https://meshtastic.org/docs/configuration/radio/device/).
 
 ## 6. Premier test
 
