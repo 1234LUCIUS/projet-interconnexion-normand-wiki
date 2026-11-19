@@ -36,7 +36,9 @@
     <p class="notice"><strong>Besoin d’une réponse rapide ?</strong> Vous pouvez aussi rejoindre le <a href="https://discord.gg/HnAfYUSU82">serveur Discord officiel</a>.</p>
     <section class="card" aria-labelledby="form-title">
       <h2 id="form-title">Préparer un message</h2>
-      <form id="contact-form">
+      <form id="contact-form" action="https://formsubmit.co/projet.interconnection.normand@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="[Wiki] Nouveau message de contact">
+        <input type="hidden" name="_url" value="https://1234lucius.github.io/projet-interconnexion-normand-wiki/contact.html">
         <label for="name">Nom ou pseudonyme *</label>
         <input id="name" name="name" type="text" autocomplete="name" required maxlength="100">
 
@@ -58,27 +60,11 @@
         <label for="message">Message *</label>
         <textarea id="message" name="message" required minlength="10" maxlength="5000" placeholder="Décrivez votre question ou votre proposition."></textarea>
 
-        <button type="submit">Ouvrir mon e-mail</button>
+        <button type="submit">Envoyer mon message</button>
       </form>
-      <p class="muted">Ce formulaire n’utilise aucun service intermédiaire : il ouvre votre application e-mail avec le destinataire, le sujet et le message déjà préparés. Il vous reste simplement à cliquer sur « Envoyer ». Si rien ne s’ouvre, utilisez le lien e-mail sous le formulaire.</p>
+      <p class="muted">À l’envoi, votre message et les informations saisies transitent par <a href="https://formsubmit.co/">FormSubmit</a> avant d’arriver à l’adresse e-mail du projet. Ce service indique conserver les soumissions 30 jours. N’incluez aucune clé, aucun mot de passe ni autre information sensible.</p>
     </section>
     <p><a href="mailto:projet.interconnection.normand@gmail.com">Écrire directement par e-mail</a> · <a href="https://discord.gg/HnAfYUSU82">Rejoindre le Discord</a></p>
   </main>
-  <script>
-    document.getElementById('contact-form').addEventListener('submit', function (event) {
-      event.preventDefault();
-      if (!this.reportValidity()) return;
-      const data = new FormData(this);
-      const subject = '[Wiki] ' + data.get('topic');
-      const body = [
-        'Nom ou pseudonyme : ' + data.get('name'),
-        'Adresse e-mail : ' + data.get('email'),
-        'Sujet : ' + data.get('topic'),
-        '',
-        data.get('message')
-      ].join('\n');
-      window.location.href = 'mailto:projet.interconnection.normand@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-    });
-  </script>
 </body>
 </html>
