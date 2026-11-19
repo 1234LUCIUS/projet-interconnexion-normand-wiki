@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://wiki.projet.interco.normand/</loc><priority>1.0</priority><changefreq>weekly</changefreq></url>
-  <url><loc>https://wiki.projet.interco.normand/guide-debutant.html</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://wiki.projet.interco.normand/meshcore/01-demarrage.html</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://wiki.projet.interco.normand/meshcore/02-roles-deploiement.html</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://wiki.projet.interco.normand/meshcore/03-profils-france-normandie.html</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://wiki.projet.interco.normand/meshcore/05-flasher-companion-repeater.html</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://wiki.projet.interco.normand/08-materiel-antennes-installations.html</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://wiki.projet.interco.normand/terrain/03-simulateurs-couverture.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://wiki.projet.interco.normand/04-carte-interactive.html</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
-  <url><loc>https://wiki.projet.interco.normand/07-presentation-collectivites.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://wiki.projet.interco.normand/02-materiel.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://1234LUCIUS.github.io/projet-interconnexion-normand-wiki/</loc><priority>1.0</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://1234LUCIUS.github.io/projet-interconnexion-normand-wiki/guide-debutant.html</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://1234LUCIUS.github.io/projet-interconnexion-normand-wiki/meshcore/01-demarrage.html</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://1234LUCIUS.github.io/projet-interconnexion-normand-wiki/meshcore/02-roles-deploiement.html</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://1234LUCIUS.github.io/projet-interconnexion-normand-wiki/meshcore/03-profils-france-normandie.html</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://1234LUCIUS.github.io/projet-interconnexion-normand-wiki/meshcore/05-flasher-companion-repeater.html</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://1234LUCIUS.github.io/projet-interconnexion-normand-wiki/08-materiel-antennes-installations.html</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://1234LUCIUS.github.io/projet-interconnexion-normand-wiki/terrain/03-simulateurs-couverture.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://1234LUCIUS.github.io/projet-interconnexion-normand-wiki/04-carte-interactive.html</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://1234LUCIUS.github.io/projet-interconnexion-normand-wiki/07-presentation-collectivites.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://1234LUCIUS.github.io/projet-interconnexion-normand-wiki/02-materiel.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
 </urlset>
