@@ -1,6 +1,6 @@
 # Où installer son nœud ?
 
-![Point haut normand avec visibilité dégagée pour une couverture radio maillée](../../assets/illustrations/radio-coverage.png)
+![Point haut normand avec visibilité dégagée pour une couverture radio maillée](../assets/illustrations/radio-coverage.png)
 
 Un bon emplacement n’est pas forcément le point le plus haut disponible. Il faut combiner hauteur, visibilité radio, accès autorisé, alimentation, sécurité, météo et possibilité de maintenance.
 
@@ -22,7 +22,7 @@ La **ligne de visée géométrique** est le segment direct entre les antennes. P
 
 En pratique, on cherche généralement à dégager au moins **60 % du rayon de la première zone de Fresnel** sur l’ensemble du trajet. À 868 MHz, la longueur d’onde est d’environ 34,5 cm. Le rayon varie avec la fréquence et avec les distances de part et d’autre de chaque point : `r₁ = √(λ × d₁ × d₂ / (d₁ + d₂))`, avec les distances en mètres. À titre d’exemple, pour une liaison de 13,6 km, le rayon au milieu du trajet est d’environ **34 m** ; la marge de dégagement de 60 % représente environ **21 m** autour de la ligne directe à cet endroit. C’est un ordre de grandeur géométrique, pas une hauteur d’antenne universelle : le profil réel, le relief et les obstacles comptent tout au long du trajet. Voir aussi la [recommandation ITU-R P.526-16](https://www.itu.int/dms_pubrec/itu-r/rec/p/R-REC-P.526-16-202511-I!!PDF-E.pdf) sur la diffraction et la note [Line of Sight Obstruction de Campbell Scientific](https://s.campbellsci.com/documents/au/technical-papers/line-of-sight-obstruction.pdf).
 
-![Profil topographique estimé d’une liaison radio dans le secteur Vire–Vassy, Calvados, avec la ligne directe et la première zone de Fresnel](../../assets/illustrations/fresnel-vire-vassy.png)
+![Profil topographique estimé d’une liaison radio dans le secteur Vire–Vassy, Calvados, avec la ligne directe et la première zone de Fresnel](../assets/illustrations/fresnel-vire-vassy.png)
 
 *Exemple de profil Vire–Vassy : environ 13,6 km, avec des antennes indiquées à 6 m et 10 m. Le profil signale que la ligne de visée directe est masquée, mais l’outil affiche une marge calculée de +28,7 dB : une obstruction géométrique n’implique donc pas nécessairement une absence totale de signal. Cette valeur reste une estimation du modèle, ni une mesure radio de terrain ni une garantie de liaison. Les coordonnées précises et l’identifiant du répéteur ont été masqués dans la capture.*
 

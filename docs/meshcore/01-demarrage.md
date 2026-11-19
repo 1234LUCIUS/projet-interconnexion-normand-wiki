@@ -1,6 +1,6 @@
 # MeshCore — démarrage rapide
 
-![Préparer un premier nœud LoRa pour le démarrage MeshCore](../../assets/illustrations/first-node-setup.webp)
+![Préparer un premier nœud LoRa pour le démarrage MeshCore](../assets/illustrations/first-node-setup.webp)
 
 
 ## Comprendre MeshCore
@@ -9,7 +9,7 @@ MeshCore est un firmware et un ensemble d’outils open source pour créer des r
 
 Le Projet d’Interconnexion Normand migre progressivement vers MeshCore. Pendant cette transition, certains nœuds peuvent encore fonctionner sous Meshtastic. Vérifiez le logiciel utilisé par le groupe ou le relais que vous souhaitez rejoindre avant de flasher votre appareil.
 
-![Schéma animé du fonctionnement d’un réseau MeshCore](../../assets/meshcore-fonctionnement.gif)
+![Schéma animé du fonctionnement d’un réseau MeshCore](../assets/meshcore-fonctionnement.gif)
 
 ### Lire le schéma en quelques secondes
 
@@ -18,7 +18,7 @@ Le Projet d’Interconnexion Normand migre progressivement vers MeshCore. Pendan
 3. Le **Companion B** reçoit le message lorsque le chemin radio est disponible. La portée dépend du terrain, des antennes, de la hauteur et de la configuration ; le schéma ne promet pas une distance fixe.
 4. Un **Observer** écoute les nœuds et les paquets qu’il peut recevoir, puis peut remonter des données autorisées vers des cartes et outils comme MeshStats ou RelayLens. Il n’est pas représenté comme un relais supplémentaire : son rôle principal est l’observation et la collecte.
 
-La version structurée du dessin est disponible en [source Mermaid](../../assets/meshcore-fonctionnement.mmd). Le GIF est volontairement simplifié : il explique les rôles et le trajet général sans remplacer la configuration réelle, les tests de portée ou la documentation du firmware.
+La version structurée du dessin est disponible en [source Mermaid](../assets/meshcore-fonctionnement.mmd). Le GIF est volontairement simplifié : il explique les rôles et le trajet général sans remplacer la configuration réelle, les tests de portée ou la documentation du firmware.
 
 ## 1. Vérifier la compatibilité
 

@@ -1,6 +1,6 @@
 # MeshCore — rôles et déploiement
 
-![Les rôles Companion, Repeater et Room Server de MeshCore](../../assets/illustrations/meshcore-roles.webp)
+![Les rôles Companion, Repeater et Room Server de MeshCore](../assets/illustrations/meshcore-roles.webp)
 
 ## Companion
 
@@ -10,7 +10,7 @@ Bonnes pratiques : batterie surveillée, antenne adaptée, nom court non personn
 
 ## Simulation : advert, message et accusé
 
-![Simulation animée d’un réseau MeshCore avec deux Companions et deux Repeaters](../../assets/meshcore-adverts-messages.gif)
+![Simulation animée d’un réseau MeshCore avec deux Companions et deux Repeaters](../assets/meshcore-adverts-messages.gif)
 
 Cette simulation représente un cas simple avec deux Companions et deux Repeaters :
 
@@ -19,7 +19,7 @@ Cette simulation représente un cas simple avec deux Companions et deux Repeater
 3. Un **ACK** (accusé) revient vers l’émetteur pour confirmer la réception lorsque le protocole et le chemin le permettent.
 4. Les Repeaters relaient les paquets ; les Companions restent les appareils utilisés par les personnes et ne deviennent pas automatiquement des relais pour le trafic des autres.
 
-La séquence est volontairement représentative : les temporisations, chemins, limites de flood, annonces et conditions d’accusé dépendent de la version du firmware et de la configuration du réseau. La [source Mermaid](../../assets/meshcore-adverts-messages.mmd) décrit la topologie simplifiée.
+La séquence est volontairement représentative : les temporisations, chemins, limites de flood, annonces et conditions d’accusé dépendent de la version du firmware et de la configuration du réseau. La [source Mermaid](../assets/meshcore-adverts-messages.mmd) décrit la topologie simplifiée.
 
 ## Repeater
 

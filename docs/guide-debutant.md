@@ -1,6 +1,6 @@
 # Guide débutant : mon premier nœud
 
-![Préparer un premier nœud LoRa : antenne, câble USB et téléphone](../assets/illustrations/first-node-setup.webp)
+![Préparer un premier nœud LoRa : antenne, câble USB et téléphone](assets/illustrations/first-node-setup.webp)
 
 Ce guide est volontairement simple. Si vous ne connaissez pas encore LoRa, MeshCore ou Meshtastic, commencez ici.
 

@@ -1,6 +1,6 @@
 # Déployer un relais
 
-![Bénévoles inspectant au sol un répéteur solaire autorisé sur un point haut normand](../../assets/illustrations/authorized-repeater-installation.webp)
+![Bénévoles inspectant au sol un répéteur solaire autorisé sur un point haut normand](../assets/illustrations/authorized-repeater-installation.webp)
 
 ## Décider si un relais est nécessaire
 

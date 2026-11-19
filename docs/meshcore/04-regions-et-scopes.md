@@ -15,7 +15,7 @@ La fréquence et la modulation disent **comment la radio parle**. Le canal et la
 
 ## L’analogie du standard téléphonique
 
-![Illustration des régions MeshCore comparées aux lignes d’un standard téléphonique](../../assets/illustrations/regions-meshcore-standard-telephonique.png)
+![Illustration des régions MeshCore comparées aux lignes d’un standard téléphonique](../assets/illustrations/regions-meshcore-standard-telephonique.png)
 
 *Illustration réalisée par Thomas Van Nieuwenberg, initiateur du Projet d’Interconnexion Normand.*
 

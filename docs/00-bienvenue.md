@@ -1,6 +1,6 @@
 # Bienvenue dans le Projet d’Interconnexion Normand
 
-![Companion, Repeater et Room Server dans un réseau MeshCore normand](../assets/illustrations/meshcore-roles.webp)
+![Companion, Repeater et Room Server dans un réseau MeshCore normand](assets/illustrations/meshcore-roles.webp)
 
 ## Le projet en une phrase
 

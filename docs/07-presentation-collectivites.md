@@ -2,13 +2,13 @@
 
 ## À l’attention des mairies, intercommunalités, départements, associations et partenaires locaux
 
-![Paysage normand traversé par un réseau radio maillé](../assets/illustrations/hero-normandie-mesh.png)
+![Paysage normand traversé par un réseau radio maillé](assets/illustrations/hero-normandie-mesh.png)
 
 Le **Projet d’Interconnexion Normand** a pour ambition de connecter les personnes entre elles en toutes circonstances, y compris lorsque l’accès à Internet ou les réseaux mobiles sont interrompus. C’est une initiative open source et citoyenne qui expérimente des communications radio maillées en Normandie. Son objectif est de créer, avec les habitants, les associations, les collectivités et les propriétaires de sites, une infrastructure locale complémentaire pour échanger des messages courts et des informations de situation.
 
 Le projet repose sur des appareils LoRa basse consommation qui peuvent communiquer directement entre eux et relayer certains messages de nœud en nœud. Un appareil peut être utilisé par une personne — rôle **Companion** — ou installé sur un point fixe pour étendre la couverture — rôle **Repeater**.
 
-![Companion, Repeater et Room Server dans un réseau radio maillé normand](../assets/illustrations/meshcore-roles.webp)
+![Companion, Repeater et Room Server dans un réseau radio maillé normand](assets/illustrations/meshcore-roles.webp)
 
 > **Notre ambition :** rendre les communications locales plus résilientes, compréhensibles et participatives, en documentant chaque étape et en gardant les habitants au centre du projet.
 

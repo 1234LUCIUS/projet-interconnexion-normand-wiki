@@ -1,6 +1,6 @@
 # Quel matériel choisir ?
 
-![Nœuds radio et relais maillés dans le paysage normand](../assets/illustrations/hero-normandie-mesh.png)
+![Nœuds radio et relais maillés dans le paysage normand](assets/illustrations/hero-normandie-mesh.png)
 
 Le bon premier appareil est celui dont le modèle exact est supporté par le firmware, qui possède une antenne adaptée à la bande utilisée et que vous pouvez récupérer physiquement en cas d’échec de mise à jour. Ne choisissez pas uniquement sur la puissance annoncée.
 

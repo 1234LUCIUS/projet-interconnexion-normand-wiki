@@ -4,7 +4,7 @@ Cette page rassemble des exemples visuels et des recommandations pour choisir un
 
 ## À quoi ressemble une installation sur un point haut ?
 
-![Exemple de répéteur MeshCore solaire installé en hauteur avec antenne verticale](../assets/meshcore-materiel/installation-point-haut-meshcore.webp)
+![Exemple de répéteur MeshCore solaire installé en hauteur avec antenne verticale](assets/meshcore-materiel/installation-point-haut-meshcore.webp)
 
 *Exemple visuel d’un répéteur solaire installé sur un support élevé. Source de l’illustration : [SmartnMagic — MeshCore Repeater Node](https://smartnmagic.com/blogs/solutions/meshcore-repeater-node).*
 
@@ -24,7 +24,7 @@ La hauteur améliore souvent la ligne de vue, mais elle ne garantit pas une port
 
 ### Seeed SenseCAP Solar Node P1-Pro
 
-![Seeed SenseCAP Solar Node P1-Pro avec panneau solaire et antenne](../assets/meshcore-materiel/sensecap-p1-pro.jpg)
+![Seeed SenseCAP Solar Node P1-Pro avec panneau solaire et antenne](assets/meshcore-materiel/sensecap-p1-pro.jpg)
 
 Le [SenseCAP Solar Node P1-Pro pour MeshCore](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-Pro-for-Meshcore-p-6741.html) est un nœud extérieur solaire avec GPS, batterie et support de fixation. La fiche Seeed indique une compatibilité MeshCore Repeater, un panneau solaire de 5 W, quatre batteries 18650 et une antenne fournie 2 dBi pour 868–915 MHz. La page Seeed précise aussi que le produit MeshCore est livré avec le firmware Repeater pré-flashé ; vérifiez toutefois le firmware réellement présent avant la mise en service.
 
@@ -32,7 +32,7 @@ C’est un candidat pratique pour un relais autonome, à condition de prévoir u
 
 ### RAK WisMesh Repeater
 
-![RAK WisMesh Repeater et alimentation solaire](../assets/meshcore-materiel/rak-wismesh-repeater.png)
+![RAK WisMesh Repeater et alimentation solaire](assets/meshcore-materiel/rak-wismesh-repeater.png)
 
 Le [RAK WisMesh Repeater](https://store.rakwireless.com/products/wismesh-meshtastic-solar-repeater) est un exemple de boîtier extérieur solaire conçu pour des déploiements fixes de réseaux LoRa. La fiche RAK le présente principalement pour Meshtastic ; avant de l’acheter pour le Projet d’Interconnexion Normand, vérifiez la compatibilité exacte du modèle et du firmware dans le [Web Flasher MeshCore](https://flasher.meshcore.io/).
 
@@ -88,7 +88,7 @@ Pour un appareil portable ou un premier test, utilisez l’antenne fournie par l
 
 Pour un Repeater qui doit couvrir plusieurs directions, choisissez en priorité une **antenne verticale omnidirectionnelle 50 Ω**, prévue pour l’extérieur et couvrant la bande européenne autour de 868 MHz. Un modèle de gain modéré, environ 3 à 8 dBi selon la géométrie du site, est généralement plus facile à intégrer qu’une antenne très directive.
 
-![Antenne omnidirectionnelle extérieure Taoglas Barracuda pour la bande 868 MHz](../assets/meshcore-materiel/antenne-omnidirectionnelle-868-taoglas.png)
+![Antenne omnidirectionnelle extérieure Taoglas Barracuda pour la bande 868 MHz](assets/meshcore-materiel/antenne-omnidirectionnelle-868-taoglas.png)
 
 *Exemple de famille d’antenne omnidirectionnelle extérieure : [Taoglas Barracuda OMB.868.B08F21](https://www.taoglas.com/product/barracuda-omb-868-08f21-868mhz-8dbi-omni-directional-outdoor-antenna/). La fiche fabricant indique une antenne colinéaire 868 MHz, un montage mât/mur, un connecteur N femelle et une protection IP65. Vérifiez le gain réellement retenu, la fréquence et le bilan de liaison avant achat.*
 
@@ -96,7 +96,7 @@ Pour la Normandie, une antenne omnidirectionnelle verticale est le choix de dép
 
 ### Antenne directionnelle BETAFPV Moxon pour une liaison ciblée
 
-![Antenne directionnelle BETAFPV Moxon dans sa variante 868 MHz avec connecteur SMA](../assets/meshcore-materiel/betafpv-moxon-868.webp)
+![Antenne directionnelle BETAFPV Moxon dans sa variante 868 MHz avec connecteur SMA](assets/meshcore-materiel/betafpv-moxon-868.webp)
 
 *La variante choisie est le [pack de deux BETAFPV Moxon 868 MHz](https://www.unmannedtechshop.co.uk/fr/products/betafpv-moxon-antenna-2x-pack-2-4ghz-868mhz?variant=56578243199357&country=FR&currency=GBP). La fiche BETAFPV annonce un gain de 5,7 dBi vers l’avant, un câble de 72 mm et un connecteur SMA mâle. [12] [13]*
 

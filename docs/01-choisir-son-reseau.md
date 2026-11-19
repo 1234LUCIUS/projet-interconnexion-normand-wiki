@@ -1,8 +1,8 @@
 # Choisir entre Meshtastic et MeshCore
 
-![Choix du réseau selon l’usage](../assets/choisir-meshtastic-ou-meshcore.png)
+![Choix du réseau selon l’usage](assets/choisir-meshtastic-ou-meshcore.png)
 
-![Companion, Repeater et Room Server dans un réseau MeshCore normand](../assets/illustrations/meshcore-roles.webp)
+![Companion, Repeater et Room Server dans un réseau MeshCore normand](assets/illustrations/meshcore-roles.webp)
 
 Le Projet d’Interconnexion Normand utilise encore les deux environnements, mais il **bascule de plus en plus vers MeshCore**. Cette évolution est progressive : pour toute nouvelle contribution à l’infrastructure normande, l’orientation recommandée est **MeshCore** ; Meshtastic reste pertinent pour certains usages mobiles ou ponctuels et pour les appareils déjà en service.
 

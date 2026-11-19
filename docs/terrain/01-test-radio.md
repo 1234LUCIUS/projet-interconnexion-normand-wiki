@@ -1,6 +1,6 @@
 # Tests radio de terrain et wardriving
 
-![Bénévoles mesurant une liaison radio à travers le bocage normand](../../assets/illustrations/field-radio-test.webp)
+![Bénévoles mesurant une liaison radio à travers le bocage normand](../assets/illustrations/field-radio-test.webp)
 
 Un test radio permet de décrire ce qui a été observé à un endroit, avec un matériel et une configuration donnés. Il ne prouve pas qu’une commune entière est couverte et ne garantit pas qu’un message passera lors d’un prochain essai. Le relief, les bâtiments, les arbres, l’antenne, la hauteur, le bruit radio, le trafic et les conditions du moment peuvent changer le résultat.
 
@@ -28,7 +28,7 @@ Pour comparer deux emplacements, répétez le même parcours dans l’autre sens
 
 MeshMapper est une application de wardriving et de cartographie communautaire du réseau MeshCore. Pour un parcours en ligne, il faut un Companion MeshCore compatible, le téléphone avec le GPS activé et une région MeshMapper disponible. Les régions doivent être configurées sur le service. En mode hors ligne, l’application peut enregistrer localement des observations en Passive ou Trace, mais les pings de canal flood — Send Ping, Active et Hybrid — ne sont pas disponibles. Suivez le [guide de connexion](https://wiki.meshmapper.net/app_connection_guide/) si le Companion n’apparaît pas.
 
-![Capture MeshMapper montrant des observations de couverture du réseau MeshCore autour du Havre](../../assets/illustrations/meshmapper-le-havre.png)
+![Capture MeshMapper montrant des observations de couverture du réseau MeshCore autour du Havre](../assets/illustrations/meshmapper-le-havre.png)
 
 *Exemple de relevé MeshMapper fourni par le projet, autour du Havre. Les cellules représentent des observations faites pendant les parcours ; elles ne décrivent pas une couverture uniforme et ne garantissent pas qu’une liaison fonctionnera à chaque endroit.*
 
