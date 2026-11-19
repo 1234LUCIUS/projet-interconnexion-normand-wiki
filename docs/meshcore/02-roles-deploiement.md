@@ -8,6 +8,19 @@ Le Companion relie une personne au réseau. Il ne doit pas être considéré com
 
 Bonnes pratiques : batterie surveillée, antenne adaptée, nom court non personnel et aucune clé d’administration partagée inutilement.
 
+## Simulation : advert, message et accusé
+
+![Simulation animée d’un réseau MeshCore avec deux Companions et deux Repeaters](../../assets/meshcore-adverts-messages.gif)
+
+Cette simulation représente un cas simple avec deux Companions et deux Repeaters :
+
+1. Un **advert** annonce la présence d’un Companion ou d’un Repeater et aide les appareils à découvrir le réseau. Ce n’est pas un message utilisateur.
+2. Un **message** transporte le contenu envoyé par l’utilisateur. Il passe de saut en saut par les Repeaters disponibles sur le chemin.
+3. Un **ACK** (accusé) revient vers l’émetteur pour confirmer la réception lorsque le protocole et le chemin le permettent.
+4. Les Repeaters relaient les paquets ; les Companions restent les appareils utilisés par les personnes et ne deviennent pas automatiquement des relais pour le trafic des autres.
+
+La séquence est volontairement représentative : les temporisations, chemins, limites de flood, annonces et conditions d’accusé dépendent de la version du firmware et de la configuration du réseau. La [source Mermaid](../../assets/meshcore-adverts-messages.mmd) décrit la topologie simplifiée.
+
 ## Repeater
 
 Le Repeater relaie les paquets pour étendre la couverture. Il mérite un emplacement dégagé, une alimentation stable et un responsable identifié. Avant installation, obtenez l’autorisation du propriétaire du site, évaluez les risques de foudre et prévoyez une récupération physique.

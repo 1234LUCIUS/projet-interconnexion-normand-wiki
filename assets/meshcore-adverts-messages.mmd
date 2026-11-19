@@ -1,0 +1,14 @@
+flowchart LR
+    A[Companion A\nannonce + message] <-->|advert / message / ACK| R1[Repeater 1\nécoute et relaie]
+    R1 <-->|advert relay / message| R2[Repeater 2\nécoute et relaie]
+    R2 <-->|advert / message / ACK| B[Companion B\nannonce + reçoit]
+
+    N[Advert = présence et découverte\nMessage = contenu utilisateur\nACK = confirmation de réception]
+    N -. explication .- A
+
+    classDef companion fill:#d7f4e5,stroke:#13795b,color:#073b2a,stroke-width:2px;
+    classDef repeater fill:#ffe8c2,stroke:#b96b00,color:#5b3500,stroke-width:2px;
+    classDef note fill:#eef2f7,stroke:#64748b,color:#172033,stroke-width:1px;
+    class A,B companion;
+    class R1,R2 repeater;
+    class N note;

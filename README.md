@@ -49,7 +49,7 @@ Pour une présentation complète destinée aux mairies, départements, intercomm
 3. Lire [les principes et règles du projet](docs/00-bienvenue.md).
 4. Lire [l’état actuel du projet](docs/06-etat-actuel.md) et [son historique](docs/05-historique-du-projet.md). Pour un nouveau déploiement, partez directement sur MeshCore.
 5. Comprendre [les régions et scopes MeshCore](docs/meshcore/04-regions-et-scopes.md).
-6. Regarder le [schéma animé du fonctionnement MeshCore](docs/meshcore/01-demarrage.md#lire-le-schéma-en-quelques-secondes).
+6. Regarder le [schéma animé du fonctionnement MeshCore](docs/meshcore/01-demarrage.md#lire-le-schéma-en-quelques-secondes), puis la [simulation détaillée des adverts, messages et ACK](docs/meshcore/02-roles-deploiement.md#simulation-advert-message-et-accusé).
 7. Choisir son matériel avec [le guide matériel](docs/02-materiel.md).
 8. Voir les [modèles, antennes et installations sur points hauts](docs/08-materiel-antennes-installations.md).
 9. Préparer son appareil avec [la checklist de mise en service](docs/01-checklist-materiel.md).
