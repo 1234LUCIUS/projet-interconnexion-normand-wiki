@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Projet d’Interconnexion Normand</title>
+  <meta name="description" content="Contacter le Projet d’Interconnexion Normand au sujet de MeshCore, Meshtastic, des Repeaters, de la couverture radio ou d’un partenariat territorial.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://1234lucius.github.io/projet-interconnexion-normand-wiki/contact.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Contacter le Projet d’Interconnexion Normand">
+  <meta property="og:description" content="Une question sur MeshCore, Meshtastic, un Repeater, la couverture radio ou un partenariat ? Contactez le projet.">
+  <meta property="og:url" content="https://1234lucius.github.io/projet-interconnexion-normand-wiki/contact.html">
+  <style>
+    :root { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #18351d; background: #f4f7ef; }
+    body { margin: 0; line-height: 1.6; }
+    header { background: #18351d; color: white; padding: 1.5rem max(1.25rem, calc((100% - 900px) / 2)); }
+    main { max-width: 900px; margin: 0 auto; padding: 1.5rem 1.25rem 3rem; }
+    .card { background: white; border: 1px solid #d6dfd0; border-radius: 14px; padding: 1.25rem; box-shadow: 0 2px 8px #18351d12; }
+    label { display: block; font-weight: 700; margin: 1rem 0 .35rem; }
+    input, select, textarea { width: 100%; box-sizing: border-box; border: 1px solid #aab9a7; border-radius: 8px; padding: .75rem; font: inherit; color: #18351d; background: #fff; }
+    textarea { min-height: 170px; resize: vertical; }
+    input:focus, select:focus, textarea:focus { outline: 3px solid #f5b64266; border-color: #28633a; }
+    button, .button { display: inline-block; margin-top: 1.2rem; border: 0; border-radius: 9px; padding: .8rem 1.1rem; font: inherit; font-weight: 700; background: #f5b642; color: #18351d; cursor: pointer; text-decoration: none; }
+    .muted { color: #526452; font-size: .95rem; }
+    .notice { border-left: 5px solid #f5b642; background: #fff8e8; padding: .8rem 1rem; }
+    a { color: #126b35; }
+    .honey { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
+  </style>
+</head>
+<body>
+  <header><strong>Projet d’Interconnexion Normand</strong> · <a href="./" style="color:#fff">Retour au wiki</a></header>
+  <main>
+    <h1>Contacter le projet</h1>
+    <p>Une question sur MeshCore, Meshtastic, un Companion, un Repeater, une antenne 868 MHz, la couverture radio ou un partenariat avec une association ou une collectivité ? Utilisez ce formulaire.</p>
+    <p class="notice"><strong>Besoin d’une réponse rapide ?</strong> Vous pouvez aussi rejoindre le <a href="https://discord.gg/HnAfYUSU82">serveur Discord officiel</a>.</p>
+    <section class="card" aria-labelledby="form-title">
+      <h2 id="form-title">Envoyer un message</h2>
+      <form action="https://formsubmit.co/projet.interconnection.normand@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="Nouveau message depuis le wiki du Projet d’Interconnexion Normand">
+        <input type="hidden" name="_next" value="https://1234lucius.github.io/projet-interconnexion-normand-wiki/contact-confirmation.html">
+        <input type="hidden" name="_template" value="table">
+        <input type="text" name="_honey" class="honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+        <label for="name">Nom ou pseudonyme *</label>
+        <input id="name" name="name" type="text" autocomplete="name" required maxlength="100">
+
+        <label for="email">Adresse e-mail *</label>
+        <input id="email" name="email" type="email" autocomplete="email" required maxlength="200">
+
+        <label for="topic">Sujet *</label>
+        <select id="topic" name="topic" required>
+          <option value="" selected disabled>Choisir un sujet</option>
+          <option>Question débutant</option>
+          <option>MeshCore ou Meshtastic</option>
+          <option>Companion ou Repeater</option>
+          <option>Couverture radio et antennes</option>
+          <option>Proposition de nœud ou de site</option>
+          <option>Partenariat association ou collectivité</option>
+          <option>Autre</option>
+        </select>
+
+        <label for="message">Message *</label>
+        <textarea id="message" name="message" required minlength="10" maxlength="5000" placeholder="Décrivez votre question ou votre proposition."></textarea>
+
+        <button type="submit">Envoyer le message</button>
+      </form>
+      <p class="muted">Les champs marqués d’un astérisque sont obligatoires. N’envoyez pas de mot de passe, de clé privée, d’adresse exacte de domicile ou d’information sensible. Le formulaire est traité par FormSubmit pour transmettre le message à l’adresse du projet.</p>
+    </section>
+    <p><a href="mailto:projet.interconnection.normand@gmail.com">Écrire directement par e-mail</a> · <a href="https://discord.gg/HnAfYUSU82">Rejoindre le Discord</a></p>
+  </main>
+</body>
+</html>
