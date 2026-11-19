@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Réseau MeshCore et Meshtastic en Normandie | Projet d’Interconnexion Normand</title>
+  <meta name="description" content="Guide open source pour débuter avec MeshCore et Meshtastic en Normandie : nœuds, Companions, Repeaters, antennes 868 MHz, couverture radio et résilience locale.">
+  <meta name="keywords" content="MeshCore Normandie, Meshtastic France, réseau LoRa maillé, répéteur MeshCore, antenne 868 MHz, communication hors réseau, résilience territoriale">
+  <meta name="author" content="Projet d’Interconnexion Normand">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://wiki.projet.interco.normand/">
+  <link rel="alternate" hreflang="fr" href="https://wiki.projet.interco.normand/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Projet d’Interconnexion Normand">
+  <meta property="og:title" content="Réseau MeshCore et Meshtastic en Normandie">
+  <meta property="og:description" content="Le guide open source pour apprendre, déployer et documenter un réseau radio maillé LoRa en Normandie.">
+  <meta property="og:url" content="https://wiki.projet.interco.normand/">
+  <meta property="og:image" content="https://wiki.projet.interco.normand/assets/logo-projet-interconnexion-normand.png">
+  <meta property="og:image:alt" content="Logo du Projet d’Interconnexion Normand">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Réseau MeshCore et Meshtastic en Normandie">
+  <meta name="twitter:description" content="Guide open source des réseaux radio maillés LoRa, des Repeaters et de la couverture radio.">
+  <meta name="twitter:image" content="https://wiki.projet.interco.normand/assets/logo-projet-interconnexion-normand.png">
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"TechArticle",
+    "headline":"Réseau MeshCore et Meshtastic en Normandie",
+    "description":"Guide open source pour apprendre, déployer et documenter un réseau radio maillé LoRa en Normandie.",
+    "inLanguage":"fr-FR",
+    "url":"https://wiki.projet.interco.normand/",
+    "image":"https://wiki.projet.interco.normand/assets/logo-projet-interconnexion-normand.png",
+    "author":{"@type":"Organization","name":"Projet d’Interconnexion Normand","url":"https://github.com/1234LUCIUS/projet-interconnexion-normand-wiki"},
+    "publisher":{"@type":"Organization","name":"Projet d’Interconnexion Normand"},
+    "keywords":["MeshCore","Meshtastic","LoRa","Normandie","réseau maillé","communication hors réseau"]
+  }
+  </script>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #18351d; background: #f4f7ef; }
+    body { margin: 0; line-height: 1.6; }
+    header { color: white; background: linear-gradient(135deg, #123b26, #28633a); padding: 2.5rem 1.25rem; }
+    header, main, footer { padding-left: max(1.25rem, calc((100% - 1080px) / 2)); padding-right: max(1.25rem, calc((100% - 1080px) / 2)); }
+    .brand { display: flex; gap: 1.5rem; align-items: center; flex-wrap: wrap; }
+    .brand img { width: 120px; height: 120px; object-fit: contain; border-radius: 18px; background: white; }
+    h1 { margin: 0; font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1.1; }
+    h2 { color: #18351d; margin-top: 2.5rem; }
+    .lead { max-width: 760px; font-size: 1.15rem; }
+    main { padding-top: 1rem; padding-bottom: 3rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1rem; }
+    .card { display: block; color: inherit; background: white; border: 1px solid #d6dfd0; border-radius: 14px; padding: 1rem; text-decoration: none; box-shadow: 0 2px 8px #18351d12; }
+    .card:hover, .card:focus { border-color: #28633a; box-shadow: 0 4px 14px #18351d20; }
+    .card h3 { margin: 0 0 .35rem; color: #126b35; }
+    .cta { display: inline-block; background: #f5b642; color: #18351d; padding: .75rem 1rem; border-radius: 10px; font-weight: 700; text-decoration: none; margin: .25rem .35rem .25rem 0; }
+    .notice { border-left: 5px solid #f5b642; background: #fff8e8; padding: 1rem 1.2rem; }
+    footer { padding-top: 1.5rem; padding-bottom: 2rem; border-top: 1px solid #d6dfd0; font-size: .95rem; }
+    a { color: #126b35; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img src="assets/logo-projet-interconnexion-normand.png" alt="Logo du Projet d’Interconnexion Normand" width="120" height="120">
+      <div>
+        <h1>Projet d’Interconnexion Normand</h1>
+        <p class="lead">Guide open source des réseaux radio maillés LoRa, MeshCore et Meshtastic en Normandie.</p>
+      </div>
+    </div>
+  </header>
+  <main>
+    <p>Le projet expérimente une communication locale pouvant rester utile lorsque Internet ou les réseaux mobiles sont indisponibles. Le wiki explique comment choisir, flasher et configurer un nœud, installer un Repeater, améliorer une antenne 868 MHz et mesurer une couverture radio.</p>
+    <p class="notice"><strong>Orientation actuelle :</strong> les nouveaux déploiements durables et les infrastructures régionales s’orientent progressivement vers <strong>MeshCore</strong>. Meshtastic reste documenté pour la transition, les appareils déjà en service et les usages mobiles ou ponctuels.</p>
+    <p><a class="cta" href="guide-debutant.html">Commencer le guide débutant</a><a class="cta" href="meshcore/01-demarrage.html">Découvrir MeshCore</a><a class="cta" href="07-presentation-collectivites.html">Présentation collectivités</a></p>
+
+    <h2>Ce que vous trouverez dans le wiki</h2>
+    <div class="grid">
+      <a class="card" href="meshcore/02-roles-deploiement.html"><h3>Companion, Repeater et messages</h3><p>Comprendre les rôles, les adverts, les messages, les ACK et les chemins multi-sauts.</p></a>
+      <a class="card" href="meshcore/05-flasher-companion-repeater.html"><h3>Flasher son appareil</h3><p>Procédure illustrée pour flasher un Companion ou un Repeater avec les outils officiels.</p></a>
+      <a class="card" href="08-materiel-antennes-installations.html"><h3>Matériel et antennes 868 MHz</h3><p>Exemples de nœuds, installations sur points hauts, antennes omnidirectionnelles et directionnelles.</p></a>
+      <a class="card" href="terrain/03-simulateurs-couverture.html"><h3>Trouver un bon emplacement</h3><p>Relief, hauteur, ligne de vue, simulations de couverture et tests radio de terrain.</p></a>
+      <a class="card" href="04-carte-interactive.html"><h3>Cartes et Observers</h3><p>Explorer MeshCore, RelayLens, MeshQual et MeshStats, et comprendre le rôle des Observers.</p></a>
+      <a class="card" href="meshcore/03-profils-france-normandie.html"><h3>Configuration France / Normandie</h3><p>Scopes, départements, canaux et profil communautaire MeshCore du projet.</p></a>
+    </div>
+
+    <h2>Un projet citoyen et documenté</h2>
+    <p>Le Projet d’Interconnexion Normand vise à renforcer la résilience locale, à faire découvrir la radio et à créer une infrastructure open source expérimentale. Il ne remplace pas les réseaux professionnels ni les services de secours : chaque installation doit être autorisée, testée et documentée avec ses limites.</p>
+    <p>Le dépôt est ouvert aux débutants, associations, clubs radio, fablabs, collectivités, propriétaires de points hauts et partenaires techniques.</p>
+    <p><a class="cta" href="https://github.com/1234LUCIUS/projet-interconnexion-normand-wiki">Voir le dépôt GitHub</a><a class="cta" href="https://discord.gg/HnAfYUSU82">Rejoindre le Discord</a><a class="cta" href="mailto:projet.interconnection.normand@gmail.com">Contacter le projet</a></p>
+  </main>
+  <footer><a href="https://github.com/1234LUCIUS/projet-interconnexion-normand-wiki">Code source et contributions</a> · Projet d’Interconnexion Normand · Documentation open source</footer>
+</body>
+</html>

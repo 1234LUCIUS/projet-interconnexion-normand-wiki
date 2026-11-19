@@ -4,7 +4,9 @@
 
 ![Paysage normand traversé par un réseau radio maillé](assets/illustrations/hero-normandie-mesh.png)
 
-Bienvenue dans le wiki open source du **Projet d’Interconnexion Normand**. Ce guide accompagne les nouveaux arrivants qui souhaitent découvrir, configurer et exploiter un réseau radio maillé basé sur **Meshtastic** et **MeshCore**.
+Bienvenue dans le wiki open source du **Projet d’Interconnexion Normand**, un projet de réseau radio maillé LoRa en Normandie. Ce guide accompagne les nouveaux arrivants qui souhaitent découvrir, configurer et exploiter un réseau basé sur **Meshtastic** et **MeshCore**, y compris pour la communication locale hors Internet et hors réseaux mobiles.
+
+**[Ouvrir le site public du wiki](https://wiki.projet.interco.normand/)** · **[Commencer le guide débutant](docs/guide-debutant.md)** · **[Découvrir MeshCore](docs/meshcore/01-demarrage.md)**
 
 > **Objectif :** permettre à chacun de mettre en service un nœud, rejoindre proprement le réseau normand, comprendre les limites radio et contribuer à une infrastructure utile, documentée et respectueuse.
 
