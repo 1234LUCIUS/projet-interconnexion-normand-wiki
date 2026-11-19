@@ -1,7 +1,7 @@
 ---
 layout: wiki
 title: "Applications mobiles"
-description: "Choisir et télécharger les applications MeshCore, Meshtastic et Nelos, avec leurs fonctions et leurs limites."
+description: "Choisir et télécharger les applications MeshCore, MeshMapper, Meshtastic et Nelos, avec leurs fonctions et leurs limites."
 ---
 
 # Applications mobiles pour les réseaux LoRa
@@ -31,6 +31,23 @@ Les commandes CLI du firmware peuvent exposer d’autres statistiques (bruit, RS
 Les préréglages radio proposés sont des suggestions : vérifiez qu’ils respectent la réglementation et correspondent au profil de votre réseau avant d’émettre. Les mesures d’un trajet dépendent du terrain, des antennes, des réglages et des répéteurs réellement accessibles; elles ne garantissent pas la réception d’un futur message.
 
 **Télécharger MeshCore :** [Android — Google Play](https://play.google.com/store/apps/details?id=com.liamcottle.meshcore.android) · [iPhone/iPad — App Store](https://apps.apple.com/nz/app/meshcore/id6742354151). Le [client MeshCore sur le Web](https://app.meshcore.nz/) est une autre interface, distincte de l’application mobile. La [carte publique MeshCore](https://map.meshcore.io/) et le [Web Flasher](https://flasher.meshcore.io/) sont eux aussi des outils séparés.
+
+## MeshMapper : mesurer et cartographier le réseau MeshCore
+
+**MeshMapper** est une application de wardriving dédiée à **MeshCore** : ce n’est ni un client de messagerie généraliste, ni une application Meshtastic. Elle se connecte à un Companion MeshCore par Bluetooth ou TCP; la connexion USB est aussi disponible sur Android. Le GPS vient du téléphone. Les observations réelles — répéteurs entendus et niveaux **RSSI** (puissance reçue) ou **SNR** (rapport signal/bruit) — alimentent la carte communautaire MeshMapper. L’application propose une carte en direct, un journal des essais, l’historique des parcours et des graphiques de bruit radio. Voir le [guide officiel](https://wiki.meshmapper.net/app_getting_started/) et la page [comment fonctionne la collecte](https://wiki.meshmapper.net/app_how_it_works/).
+
+Le choix du mode change ce que la radio transmet :
+
+- **Passive** écoute le trafic reçu et envoie périodiquement une requête de découverte à zéro saut. Elle n’inonde pas le réseau par des messages de canal, mais ce n’est pas un mode totalement silencieux.
+- **Trace** interroge un répéteur choisi pour observer la qualité de la liaison vers ce nœud, notamment RSSI/SNR. C’est utile pour comparer un emplacement ou l’orientation d’une antenne; la requête de trace est bien une émission radio.
+- **Hybrid**, recommandé par l’équipe MeshMapper pour le wardriving général, alterne découverte et messages de canal `#wardriving`. Ces messages peuvent être relayés ou limités par un scope et consomment du temps d’antenne. Utilisez ce mode seulement si la région l’autorise.
+- **Active**, conservé pour compatibilité, envoie surtout des messages de canal répétitifs. Un **Send Ping** manuel émet également un message. Dans les deux cas, vérifiez les règles locales avant d’émettre.
+
+En **mode hors ligne**, les observations sont conservées sur le téléphone et peuvent être envoyées plus tard. Les modes Passive et Trace restent disponibles; Hybrid, Active et les pings de canal nécessitent une session en ligne et une région autorisée. Les essais décrivent ce que votre appareil a effectivement entendu à l’endroit et au moment du parcours; une cellule vide ou colorée ne garantit pas la couverture d’un autre appareil.
+
+**Vie privée :** par défaut, les pings radio ne contiennent pas les coordonnées GPS, mais l’application transmet la position au service MeshMapper pour rattacher les observations aux cartes communautaires. Le mode « Anonymous » masque le nom dans certains affichages, mais ne rend pas la position cartographiée privée. Le mode hors ligne évite le téléversement tant que vous ne choisissez pas de le faire. Consultez la [politique de confidentialité MeshMapper](https://wiki.meshmapper.net/privacy/) et le [guide des tests radio terrain](terrain/01-test-radio.html); en voiture, laissez la manipulation à un passager.
+
+**Télécharger MeshMapper :** [Android — Google Play](https://play.google.com/store/apps/details?id=net.meshmapper.app) · [iPhone/iPad — App Store](https://apps.apple.com/us/app/meshmapper/id6758073991). Voir aussi le guide des [modes de wardriving](https://wiki.meshmapper.net/app_wardriving_modes/) et le [dépôt source](https://github.com/MeshMapper/MeshMapper_Flutter_App).
 
 ## Meshtastic : messages, positions et configuration
 
