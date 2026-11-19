@@ -1,0 +1,18 @@
+flowchart LR
+    A[Companion A\nmessage utilisateur] -->|radio LoRa| R1[Repeater 1\nrelais dédié]
+    R1 -->|multi-saut| R2[Repeater 2\nrelais dédié]
+    R2 -->|radio LoRa| B[Companion B\ndestinataire]
+    R1 -. écoute / données .-> O[Observer\nécoute et remonte]
+    R2 -. écoute / données .-> O
+    O -->|données autorisées| M[Cartes et analyses\nMeshStats · RelayLens]
+    A -. annonce / découverte .-> R1
+    R1 -. chemin appris .-> A
+
+    classDef companion fill:#d7f4e5,stroke:#13795b,color:#073b2a,stroke-width:2px;
+    classDef repeater fill:#ffe8c2,stroke:#b96b00,color:#5b3500,stroke-width:2px;
+    classDef observer fill:#dbeafe,stroke:#2563eb,color:#102a56,stroke-width:2px;
+    classDef maps fill:#ede9fe,stroke:#7c3aed,color:#3b176d,stroke-width:2px;
+    class A,B companion;
+    class R1,R2 repeater;
+    class O observer;
+    class M maps;
