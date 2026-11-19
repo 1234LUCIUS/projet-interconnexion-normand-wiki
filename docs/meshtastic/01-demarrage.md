@@ -1,3 +1,8 @@
+---
+layout: wiki
+title: "Meshtastic — démarrage rapide"
+---
+
 # Meshtastic — démarrage rapide
 
 ![Préparer un premier nœud LoRa pour le démarrage Meshtastic](../assets/illustrations/first-node-setup.webp)

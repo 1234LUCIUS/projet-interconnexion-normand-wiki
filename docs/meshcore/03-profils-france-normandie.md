@@ -1,3 +1,8 @@
+---
+layout: wiki
+title: "MeshCore — profils France / Normandie"
+---
+
 # MeshCore — profils France / Normandie
 
 Cette page propose des profils de départ pour la bande européenne utilisée en France. Elle ne remplace ni la réglementation française, ni la documentation de la version installée, ni la décision du réseau local. Tous les appareils qui doivent communiquer doivent partager les mêmes paramètres radio.

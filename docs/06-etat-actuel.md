@@ -1,3 +1,8 @@
+---
+layout: wiki
+title: "État actuel du Projet d’Interconnexion Normand"
+---
+
 # État actuel du Projet d’Interconnexion Normand
 
 ## En une phrase

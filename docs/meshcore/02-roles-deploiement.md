@@ -1,3 +1,8 @@
+---
+layout: wiki
+title: "MeshCore — rôles et déploiement"
+---
+
 # MeshCore — rôles et déploiement
 
 ![Les rôles Companion, Repeater et Room Server de MeshCore](../assets/illustrations/meshcore-roles.webp)

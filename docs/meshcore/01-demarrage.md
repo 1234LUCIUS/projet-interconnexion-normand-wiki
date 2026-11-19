@@ -1,3 +1,8 @@
+---
+layout: wiki
+title: "MeshCore — démarrage rapide"
+---
+
 # MeshCore — démarrage rapide
 
 ![Préparer un premier nœud LoRa pour le démarrage MeshCore](../assets/illustrations/first-node-setup.webp)

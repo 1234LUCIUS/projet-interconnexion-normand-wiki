@@ -1,3 +1,8 @@
+---
+layout: wiki
+title: "Seeed Studio SenseCAP Solar Node P1-Pro"
+---
+
 # Seeed Studio SenseCAP Solar Node P1-Pro
 
 ![Répéteur solaire MeshCore sur un point haut normand](../assets/illustrations/radio-coverage.png)

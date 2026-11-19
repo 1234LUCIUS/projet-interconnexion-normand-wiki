@@ -1,3 +1,8 @@
+---
+layout: wiki
+title: "Tests radio de terrain et wardriving"
+---
+
 # Tests radio de terrain et wardriving
 
 ![Bénévoles mesurant une liaison radio à travers le bocage normand](../assets/illustrations/field-radio-test.webp)

@@ -1,3 +1,8 @@
+---
+layout: wiki
+title: "Matériel, antennes et installations MeshCore"
+---
+
 # Matériel, antennes et installations MeshCore
 
 Cette page rassemble des exemples visuels et des recommandations pour choisir un nœud MeshCore, une antenne et un emplacement de répéteur. Les photos servent à reconnaître les familles de matériel et les principes d’installation ; elles ne constituent pas une validation automatique d’un modèle ou d’un site.

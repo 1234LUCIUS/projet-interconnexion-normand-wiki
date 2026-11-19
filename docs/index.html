@@ -36,42 +36,24 @@
     "keywords":["MeshCore","Meshtastic","LoRa","Normandie","réseau maillé","communication hors réseau"]
   }
   </script>
-  <style>
-    :root { color-scheme: light; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #18351d; background: #f4f7ef; }
-    body { margin: 0; line-height: 1.6; }
-    header { color: white; background: linear-gradient(135deg, #123b26, #28633a); padding: 2.5rem 1.25rem; }
-    header, main, footer { padding-left: max(1.25rem, calc((100% - 1080px) / 2)); padding-right: max(1.25rem, calc((100% - 1080px) / 2)); }
-    .brand { display: flex; gap: 1.5rem; align-items: center; flex-wrap: wrap; }
-    .brand img { width: 120px; height: 120px; object-fit: contain; border-radius: 18px; background: white; }
-    h1 { margin: 0; font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1.1; }
-    h2 { color: #18351d; margin-top: 2.5rem; }
-    .lead { max-width: 760px; font-size: 1.15rem; }
-    main { padding-top: 1rem; padding-bottom: 3rem; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1rem; }
-    .card { display: block; color: inherit; background: white; border: 1px solid #d6dfd0; border-radius: 14px; padding: 1rem; text-decoration: none; box-shadow: 0 2px 8px #18351d12; }
-    .card:hover, .card:focus { border-color: #28633a; box-shadow: 0 4px 14px #18351d20; }
-    .card h3 { margin: 0 0 .35rem; color: #126b35; }
-    .cta { display: inline-block; background: #f5b642; color: #18351d; padding: .75rem 1rem; border-radius: 10px; font-weight: 700; text-decoration: none; margin: .25rem .35rem .25rem 0; }
-    .notice { border-left: 5px solid #f5b642; background: #fff8e8; padding: 1rem 1.2rem; }
-    .success-banner { display: flex; align-items: center; gap: 1rem; margin: .5rem 0 1.5rem; padding: 1rem 1.25rem; border: 1px solid #b7d9b3; border-left: 6px solid #28633a; border-radius: 14px; background: #eaf6e8; box-shadow: 0 2px 8px #18351d12; }
-    .success-banner[hidden] { display: none; }
-    .success-banner img { width: 72px; height: 72px; flex: 0 0 auto; object-fit: contain; border-radius: 12px; background: white; }
-    .success-banner p { margin: .2rem 0 0; }
-    footer { padding-top: 1.5rem; padding-bottom: 2rem; border-top: 1px solid #d6dfd0; font-size: .95rem; }
-    a { color: #126b35; }
-  </style>
+  <link rel="stylesheet" href="assets/wiki.css">
 </head>
 <body>
-  <header>
-    <div class="brand">
+  <header class="site-header">
+    <div class="site-header-inner">
+      <div class="brand">
       <img src="assets/logo-projet-interconnexion-normand.png" alt="Logo du Projet d’Interconnexion Normand" width="120" height="120">
       <div>
         <h1>Projet d’Interconnexion Normand</h1>
         <p class="lead">Guide open source des réseaux radio maillés LoRa, MeshCore et Meshtastic en Normandie.</p>
       </div>
+      </div>
+      <nav class="site-nav" aria-label="Navigation principale">
+        <a href="./">Accueil</a><a href="guide-debutant.html">Débuter</a><a href="meshcore/01-demarrage.html">MeshCore</a><a href="meshtastic/01-demarrage.html">Meshtastic</a><a href="terrain/01-test-radio.html">Terrain</a><a href="04-carte-interactive.html">Carte</a><a href="contact.html">Contact</a>
+      </nav>
     </div>
   </header>
-  <main>
+  <main class="page-shell home-page">
     <section id="contact-success" class="success-banner" role="status" aria-live="polite" hidden>
       <img src="assets/logo-projet-interconnexion-normand.png" alt="Logo du Projet d’Interconnexion Normand" width="72" height="72">
       <div><strong>Votre message a été envoyé avec succès.</strong><p>Merci d’avoir contacté le Projet d’Interconnexion Normand.</p></div>
@@ -103,6 +85,6 @@
       }
     </script>
   </main>
-  <footer><a href="https://github.com/1234LUCIUS/projet-interconnexion-normand-wiki">Code source et contributions</a> · Projet d’Interconnexion Normand · Documentation open source</footer>
+  <footer class="site-footer"><a href="https://github.com/1234LUCIUS/projet-interconnexion-normand-wiki">Code source et contributions</a> · Projet d’Interconnexion Normand · Documentation open source</footer>
 </body>
 </html>

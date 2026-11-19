@@ -1,3 +1,8 @@
+---
+layout: wiki
+title: "Déployer un relais"
+---
+
 # Déployer un relais
 
 ![Bénévoles inspectant au sol un répéteur solaire autorisé sur un point haut normand](../assets/illustrations/authorized-repeater-installation.webp)

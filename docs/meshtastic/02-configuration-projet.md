@@ -1,3 +1,8 @@
+---
+layout: wiki
+title: "Meshtastic — configuration du Projet d’Interconnexion Normand"
+---
+
 # Meshtastic — configuration du Projet d’Interconnexion Normand
 
 Cette page distingue les réglages génériques des décisions propres au projet. Les champs marqués **À valider localement** doivent être confirmés par les mainteneurs avant publication.

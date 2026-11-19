@@ -1,3 +1,8 @@
+---
+layout: wiki
+title: "Flasher son appareil MeshCore"
+---
+
 # Flasher son appareil MeshCore
 
 ![Préparer un nœud LoRa avant de choisir et flasher son firmware](../assets/illustrations/first-node-setup.webp)

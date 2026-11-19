@@ -1,3 +1,8 @@
+---
+layout: wiki
+title: "Meshtastic — canaux et sécurité"
+---
+
 # Meshtastic — canaux et sécurité
 
 ## Canal public ou privé

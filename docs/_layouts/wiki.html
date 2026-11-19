@@ -1,0 +1,43 @@
+---
+---
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | default: site.title | escape }} · {{ site.title | escape }}</title>
+  <meta name="description" content="{{ page.description | default: site.description | escape }}">
+  <link rel="stylesheet" href="{{ '/assets/wiki.css' | relative_url }}">
+  {% seo %}
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="brand" href="{{ '/' | relative_url }}">
+        <img src="{{ '/assets/logo-projet-interconnexion-normand.png' | relative_url }}" alt="Logo du Projet d’Interconnexion Normand" width="82" height="82">
+        <span class="brand-copy"><strong>Projet d’Interconnexion Normand</strong><small>Wiki MeshCore, Meshtastic et radio LoRa en Normandie</small></span>
+      </a>
+      <nav class="site-nav" aria-label="Navigation principale">
+        <a href="{{ '/' | relative_url }}">Accueil</a>
+        <a href="{{ '/guide-debutant.html' | relative_url }}">Débuter</a>
+        <a href="{{ '/meshcore/01-demarrage.html' | relative_url }}">MeshCore</a>
+        <a href="{{ '/meshtastic/01-demarrage.html' | relative_url }}">Meshtastic</a>
+        <a href="{{ '/terrain/01-test-radio.html' | relative_url }}">Terrain</a>
+        <a href="{{ '/04-carte-interactive.html' | relative_url }}">Carte</a>
+        <a href="{{ '/contact.html' | relative_url }}">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main class="page-shell">
+    <p class="breadcrumbs"><a href="{{ '/' | relative_url }}">Accueil</a> <span aria-hidden="true">/</span> {{ page.title | escape }}</p>
+    <article class="content-card prose">
+      {{ content }}
+    </article>
+  </main>
+  <footer class="site-footer">
+    <a href="{{ '/04-carte-interactive.html' | relative_url }}">Cartes du réseau</a> ·
+    <a href="{{ '/contact.html' | relative_url }}">Contacter le projet</a> ·
+    <a href="https://github.com/1234LUCIUS/projet-interconnexion-normand-wiki">Code source</a>
+  </footer>
+</body>
+</html>

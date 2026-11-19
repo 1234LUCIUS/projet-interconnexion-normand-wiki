@@ -1,3 +1,8 @@
+---
+layout: wiki
+title: "MeshCore : comprendre les régions et les scopes"
+---
+
 # MeshCore : comprendre les régions et les scopes
 
 ## L’idée simple

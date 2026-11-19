@@ -1,3 +1,8 @@
+---
+layout: wiki
+title: "Checklist matériel et préparation"
+---
+
 # Checklist matériel et préparation
 
 ## Matériel conseillé

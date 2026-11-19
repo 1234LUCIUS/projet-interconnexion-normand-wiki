@@ -1,3 +1,8 @@
+---
+layout: wiki
+title: "Choisir entre Meshtastic et MeshCore"
+---
+
 # Choisir entre Meshtastic et MeshCore
 
 ![Choix du réseau selon l’usage](assets/choisir-meshtastic-ou-meshcore.png)

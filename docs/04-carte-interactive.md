@@ -1,3 +1,8 @@
+---
+layout: wiki
+title: "Cartes officielles des nœuds et de la couverture"
+---
+
 # Cartes officielles des nœuds et de la couverture
 
 Le Projet d’Interconnexion Normand s’appuie désormais sur des cartes officielles et communautaires externes pour consulter les nœuds, les relais et les mesures de couverture. La carte locale GitHub du projet n’est plus la référence.
@@ -6,9 +11,19 @@ Le Projet d’Interconnexion Normand s’appuie désormais sur des cartes offici
 
 ### Carte MeshCore officielle
 
-**[Ouvrir la carte MeshCore](https://map.meshcore.io/?lat=7.0000&lon=25.0000&zoom=3)**
+**[Ouvrir la carte MeshCore](https://map.meshcore.io/?lat=49.1086&lon=-0.1881&zoom=8.74)**
 
 Cette carte permet d’explorer les nœuds MeshCore et de naviguer vers la zone qui vous intéresse. Utilisez le zoom et la recherche de position pour observer les nœuds visibles autour d’une commune ou d’un point haut.
+
+#### Carte MeshCore intégrée
+
+La carte ci-dessous s’ouvre sur la vue indiquée, autour des coordonnées et du niveau de zoom fournis par le projet. Vous pouvez déplacer la carte et zoomer directement dans cette page.
+
+<div class="map-embed">
+  <iframe src="https://map.meshcore.io/?lat=49.1086&amp;lon=-0.1881&amp;zoom=8.74" title="Carte MeshCore interactive centrée sur la vue du projet" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<p class="muted">Si la carte ne s’affiche pas dans votre navigateur, <a href="https://map.meshcore.io/?lat=49.1086&amp;lon=-0.1881&amp;zoom=8.74" target="_blank" rel="noopener noreferrer">ouvrez-la directement sur map.meshcore.io</a>.</p>
 
 ### RelayLens — Companions
 

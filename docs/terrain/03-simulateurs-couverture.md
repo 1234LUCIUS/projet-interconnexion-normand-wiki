@@ -1,3 +1,8 @@
+---
+layout: wiki
+title: "Où installer son nœud ?"
+---
+
 # Où installer son nœud ?
 
 ![Point haut normand avec visibilité dégagée pour une couverture radio maillée](../assets/illustrations/radio-coverage.png)

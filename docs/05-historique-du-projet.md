@@ -1,3 +1,8 @@
+---
+layout: wiki
+title: "Historique du Projet d’Interconnexion Normand"
+---
+
 # Historique du Projet d’Interconnexion Normand
 
 Cette page rassemble les éléments publics disponibles sur l’évolution du projet. Elle décrit une trajectoire, et non un inventaire complet de tous les nœuds ou de toutes les réunions. Les dates et informations opérationnelles doivent être corrigées par l’équipe lorsqu’une source plus précise est disponible.

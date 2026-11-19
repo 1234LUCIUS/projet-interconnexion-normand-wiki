@@ -1,3 +1,8 @@
+---
+layout: wiki
+title: "Quel matériel choisir ?"
+---
+
 # Quel matériel choisir ?
 
 ![Nœuds radio et relais maillés dans le paysage normand](assets/illustrations/hero-normandie-mesh.png)

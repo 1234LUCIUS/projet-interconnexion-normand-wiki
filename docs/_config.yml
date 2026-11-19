@@ -1,0 +1,8 @@
+title: "Projet d’Interconnexion Normand"
+description: "Guide open source des réseaux radio maillés LoRa, MeshCore et Meshtastic en Normandie."
+url: "https://1234lucius.github.io"
+baseurl: "/projet-interconnexion-normand-wiki"
+lang: "fr-FR"
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag

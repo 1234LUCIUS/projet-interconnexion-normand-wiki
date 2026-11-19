@@ -1,3 +1,8 @@
+---
+layout: wiki
+title: "Dépannage commun"
+---
+
 # Dépannage commun
 
 ## Méthode

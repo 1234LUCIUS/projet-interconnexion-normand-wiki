@@ -1,3 +1,8 @@
+---
+layout: wiki
+title: "Guide débutant : mon premier nœud"
+---
+
 # Guide débutant : mon premier nœud
 
 ![Préparer un premier nœud LoRa : antenne, câble USB et téléphone](assets/illustrations/first-node-setup.webp)

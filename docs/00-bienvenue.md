@@ -1,3 +1,8 @@
+---
+layout: wiki
+title: "Bienvenue dans le Projet d’Interconnexion Normand"
+---
+
 # Bienvenue dans le Projet d’Interconnexion Normand
 
 ![Companion, Repeater et Room Server dans un réseau MeshCore normand](assets/illustrations/meshcore-roles.webp)

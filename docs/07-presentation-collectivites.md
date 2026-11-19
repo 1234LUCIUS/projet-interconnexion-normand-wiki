@@ -1,3 +1,8 @@
+---
+layout: wiki
+title: "Présentation du Projet d’Interconnexion Normand"
+---
+
 # Présentation du Projet d’Interconnexion Normand
 
 ## À l’attention des mairies, intercommunalités, départements, associations et partenaires locaux
