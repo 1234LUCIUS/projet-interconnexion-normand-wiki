@@ -25,6 +25,12 @@ Le Projet d’Interconnexion Normand migre progressivement vers MeshCore. Pendan
 
 La version structurée du dessin est disponible en [source Mermaid](../assets/meshcore-fonctionnement.mmd). Le GIF est volontairement simplifié : il explique les rôles et le trajet général sans remplacer la configuration réelle, les tests de portée ou la documentation du firmware.
 
+### Qui émet et comment un message direct trouve son chemin ?
+
+L’application remet le message au **Companion** : c’est sa radio qui l’émet en LoRa. Au premier échange avec un contact, un message direct peut partir en *flood* (diffusion par les relais). Le destinataire renvoie un accusé de livraison qui indique les Repeaters traversés; le Companion mémorise ce chemin. Les messages directs suivants peuvent alors le suivre : chaque Repeater ne retransmet le paquet que si son identifiant correspond à l’étape prévue. Si le chemin ne fonctionne plus, le Companion peut réessayer en flood pour en découvrir un autre.
+
+Un message envoyé sur un **canal** n’a pas un destinataire unique : il est diffusé en flood à chaque envoi. Les Companions ne relaient pas les messages des autres par défaut; seuls les Repeaters ou Room Servers configurés pour répéter assurent ce rôle. Un *scope* peut limiter certains floods à une région. Voir la [FAQ MeshCore](https://docs.meshcore.io/faq/) et le [format des paquets](https://docs.meshcore.io/packet_format/).
+
 ## 1. Vérifier la compatibilité
 
 Consultez le [Web Flasher officiel MeshCore](https://flasher.meshcore.io/) et identifiez le modèle exact de votre carte. Une variante proche n’est pas forcément compatible. Préparez un câble USB de données et branchez l’antenne avant d’alimenter la radio.

@@ -49,6 +49,12 @@ Ne changez pas le preset d’un relais en production sans fenêtre de maintenanc
 
 Pour un premier appareil, utilisez le rôle **Client**. Les rôles Repeater ou Router sont réservés aux appareils dédiés, avec alimentation, emplacement et maintenance maîtrisés.
 
+### Qui émet et comment le message progresse ?
+
+L’application prépare le message, mais c’est la **radio Meshtastic** qui l’émet. Meshtastic n’utilise pas un itinéraire fixe enregistré à l’avance : il diffuse le paquet par *managed flooding*. Les nœuds qui l’entendent attendent brièvement pour voir si un autre l’a déjà retransmis. Si le paquet peut encore avancer, ils le relaient et diminuent son **hop limit** (le nombre maximal de retransmissions). Cette limite borne la diffusion; le destinataire peut recevoir le paquet pendant qu’il se propage.
+
+Le rôle du nœud détermine s’il aide à relayer : un **Client** retransmet si aucun autre nœud ne l’a déjà fait; un **Router** ou **Repeater** retransmet chaque paquet admissible une fois; un **Client Mute** ne relaie pas. Le chemin réel dépend donc des radios qui s’entendent au moment de l’envoi, pas d’une liste fixe de relais. Voir l’[algorithme officiel](https://meshtastic.org/docs/overview/mesh-algo/) et les [rôles des appareils](https://meshtastic.org/docs/configuration/radio/device/).
+
 ## 6. Premier test
 
 À deux endroits connus, envoyez un message court sur le canal prévu. Notez l’heure, la distance approximative, la présence d’obstacles et le nombre de relais. Un seul message reçu ne constitue pas une mesure de couverture.
