@@ -39,7 +39,7 @@
       <form id="contact-form" action="https://formsubmit.co/projet.interconnection.normand@gmail.com" method="POST">
         <input type="hidden" name="_subject" value="[Wiki] Nouveau message de contact">
         <input type="hidden" name="_url" value="https://1234lucius.github.io/projet-interconnexion-normand-wiki/contact.html">
-        <input type="hidden" name="_next" value="https://1234lucius.github.io/projet-interconnexion-normand-wiki/">
+        <input type="hidden" name="_next" value="https://1234lucius.github.io/projet-interconnexion-normand-wiki/?contact=success">
         <label for="name">Nom ou pseudonyme *</label>
         <input id="name" name="name" type="text" autocomplete="name" required maxlength="100">
 
@@ -92,7 +92,7 @@
         if (!response.ok || String(result.success).toLowerCase() !== 'true') {
           throw new Error(result.message || 'L’envoi n’a pas abouti.');
         }
-        window.location.replace('https://1234lucius.github.io/projet-interconnexion-normand-wiki/');
+        window.location.replace('https://1234lucius.github.io/projet-interconnexion-normand-wiki/?contact=success');
       } catch (error) {
         status.textContent = 'L’envoi n’a pas pu être confirmé. Réessayez ou écrivez directement à projet.interconnection.normand@gmail.com.';
         button.disabled = false;

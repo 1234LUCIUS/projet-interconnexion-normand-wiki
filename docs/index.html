@@ -53,6 +53,10 @@
     .card h3 { margin: 0 0 .35rem; color: #126b35; }
     .cta { display: inline-block; background: #f5b642; color: #18351d; padding: .75rem 1rem; border-radius: 10px; font-weight: 700; text-decoration: none; margin: .25rem .35rem .25rem 0; }
     .notice { border-left: 5px solid #f5b642; background: #fff8e8; padding: 1rem 1.2rem; }
+    .success-banner { display: flex; align-items: center; gap: 1rem; margin: .5rem 0 1.5rem; padding: 1rem 1.25rem; border: 1px solid #b7d9b3; border-left: 6px solid #28633a; border-radius: 14px; background: #eaf6e8; box-shadow: 0 2px 8px #18351d12; }
+    .success-banner[hidden] { display: none; }
+    .success-banner img { width: 72px; height: 72px; flex: 0 0 auto; object-fit: contain; border-radius: 12px; background: white; }
+    .success-banner p { margin: .2rem 0 0; }
     footer { padding-top: 1.5rem; padding-bottom: 2rem; border-top: 1px solid #d6dfd0; font-size: .95rem; }
     a { color: #126b35; }
   </style>
@@ -68,6 +72,10 @@
     </div>
   </header>
   <main>
+    <section id="contact-success" class="success-banner" role="status" aria-live="polite" hidden>
+      <img src="assets/logo-projet-interconnexion-normand.png" alt="Logo du Projet d’Interconnexion Normand" width="72" height="72">
+      <div><strong>Votre message a été envoyé avec succès.</strong><p>Merci d’avoir contacté le Projet d’Interconnexion Normand.</p></div>
+    </section>
     <p>Le projet expérimente une communication locale pouvant rester utile lorsque Internet ou les réseaux mobiles sont indisponibles. Le wiki explique comment choisir, flasher et configurer un nœud, installer un Repeater, améliorer une antenne 868 MHz et mesurer une couverture radio.</p>
     <p class="notice"><strong>Orientation actuelle :</strong> les nouveaux déploiements durables et les infrastructures régionales s’orientent progressivement vers <strong>MeshCore</strong>. Meshtastic reste documenté pour la transition, les appareils déjà en service et les usages mobiles ou ponctuels.</p>
     <p><a class="cta" href="guide-debutant.html">Commencer le guide débutant</a><a class="cta" href="meshcore/01-demarrage.html">Découvrir MeshCore</a><a class="cta" href="07-presentation-collectivites.html">Présentation collectivités</a><a class="cta" href="contact.html">Formulaire de contact</a></p>
@@ -86,6 +94,14 @@
     <p>Le Projet d’Interconnexion Normand vise à renforcer la résilience locale, à faire découvrir la radio et à créer une infrastructure open source expérimentale. Il ne remplace pas les réseaux professionnels ni les services de secours : chaque installation doit être autorisée, testée et documentée avec ses limites.</p>
     <p>Le dépôt est ouvert aux débutants, associations, clubs radio, fablabs, collectivités, propriétaires de points hauts et partenaires techniques.</p>
     <p><a class="cta" href="https://github.com/1234LUCIUS/projet-interconnexion-normand-wiki">Voir le dépôt GitHub</a><a class="cta" href="https://discord.gg/HnAfYUSU82">Rejoindre le Discord</a><a class="cta" href="contact.html">Formulaire de contact</a></p>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      if (params.get('contact') === 'success') {
+        const confirmation = document.getElementById('contact-success');
+        if (confirmation) confirmation.hidden = false;
+        window.history.replaceState({}, document.title, window.location.pathname + window.location.hash);
+      }
+    </script>
   </main>
   <footer><a href="https://github.com/1234LUCIUS/projet-interconnexion-normand-wiki">Code source et contributions</a> · Projet d’Interconnexion Normand · Documentation open source</footer>
 </body>
