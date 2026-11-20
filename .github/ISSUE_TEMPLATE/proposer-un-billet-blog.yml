@@ -1,0 +1,61 @@
+name: Proposer un billet pour le Blog
+description: Soumettre un brouillon destiné au Blog du Projet d’Interconnexion Normand
+title: "[Blog à valider] "
+labels: [documentation, triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Cette proposition crée une issue publique dans le dépôt : le brouillon et les échanges seront visibles par tous.**
+        Les administrateurs relisent la proposition et doivent la valider avant toute publication sur le Blog. L’envoi de ce formulaire ne publie rien automatiquement.
+
+        N’ajoutez aucune clé, mot de passe, QR code, identifiant d’appareil, adresse privée, position précise d’un particulier ou journal contenant des informations sensibles.
+  - type: input
+    id: title
+    attributes:
+      label: Titre proposé
+      placeholder: "Exemple : Comprendre la portée d’un réseau LoRa en terrain vallonné"
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Type de billet
+      options:
+        - Dossier ou explication
+        - Retour d’expérience
+        - Analyse
+        - Guide ou tutoriel
+        - Autre
+    validations:
+      required: true
+  - type: textarea
+    id: draft
+    attributes:
+      label: Votre brouillon
+      description: Rédigez le billet ou son plan. Un brouillon inachevé peut être envoyé ; les administrateurs pourront demander des précisions.
+      placeholder: |
+        ## Sujet et objectif
+        Expliquez le thème et à qui le billet s’adresse.
+
+        ## Développement
+        Présentez les explications, étapes ou retours d’expérience.
+
+        ## Conclusion et limites
+        Résumez les points importants et ce qui reste à vérifier.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources et liens utiles (facultatif)
+      description: Ajoutez les liens publics utilisés pour préparer le billet.
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Avant d’envoyer
+      options:
+        - label: Je comprends que cette issue, le brouillon et les échanges sont publics.
+          required: true
+        - label: J’ai retiré les informations sensibles et je comprends que le billet doit être validé par les administrateurs avant sa publication sur le Blog.
+          required: true

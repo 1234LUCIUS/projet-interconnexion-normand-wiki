@@ -4,9 +4,11 @@ Merci d’améliorer la documentation du Projet d’Interconnexion Normand. Les 
 
 ## Proposer une actualité
 
-Le formulaire de proposition d’actualité est accessible uniquement depuis la page [Actualités du wiki](https://1234lucius.github.io/projet-interconnexion-normand-wiki/actualites.html). Il ouvre une issue publique : n’y partagez que des informations destinées à être visibles par tous. Les administrateurs relisent chaque proposition et doivent l’approuver avant toute publication ; l’envoi du formulaire ne publie pas l’actualité automatiquement.
+Le formulaire de proposition d’actualité est accessible depuis la page [Actualités du wiki](https://1234lucius.github.io/projet-interconnexion-normand-wiki/actualites.html). Il ouvre une issue publique : n’y partagez que des informations destinées à être visibles par tous. Les administrateurs relisent chaque proposition et doivent l’approuver avant toute publication ; l’envoi du formulaire ne publie pas l’actualité automatiquement.
 
-Les billets du [Blog](https://1234lucius.github.io/projet-interconnexion-normand-wiki/blog.html) sont également relus et validés par les administrateurs avant leur publication. Le formulaire d’Actualités n’est pas destiné aux billets du Blog.
+## Proposer un billet pour le Blog
+
+Le formulaire distinct pour le Blog est accessible depuis la page [Blog du wiki](https://1234lucius.github.io/projet-interconnexion-normand-wiki/blog.html). Il ouvre également une issue publique. Le brouillon et les échanges sont visibles par tous ; les administrateurs doivent valider le billet avant sa publication. Le formulaire d’Actualités reste réservé aux nouvelles du projet.
 
 ## Modifications de la documentation
 
