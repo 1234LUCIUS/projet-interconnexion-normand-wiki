@@ -21,6 +21,41 @@ Cherchez une hauteur utile avec une ligne de vue vers plusieurs zones, pas seule
 
 Un relais placé trop près d’une source de bruit radio ou avec une mauvaise alimentation peut être moins utile qu’un nœud plus bas mais mieux dégagé.
 
+## Spots convoités : pourquoi ces lieux sont intéressants ?
+
+Certains secteurs attirent l’attention pour l’installation éventuelle d’un Repeater, car ils combinent une altitude relative intéressante, une vue dégagée et une position centrale entre plusieurs bassins de population. Un bon spot peut améliorer la portée vers plusieurs directions et réduire le nombre de relais nécessaires. Il ne suffit toutefois pas de repérer une zone rouge sur une simulation : il faut vérifier le profil topographique, la hauteur réelle de l’antenne, les obstacles, le bruit radio, l’alimentation, l’accès et l’autorisation du propriétaire.
+
+Les exemples ci-dessous sont des **spots d’étude issus de la fonction « Couverture d’antenne » de MeshCore**, et non des installations confirmées du projet. Les coordonnées affichées dans les captures sont indiquées pour permettre de retrouver le secteur ; elles ne constituent ni une réservation de site ni une autorisation d’installation.
+
+### Secteur de Seulline — Calvados (14)
+
+![Simulation MeshCore autour de Seulline et du secteur de Vire](../assets/meshcore-coverage/spot-seulline-calvados.webp)
+
+La capture pointe le secteur de **La Jurée, hameau de Laumont, commune de Seulline**, dans le Calvados, à proximité du bassin de Vire. Coordonnées affichées par l’application : **48.999296, -0.692481**. Ce secteur est intéressant à étudier pour sa position dans le bocage et sa capacité potentielle à regarder vers le nord, l’ouest et le sud-ouest. La carte montre une grande zone de couverture simulée, mais le relief vallonné du Pré-Bocage impose de confirmer la liaison par un profil de terrain et un test radio réel.
+
+### Secteur de La Pommeraye — Suisse normande, Calvados (14)
+
+![Simulation MeshCore autour de La Pommeraye et de Falaise](../assets/meshcore-coverage/spot-pommeraye-calvados.webp)
+
+La capture pointe le secteur de **La Guérardière, hameau de La Place, commune de La Pommeraye**, en Suisse normande, à l’ouest de Falaise. Coordonnées affichées : **48.911527, -0.409591**. Les hauteurs et les vallées de la Suisse normande peuvent offrir des vues intéressantes vers Falaise, le pays de Caen et le secteur de Flers, à condition que l’antenne soit réellement placée sur une hauteur dégagée. Un site accessible, stable et autorisé sera préférable à un sommet théorique impossible à maintenir.
+
+### Secteur de Saint-Rémy — vallée de l’Orne, Calvados (14)
+
+![Simulation MeshCore autour de Saint-Rémy, de Caen et de la Suisse normande](../assets/meshcore-coverage/spot-calvados-3.webp)
+
+La capture pointe le secteur de **La Herserie, hameau de La Vallée, commune de Saint-Rémy**, dans la vallée de l’Orne, à proximité de la Suisse normande. Coordonnées affichées : **48.938209, -0.488135**. Ce secteur peut être convoité pour sa position de transition entre les hauteurs de l’intérieur du Calvados, Falaise et l’axe de Caen. La présence de vallées encaissées rend cependant la zone particulièrement dépendante de la hauteur de l’antenne et de la ligne de vue : une installation en fond de vallée ne donnera pas le même résultat qu’un point haut voisin.
+
+### Comment valider un spot avant toute installation ?
+
+1. Relever la commune et le secteur général, sans publier l’adresse précise d’un domicile.
+2. Comparer au moins deux emplacements avec MeshLab-RF, Meshtastic Site Planner ou un outil de profil topographique.
+3. Vérifier la hauteur disponible, la ligne de vue et la première zone de Fresnel à 868 MHz.
+4. Tester temporairement avec un Companion et relever les messages, adverts, RSSI et pertes de paquets.
+5. Obtenir l’accord écrit du propriétaire ou de la collectivité avant toute pose d’antenne.
+6. Documenter la couverture réellement mesurée, en distinguant clairement simulation et observation.
+
+Un spot est donc « convoité » parce qu’il peut couvrir plusieurs directions depuis une position haute et dégagée, pas parce qu’il garantit une portée donnée. Pour proposer un point haut ou demander un avis, partagez le secteur général sur le [Discord officiel du projet](https://discord.gg/HnAfYUSU82) ou écrivez à [projet.interconnection.normand@gmail.com](mailto:projet.interconnection.normand@gmail.com).
+
 ## À 868 MHz : garder la zone de Fresnel dégagée
 
 La **ligne de visée géométrique** est le segment direct entre les antennes. Pour une liaison radio, ce segment ne suffit pas à décrire le trajet : l’onde occupe aussi un volume autour de lui, appelé **première zone de Fresnel**. Un relief, un bâtiment ou une végétation qui pénètre dans ce volume peut atténuer ou faire varier le signal, même si les deux antennes semblent se voir. À l’inverse, une liaison peut parfois encore fonctionner lorsque le relief masque le segment direct, grâce à la diffraction, mais avec des pertes qui dépendent de la forme et de la position de l’obstacle.
