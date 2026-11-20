@@ -31,19 +31,19 @@ Les exemples ci-dessous sont les trois spots nommés visibles dans la fonction *
 
 ![Couverture MeshCore du mont Pinçon, 364 m d’altitude](../assets/meshcore-coverage/spot-seulline-calvados.webp)
 
-La **photo 1** montre clairement la couverture du **mont Pinçon**, dont l’altitude est de **364 m**. Coordonnées affichées dans MeshCore : **48.999296, -0.692481**. Ce spot est recherché pour sa hauteur et sa capacité potentielle à couvrir plusieurs directions. La couverture affichée reste une simulation : la liaison doit être confirmée par un profil de terrain et un test radio réel.
+La couverture du **mont Pinçon** atteint une altitude de **364 m**. Coordonnées affichées dans MeshCore : **48.999296, -0.692481**. Ce spot est recherché pour sa hauteur et sa capacité potentielle à couvrir plusieurs directions. La couverture affichée reste une simulation : la liaison doit être confirmée par un profil de terrain et un test radio réel.
 
 ### Spot 2 — Mont de la Foudre — 276 m d’altitude
 
 ![Couverture MeshCore du mont de la Foudre, 276 m d’altitude](../assets/meshcore-coverage/spot-pommeraye-calvados.webp)
 
-La **photo 2** montre clairement la couverture du **mont de la Foudre**, dont l’altitude est de **276 m**. Coordonnées affichées dans MeshCore : **48.911527, -0.409591**. Ce spot est recherché pour sa hauteur et sa vue potentielle vers plusieurs secteurs. La couverture affichée reste une simulation : la liaison doit être confirmée par un profil de terrain et un test radio réel.
+La couverture du **mont de la Foudre** atteint une altitude de **276 m**. Coordonnées affichées dans MeshCore : **48.911527, -0.409591**. Ce spot est recherché pour sa hauteur et sa vue potentielle vers plusieurs secteurs. La couverture affichée reste une simulation : la liaison doit être confirmée par un profil de terrain et un test radio réel.
 
 ### Spot 3 — Mont du Père — 271 m d’altitude
 
 ![Couverture MeshCore du mont du Père, 271 m d’altitude](../assets/meshcore-coverage/spot-calvados-3.webp)
 
-La **photo 3** montre clairement la couverture du **mont du Père**, dont l’altitude est de **271 m**. Coordonnées affichées dans MeshCore : **48.938209, -0.488135**. Ce spot est recherché pour sa position en hauteur et sa capacité potentielle à couvrir plusieurs directions. La présence de vallées rend indispensable une vérification de la ligne de vue et un test radio réel.
+La couverture du **mont du Père** atteint une altitude de **271 m**. Coordonnées affichées dans MeshCore : **48.938209, -0.488135**. Ce spot est recherché pour sa position en hauteur et sa capacité potentielle à couvrir plusieurs directions. La présence de vallées rend indispensable une vérification de la ligne de vue et un test radio réel.
 
 Pour situer ces reliefs dans le paysage normand, voir la présentation de [la Suisse normande par l’office de tourisme](https://www.suisse-normande-tourisme.com/decouvertes/la-suisse-normande) et la page consacrée aux [points de vue des Montagnes de Normandie](https://www.montagnesdenormandie.fr/decouvrir-les-montagnes-de-normandie/un-relief-unique/les-points-de-vue/). Les altitudes et les noms des trois monts correspondent aux informations fournies pour ces captures ; elles ne remplacent pas une étude radio ou une autorisation d’occupation.
 
