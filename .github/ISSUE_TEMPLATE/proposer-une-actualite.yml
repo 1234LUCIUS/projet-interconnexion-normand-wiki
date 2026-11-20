@@ -1,0 +1,59 @@
+name: Proposer une actualité
+description: Soumettre une nouvelle ou une information pour la rubrique Actualités
+title: "[Actualité à valider] "
+labels: [documentation, triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Cette proposition crée une issue publique dans le dépôt : son contenu sera visible par tous.**
+        Elle concerne uniquement la rubrique Actualités. Les administrateurs relisent la proposition et doivent la valider avant toute publication. L’envoi du formulaire ne publie rien automatiquement.
+
+        N’ajoutez aucune clé, mot de passe, QR code, identifiant d’appareil, adresse privée, position précise d’un particulier ou journal contenant des informations sensibles.
+  - type: input
+    id: title
+    attributes:
+      label: Titre de l’actualité
+      placeholder: "Exemple : Nouvel essai de couverture MeshCore dans le Calvados"
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Type d’actualité
+      options:
+        - Nouvelle du projet
+        - Mise à jour du wiki
+        - Retour d’expérience terrain
+        - Événement ou rencontre
+        - Matériel ou installation
+        - Autre
+    validations:
+      required: true
+  - type: textarea
+    id: draft
+    attributes:
+      label: Décrivez l’actualité
+      description: Indiquez ce qui s’est passé, quand, pourquoi c’est utile et ce qui peut être partagé publiquement.
+      placeholder: |
+        Résumé de la nouvelle :
+
+        Date ou période :
+
+        Contexte et informations utiles :
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources et liens utiles (facultatif)
+      description: Ajoutez des liens publics qui permettent de vérifier les informations.
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Avant d’envoyer
+      options:
+        - label: Je comprends que cette issue et son contenu sont publics.
+          required: true
+        - label: J’ai retiré les informations sensibles et je comprends que les administrateurs doivent valider la proposition avant sa publication dans Actualités.
+          required: true

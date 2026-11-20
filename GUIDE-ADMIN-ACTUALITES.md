@@ -1,18 +1,27 @@
 # Guide administrateur — publier une actualité
 
-Cette rubrique est publique en lecture, mais la publication est réservée aux administrateurs du dépôt GitHub `1234LUCIUS/projet-interconnexion-normand-wiki`.
+La rubrique Actualités est publique en lecture. Les nouvelles y sont publiées uniquement après relecture et validation par les administrateurs du dépôt GitHub `1234LUCIUS/projet-interconnexion-normand-wiki`.
 
-## Où rédiger un article ?
+## Traiter une proposition reçue
 
-1. Ouvrir le dépôt GitHub.
-2. Entrer dans le dossier [`docs/actualites/`](https://github.com/1234LUCIUS/projet-interconnexion-normand-wiki/tree/main/docs/actualites).
-3. Créer un nouveau fichier HTML, par exemple `installation-repeater-calvados.html`.
-4. Rédiger l’article en français en reprenant la structure HTML des autres pages du wiki : titre, description SEO, navigation, contenu et pied de page.
-5. Ajouter la carte de l’article dans [`docs/actualites.html`](https://github.com/1234LUCIUS/projet-interconnexion-normand-wiki/blob/main/docs/actualites.html), avec son image, son titre, son résumé et le lien vers le nouveau fichier.
-6. Ajouter l’URL de l’article dans [`docs/sitemap.xml`](https://github.com/1234LUCIUS/projet-interconnexion-normand-wiki/blob/main/docs/sitemap.xml).
-7. Relire les liens, les textes alternatifs et les informations sensibles, puis valider la modification sur `main`.
+1. Ouvrir l’issue créée par le formulaire de la page [Actualités](https://1234lucius.github.io/projet-interconnexion-normand-wiki/actualites.html). Les issues commencent par `[Actualité à valider]` et leur contenu est public.
+2. Vérifier la pertinence, les dates, les sources et les affirmations techniques. Retirer ou faire retirer tout contenu sensible : clé, QR code, adresse privée, position précise d’un domicile, identifiant d’appareil ou image sans autorisation.
+3. Demander des précisions ou corrections dans l’issue si nécessaire. Ne pas recopier le brouillon sur le site tant qu’un administrateur ne l’a pas explicitement validé.
+4. Si la proposition est retenue, créer l’article et effectuer sa mise en ligne selon les étapes ci-dessous. Sinon, expliquer la décision dans l’issue puis la fermer.
+5. Après publication, répondre à l’issue avec le lien public vers l’actualité, puis la fermer.
 
-Après le commit, GitHub Pages publie automatiquement la page sous :
+Le formulaire crée seulement un brouillon public : il ne déclenche aucune publication automatique et ne garantit pas que la proposition sera retenue.
+
+## Ajouter l’actualité validée
+
+1. Ouvrir le dépôt GitHub et entrer dans `docs/actualites/`.
+2. Créer un nouveau fichier HTML, par exemple `installation-repeater-calvados.html`.
+3. Rédiger l’article en français en reprenant la structure HTML des autres pages du wiki : titre, description SEO, navigation, contenu et pied de page.
+4. Ajouter la carte de l’article dans [`docs/actualites.html`](https://github.com/1234LUCIUS/projet-interconnexion-normand-wiki/blob/main/docs/actualites.html), avec son image, son titre, son résumé et le lien vers le nouveau fichier.
+5. Ajouter l’URL de l’article dans [`docs/sitemap.xml`](https://github.com/1234LUCIUS/projet-interconnexion-normand-wiki/blob/main/docs/sitemap.xml).
+6. Relire les liens, les textes alternatifs et les informations sensibles. Ne fusionner sur `main` qu’après validation d’un administrateur.
+
+Après publication, GitHub Pages sert la page sous :
 
 `https://1234lucius.github.io/projet-interconnexion-normand-wiki/actualites/nom-du-fichier.html`
 
@@ -31,10 +40,3 @@ Après le commit, GitHub Pages publie automatiquement la page sous :
 ```
 
 Les photos doivent être validées par un administrateur. Ne jamais publier de clé, QR code, adresse privée, visage identifiable sans autorisation ou position précise d’un domicile.
-
-## Règles de publication
-
-- Les visiteurs peuvent lire les articles et voir les images, mais ne peuvent pas publier directement.
-- Chaque article est relu et validé par un administrateur avant mise en ligne.
-- Les informations techniques doivent rester cohérentes avec la documentation MeshCore et Meshtastic du wiki.
-- Pour une proposition ou une correction, utiliser le [Discord officiel](https://discord.gg/HnAfYUSU82) ou l’adresse [projet.interconnection.normand@gmail.com](mailto:projet.interconnection.normand@gmail.com). La proposition ne devient pas automatiquement un article publié.

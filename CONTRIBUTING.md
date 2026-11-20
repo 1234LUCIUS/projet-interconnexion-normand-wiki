@@ -2,25 +2,23 @@
 
 Merci d’améliorer la documentation du Projet d’Interconnexion Normand. Les corrections de langue, procédures de test, retours terrain et traductions sont bienvenus.
 
-## Le plus simple : proposer un brouillon guidé
+## Proposer une actualité
 
-Utilisez le [formulaire de proposition d’article](https://github.com/1234LUCIUS/projet-interconnexion-normand-wiki/issues/new?template=proposer-un-article.yml). Il permet d’écrire le brouillon directement dans le navigateur, sans installer d’outil ni connaître Git.
+Le formulaire de proposition d’actualité est accessible uniquement depuis la page [Actualités du wiki](https://1234lucius.github.io/projet-interconnexion-normand-wiki/actualites.html). Il ouvre une issue publique : n’y partagez que des informations destinées à être visibles par tous. Les administrateurs relisent chaque proposition et doivent l’approuver avant toute publication ; l’envoi du formulaire ne publie pas l’actualité automatiquement.
 
-**Attention :** le formulaire crée une issue publique. N’y mettez que des informations partageables publiquement. La proposition n’est pas publiée automatiquement : les administrateurs relisent le contenu, peuvent demander des modifications et doivent le valider avant son intégration au wiki.
+Les billets du [Blog](https://1234lucius.github.io/projet-interconnexion-normand-wiki/blog.html) sont également relus et validés par les administrateurs avant leur publication. Le formulaire d’Actualités n’est pas destiné aux billets du Blog.
 
-## Avant de proposer une modification
+## Modifications de la documentation
 
-Vérifiez les documentations officielles Meshtastic ou MeshCore lorsque la modification concerne leur logiciel. Pour les réglages propres au projet, indiquez clairement ce qui est confirmé, ce qui est proposé et ce qui doit être validé par les mainteneurs.
-
-## Pull request
-
-Une pull request devrait expliquer :
+Pour corriger ou enrichir les guides, une pull request devrait expliquer :
 
 - le problème rencontré ;
 - la modification réalisée ;
 - le matériel ou la version concernés ;
 - la manière dont la procédure a été testée ;
 - les informations sensibles retirées.
+
+Vérifiez les documentations officielles Meshtastic ou MeshCore lorsque la modification concerne leur logiciel. Pour les réglages propres au projet, indiquez clairement ce qui est confirmé, ce qui est proposé et ce qui doit être validé par les mainteneurs.
 
 Ne commitez jamais de clé, mot de passe, QR code de configuration, position exacte d’un particulier ou export complet d’appareil.
 
