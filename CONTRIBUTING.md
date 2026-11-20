@@ -2,6 +2,12 @@
 
 Merci d’améliorer la documentation du Projet d’Interconnexion Normand. Les corrections de langue, procédures de test, retours terrain et traductions sont bienvenus.
 
+## Le plus simple : proposer un brouillon guidé
+
+Utilisez le [formulaire de proposition d’article](https://github.com/1234LUCIUS/projet-interconnexion-normand-wiki/issues/new?template=proposer-un-article.yml). Il permet d’écrire le brouillon directement dans le navigateur, sans installer d’outil ni connaître Git.
+
+**Attention :** le formulaire crée une issue publique. N’y mettez que des informations partageables publiquement. La proposition n’est pas publiée automatiquement : les administrateurs relisent le contenu, peuvent demander des modifications et doivent le valider avant son intégration au wiki.
+
 ## Avant de proposer une modification
 
 Vérifiez les documentations officielles Meshtastic ou MeshCore lorsque la modification concerne leur logiciel. Pour les réglages propres au projet, indiquez clairement ce qui est confirmé, ce qui est proposé et ce qui doit être validé par les mainteneurs.

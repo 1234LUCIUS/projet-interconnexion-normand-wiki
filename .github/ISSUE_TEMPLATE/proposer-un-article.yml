@@ -1,0 +1,77 @@
+name: Proposer un article
+description: Rédiger un brouillon guidé à faire relire par les administrateurs
+title: "[Article à valider] "
+labels: [documentation, triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Cette proposition crée une issue publique dans le dépôt : son contenu sera visible par tous.**
+        Elle reste un brouillon. Les administrateurs doivent la relire et la valider avant toute intégration au wiki ; l’envoi du formulaire ne publie pas l’article.
+
+        N’ajoutez aucune clé, mot de passe, QR code, identifiant d’appareil, adresse privée, position précise d’un particulier ou journal contenant des informations sensibles.
+  - type: input
+    id: title
+    attributes:
+      label: Titre de l’article
+      placeholder: "Exemple : Installer et tester un Repeater MeshCore"
+    validations:
+      required: true
+  - type: dropdown
+    id: section
+    attributes:
+      label: Rubrique concernée
+      options:
+        - MeshCore
+        - Meshtastic
+        - Applications mobiles
+        - Tests radio de terrain
+        - Matériel et antennes
+        - Cartes et réseau
+        - Autre
+    validations:
+      required: true
+  - type: textarea
+    id: purpose
+    attributes:
+      label: À quoi servira cet article ?
+      description: Dites à qui il s’adresse et ce que la personne pourra apprendre ou faire.
+      placeholder: Cet article aidera…
+    validations:
+      required: true
+  - type: textarea
+    id: draft
+    attributes:
+      label: Votre brouillon
+      description: Écrivez simplement, même si le texte n’est pas terminé. Les administrateurs pourront vous demander des précisions et aider à la mise en forme.
+      placeholder: |
+        ## Objectif
+        Expliquez le sujet en quelques phrases.
+
+        ## Étapes ou explications
+        Décrivez les points importants dans l’ordre.
+
+        ## Résultat, limites et précautions
+        Indiquez ce qui a été vérifié et ce qui reste à confirmer.
+    validations:
+      required: true
+  - type: textarea
+    id: versions
+    attributes:
+      label: Matériel, logiciel et versions (facultatif)
+      description: Précisez le modèle et les versions concernés, sans identifiant unique.
+      placeholder: Modèle de nœud, antenne, MeshCore/Meshtastic et versions…
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources et liens utiles (facultatif)
+      description: Ajoutez les liens vers les documentations officielles ou les références utilisées.
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Avant d’envoyer
+      options:
+        - label: Je comprends que cette issue et son contenu sont publics.
+          required: true
+        - label: J’ai retiré les informations sensibles et je comprends que les administrateurs doivent valider l’article avant sa publication dans le wiki.
+          required: true
