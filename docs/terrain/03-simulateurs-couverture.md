@@ -25,25 +25,25 @@ Un relais placé trop près d’une source de bruit radio ou avec une mauvaise a
 
 Certains secteurs attirent l’attention pour l’installation éventuelle d’un Repeater, car ils combinent une altitude relative intéressante, une vue dégagée et une position centrale entre plusieurs bassins de population. Un bon spot peut améliorer la portée vers plusieurs directions et réduire le nombre de relais nécessaires. Il ne suffit toutefois pas de repérer une zone rouge sur une simulation : il faut vérifier le profil topographique, la hauteur réelle de l’antenne, les obstacles, le bruit radio, l’alimentation, l’accès et l’autorisation du propriétaire.
 
-Les exemples ci-dessous sont des **spots d’étude issus de la fonction « Couverture d’antenne » de MeshCore**, et non des installations confirmées du projet. Les coordonnées affichées dans les captures sont indiquées pour permettre de retrouver le secteur ; elles ne constituent ni une réservation de site ni une autorisation d’installation.
+Les exemples ci-dessous sont les trois spots nommés visibles dans la fonction **« Couverture d’antenne » de MeshCore**. Les coordonnées affichées dans chaque capture servent à retrouver le point cartographié ; elles ne constituent ni une réservation de site ni une autorisation d’installation.
 
-### Secteur de Seulline — Calvados (14)
+### Spot 1 — Mont Pinçon — 364 m d’altitude
 
-![Simulation MeshCore autour de Seulline et du secteur de Vire](../assets/meshcore-coverage/spot-seulline-calvados.webp)
+![Couverture MeshCore du mont Pinçon, 364 m d’altitude](../assets/meshcore-coverage/spot-seulline-calvados.webp)
 
-La capture correspond à la **couverture du mont Pinçon**, point haut du Calvados culminant à **364 m d’altitude**. Le secteur cartographié se trouve autour de **La Jurée, hameau de Laumont, commune de Seulline**, dans le Calvados, près du bassin de Vire. Coordonnées affichées par l’application : **48.999296, -0.692481**. Ce point haut est intéressant pour sa position dans le bocage et sa capacité potentielle à regarder vers le nord, l’ouest et le sud-ouest. La couverture affichée reste une simulation : le relief vallonné impose de confirmer la liaison par un profil de terrain et un test radio réel.
+La **photo 1** montre clairement la couverture du **mont Pinçon**, dont l’altitude est de **364 m**. Coordonnées affichées dans MeshCore : **48.999296, -0.692481**. Ce spot est recherché pour sa hauteur et sa capacité potentielle à couvrir plusieurs directions. La couverture affichée reste une simulation : la liaison doit être confirmée par un profil de terrain et un test radio réel.
 
-### Secteur de La Pommeraye — Suisse normande, Calvados (14)
+### Spot 2 — Mont de la Foudre — 276 m d’altitude
 
-![Simulation MeshCore autour de La Pommeraye et de Falaise](../assets/meshcore-coverage/spot-pommeraye-calvados.webp)
+![Couverture MeshCore du mont de la Foudre, 276 m d’altitude](../assets/meshcore-coverage/spot-pommeraye-calvados.webp)
 
-La capture correspond à la couverture du **mont de la Foudre**, culminant à **276 m d’altitude**. Le secteur se situe autour de **La Guérardière, hameau de La Place, commune de La Pommeraye**, en **Suisse normande**, à l’ouest de Falaise. Coordonnées affichées : **48.911527, -0.409591**. Ce point haut peut offrir des vues intéressantes vers Falaise, le pays de Caen et le secteur de Flers, à condition que l’antenne soit réellement placée sur une hauteur dégagée. Un site accessible, stable et autorisé sera préférable à un sommet théorique impossible à maintenir.
+La **photo 2** montre clairement la couverture du **mont de la Foudre**, dont l’altitude est de **276 m**. Coordonnées affichées dans MeshCore : **48.911527, -0.409591**. Ce spot est recherché pour sa hauteur et sa vue potentielle vers plusieurs secteurs. La couverture affichée reste une simulation : la liaison doit être confirmée par un profil de terrain et un test radio réel.
 
-### Secteur de Saint-Rémy — vallée de l’Orne, Calvados (14)
+### Spot 3 — Mont du Père — 271 m d’altitude
 
-![Simulation MeshCore autour de Saint-Rémy, de Caen et de la Suisse normande](../assets/meshcore-coverage/spot-calvados-3.webp)
+![Couverture MeshCore du mont du Père, 271 m d’altitude](../assets/meshcore-coverage/spot-calvados-3.webp)
 
-La capture correspond à la couverture du **mont du Père**, culminant à **271 m d’altitude**. Le secteur se situe autour de **La Herserie, hameau de La Vallée, commune de Saint-Rémy**, dans la vallée de l’Orne, à proximité de la Suisse normande. Coordonnées affichées : **48.938209, -0.488135**. Ce point haut peut être convoité pour sa position de transition entre les hauteurs de l’intérieur du Calvados, Falaise et l’axe de Caen. La présence de vallées encaissées rend cependant la zone particulièrement dépendante de la hauteur de l’antenne et de la ligne de vue : une installation en fond de vallée ne donnera pas le même résultat qu’un point haut voisin.
+La **photo 3** montre clairement la couverture du **mont du Père**, dont l’altitude est de **271 m**. Coordonnées affichées dans MeshCore : **48.938209, -0.488135**. Ce spot est recherché pour sa position en hauteur et sa capacité potentielle à couvrir plusieurs directions. La présence de vallées rend indispensable une vérification de la ligne de vue et un test radio réel.
 
 Pour situer ces reliefs dans le paysage normand, voir la présentation de [la Suisse normande par l’office de tourisme](https://www.suisse-normande-tourisme.com/decouvertes/la-suisse-normande) et la page consacrée aux [points de vue des Montagnes de Normandie](https://www.montagnesdenormandie.fr/decouvrir-les-montagnes-de-normandie/un-relief-unique/les-points-de-vue/). Les altitudes et les noms des trois monts correspondent aux informations fournies pour ces captures ; elles ne remplacent pas une étude radio ou une autorisation d’occupation.
 
