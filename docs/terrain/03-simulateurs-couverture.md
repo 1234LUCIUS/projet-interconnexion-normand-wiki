@@ -27,19 +27,19 @@ Certains secteurs attirent l’attention pour l’installation éventuelle d’u
 
 Les exemples ci-dessous sont les trois spots nommés visibles dans la fonction **« Couverture d’antenne » de MeshCore**. Les coordonnées affichées dans chaque capture servent à retrouver le point cartographié ; elles ne constituent ni une réservation de site ni une autorisation d’installation.
 
-### Spot 1 — Mont Pinçon — 364 m d’altitude
+### Mont Pinçon — 364 m d’altitude
 
 ![Couverture MeshCore du mont Pinçon, 364 m d’altitude](../assets/meshcore-coverage/spot-seulline-calvados.webp)
 
 La couverture du **mont Pinçon** atteint une altitude de **364 m**. Coordonnées affichées dans MeshCore : **48.999296, -0.692481**. Ce spot est recherché pour sa hauteur et sa capacité potentielle à couvrir plusieurs directions. La couverture affichée reste une simulation : la liaison doit être confirmée par un profil de terrain et un test radio réel.
 
-### Spot 2 — Mont de la Foudre — 276 m d’altitude
+### Mont de la Foudre — 276 m d’altitude
 
 ![Couverture MeshCore du mont de la Foudre, 276 m d’altitude](../assets/meshcore-coverage/spot-pommeraye-calvados.webp)
 
 La couverture du **mont de la Foudre** atteint une altitude de **276 m**. Coordonnées affichées dans MeshCore : **48.911527, -0.409591**. Ce spot est recherché pour sa hauteur et sa vue potentielle vers plusieurs secteurs. La couverture affichée reste une simulation : la liaison doit être confirmée par un profil de terrain et un test radio réel.
 
-### Spot 3 — Mont du Père — 271 m d’altitude
+### Mont du Père — 271 m d’altitude
 
 ![Couverture MeshCore du mont du Père, 271 m d’altitude](../assets/meshcore-coverage/spot-calvados-3.webp)
 
