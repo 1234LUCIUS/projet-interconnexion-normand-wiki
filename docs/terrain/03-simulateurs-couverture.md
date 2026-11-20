@@ -33,17 +33,25 @@ Les exemples ci-dessous sont les trois spots nommés visibles dans la fonction *
 
 La couverture du **mont Pinçon** atteint une altitude de **364 m**. Coordonnées affichées dans MeshCore : **48.999296, -0.692481**. Ce spot est recherché pour sa hauteur et sa capacité potentielle à couvrir plusieurs directions. La couverture affichée reste une simulation : la liaison doit être confirmée par un profil de terrain et un test radio réel.
 
+➡️ [Voir la carte topographique ciblée du mont Pinçon sur topographic-map.com](https://fr-fr.topographic-map.com/map-4nhdgp/Mont-Pin%C3%A7on/)
+
 ### Spot 2 — Mont de la Foudre — 276 m d’altitude
 
 ![Couverture MeshCore du mont de la Foudre, 276 m d’altitude](../assets/meshcore-coverage/spot-pommeraye-calvados.webp)
 
 La couverture du **mont de la Foudre** atteint une altitude de **276 m**. Coordonnées affichées dans MeshCore : **48.911527, -0.409591**. Ce spot est recherché pour sa hauteur et sa vue potentielle vers plusieurs secteurs. La couverture affichée reste une simulation : la liaison doit être confirmée par un profil de terrain et un test radio réel.
 
+➡️ [Voir la carte topographique ciblée sur La Pommeraye et le mont de la Foudre](https://fr-fr.topographic-map.com/map-hz5tgt/La-Pommeraye/)
+
 ### Spot 3 — Mont du Père — 271 m d’altitude
 
 ![Couverture MeshCore du mont du Père, 271 m d’altitude](../assets/meshcore-coverage/spot-calvados-3.webp)
 
 La couverture du **mont du Père** atteint une altitude de **271 m**. Coordonnées affichées dans MeshCore : **48.938209, -0.488135**. Ce spot est recherché pour sa position en hauteur et sa capacité potentielle à couvrir plusieurs directions. La présence de vallées rend indispensable une vérification de la ligne de vue et un test radio réel.
+
+➡️ [Voir la carte topographique ciblée sur Clécy et le mont du Père](https://fr-fr.topographic-map.com/map-47tj/Cl%C3%A9cy/)
+
+Les cartes sont fournies par [fr-fr.topographic-map.com](https://fr-fr.topographic-map.com/). Elles permettent de visualiser l’altitude et le relief autour de chaque spot ; elles complètent la simulation MeshCore, mais ne remplacent pas un test radio sur le terrain.
 
 Pour situer ces reliefs dans le paysage normand, voir la présentation de [la Suisse normande par l’office de tourisme](https://www.suisse-normande-tourisme.com/decouvertes/la-suisse-normande) et la page consacrée aux [points de vue des Montagnes de Normandie](https://www.montagnesdenormandie.fr/decouvrir-les-montagnes-de-normandie/un-relief-unique/les-points-de-vue/). Les altitudes et les noms des trois monts correspondent aux informations fournies pour ces captures ; elles ne remplacent pas une étude radio ou une autorisation d’occupation.
 
