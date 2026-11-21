@@ -1,42 +1,40 @@
-# Guide administrateur — publier une actualité
+# Guide rapide — créer une actualité
 
-La rubrique Actualités est publique en lecture. Les nouvelles y sont publiées uniquement après relecture et validation par les administrateurs du dépôt GitHub `1234LUCIUS/projet-interconnexion-normand-wiki`.
+La rubrique Actualités est publique en lecture. Seuls les administrateurs du dépôt GitHub peuvent publier ou modifier un article.
 
-## Traiter une proposition reçue
+## Pour proposer une actualité
 
-1. Ouvrir l’issue créée par le formulaire de la page [Actualités](https://1234lucius.github.io/projet-interconnexion-normand-wiki/actualites.html). Les issues commencent par `[Actualité à valider]` et leur contenu est public.
-2. Vérifier la pertinence, les dates, les sources et les affirmations techniques. Retirer ou faire retirer tout contenu sensible : clé, QR code, adresse privée, position précise d’un domicile, identifiant d’appareil ou image sans autorisation.
-3. Demander des précisions ou corrections dans l’issue si nécessaire. Ne pas recopier le brouillon sur le site tant qu’un administrateur ne l’a pas explicitement validé.
-4. Si la proposition est retenue, créer l’article et effectuer sa mise en ligne selon les étapes ci-dessous. Sinon, expliquer la décision dans l’issue puis la fermer.
-5. Après publication, répondre à l’issue avec le lien public vers l’actualité, puis la fermer.
+Un visiteur ou un membre du projet peut utiliser le [formulaire de proposition d’actualité](https://github.com/1234LUCIUS/projet-interconnexion-normand-wiki/issues/new?template=proposer-une-actualite.yml). La proposition devient une issue publique, mais elle ne publie rien automatiquement.
 
-Le formulaire crée seulement un brouillon public : il ne déclenche aucune publication automatique et ne garantit pas que la proposition sera retenue.
+Les administrateurs doivent relire la proposition, vérifier les informations et les photos, supprimer toute donnée sensible, puis décider si elle doit être publiée.
 
-## Ajouter l’actualité validée
+## La méthode simple pour publier
 
-1. Ouvrir le dépôt GitHub et entrer dans `docs/actualites/`.
-2. Créer un nouveau fichier HTML, par exemple `installation-repeater-calvados.html`.
-3. Rédiger l’article en français en reprenant la structure HTML des autres pages du wiki : titre, description SEO, navigation, contenu et pied de page.
-4. Ajouter la carte de l’article dans [`docs/actualites.html`](https://github.com/1234LUCIUS/projet-interconnexion-normand-wiki/blob/main/docs/actualites.html), avec son image, son titre, son résumé et le lien vers le nouveau fichier.
-5. Ajouter l’URL de l’article dans [`docs/sitemap.xml`](https://github.com/1234LUCIUS/projet-interconnexion-normand-wiki/blob/main/docs/sitemap.xml).
-6. Relire les liens, les textes alternatifs et les informations sensibles. Ne fusionner sur `main` qu’après validation d’un administrateur.
+1. Ouvrir le dossier [`docs/actualites/`](https://github.com/1234LUCIUS/projet-interconnexion-normand-wiki/tree/main/docs/actualites).
+2. Copier le fichier [`_modele-article.md`](https://github.com/1234LUCIUS/projet-interconnexion-normand-wiki/blob/main/docs/actualites/_modele-article.md).
+3. Le renommer avec des mots simples, par exemple `installation-repeater-calvados.md`.
+4. Remplacer le titre, la date, le résumé et le texte d’exemple.
+5. Ajouter les photos dans [`docs/assets/actualites/`](https://github.com/1234LUCIUS/projet-interconnexion-normand-wiki/tree/main/docs/assets/actualites), puis modifier le chemin de la photo dans l’article.
+6. Enregistrer le fichier et valider la modification sur la branche `main`.
 
-Après publication, GitHub Pages sert la page sous :
+La page [Actualités](https://1234lucius.github.io/projet-interconnexion-normand-wiki/actualites.html) et le sitemap détectent automatiquement les articles Markdown placés dans ce dossier. Il n’est plus nécessaire de modifier une page HTML ou le sitemap.
 
-`https://1234lucius.github.io/projet-interconnexion-normand-wiki/actualites/nom-du-fichier.html`
+## Ajouter des photos
 
-## Ajouter des photos à un article
+Déposer chaque photo validée dans `docs/assets/actualites/`, puis utiliser ce format dans le fichier Markdown :
 
-1. Ajouter les images validées dans `docs/assets/actualites/` — ce dossier doit être créé si nécessaire.
-2. Utiliser des noms simples, sans espace ni accent, par exemple `repeater-calvados-2026.jpg`.
-3. Dans l’article situé dans `docs/actualites/`, utiliser un chemin relatif :
-
-```html
-<figure>
-  <img src="../assets/actualites/repeater-calvados-2026.jpg"
-       alt="Répéteur MeshCore installé dans le Calvados">
-  <figcaption>Installation documentée par l’équipe du projet.</figcaption>
-</figure>
+```markdown
+![Répéteur MeshCore installé dans le Calvados](../assets/actualites/repeater-calvados.jpg)
 ```
 
-Les photos doivent être validées par un administrateur. Ne jamais publier de clé, QR code, adresse privée, visage identifiable sans autorisation ou position précise d’un domicile.
+Plusieurs photos peuvent être ajoutées dans le même article. Utiliser des noms sans espaces ni accents et renseigner un texte alternatif décrivant chaque image.
+
+## Avant de publier
+
+- Relire l’article et vérifier les liens.
+- Vérifier que les photos sont validées par un administrateur.
+- Ne jamais publier de clé, QR code, adresse privée, visage identifiable sans autorisation ou position précise d’un domicile.
+- Ne pas publier automatiquement une proposition reçue d’un visiteur : elle doit être relue et validée par l’équipe.
+- Après publication, répondre à l’issue avec le lien public vers l’article, puis la fermer.
+
+Pour une proposition ou une correction, utiliser le [Discord officiel](https://discord.gg/HnAfYUSU82) ou l’adresse [projet.interconnection.normand@gmail.com](mailto:projet.interconnection.normand@gmail.com).
