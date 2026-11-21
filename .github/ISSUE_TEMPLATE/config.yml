@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Poser une question au projet
+    url: https://discord.gg/HnAfYUSU82
+    about: Rejoindre le Discord officiel pour poser une question ou demander de l’aide.
+  - name: Contacter l’équipe par e-mail
+    url: mailto:projet.interconnection.normand@gmail.com
+    about: Écrire à l’équipe du Projet d’Interconnexion Normand.
