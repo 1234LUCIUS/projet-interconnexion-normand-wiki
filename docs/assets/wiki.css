@@ -159,6 +159,7 @@ a:hover { color: var(--green); }
 }
 .cta:hover, .button:hover, .form-card button:hover { background: #eaa92e; color: var(--green); }
 .notice { padding: 1rem 1.2rem; border-left: 5px solid var(--gold); background: #fff8e8; }
+.feed-links { padding: .65rem .9rem; border: 1px solid var(--line); border-radius: 10px; background: #f7faf4; }
 .muted { color: var(--muted); font-size: .95rem; }
 .success-banner {
   display: flex;

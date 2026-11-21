@@ -48,6 +48,7 @@ layout: null
       <p class="lead">Analyses, dossiers, explications et retours d’expérience autour de MeshCore, Meshtastic et des communications radio LoRa en Normandie.</p>
       <p class="notice"><strong>Publication modérée :</strong> chaque billet est relu et validé par les administrateurs. Le formulaire crée une issue publique ; l’envoi ne publie rien automatiquement. Après relecture, l’ajout du label <code>blog-publication-validée</code> déclenche automatiquement la création et la publication du billet. N’y partagez aucune information sensible.</p>
       <p><a class="cta" href="https://github.com/1234LUCIUS/projet-interconnexion-normand-wiki/issues/new?template=proposer-un-billet-blog.yml">Proposer un billet pour le Blog</a></p>
+      <p class="feed-links"><strong>Suivre les publications :</strong> <a href="blog.xml">Flux RSS du Blog</a> · <a href="actualites.xml">Flux RSS des Actualités</a></p>
       <p>Pour proposer une nouvelle du projet plutôt qu’un billet de blog, utilisez le formulaire réservé à la rubrique <a href="actualites.html">Actualités</a>.</p>
       {% assign published_posts = site.pages | where_exp: "page", "page.path contains 'blog/'" %}
       {% assign has_posts = false %}

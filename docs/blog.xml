@@ -1,0 +1,5 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel><title>Blog · Projet d’Interconnexion Normand</title><link>{{ site.url }}{{ site.baseurl }}/blog.html</link><description>Billets, dossiers et retours d’expérience sur MeshCore, Meshtastic et les réseaux radio maillés en Normandie.</description><language>fr-FR</language><lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>{% assign posts = site.pages | where_exp: "page", "page.path contains 'blog/'" %}{% for post in posts %}{% unless post.name == '_modele-billet.md' %}<item><title>{{ post.title | xml_escape }}</title><link>{{ site.url }}{{ site.baseurl }}{{ post.url }}</link><guid isPermaLink="true">{{ site.url }}{{ site.baseurl }}{{ post.url }}</guid><description>{{ post.description | default: post.title | xml_escape }}</description>{% if post.date %}<pubDate>{{ post.date | date_to_rfc822 }}</pubDate>{% endif %}</item>{% endunless %}{% endfor %}</channel></rss>

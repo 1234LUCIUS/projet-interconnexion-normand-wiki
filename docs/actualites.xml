@@ -1,0 +1,5 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel><title>Actualités · Projet d’Interconnexion Normand</title><link>{{ site.url }}{{ site.baseurl }}/actualites.html</link><description>Actualités du Projet d’Interconnexion Normand sur MeshCore, Meshtastic et les réseaux radio maillés en Normandie.</description><language>fr-FR</language><lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>{% assign articles = site.pages | where_exp: "page", "page.path contains 'actualites/'" %}{% for article in articles %}{% unless article.name == '_modele-article.md' %}<item><title>{{ article.title | xml_escape }}</title><link>{{ site.url }}{{ site.baseurl }}{{ article.url }}</link><guid isPermaLink="true">{{ site.url }}{{ site.baseurl }}{{ article.url }}</guid><description>{{ article.description | default: article.title | xml_escape }}</description>{% if article.date %}<pubDate>{{ article.date | date_to_rfc822 }}</pubDate>{% endif %}</item>{% endunless %}{% endfor %}</channel></rss>
