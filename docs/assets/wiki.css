@@ -73,8 +73,8 @@ a:hover { color: var(--green); }
   display: block;
   width: auto;
   max-width: min(100%, 760px);
-  max-height: 520px;
-  height: auto;
+  height: min(420px, 65vh);
+  max-height: 420px;
   object-fit: contain;
   margin: 1.1rem auto;
   border: 1px solid var(--line);
@@ -175,5 +175,6 @@ a:hover { color: var(--green); }
   .page-shell { padding: .8rem; }
   .success-banner { align-items: flex-start; padding: .85rem; }
   .success-banner img { width: 56px; height: 56px; }
+  .prose img { height: min(320px, 55vh); max-height: 320px; }
   .map-embed iframe { height: 68vh; min-height: 430px; }
 }
