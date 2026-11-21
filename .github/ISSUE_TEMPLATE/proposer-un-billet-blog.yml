@@ -33,13 +33,14 @@ body:
     id: draft
     attributes:
       label: Votre brouillon
-      description: Rédigez le billet ou son plan. Un brouillon inachevé peut être envoyé ; les administrateurs pourront demander des précisions.
+      description: Rédigez le billet ou son plan. Vous pouvez glisser-déposer une photo directement à l’endroit du texte qu’elle illustre ; son image Markdown sera conservée à cet emplacement. Un brouillon inachevé peut être envoyé.
       placeholder: |
         ## Sujet et objectif
         Expliquez le thème et à qui le billet s’adresse.
 
         ## Développement
         Présentez les explications, étapes ou retours d’expérience.
+        Insérez les photos juste après le paragraphe qu’elles illustrent.
 
         ## Conclusion et limites
         Résumez les points importants et ce qui reste à vérifier.
@@ -54,7 +55,7 @@ body:
     id: photos
     attributes:
       label: Photos à publier (facultatif)
-      description: Glissez-déposez ici les photos validées ou collez leurs liens Markdown. Elles seront ajoutées au billet après validation.
+      description: Facultatif : ajoutez ici des photos supplémentaires. Pour contrôler précisément leur emplacement, insérez-les directement dans « Votre brouillon », entre les paragraphes qu’elles illustrent. Les images doivent rester publiques et validées.
   - type: checkboxes
     id: confirmations
     attributes:

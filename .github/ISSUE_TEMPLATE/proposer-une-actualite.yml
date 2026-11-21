@@ -34,13 +34,15 @@ body:
     id: draft
     attributes:
       label: Décrivez l’actualité
-      description: Indiquez ce qui s’est passé, quand, pourquoi c’est utile et ce qui peut être partagé publiquement.
+      description: Indiquez ce qui s’est passé, quand, pourquoi c’est utile et ce qui peut être partagé publiquement. Vous pouvez glisser-déposer une photo directement entre deux paragraphes pour qu’elle illustre précisément le texte concerné.
       placeholder: |
         Résumé de la nouvelle :
 
         Date ou période :
 
         Contexte et informations utiles :
+
+        (Insérez ici les photos à l’endroit où elles doivent apparaître.)
     validations:
       required: true
   - type: textarea
@@ -52,7 +54,7 @@ body:
     id: photos
     attributes:
       label: Photos à publier (facultatif)
-      description: Glissez-déposez ici les photos validées ou collez leurs liens Markdown. Elles seront ajoutées à l’article après validation.
+      description: Facultatif : ajoutez ici des photos supplémentaires. Pour choisir leur emplacement, insérez-les directement dans « Décrivez l’actualité », entre les paragraphes qu’elles illustrent. Les images doivent rester publiques et validées.
   - type: checkboxes
     id: confirmations
     attributes:
