@@ -6,6 +6,8 @@ La rubrique Actualités est publique en lecture. Seuls les administrateurs du d�
 
 Un visiteur ou un membre du projet peut utiliser le [formulaire de proposition d’actualité](https://github.com/1234LUCIUS/projet-interconnexion-normand-wiki/issues/new?template=proposer-une-actualite.yml). La proposition devient une issue publique, mais elle ne publie rien automatiquement.
 
+Les actualités utilisent quatre étiquettes : **Nouvelle du projet**, **Pose de répéteur**, **Mise à jour du wiki** et **Événement ou rencontre**. Les billets du Blog conservent leurs catégories dédiées : **Dossier ou explication**, **Retour d’expérience**, **Analyse**, **Guide ou tutoriel** et **Autre**.
+
 Les administrateurs doivent relire la proposition, vérifier les informations et les photos, supprimer toute donnée sensible, puis décider si elle doit être publiée.
 
 ## La méthode simple pour publier

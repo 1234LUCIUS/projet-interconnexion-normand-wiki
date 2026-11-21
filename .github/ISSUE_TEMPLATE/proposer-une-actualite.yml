@@ -23,11 +23,9 @@ body:
       label: Type d’actualité
       options:
         - Nouvelle du projet
+        - Pose de répéteur
         - Mise à jour du wiki
-        - Retour d’expérience terrain
         - Événement ou rencontre
-        - Matériel ou installation
-        - Autre
     validations:
       required: true
   - type: textarea

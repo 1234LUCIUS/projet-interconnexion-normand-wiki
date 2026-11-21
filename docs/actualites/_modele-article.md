@@ -3,7 +3,7 @@ layout: wiki
 title: "Titre de l’article"
 description: "Résumé court de l’article pour les moteurs de recherche."
 date: 2026-11-20
-category: "Actualité"
+category: "Nouvelle du projet"
 image: "/assets/actualites/nom-de-la-photo.jpg"
 image_alt: "Description précise de la photo"
 ---
