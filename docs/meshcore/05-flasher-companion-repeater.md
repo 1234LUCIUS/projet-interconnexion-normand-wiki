@@ -86,7 +86,7 @@ La fréquence et les paramètres radio doivent correspondre au réseau que vous 
 
 Pour un Companion normand, le scope par défaut du projet est `fr`. Activez les chemins sur deux octets dans les réglages de l’application lorsque votre version et le réseau sont compatibles avec ce choix.
 
-Choisissez ensuite le scope du canal selon l’usage : `fr` pour `#fr`, `fr-nor`,`fr-14`,`fr-50 `, `fr-61`, `fr-27`, `fr-76` pour les canaux normands communs et le scope départemental pour un canal local comme `#potes`.
+Choisissez ensuite le scope du canal selon l’usage : `fr` pour `#fr`,`fr-nor`pour le canal régional `#fr-nor`, à l'échelle d'un département `fr-14`,`fr-50 `, `fr-61`, `fr-27`, `fr-76` pour les canaux departementaux `#fr-14`... 
 
 ## Étape 5 — Test du Companion
 
