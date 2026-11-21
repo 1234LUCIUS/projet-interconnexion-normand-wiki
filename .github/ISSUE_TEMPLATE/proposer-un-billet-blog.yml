@@ -50,6 +50,11 @@ body:
     attributes:
       label: Sources et liens utiles (facultatif)
       description: Ajoutez les liens publics utilisés pour préparer le billet.
+  - type: textarea
+    id: photos
+    attributes:
+      label: Photos à publier (facultatif)
+      description: Glissez-déposez ici les photos validées ou collez leurs liens Markdown. Elles seront ajoutées au billet après validation.
   - type: checkboxes
     id: confirmations
     attributes:

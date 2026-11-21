@@ -16,6 +16,6 @@ layout: null
   <url><loc>https://1234lucius.github.io/projet-interconnexion-normand-wiki/actualites.html</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
   <url><loc>https://1234lucius.github.io/projet-interconnexion-normand-wiki/blog.html</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
   <url><loc>https://1234lucius.github.io/projet-interconnexion-normand-wiki/galerie.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
-{% for article in site.pages %}{% if article.path contains 'actualites/' and article.name != '_modele-article.md' %}
+  {% for article in site.pages %}{% if (article.path contains 'actualites/' and article.name != '_modele-article.md') or (article.path contains 'blog/' and article.name != '_modele-billet.md') %}
   <url><loc>{{ site.url }}{{ site.baseurl }}{{ article.url }}</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>{% endif %}{% endfor %}
 </urlset>

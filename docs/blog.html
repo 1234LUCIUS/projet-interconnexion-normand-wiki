@@ -1,3 +1,6 @@
+---
+layout: null
+---
 <!doctype html>
 <html lang="fr">
 <head>
@@ -43,12 +46,28 @@
     <section class="content-card prose">
       <h1>Blog du Projet d’Interconnexion Normand</h1>
       <p class="lead">Analyses, dossiers, explications et retours d’expérience autour de MeshCore, Meshtastic et des communications radio LoRa en Normandie.</p>
-      <p class="notice"><strong>Publication modérée :</strong> chaque billet est relu et doit être validé par les administrateurs avant d’être publié. Le formulaire crée une issue publique ; l’envoi ne publie rien automatiquement. N’y partagez aucune information sensible.</p>
+      <p class="notice"><strong>Publication modérée :</strong> chaque billet est relu et validé par les administrateurs. Le formulaire crée une issue publique ; l’envoi ne publie rien automatiquement. Après relecture, l’ajout du label <code>blog-publication-validée</code> déclenche automatiquement la création et la publication du billet. N’y partagez aucune information sensible.</p>
       <p><a class="cta" href="https://github.com/1234LUCIUS/projet-interconnexion-normand-wiki/issues/new?template=proposer-un-billet-blog.yml">Proposer un billet pour le Blog</a></p>
       <p>Pour proposer une nouvelle du projet plutôt qu’un billet de blog, utilisez le formulaire réservé à la rubrique <a href="actualites.html">Actualités</a>.</p>
+      {% assign published_posts = site.pages | where_exp: "page", "page.path contains 'blog/'" %}
+      {% assign has_posts = false %}
       <h2>Billets du blog</h2>
-      <div class="notice"><strong>Aucun billet publié pour le moment.</strong><br>Les billets apparaîtront ici après relecture éditoriale et validation par les administrateurs du projet.</div>
-      <p>Pour toute question sur le blog ou le wiki, contactez l’équipe via la <a href="contact.html">page de contact</a>.</p>
+      <div class="article-grid">
+        {% for post in published_posts %}
+          {% unless post.name == "_modele-billet.md" %}
+            {% assign has_posts = true %}
+            <article class="article-card">
+              {% if post.image %}<img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | escape }}">{% endif %}
+              <p class="article-meta">{% if post.date %}<time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%d/%m/%Y' }}</time> · {% endif %}{{ post.category | default: 'Billet' }}</p>
+              <h2>{{ post.title }}</h2>
+              <p>{{ post.description }}</p>
+              <a class="button" href="{{ post.url | relative_url }}">Lire le billet</a>
+            </article>
+          {% endunless %}
+        {% endfor %}
+      </div>
+      {% unless has_posts %}<div class="notice"><strong>Aucun billet publié pour le moment.</strong><br>Les billets apparaîtront ici après relecture et validation par les administrateurs du projet. Vous pouvez consulter le <a href="https://github.com/1234LUCIUS/projet-interconnexion-normand-wiki/blob/main/docs/blog/_modele-billet.md">modèle Markdown</a>.</div>{% endunless %}
+      <p>Pour toute question sur le blog ou le wiki, contactez l’équipe via la <a href="contact.html">page de contact</a>, le <a href="https://discord.gg/HnAfYUSU82">Discord officiel</a> ou <a href="mailto:projet.interconnection.normand@gmail.com">l’e-mail du projet</a>.</p>
     </section>
   </main>
   <footer class="site-footer">

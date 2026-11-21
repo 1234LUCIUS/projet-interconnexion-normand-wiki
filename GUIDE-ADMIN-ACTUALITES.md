@@ -41,3 +41,13 @@ Plusieurs photos peuvent être ajoutées dans le même article. Utiliser des nom
 - Après publication, répondre à l’issue avec le lien public vers l’article, puis la fermer.
 
 Pour une proposition ou une correction, utiliser le [Discord officiel](https://discord.gg/HnAfYUSU82) ou l’adresse [projet.interconnection.normand@gmail.com](mailto:projet.interconnection.normand@gmail.com).
+
+## Publier un billet du Blog
+
+Le Blog suit exactement le même principe de modération que les Actualités. Utiliser le [formulaire de proposition de billet](https://github.com/1234LUCIUS/projet-interconnexion-normand-wiki/issues/new?template=proposer-un-billet-blog.yml). Le visiteur peut proposer un brouillon, des sources et des photos, mais rien n’est publié à l’envoi.
+
+Après relecture, vérification des liens et contrôle des photos, ajouter uniquement le label **`blog-publication-validée`** à l’issue. Le workflow vérifie que le labeler dispose des droits `admin`, `maintain` ou `write`, crée automatiquement un fichier dans [`docs/blog/`](https://github.com/1234LUCIUS/projet-interconnexion-normand-wiki/tree/main/docs/blog), puis le pousse dans `main`. La page [Blog](https://1234lucius.github.io/projet-interconnexion-normand-wiki/blog.html) et le sitemap le détectent automatiquement.
+
+Les photos du billet peuvent être déposées dans [`docs/assets/blog/`](https://github.com/1234LUCIUS/projet-interconnexion-normand-wiki/tree/main/docs/assets/blog). Pour un billet nécessitant une correction, modifier le fichier publié dans `docs/blog/` comme administrateur ; ne pas republier l’issue avec le même label.
+
+Le suivi de l’exécution se fait dans l’onglet **Actions**, avec le workflow **Publier une actualité ou un billet Blog validé**. En cas d’échec, ne pas ajouter le label en boucle : consulter le journal, corriger l’issue ou le workflow, puis relancer l’exécution depuis Actions. Après réussite, répondre à l’issue avec le lien public et la fermer.
