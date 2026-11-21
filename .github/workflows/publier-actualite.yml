@@ -1,0 +1,240 @@
+name: Publier une actualité validée
+
+
+
+on:
+
+  issues:
+
+    types: [labeled]
+
+
+
+permissions:
+
+  contents: write
+
+  issues: read
+
+
+
+jobs:
+
+  publier:
+
+    if: github.event.label.name == 'publication-validée'
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Vérifier les droits de l’administrateur
+
+        env:
+
+          GH_TOKEN: ${{ github.token }}
+
+          ACTOR: ${{ github.actor }}
+
+          REPOSITORY: ${{ github.repository }}
+
+        run: |
+
+          permission=$(gh api "repos/${REPOSITORY}/collaborators/${ACTOR}/permission" --jq '.permission' 2>/dev/null || echo none)
+
+          case "$permission" in
+
+            admin|maintain|write) echo "Validation autorisée ($permission)" ;;
+
+            *) echo "Le labeler ne possède pas les droits requis ($permission)."; exit 1 ;;
+
+          esac
+
+
+
+      - name: Récupérer le dépôt
+
+        uses: actions/checkout@v4
+
+        with:
+
+          fetch-depth: 0
+
+
+
+      - name: Générer automatiquement l’article Markdown
+
+        env:
+
+          ISSUE_BODY: ${{ github.event.issue.body }}
+
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+
+          REPOSITORY: ${{ github.repository }}
+
+        run: |
+
+          python3 - <<'PY'
+
+          import datetime, json, os, re, unicodedata
+
+          from pathlib import Path
+
+
+
+          body = os.environ.get('ISSUE_BODY', '')
+
+
+
+          def field(label):
+
+              pattern = rf"###\s+{re.escape(label)}\s*\n+(.+?)(?=\n###\s|\Z)"
+
+              match = re.search(pattern, body, re.S | re.I)
+
+              if not match:
+
+                  return ''
+
+              value = match.group(1).strip()
+
+              value = re.sub(r'<!--.*?-->', '', value, flags=re.S).strip()
+
+              return value
+
+
+
+          title = field('Titre de l’actualité') or field("Titre de l'actualité") or os.environ.get('ISSUE_TITLE', 'Actualité')
+
+          category = field('Type d’actualité') or field("Type d'actualité") or 'Actualité'
+
+          draft = field('Décrivez l’actualité')
+
+          photos = field('Photos à publier (facultatif)')
+
+          sources = field('Sources et liens utiles (facultatif)')
+
+          if photos:
+
+              draft = (draft + '\n\n## Photos\n\n' + photos).strip()
+
+          if sources:
+
+              draft = (draft + '\n\n## Sources\n\n' + sources).strip()
+
+          if not draft:
+
+              raise SystemExit('La proposition ne contient pas de texte.')
+
+
+
+          def slugify(value):
+
+              value = unicodedata.normalize('NFKD', value).encode('ascii', 'ignore').decode().lower()
+
+              value = re.sub(r'[^a-z0-9]+', '-', value).strip('-')
+
+              return value[:70] or 'actualite'
+
+
+
+          slug = slugify(title)
+
+          folder = Path('docs/actualites')
+
+          folder.mkdir(parents=True, exist_ok=True)
+
+          target = folder / f'{slug}.md'
+
+          suffix = 2
+
+          while target.exists():
+
+              target = folder / f'{slug}-{suffix}.md'
+
+              suffix += 1
+
+
+
+          image = ''
+
+          image_alt = ''
+
+          first_image = re.search(r'!\[([^\]]*)\]\(([^)]+)\)', draft)
+
+          if first_image:
+
+              image_alt, image = first_image.group(1).strip(), first_image.group(2).strip()
+
+
+
+          description = re.sub(r'[#>*_`\[\]!()]', ' ', draft)
+
+          description = re.sub(r'\s+', ' ', description).strip()[:155]
+
+          date = datetime.date.today().isoformat()
+
+          frontmatter = [
+
+              '---',
+
+              'layout: wiki',
+
+              f'title: {json.dumps(title, ensure_ascii=False)}',
+
+              f'description: {json.dumps(description, ensure_ascii=False)}',
+
+              f'date: {date}',
+
+              f'category: {json.dumps(category, ensure_ascii=False)}',
+
+              f'image: {json.dumps(image, ensure_ascii=False)}',
+
+              f'image_alt: {json.dumps(image_alt, ensure_ascii=False)}',
+
+              '---',
+
+              '',
+
+              f'# {title}',
+
+              '',
+
+              draft,
+
+              '',
+
+              f'---\n\n*Proposition validée depuis l’issue #{os.environ.get("ISSUE_NUMBER")}.*',
+
+              ''
+
+          ]
+
+          target.write_text('\n'.join(frontmatter), encoding='utf-8')
+
+          print(f'Article généré : {target}')
+
+          PY
+
+
+
+      - name: Publier l’article
+
+        env:
+
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+
+        run: |
+
+          git config user.name "github-actions[bot]"
+
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add docs/actualites
+
+          git commit -m "Publie l actualite validee #${ISSUE_NUMBER}"
+
+          git push
+
