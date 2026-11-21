@@ -82,8 +82,12 @@ jobs:
           
           from pathlib import Path
           
+
+
           body = os.environ.get('ISSUE_BODY', '')
           
+
+
           def field(label):
           
               pattern = rf"###\s+{re.escape(label)}\s*\n+(.+?)(?=\n###\s|\Z)"
@@ -96,6 +100,8 @@ jobs:
                   
               return re.sub(r'<!--.*?-->', '', match.group(1), flags=re.S).strip()
               
+
+
           is_blog = os.environ.get('PUBLICATION_LABEL') == 'blog-publication-validée'
           
           if is_blog:
@@ -114,6 +120,18 @@ jobs:
               
               draft = field('Décrivez l’actualité')
               
+
+
+          author_github = re.sub(r'[^A-Za-z0-9-]', '', field('Pseudo GitHub du rédacteur').lstrip('@')).strip()
+          
+          author_name = field('Nom et prénom à afficher (facultatif)').strip()
+          
+          if not author_github:
+          
+              raise SystemExit('Le pseudo GitHub du rédacteur est obligatoire.')
+              
+
+
           photos = field('Photos à publier (facultatif)')
           
           sources = field('Sources et liens utiles (facultatif)')
@@ -130,30 +148,32 @@ jobs:
           
               raise SystemExit('La proposition ne contient pas de texte.')
               
+
+
           def slugify(value):
           
               value = unicodedata.normalize('NFKD', value).encode('ascii', 'ignore').decode().lower()
               
-              value = re.sub(r'[^a-z0-9]+', '-', value).strip('-')
+              return re.sub(r'[^a-z0-9]+', '-', value).strip('-')[:70] or ('billet' if is_blog else 'actualite')
               
-              return value[:70] or ('billet' if is_blog else 'actualite')
-              
+
+
           folder = Path('docs/blog' if is_blog else 'docs/actualites')
           
           folder.mkdir(parents=True, exist_ok=True)
           
-          slug = slugify(title)
-          
-          target = folder / f'{slug}.md'
+          target = folder / f'{slugify(title)}.md'
           
           suffix = 2
           
           while target.exists():
           
-              target = folder / f'{slug}-{suffix}.md'
+              target = folder / f'{slugify(title)}-{suffix}.md'
               
               suffix += 1
               
+
+
           image, image_alt = '', ''
           
           first_image = re.search(r'!\[([^\]]*)\]\(([^)]+)\)', draft)
@@ -166,7 +186,31 @@ jobs:
           
           description = re.sub(r'\s+', ' ', description).strip()[:155]
           
-          frontmatter = ['---', 'layout: wiki', f'title: {json.dumps(title, ensure_ascii=False)}', f'description: {json.dumps(description, ensure_ascii=False)}', f'date: {datetime.date.today().isoformat()}', f'category: {json.dumps(category, ensure_ascii=False)}', f'image: {json.dumps(image, ensure_ascii=False)}', f'image_alt: {json.dumps(image_alt, ensure_ascii=False)}', '---', '', f'# {title}', '', draft, '', f'---\n\n*Proposition validée depuis l’issue #{os.environ.get("ISSUE_NUMBER")}.*', '']
+          frontmatter = [
+          
+              '---', 'layout: wiki',
+              
+              f'title: {json.dumps(title, ensure_ascii=False)}',
+              
+              f'description: {json.dumps(description, ensure_ascii=False)}',
+              
+              f'date: {datetime.date.today().isoformat()}',
+              
+              f'category: {json.dumps(category, ensure_ascii=False)}',
+              
+              f'author_github: {json.dumps(author_github, ensure_ascii=False)}',
+              
+              f'author_name: {json.dumps(author_name, ensure_ascii=False)}',
+              
+              f'image: {json.dumps(image, ensure_ascii=False)}',
+              
+              f'image_alt: {json.dumps(image_alt, ensure_ascii=False)}',
+              
+              '---', '', f'# {title}', '', draft, '',
+              
+              f'---\n\n*Proposition validée depuis l’issue #{os.environ.get("ISSUE_NUMBER")}.*', ''
+              
+          ]
           
           target.write_text('\n'.join(frontmatter), encoding='utf-8')
           
@@ -204,6 +248,20 @@ jobs:
           
           git push
           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
