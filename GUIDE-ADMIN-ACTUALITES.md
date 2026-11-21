@@ -10,12 +10,15 @@ Les administrateurs doivent relire la proposition, vérifier les informations et
 
 ## La méthode simple pour publier
 
-1. Ouvrir le dossier [`docs/actualites/`](https://github.com/1234LUCIUS/projet-interconnexion-normand-wiki/tree/main/docs/actualites).
-2. Copier le fichier [`_modele-article.md`](https://github.com/1234LUCIUS/projet-interconnexion-normand-wiki/blob/main/docs/actualites/_modele-article.md).
-3. Le renommer avec des mots simples, par exemple `installation-repeater-calvados.md`.
-4. Remplacer le titre, la date, le résumé et le texte d’exemple.
-5. Ajouter les photos dans [`docs/assets/actualites/`](https://github.com/1234LUCIUS/projet-interconnexion-normand-wiki/tree/main/docs/assets/actualites), puis modifier le chemin de la photo dans l’article.
-6. Enregistrer le fichier et valider la modification sur la branche `main`.
+Après relecture, l’administrateur n’a plus besoin de créer manuellement le fichier Markdown : il suffit d’ajouter le label GitHub **`publication-validée`** à l’issue. L’action GitHub vérifie les droits de l’administrateur, transforme automatiquement le formulaire en article Markdown et le pousse dans `main`.
+
+1. Pour une publication automatique, ouvrir l’issue proposée et ajouter le label **`publication-validée`**. Les étapes ci-dessous restent disponibles pour une publication manuelle ou une correction.
+2. Ouvrir le dossier [`docs/actualites/`](https://github.com/1234LUCIUS/projet-interconnexion-normand-wiki/tree/main/docs/actualites).
+3. Copier le fichier [`_modele-article.md`](https://github.com/1234LUCIUS/projet-interconnexion-normand-wiki/blob/main/docs/actualites/_modele-article.md).
+4. Le renommer avec des mots simples, par exemple `installation-repeater-calvados.md`.
+5. Remplacer le titre, la date, le résumé et le texte d’exemple.
+6. Ajouter les photos dans [`docs/assets/actualites/`](https://github.com/1234LUCIUS/projet-interconnexion-normand-wiki/tree/main/docs/assets/actualites), puis modifier le chemin de la photo dans l’article.
+7. Enregistrer le fichier et valider la modification sur la branche `main`.
 
 La page [Actualités](https://1234lucius.github.io/projet-interconnexion-normand-wiki/actualites.html) et le sitemap détectent automatiquement les articles Markdown placés dans ce dossier. Il n’est plus nécessaire de modifier une page HTML ou le sitemap.
 

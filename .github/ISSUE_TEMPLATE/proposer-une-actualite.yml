@@ -48,6 +48,11 @@ body:
     attributes:
       label: Sources et liens utiles (facultatif)
       description: Ajoutez des liens publics qui permettent de vérifier les informations.
+  - type: textarea
+    id: photos
+    attributes:
+      label: Photos à publier (facultatif)
+      description: Glissez-déposez ici les photos validées ou collez leurs liens Markdown. Elles seront ajoutées à l’article après validation.
   - type: checkboxes
     id: confirmations
     attributes:
