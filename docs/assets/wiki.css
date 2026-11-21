@@ -126,6 +126,18 @@ a:hover { color: var(--green); }
 .article-card h2, .article-card p, .article-card .button { margin-left: 1rem; margin-right: 1rem; }
 .article-card h2 { margin-top: .35rem; font-size: 1.3rem; }
 .article-meta { color: var(--muted); font-size: .9rem; }
+.article-tag {
+  display: inline-block;
+  margin-top: .25rem !important;
+  padding: .2rem .55rem;
+  border: 1px solid #b7d9b3;
+  border-radius: 999px;
+  background: #eaf6e8;
+  color: var(--green-mid);
+  font-size: .82rem;
+  font-weight: 700;
+}
+.prose > .article-tag { margin: 0 0 .9rem; }
 .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-top: 1.25rem; }
 .gallery-card { margin: 0; overflow: hidden; background: var(--paper); border: 1px solid var(--line); border-radius: 14px; box-shadow: 0 2px 8px #18351d12; }
 .gallery-card a { display: block; }

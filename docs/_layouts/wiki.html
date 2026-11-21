@@ -33,6 +33,7 @@
   <main class="page-shell">
     <p class="breadcrumbs"><a href="{{ '/' | relative_url }}">Accueil</a> <span aria-hidden="true">/</span> {{ page.title | escape }}</p>
     <article class="content-card prose">
+      {% if page.category %}<p class="article-tag" aria-label="Catégorie">{{ page.category | escape }}</p>{% endif %}
       {{ content }}
     </article>
   </main>
