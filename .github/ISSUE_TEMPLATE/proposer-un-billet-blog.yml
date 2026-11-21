@@ -55,7 +55,7 @@ body:
     id: photos
     attributes:
       label: Photos à publier (facultatif)
-      description: Facultatif : ajoutez ici des photos supplémentaires. Pour contrôler précisément leur emplacement, insérez-les directement dans « Votre brouillon », entre les paragraphes qu’elles illustrent. Les images doivent rester publiques et validées.
+      description: "Facultatif : ajoutez ici des photos supplémentaires. Pour contrôler précisément leur emplacement, insérez-les directement dans « Votre brouillon », entre les paragraphes qu’elles illustrent. Les images doivent rester publiques et validées."
   - type: checkboxes
     id: confirmations
     attributes:
