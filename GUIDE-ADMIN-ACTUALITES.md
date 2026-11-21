@@ -10,6 +10,8 @@ Les actualités utilisent quatre étiquettes : **Nouvelle du projet**, **Pose de
 
 Les administrateurs doivent relire la proposition, vérifier les informations et les photos, supprimer toute donnée sensible, puis décider si elle doit être publiée.
 
+Le formulaire demande le **pseudo GitHub du rédacteur**, qui est affiché avec un lien vers son profil sur l’article publié. Le rédacteur peut aussi choisir d’afficher son **nom et prénom** ; ce champ est facultatif. Ne renseignez jamais une adresse e-mail, un numéro de téléphone ou une autre donnée privée dans ces champs.
+
 ## La méthode simple pour publier
 
 Après relecture, l’administrateur n’a plus besoin de créer manuellement le fichier Markdown : il suffit d’ajouter le label GitHub **`publication-validée`** à l’issue. L’action GitHub vérifie les droits de l’administrateur, transforme automatiquement le formulaire en article Markdown et le pousse dans `main`.

@@ -4,6 +4,8 @@ title: "Titre de l’article"
 description: "Résumé court de l’article pour les moteurs de recherche."
 date: 2026-11-20
 category: "Nouvelle du projet"
+author_github: "pseudo-github"
+author_name: "Nom Prénom (facultatif)"
 image: "/assets/actualites/nom-de-la-photo.jpg"
 image_alt: "Description précise de la photo"
 ---

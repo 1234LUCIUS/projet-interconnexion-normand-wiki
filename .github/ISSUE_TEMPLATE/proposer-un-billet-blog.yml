@@ -29,6 +29,20 @@ body:
         - Autre
     validations:
       required: true
+  - type: input
+    id: github_username
+    attributes:
+      label: Pseudo GitHub du rédacteur
+      description: Indiquez le pseudo GitHub qui doit apparaître comme contributeur du billet, par exemple @1234LUCIUS.
+      placeholder: "Exemple : 1234LUCIUS"
+    validations:
+      required: true
+  - type: input
+    id: author_name
+    attributes:
+      label: Nom et prénom à afficher (facultatif)
+      description: Vous pouvez afficher votre nom et prénom en plus de votre pseudo GitHub. Laissez vide si vous préférez rester identifié uniquement par votre pseudo.
+      placeholder: "Exemple : Jean Dupont"
   - type: textarea
     id: draft
     attributes:

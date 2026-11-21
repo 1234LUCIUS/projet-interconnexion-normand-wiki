@@ -4,6 +4,8 @@ title: "Titre du billet"
 description: "Résumé court du billet pour les moteurs de recherche."
 date: 2026-11-21
 category: "Dossier ou explication"
+author_github: "pseudo-github"
+author_name: "Nom Prénom (facultatif)"
 image: ""
 image_alt: ""
 ---

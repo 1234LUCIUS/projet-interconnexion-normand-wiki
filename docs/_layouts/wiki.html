@@ -34,6 +34,7 @@
     <p class="breadcrumbs"><a href="{{ '/' | relative_url }}">Accueil</a> <span aria-hidden="true">/</span> {{ page.title | escape }}</p>
     <article class="content-card prose">
       {% if page.category %}<p class="article-tag" aria-label="Catégorie">{{ page.category | escape }}</p>{% endif %}
+      {% if page.author_github or page.author_name %}<p class="article-author" aria-label="Auteur de la contribution">Contribution de {% if page.author_name %}<strong>{{ page.author_name | escape }}</strong> · {% endif %}{% if page.author_github contains '@' %}<a href="https://github.com/{{ page.author_github | remove: '@' | escape }}">{{ page.author_github | escape }}</a>{% else %}<a href="https://github.com/{{ page.author_github | escape }}">@{{ page.author_github | escape }}</a>{% endif %}</p>{% endif %}
       {{ content }}
     </article>
   </main>
