@@ -1,0 +1,25 @@
+---
+layout: wiki
+title: "Rechercher dans le wiki"
+description: "Rechercher une information dans le wiki du Projet d’Interconnexion Normand."
+---
+
+# Rechercher dans le wiki
+
+<p class="search-intro">Trouvez rapidement une explication, une configuration, un matériel ou un retour d’expérience dans les pages publiques du wiki.</p>
+
+<form class="search-page-form" data-search-page-form data-search-form action="{{ '/recherche.html' | relative_url }}" method="get" role="search">
+  <label for="wiki-search-page">Votre recherche</label>
+  <div class="search-controls">
+    <input id="wiki-search-page" data-search-input type="search" name="q" placeholder="Exemple : configuration MeshCore" autocomplete="off" />
+    <button type="submit">Rechercher</button>
+  </div>
+</form>
+
+<p class="search-status" data-search-status role="status" aria-live="polite"></p>
+<section class="search-results" data-search-results aria-label="Résultats de recherche"></section>
+
+<p class="muted">La recherche est effectuée directement dans votre navigateur. Aucun terme recherché n’est envoyé à un service externe.</p>
+
+<script src="{{ '/assets/search-index.js' | relative_url }}"></script>
+<script src="{{ '/assets/search.js' | relative_url }}"></script>
