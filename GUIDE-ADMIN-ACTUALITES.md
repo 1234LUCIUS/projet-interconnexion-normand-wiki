@@ -36,7 +36,7 @@ Déposer chaque photo validée dans `docs/assets/actualites/`, puis utiliser ce 
 
 Plusieurs photos peuvent être ajoutées dans le même article. Utiliser des noms sans espaces ni accents et renseigner un texte alternatif décrivant chaque image.
 
-Pour illustrer précisément le texte, placer l’image Markdown directement après le paragraphe concerné dans le brouillon. Le workflow conserve cet emplacement lors de la génération automatique. Le champ « Photos à publier » sert uniquement aux photos supplémentaires qui n’ont pas été placées dans le texte. Deux photos consécutives sont affichées côte à côte sur ordinateur, sans recadrage, puis l’une sous l’autre sur mobile.
+La mise en page du rédacteur est libre : titres Markdown, paragraphes, listes, liens, citations et ordre des sections sont conservés. Pour illustrer précisément le texte, placer l’image Markdown directement après le paragraphe concerné dans le brouillon. Le workflow conserve cet emplacement lors de la génération automatique. Le champ « Photos à publier » sert uniquement aux photos supplémentaires qui n’ont pas été placées dans le texte ; elles sont ajoutées en fin d’article dans une section complémentaire. Deux photos consécutives sont affichées côte à côte sur ordinateur, sans recadrage, puis l’une sous l’autre sur mobile.
 
 ## Avant de publier
 

@@ -46,7 +46,7 @@ body:
     id: draft
     attributes:
       label: Décrivez l’actualité
-      description: Indiquez ce qui s’est passé, quand, pourquoi c’est utile et ce qui peut être partagé publiquement. Vous pouvez glisser-déposer une photo directement entre deux paragraphes pour qu’elle illustre précisément le texte concerné.
+      description: Mise en page libre : rédigez comme vous le souhaitez en Markdown avec vos propres titres, paragraphes, listes, liens ou citations. Placez chaque photo directement à l’endroit voulu entre les paragraphes ; le workflow conservera cet ordre et cet emplacement.
       placeholder: |
         Résumé de la nouvelle :
 
