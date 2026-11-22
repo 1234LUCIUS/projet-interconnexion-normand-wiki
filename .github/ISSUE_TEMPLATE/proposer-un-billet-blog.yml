@@ -47,7 +47,7 @@ body:
     id: draft
     attributes:
       label: Votre brouillon
-      description: Mise en page libre : rédigez le billet en Markdown avec vos propres titres, paragraphes, listes, liens, citations ou autres éléments simples. Placez chaque photo directement à l’endroit voulu ; son image Markdown sera conservée exactement à cet emplacement. Un brouillon inachevé peut être envoyé.
+      description: "Mise en page libre : rédigez le billet en Markdown avec vos propres titres, paragraphes, listes, liens, citations ou autres éléments simples. Placez chaque photo directement à l’endroit voulu ; son image Markdown sera conservée exactement à cet emplacement. Un brouillon inachevé peut être envoyé."
       placeholder: |
         ## Sujet et objectif
         Expliquez le thème et à qui le billet s’adresse.

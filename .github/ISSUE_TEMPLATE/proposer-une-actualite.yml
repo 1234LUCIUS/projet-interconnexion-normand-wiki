@@ -46,7 +46,7 @@ body:
     id: draft
     attributes:
       label: Décrivez l’actualité
-      description: Mise en page libre : rédigez comme vous le souhaitez en Markdown avec vos propres titres, paragraphes, listes, liens ou citations. Placez chaque photo directement à l’endroit voulu entre les paragraphes ; le workflow conservera cet ordre et cet emplacement.
+      description: "Mise en page libre : rédigez comme vous le souhaitez en Markdown avec vos propres titres, paragraphes, listes, liens ou citations. Placez chaque photo directement à l’endroit voulu entre les paragraphes ; le workflow conservera cet ordre et cet emplacement."
       placeholder: |
         Résumé de la nouvelle :
 
