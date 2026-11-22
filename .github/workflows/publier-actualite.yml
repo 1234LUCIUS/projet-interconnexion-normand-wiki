@@ -86,11 +86,29 @@ jobs:
 
           body = os.environ.get('ISSUE_BODY', '')
           
+          form_labels = [
+          
+              'Titre proposé', 'Type de billet', 'Pseudo GitHub du rédacteur',
+              
+              'Nom et prénom à afficher (facultatif)', 'Votre brouillon',
+              
+              'Titre de l’actualité', "Titre de l'actualité", 'Type d’actualité',
+              
+              "Type d'actualité", 'Décrivez l’actualité',
+              
+              'Sources et liens utiles (facultatif)', 'Photos à publier (facultatif)',
+              
+              'Avant d’envoyer'
+              
+          ]
+          
+          next_field = '|'.join(re.escape(item) for item in form_labels)
+          
 
 
           def field(label):
           
-              pattern = rf"###\s+{re.escape(label)}\s*\n+(.+?)(?=\n###\s|\Z)"
+              pattern = rf"###\s+{re.escape(label)}\s*\n(.*?)(?=\n###\s+(?:{next_field})\s*\n|\Z)"
               
               match = re.search(pattern, body, re.S | re.I)
               
@@ -248,6 +266,15 @@ jobs:
           
           git push
           
+
+
+
+
+
+
+
+
+
 
 
 
