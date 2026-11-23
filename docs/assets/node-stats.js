@@ -2,7 +2,7 @@
   'use strict';
 
   const meshcoreEndpoint = 'https://map.meshcore.io/api/v1/nodes?short=1';
-  const umapEndpoint = 'https://umap.openstreetmap.fr/fr/map/projet-dinterconnexion-normand_1488925.geojson';
+  const umapEndpoint = 'https://umap.openstreetmap.fr/fr/map/1488925/geojson/';
   const refreshEveryMs = 5 * 60 * 1000;
   const numberFormat = new Intl.NumberFormat('fr-FR');
   const nodesById = {
@@ -68,7 +68,12 @@
   }
 
   function uMapRecords(collection) {
-    const features = Array.isArray(collection && collection.features) ? collection.features : [];
+    const isMapSettingsFeature = collection && collection.type === 'Feature'
+      && collection.properties
+      && (collection.properties.zoom !== undefined || collection.properties.center !== undefined || collection.properties.permissions);
+    const features = collection && collection.type === 'Feature' && !isMapSettingsFeature
+      ? [collection]
+      : Array.isArray(collection && collection.features) ? collection.features : [];
     return features.filter(isPointFeature).map((feature) => ({
       source: 'uMap',
       name: featureName(feature),
