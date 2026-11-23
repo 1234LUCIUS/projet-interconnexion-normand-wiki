@@ -78,15 +78,11 @@ Chaque épingle uMap doit utiliser une fiche homogène, lisible par les débutan
 Nom du nœud : [nom public court]
 Réseau : MeshCore ou Meshtastic
 Rôle : Repeater / Companion (Client)
-Statut : installé ou projet
-Lieu public : [commune, point haut ou site autorisé — pas d’adresse privée]
 Modèle du nœud : [référence exacte]
 Antenne : [omnidirectionnelle, directionnelle, modèle]
 Gain d’antenne : [nombre] dBi
 Date de pose : [AAAA-MM-JJ — obligatoire pour un Repeater installé]
 Description de l’installation : [alimentation, support, hauteur approximative, autorisation et maintenance]
-Dernière vérification : [AAAA-MM-JJ]
-Source ou contact public : [lien vers une page publique, facultatif]
 ```
 
 Pour un **projet de nœud**, remplacez `Date de pose` par `Date prévue` ou `À déterminer`, et indiquez clairement que le nœud n’est pas encore opérationnel. Pour un Companion mobile, la date de pose peut rester vide ; indiquez plutôt la zone générale et le modèle utilisé. Pour les nouveaux répéteurs permanents, MeshCore est le choix recommandé par le projet.
