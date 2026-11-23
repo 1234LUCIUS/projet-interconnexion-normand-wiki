@@ -11,7 +11,7 @@ Le Projet d’Interconnexion Normand s’appuie désormais sur des cartes offici
 
 ## Compteurs et statistiques actualisés
 
-Les chiffres ci-dessous sont fusionnés à partir de l’API publique de la [carte officielle MeshCore](https://map.meshcore.io/) et des marqueurs de la carte uMap du projet. Ils sont actualisés à l’ouverture de la page, puis environ toutes les cinq minutes.
+Les chiffres ci-dessous sont fusionnés à partir de l’API publique de la [carte officielle MeshCore](https://map.meshcore.io/) et des marqueurs de la carte uMap du projet. Pour MeshCore, seuls les nœuds dont les coordonnées se trouvent dans les cinq départements normands — Calvados (14), Eure (27), Manche (50), Orne (61) et Seine-Maritime (76) — sont retenus. Ils sont actualisés à l’ouverture de la page, puis environ toutes les cinq minutes.
 
 <div class="node-stats" aria-live="polite">
   <div class="node-stat node-stat-primary"><strong data-node-stat="repeaters">—</strong><span>répéteurs référencés — MeshCore + uMap</span></div>
@@ -22,7 +22,7 @@ Les chiffres ci-dessous sont fusionnés à partir de l’API publique de la [car
 </div>
 <p class="muted">Dernière actualisation de cette page : <span data-node-stat="updated">—</span>. <span data-node-stat="status">Chargement des données MeshCore…</span></p>
 
-<p class="notice"><strong>Sources et limites :</strong> les compteurs fusionnent les nœuds MeshCore et les marqueurs ponctuels uMap dont le rôle est identifiable. Un même nom public est dédoublonné lorsqu’il apparaît dans les deux sources. La carte uMap doit être réglée sur <strong>Everybody / Public</strong> pour que ses marqueurs soient lisibles par le navigateur ; tant qu’elle reste privée, seuls les nœuds MeshCore sont comptés. Les projets uMap ne sont pas comptés comme des nœuds déployés. La réponse JSON MeshCore est volumineuse, de l’ordre de plusieurs dizaines de mégaoctets : selon la connexion ou les protections du navigateur, le chargement peut être lent ou indisponible. La présence d’un nœud dans une carte ne garantit pas qu’il soit encore joignable aujourd’hui.</p>
+<p class="notice"><strong>Sources et limites :</strong> les compteurs fusionnent les nœuds MeshCore situés en Normandie et les marqueurs ponctuels uMap dont le rôle est identifiable. Le périmètre MeshCore est calculé avec le <a href="https://raw.githubusercontent.com/gregoiredavid/france-geojson/master/regions/normandie/region-normandie.geojson">contour administratif public de la région Normandie</a>. Un même nom public est dédoublonné lorsqu’il apparaît dans les deux sources. La carte uMap doit être réglée sur <strong>Everybody / Public</strong> pour que ses marqueurs soient lisibles par le navigateur ; tant qu’elle reste privée, seuls les nœuds MeshCore sont comptés. Les projets uMap ne sont pas comptés comme des nœuds déployés. La réponse JSON MeshCore est volumineuse, de l’ordre de plusieurs dizaines de mégaoctets : selon la connexion ou les protections du navigateur, le chargement peut être lent ou indisponible. La présence d’un nœud dans une carte ne garantit pas qu’il soit encore joignable aujourd’hui.</p>
 
 ## Les cartes à consulter
 

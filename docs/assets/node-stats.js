@@ -3,6 +3,7 @@
 
   const meshcoreEndpoint = 'https://map.meshcore.io/api/v1/nodes?short=1';
   const umapEndpoint = 'https://umap.openstreetmap.fr/fr/map/1488925/geojson/';
+  const normandyBoundaryEndpoint = 'https://raw.githubusercontent.com/gregoiredavid/france-geojson/master/regions/normandie/region-normandie.geojson';
   const refreshEveryMs = 5 * 60 * 1000;
   const numberFormat = new Intl.NumberFormat('fr-FR');
   const nodesById = {
@@ -26,6 +27,38 @@
 
   function setValue(key, number) {
     if (nodesById[key]) nodesById[key].textContent = numberFormat.format(number);
+  }
+
+  function pointInRing(point, ring) {
+    let inside = false;
+    for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+      const xi = ring[i][0], yi = ring[i][1];
+      const xj = ring[j][0], yj = ring[j][1];
+      const intersects = ((yi > point[1]) !== (yj > point[1]))
+        && point[0] < ((xj - xi) * (point[1] - yi)) / (yj - yi) + xi;
+      if (intersects) inside = !inside;
+    }
+    return inside;
+  }
+
+  function pointInNormandy(point, boundary) {
+    const geometry = boundary && boundary.geometry;
+    if (!geometry || !point) return false;
+    const polygons = geometry.type === 'Polygon' ? [geometry.coordinates] : geometry.coordinates;
+    return polygons.some((polygon) => pointInRing(point, polygon[0])
+      && !polygon.slice(1).some((hole) => pointInRing(point, hole)));
+  }
+
+  function coordinatesOf(node) {
+    const coordinates = node && (node.coordinates || node.coords || node.location);
+    if (Array.isArray(coordinates) && coordinates.length >= 2) {
+      const lon = Number(coordinates[0]);
+      const lat = Number(coordinates[1]);
+      return Number.isFinite(lon) && Number.isFinite(lat) ? [lon, lat] : null;
+    }
+    const lat = Number(node && (node.lat ?? node.latitude ?? node.la ?? node.y));
+    const lon = Number(node && (node.lon ?? node.lng ?? node.longitude ?? node.lo ?? node.x));
+    return Number.isFinite(lon) && Number.isFinite(lat) ? [lon, lat] : null;
   }
 
   function normalize(value) {
@@ -84,8 +117,8 @@
     }));
   }
 
-  function meshCoreRecords(nodes) {
-    return nodes.map((node) => ({
+  function meshCoreRecords(nodes, boundary) {
+    return nodes.filter((node) => pointInNormandy(coordinatesOf(node), boundary)).map((node) => ({
       source: 'MeshCore',
       name: value(node, 'n', 'adv_name'),
       key: normalize(value(node, 'n', 'adv_name')),
@@ -95,8 +128,8 @@
     }));
   }
 
-  function mergeRecords(meshcoreNodes, umapCollection) {
-    const merged = meshCoreRecords(meshcoreNodes);
+  function mergeRecords(meshcoreNodes, umapCollection, boundary) {
+    const merged = meshCoreRecords(meshcoreNodes, boundary);
     const knownKeys = new Set(merged.map((record) => record.key).filter(Boolean));
     for (const record of uMapRecords(umapCollection)) {
       if (record.key && knownKeys.has(record.key)) continue;
@@ -116,13 +149,17 @@
 
   async function update() {
     nodesById.status.textContent = 'Actualisation des données MeshCore et uMap…';
-    const [meshcoreResult, umapResult] = await Promise.allSettled([
+    const [meshcoreResult, umapResult, boundaryResult] = await Promise.allSettled([
       fetch(meshcoreEndpoint, { cache: 'no-store' }).then((response) => {
         if (!response.ok) throw new Error(`MeshCore HTTP ${response.status}`);
         return response.json();
       }),
       fetch(umapEndpoint, { cache: 'no-store' }).then((response) => {
         if (!response.ok) throw new Error(`uMap HTTP ${response.status}`);
+        return response.json();
+      }),
+      fetch(normandyBoundaryEndpoint, { cache: 'force-cache' }).then((response) => {
+        if (!response.ok) throw new Error(`Normandie HTTP ${response.status}`);
         return response.json();
       })
     ]);
@@ -135,7 +172,12 @@
 
     const meshcoreNodes = Array.isArray(meshcoreResult.value) ? meshcoreResult.value : [];
     const umapCollection = umapResult.status === 'fulfilled' ? umapResult.value : null;
-    const records = mergeRecords(meshcoreNodes, umapCollection);
+    const boundary = boundaryResult.status === 'fulfilled' ? boundaryResult.value : null;
+    if (!boundary) {
+      nodesById.status.textContent = 'Limites de la Normandie indisponibles : compteurs MeshCore non calculés.';
+      return;
+    }
+    const records = mergeRecords(meshcoreNodes, umapCollection, boundary);
     const repeaters = records.filter((record) => record.role === 'repeater' && !record.project).length;
     const companions = records.filter((record) => record.role === 'companion' && !record.project).length;
     const now = Date.now();
@@ -147,8 +189,8 @@
     setValue('month', addedSince(records, now - 30 * 24 * 60 * 60 * 1000));
     nodesById.updated.textContent = new Date().toLocaleString('fr-FR', { dateStyle: 'short', timeStyle: 'short' });
     nodesById.status.textContent = umapResult.status === 'fulfilled'
-      ? 'Données publiques MeshCore et uMap chargées.'
-      : 'Données MeshCore chargées ; uMap est privée ou momentanément indisponible.';
+      ? 'Données MeshCore de Normandie et uMap chargées.'
+      : 'Données MeshCore de Normandie chargées ; uMap est privée ou momentanément indisponible.';
   }
 
   update().catch((error) => {
