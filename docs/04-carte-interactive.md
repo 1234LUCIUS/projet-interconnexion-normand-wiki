@@ -11,18 +11,18 @@ Le Projet d’Interconnexion Normand s’appuie désormais sur des cartes offici
 
 ## Compteurs et statistiques actualisés
 
-Les chiffres ci-dessous sont fusionnés à partir de l’API publique de la [carte officielle MeshCore](https://map.meshcore.io/) et des marqueurs de la carte uMap du projet. Pour MeshCore, seuls les nœuds dont les coordonnées se trouvent dans les cinq départements normands — Calvados (14), Eure (27), Manche (50), Orne (61) et Seine-Maritime (76) — sont retenus. Ils sont actualisés à l’ouverture de la page, puis environ toutes les cinq minutes.
+Les chiffres ci-dessous sont fusionnés à partir de l’API publique de la [carte officielle MeshCore](https://map.meshcore.io/), de [MeshQual](https://meshqual.pmrs.fr/) et de [RelayLens](https://relaylens.mesh.chaun14.fr/companions). Pour MeshCore et les sources complémentaires, seuls les nœuds dont les coordonnées se trouvent dans les cinq départements normands — Calvados (14), Eure (27), Manche (50), Orne (61) et Seine-Maritime (76) — sont retenus. Ils sont actualisés à l’ouverture de la page, puis environ toutes les cinq minutes.
 
 <div class="node-stats" aria-live="polite">
-  <div class="node-stat node-stat-primary"><strong data-node-stat="repeaters">—</strong><span>répéteurs référencés — MeshCore + uMap</span></div>
-  <div class="node-stat"><strong data-node-stat="companions">—</strong><span>Companions / Clients — MeshCore + uMap</span></div>
+  <div class="node-stat node-stat-primary"><strong data-node-stat="repeaters">—</strong><span>répéteurs référencés — sources MeshCore</span></div>
+  <div class="node-stat"><strong data-node-stat="companions">—</strong><span>Companions / Clients — sources MeshCore</span></div>
   <div class="node-stat"><strong data-node-stat="total">—</strong><span>nœuds au total — doublons dédupliqués</span></div>
   <div class="node-stat"><strong data-node-stat="week">—</strong><span>nœuds déployés durant les 7 derniers jours</span></div>
   <div class="node-stat"><strong data-node-stat="month">—</strong><span>nœuds déployés durant les 30 derniers jours</span></div>
 </div>
 <p class="muted">Dernière actualisation de cette page : <span data-node-stat="updated">—</span>. <span data-node-stat="status">Chargement des données MeshCore…</span></p>
 
-<p class="notice"><strong>Sources et limites :</strong> les compteurs fusionnent les nœuds MeshCore situés en Normandie, les données géolocalisées de <a href="https://meshqual.pmrs.fr/">MeshQual</a>, les données géolocalisées de <a href="https://relaylens.mesh.chaun14.fr/companions">RelayLens</a> et les marqueurs ponctuels uMap dont le rôle est identifiable. Toutes ces sources sont filtrées avec le <a href="https://raw.githubusercontent.com/gregoiredavid/france-geojson/master/regions/normandie/region-normandie.geojson">contour administratif public de la région Normandie</a>. Un même nœud est dédoublonné par clé publique ou nom public lorsqu’il apparaît dans plusieurs sources. La carte uMap doit être réglée sur <strong>Everybody / Public</strong> pour que ses marqueurs soient lisibles par le navigateur ; tant qu’elle reste privée, elle n’ajoute aucun nœud. Les projets uMap ne sont pas comptés comme des nœuds déployés. Les statistiques sur 7 et 30 jours utilisent les dates d’insertion MeshCore lorsqu’elles sont disponibles ; MeshQual et RelayLens ne fournissent pas nécessairement cette date historique. La réponse JSON MeshCore est volumineuse, de l’ordre de plusieurs dizaines de mégaoctets : selon la connexion ou les protections du navigateur, le chargement peut être lent ou indisponible. La présence d’un nœud dans une carte ne garantit pas qu’il soit encore joignable aujourd’hui.</p>
+<p class="notice"><strong>Sources et limites :</strong> les compteurs fusionnent les nœuds MeshCore situés en Normandie, les données géolocalisées de <a href="https://meshqual.pmrs.fr/">MeshQual</a> et les données géolocalisées de <a href="https://relaylens.mesh.chaun14.fr/companions">RelayLens</a>. Toutes ces sources sont filtrées avec le <a href="https://raw.githubusercontent.com/gregoiredavid/france-geojson/master/regions/normandie/region-normandie.geojson">contour administratif public de la région Normandie</a>. Un même nœud est dédoublonné par clé publique ou nom public lorsqu’il apparaît dans plusieurs sources. Les statistiques sur 7 et 30 jours utilisent les dates d’insertion MeshCore lorsqu’elles sont disponibles ; MeshQual et RelayLens ne fournissent pas nécessairement cette date historique. La réponse JSON MeshCore est volumineuse, de l’ordre de plusieurs dizaines de mégaoctets : selon la connexion ou les protections du navigateur, le chargement peut être lent ou indisponible. La présence d’un nœud dans une carte ne garantit pas qu’il soit encore joignable aujourd’hui.</p>
 
 ## Les cartes à consulter
 
@@ -47,49 +47,6 @@ La carte ci-dessous s’ouvre sur la vue indiquée, autour des coordonnées et d
 **[Ouvrir MeshMap — carte publique Meshtastic](https://meshmap.net/)**
 
 MeshMap est une carte communautaire quasi temps réel des nœuds Meshtastic entendus par le serveur MQTT public. Elle est proposée ici comme complément : pour les nouvelles infrastructures permanentes du projet, la référence prioritaire reste la carte MeshCore officielle.
-
-### Carte collaborative du Projet — uMap OpenStreetMap
-
-La carte uMap est prévue pour le recensement manuel des nœuds normands et des projets de pose. [Ouvrir la carte collaborative du projet](https://umap.openstreetmap.fr/fr/map/projet-dinterconnexion-normand_1488925).
-
-La carte est maintenant enregistrée. Pour l’afficher ci-dessous et inclure ses marqueurs dans les compteurs, son statut uMap doit être **Everybody / Public**. Ne publiez pas l’adresse exacte d’un domicile ou d’un site sensible.
-
-<div class="map-embed">
-  <iframe src="https://umap.openstreetmap.fr/fr/map/projet-dinterconnexion-normand_1488925?scaleControl=true" title="Carte uMap collaborative du Projet d’Interconnexion Normand" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-
-<p class="muted">Si uMap indique que la carte n’est pas publique, ouvrez-la directement et choisissez le statut de visibilité <strong>Everybody / Public</strong> dans ses permissions.</p>
-
-#### Légende des épingles
-
-<div class="map-legend" aria-label="Légende de la carte collaborative">
-  <span><i class="map-pin map-pin-installed" aria-hidden="true"></i> Nœud installé</span>
-  <span><i class="map-pin map-pin-project" aria-hidden="true"></i> Projet de nœud</span>
-</div>
-
-- **Épingle bleue : nœud installé**, déjà flashé, posé ou en fonctionnement.
-- **Épingle jaune : projet de nœud**, emplacement envisagé ou installation à préparer, sans présenter le projet comme déjà actif.
-
-#### Structure proposée pour chaque référencement
-
-Chaque épingle uMap doit utiliser une fiche homogène, lisible par les débutants et sans donnée sensible :
-
-```text
-Nom du nœud : [nom public court]
-Réseau : MeshCore ou Meshtastic
-Rôle : Repeater / Companion (Client)
-Modèle du nœud : [référence exacte]
-Antenne : [omnidirectionnelle, directionnelle, modèle]
-Gain d’antenne : [nombre] dBi
-Date de pose : [AAAA-MM-JJ — obligatoire pour un Repeater installé]
-Description de l’installation : [alimentation, support, hauteur approximative, autorisation et maintenance]
-```
-
-Pour un **projet de nœud**, remplacez `Date de pose` par `Date prévue` ou `À déterminer`, et indiquez clairement que le nœud n’est pas encore opérationnel. Pour un Companion mobile, la date de pose peut rester vide ; indiquez plutôt la zone générale et le modèle utilisé. Pour les nouveaux répéteurs permanents, MeshCore est le choix recommandé par le projet.
-
-#### Règles de contribution
-
-Une personne qui ajoute une épingle doit vérifier le modèle, le rôle et le gain d’antenne avant publication. Les positions précises ne doivent être utilisées que pour un site public ou autorisé. Pour un domicile, un terrain privé ou un site sensible, utilisez une position générale et demandez l’accord du propriétaire. Ne publiez jamais de clé, QR code, identifiant d’appareil, mot de passe ou donnée permettant d’accéder au nœud.
 
 ### RelayLens — Companions
 
@@ -160,7 +117,7 @@ Une carte reflète uniquement les données connues, publiées et accessibles au 
 
 ## Recenser ou signaler un nœud
 
-Le recensement communautaire du projet se fait dans la **carte uMap OpenStreetMap** décrite plus haut, avec une épingle bleue pour un nœud installé et une épingle jaune pour un projet. Pour savoir comment un nœud peut aussi être visible sur les cartes officielles, consultez les règles propres à chaque service et n’envoyez jamais de clé privée, QR code, adresse personnelle ou coordonnées précises d’un site sensible.
+Pour signaler un nœud ou demander une correction sur les cartes officielles, consultez les règles propres à chaque service et n’envoyez jamais de clé privée, QR code, adresse personnelle ou coordonnées précises d’un site sensible.
 
 Si vous ne savez pas quelle carte utiliser ou si vous souhaitez signaler une erreur, demandez conseil sur le [serveur Discord officiel du Projet d’Interconnexion Normand](https://discord.gg/HnAfYUSU82) ou écrivez à [projet.interconnection.normand@gmail.com](mailto:projet.interconnection.normand@gmail.com).
 

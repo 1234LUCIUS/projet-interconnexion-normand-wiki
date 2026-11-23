@@ -2,7 +2,6 @@
   'use strict';
 
   const meshcoreEndpoint = 'https://map.meshcore.io/api/v1/nodes?short=1';
-  const umapEndpoint = 'https://umap.openstreetmap.fr/fr/map/1488925/geojson/';
   const meshqualEndpoint = 'https://api.meshqual.pmrs.fr/api/nodes?bbox=-2.5,48.8,2,50.3';
   const relayLensEndpoint = 'https://relaylens.mesh.chaun14.fr/api/map/features?west=-2.5&south=48.8&east=2&north=50.3&zoom=8&max=400';
   const normandyBoundaryEndpoint = 'https://raw.githubusercontent.com/gregoiredavid/france-geojson/master/regions/normandie/region-normandie.geojson';
@@ -67,58 +66,6 @@
     return String(value || '').trim().toLocaleLowerCase('fr-FR').replace(/\s+/g, ' ');
   }
 
-  function featureText(feature) {
-    const properties = feature && feature.properties ? feature.properties : {};
-    return Object.values(properties).filter((value) => typeof value === 'string').join(' ');
-  }
-
-  function featureName(feature) {
-    const properties = feature && feature.properties ? feature.properties : {};
-    return properties.name || properties.nom || properties.title || properties.titre || '';
-  }
-
-  function featureDate(feature) {
-    const properties = feature && feature.properties ? feature.properties : {};
-    const values = Object.entries(properties)
-      .filter(([key]) => /date|pose|install|deploy|ajout|created/i.test(key))
-      .map(([, value]) => value);
-    const text = `${values.join(' ')} ${featureText(feature)}`;
-    const match = text.match(/\b(20\d{2})[-/]([01]\d)[-/]([0-3]\d)\b/);
-    return match ? `${match[1]}-${match[2]}-${match[3]}` : '';
-  }
-
-  function isProject(feature) {
-    return /projet|prévu|prevu|à venir|a venir|envisag|étude|etude/i.test(featureText(feature));
-  }
-
-  function roleOf(feature) {
-    const text = featureText(feature);
-    if (/repeater|répéteur|repeteur|relais/i.test(text)) return 'repeater';
-    if (/companion|client/i.test(text)) return 'companion';
-    return 'other';
-  }
-
-  function isPointFeature(feature) {
-    return feature && feature.geometry && feature.geometry.type === 'Point';
-  }
-
-  function uMapRecords(collection) {
-    const isMapSettingsFeature = collection && collection.type === 'Feature'
-      && collection.properties
-      && (collection.properties.zoom !== undefined || collection.properties.center !== undefined || collection.properties.permissions);
-    const features = collection && collection.type === 'Feature' && !isMapSettingsFeature
-      ? [collection]
-      : Array.isArray(collection && collection.features) ? collection.features : [];
-    return features.filter(isPointFeature).map((feature) => ({
-      source: 'uMap',
-      name: featureName(feature),
-      key: normalize(featureName(feature)),
-      role: roleOf(feature),
-      project: isProject(feature),
-      inserted: featureDate(feature)
-    }));
-  }
-
   function makeRecord({ name, publicKey, role, project = false, inserted = '' }) {
     return {
       source: 'MeshCore',
@@ -167,10 +114,10 @@
     }));
   }
 
-  function mergeRecords(meshcoreNodes, meshqualCollection, relayLensCollection, umapCollection, boundary) {
+  function mergeRecords(meshcoreNodes, meshqualCollection, relayLensCollection, boundary) {
     const merged = meshCoreRecords(meshcoreNodes, boundary);
     const knownKeys = new Set(merged.flatMap((record) => [record.key, record.nameKey]).filter(Boolean));
-    for (const record of [...meshQualRecords(meshqualCollection, boundary), ...relayLensRecords(relayLensCollection, boundary), ...uMapRecords(umapCollection)]) {
+    for (const record of [...meshQualRecords(meshqualCollection, boundary), ...relayLensRecords(relayLensCollection, boundary)]) {
       if ((record.key && knownKeys.has(record.key)) || (record.nameKey && knownKeys.has(record.nameKey))) continue;
       if (record.key) knownKeys.add(record.key);
       if (record.nameKey) knownKeys.add(record.nameKey);
@@ -188,14 +135,10 @@
   }
 
   async function update() {
-    nodesById.status.textContent = 'Actualisation des données MeshCore et uMap…';
-    const [meshcoreResult, umapResult, meshqualResult, relayLensResult, boundaryResult] = await Promise.allSettled([
+    nodesById.status.textContent = 'Actualisation des données MeshCore, MeshQual et RelayLens…';
+    const [meshcoreResult, meshqualResult, relayLensResult, boundaryResult] = await Promise.allSettled([
       fetch(meshcoreEndpoint, { cache: 'no-store' }).then((response) => {
         if (!response.ok) throw new Error(`MeshCore HTTP ${response.status}`);
-        return response.json();
-      }),
-      fetch(umapEndpoint, { cache: 'no-store' }).then((response) => {
-        if (!response.ok) throw new Error(`uMap HTTP ${response.status}`);
         return response.json();
       }),
       fetch(meshqualEndpoint, { cache: 'no-store' }).then((response) => {
@@ -219,7 +162,6 @@
     }
 
     const meshcoreNodes = Array.isArray(meshcoreResult.value) ? meshcoreResult.value : [];
-    const umapCollection = umapResult.status === 'fulfilled' ? umapResult.value : null;
     const meshqualCollection = meshqualResult.status === 'fulfilled' ? meshqualResult.value : null;
     const relayLensCollection = relayLensResult.status === 'fulfilled' ? relayLensResult.value : null;
     const boundary = boundaryResult.status === 'fulfilled' ? boundaryResult.value : null;
@@ -227,7 +169,7 @@
       nodesById.status.textContent = 'Limites de la Normandie indisponibles : compteurs MeshCore non calculés.';
       return;
     }
-    const records = mergeRecords(meshcoreNodes, meshqualCollection, relayLensCollection, umapCollection, boundary);
+    const records = mergeRecords(meshcoreNodes, meshqualCollection, relayLensCollection, boundary);
     const repeaters = records.filter((record) => record.role === 'repeater' && !record.project).length;
     const companions = records.filter((record) => record.role === 'companion' && !record.project).length;
     const now = Date.now();
@@ -238,7 +180,7 @@
     setValue('week', addedSince(records, now - 7 * 24 * 60 * 60 * 1000));
     setValue('month', addedSince(records, now - 30 * 24 * 60 * 60 * 1000));
     nodesById.updated.textContent = new Date().toLocaleString('fr-FR', { dateStyle: 'short', timeStyle: 'short' });
-    const sourceCount = [umapResult, meshqualResult, relayLensResult].filter((result) => result.status === 'fulfilled').length;
+    const sourceCount = [meshqualResult, relayLensResult].filter((result) => result.status === 'fulfilled').length;
     nodesById.status.textContent = `Données normandes chargées depuis MeshCore et ${sourceCount} source(s) complémentaire(s).`;
   }
 
