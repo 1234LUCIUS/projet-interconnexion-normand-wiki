@@ -1,7 +1,8 @@
 (function () {
   'use strict';
 
-  const endpoint = 'https://map.meshcore.io/api/v1/nodes?short=1';
+  const meshcoreEndpoint = 'https://map.meshcore.io/api/v1/nodes?short=1';
+  const umapEndpoint = 'https://umap.openstreetmap.fr/fr/map/projet-dinterconnexion-normand_1488925.geojson';
   const refreshEveryMs = 5 * 60 * 1000;
   const numberFormat = new Intl.NumberFormat('fr-FR');
   const nodesById = {
@@ -27,37 +28,127 @@
     if (nodesById[key]) nodesById[key].textContent = numberFormat.format(number);
   }
 
-  async function update() {
-    nodesById.status.textContent = 'Actualisation des données MeshCore…';
-    try {
-      const response = await fetch(endpoint, { cache: 'no-store' });
-      if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      const nodes = await response.json();
-      const repeaters = nodes.filter((node) => Number(value(node, 't', 'type')) === 2);
-      const companions = nodes.filter((node) => Number(value(node, 't', 'type')) === 1);
-      const now = Date.now();
-      const sinceWeek = now - 7 * 24 * 60 * 60 * 1000;
-      const sinceMonth = now - 30 * 24 * 60 * 60 * 1000;
-      const addedSince = (timestamp) => nodes.filter((node) => {
-        const date = Date.parse(dateValue(node) || '');
-        return Number.isFinite(date) && date >= timestamp;
-      }).length;
-
-      setValue('repeaters', repeaters.length);
-      setValue('companions', companions.length);
-      setValue('total', nodes.length);
-      setValue('week', addedSince(sinceWeek));
-      setValue('month', addedSince(sinceMonth));
-      nodesById.updated.textContent = new Date().toLocaleString('fr-FR', {
-        dateStyle: 'short', timeStyle: 'short'
-      });
-      nodesById.status.textContent = 'Données publiques MeshCore chargées.';
-    } catch (error) {
-      nodesById.status.textContent = 'Les données en direct sont momentanément indisponibles. Consultez la carte MeshCore officielle.';
-      console.warn('Impossible de charger les statistiques MeshCore', error);
-    }
+  function normalize(value) {
+    return String(value || '').trim().toLocaleLowerCase('fr-FR').replace(/\s+/g, ' ');
   }
 
-  update();
+  function featureText(feature) {
+    const properties = feature && feature.properties ? feature.properties : {};
+    return Object.values(properties).filter((value) => typeof value === 'string').join(' ');
+  }
+
+  function featureName(feature) {
+    const properties = feature && feature.properties ? feature.properties : {};
+    return properties.name || properties.nom || properties.title || properties.titre || '';
+  }
+
+  function featureDate(feature) {
+    const properties = feature && feature.properties ? feature.properties : {};
+    const values = Object.entries(properties)
+      .filter(([key]) => /date|pose|install|deploy|ajout|created/i.test(key))
+      .map(([, value]) => value);
+    const text = `${values.join(' ')} ${featureText(feature)}`;
+    const match = text.match(/\b(20\d{2})[-/]([01]\d)[-/]([0-3]\d)\b/);
+    return match ? `${match[1]}-${match[2]}-${match[3]}` : '';
+  }
+
+  function isProject(feature) {
+    return /projet|prévu|prevu|à venir|a venir|envisag|étude|etude/i.test(featureText(feature));
+  }
+
+  function roleOf(feature) {
+    const text = featureText(feature);
+    if (/repeater|répéteur|repeteur|relais/i.test(text)) return 'repeater';
+    if (/companion|client/i.test(text)) return 'companion';
+    return 'other';
+  }
+
+  function isPointFeature(feature) {
+    return feature && feature.geometry && feature.geometry.type === 'Point';
+  }
+
+  function uMapRecords(collection) {
+    const features = Array.isArray(collection && collection.features) ? collection.features : [];
+    return features.filter(isPointFeature).map((feature) => ({
+      source: 'uMap',
+      name: featureName(feature),
+      key: normalize(featureName(feature)),
+      role: roleOf(feature),
+      project: isProject(feature),
+      inserted: featureDate(feature)
+    }));
+  }
+
+  function meshCoreRecords(nodes) {
+    return nodes.map((node) => ({
+      source: 'MeshCore',
+      name: value(node, 'n', 'adv_name'),
+      key: normalize(value(node, 'n', 'adv_name')),
+      role: Number(value(node, 't', 'type')) === 2 ? 'repeater' : Number(value(node, 't', 'type')) === 1 ? 'companion' : 'other',
+      project: false,
+      inserted: dateValue(node)
+    }));
+  }
+
+  function mergeRecords(meshcoreNodes, umapCollection) {
+    const merged = meshCoreRecords(meshcoreNodes);
+    const knownKeys = new Set(merged.map((record) => record.key).filter(Boolean));
+    for (const record of uMapRecords(umapCollection)) {
+      if (record.key && knownKeys.has(record.key)) continue;
+      if (record.key) knownKeys.add(record.key);
+      merged.push(record);
+    }
+    return merged;
+  }
+
+  function addedSince(records, timestamp) {
+    return records.filter((record) => {
+      if (record.project) return false;
+      const date = Date.parse(record.inserted || '');
+      return Number.isFinite(date) && date >= timestamp;
+    }).length;
+  }
+
+  async function update() {
+    nodesById.status.textContent = 'Actualisation des données MeshCore et uMap…';
+    const [meshcoreResult, umapResult] = await Promise.allSettled([
+      fetch(meshcoreEndpoint, { cache: 'no-store' }).then((response) => {
+        if (!response.ok) throw new Error(`MeshCore HTTP ${response.status}`);
+        return response.json();
+      }),
+      fetch(umapEndpoint, { cache: 'no-store' }).then((response) => {
+        if (!response.ok) throw new Error(`uMap HTTP ${response.status}`);
+        return response.json();
+      })
+    ]);
+
+    if (meshcoreResult.status !== 'fulfilled') {
+      nodesById.status.textContent = 'Les données MeshCore sont momentanément indisponibles. Consultez la carte officielle.';
+      console.warn('Impossible de charger les statistiques MeshCore', meshcoreResult.reason);
+      return;
+    }
+
+    const meshcoreNodes = Array.isArray(meshcoreResult.value) ? meshcoreResult.value : [];
+    const umapCollection = umapResult.status === 'fulfilled' ? umapResult.value : null;
+    const records = mergeRecords(meshcoreNodes, umapCollection);
+    const repeaters = records.filter((record) => record.role === 'repeater' && !record.project).length;
+    const companions = records.filter((record) => record.role === 'companion' && !record.project).length;
+    const now = Date.now();
+
+    setValue('repeaters', repeaters);
+    setValue('companions', companions);
+    setValue('total', records.filter((record) => !record.project).length);
+    setValue('week', addedSince(records, now - 7 * 24 * 60 * 60 * 1000));
+    setValue('month', addedSince(records, now - 30 * 24 * 60 * 60 * 1000));
+    nodesById.updated.textContent = new Date().toLocaleString('fr-FR', { dateStyle: 'short', timeStyle: 'short' });
+    nodesById.status.textContent = umapResult.status === 'fulfilled'
+      ? 'Données publiques MeshCore et uMap chargées.'
+      : 'Données MeshCore chargées ; uMap est privée ou momentanément indisponible.';
+  }
+
+  update().catch((error) => {
+    nodesById.status.textContent = 'Les données en direct sont momentanément indisponibles. Consultez les cartes officielles.';
+    console.warn('Impossible de charger les statistiques des cartes', error);
+  });
   window.setInterval(update, refreshEveryMs);
 })();

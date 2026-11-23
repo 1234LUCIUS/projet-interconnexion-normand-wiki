@@ -11,18 +11,18 @@ Le Projet d’Interconnexion Normand s’appuie désormais sur des cartes offici
 
 ## Compteurs et statistiques actualisés
 
-Les chiffres ci-dessous sont chargés directement depuis l’API publique de la [carte officielle MeshCore](https://map.meshcore.io/). Ils sont actualisés à l’ouverture de la page, puis environ toutes les cinq minutes.
+Les chiffres ci-dessous sont fusionnés à partir de l’API publique de la [carte officielle MeshCore](https://map.meshcore.io/) et des marqueurs de la carte uMap du projet. Ils sont actualisés à l’ouverture de la page, puis environ toutes les cinq minutes.
 
 <div class="node-stats" aria-live="polite">
-  <div class="node-stat node-stat-primary"><strong data-node-stat="repeaters">—</strong><span>répéteurs MeshCore référencés</span></div>
-  <div class="node-stat"><strong data-node-stat="companions">—</strong><span>Companions / Clients MeshCore référencés</span></div>
-  <div class="node-stat"><strong data-node-stat="total">—</strong><span>nœuds MeshCore au total</span></div>
-  <div class="node-stat"><strong data-node-stat="week">—</strong><span>nœuds ajoutés durant les 7 derniers jours</span></div>
-  <div class="node-stat"><strong data-node-stat="month">—</strong><span>nœuds ajoutés durant les 30 derniers jours</span></div>
+  <div class="node-stat node-stat-primary"><strong data-node-stat="repeaters">—</strong><span>répéteurs référencés — MeshCore + uMap</span></div>
+  <div class="node-stat"><strong data-node-stat="companions">—</strong><span>Companions / Clients — MeshCore + uMap</span></div>
+  <div class="node-stat"><strong data-node-stat="total">—</strong><span>nœuds au total — doublons dédupliqués</span></div>
+  <div class="node-stat"><strong data-node-stat="week">—</strong><span>nœuds déployés durant les 7 derniers jours</span></div>
+  <div class="node-stat"><strong data-node-stat="month">—</strong><span>nœuds déployés durant les 30 derniers jours</span></div>
 </div>
 <p class="muted">Dernière actualisation de cette page : <span data-node-stat="updated">—</span>. <span data-node-stat="status">Chargement des données MeshCore…</span></p>
 
-<p class="notice"><strong>Source et limites :</strong> ces compteurs comptent uniquement les nœuds présents dans l’API publique de la carte MeshCore. Ils ne comptent pas automatiquement les projets dessinés dans uMap ni les nœuds Meshtastic visibles sur une autre carte. La réponse JSON publique est volumineuse, de l’ordre de plusieurs dizaines de mégaoctets : selon la connexion ou les protections du navigateur, le chargement peut être lent ou indisponible. La présence d’un nœud dans une carte ne garantit pas qu’il soit encore joignable aujourd’hui.</p>
+<p class="notice"><strong>Sources et limites :</strong> les compteurs fusionnent les nœuds MeshCore et les marqueurs ponctuels uMap dont le rôle est identifiable. Un même nom public est dédoublonné lorsqu’il apparaît dans les deux sources. La carte uMap doit être réglée sur <strong>Everybody / Public</strong> pour que ses marqueurs soient lisibles par le navigateur ; tant qu’elle reste privée, seuls les nœuds MeshCore sont comptés. Les projets uMap ne sont pas comptés comme des nœuds déployés. La réponse JSON MeshCore est volumineuse, de l’ordre de plusieurs dizaines de mégaoctets : selon la connexion ou les protections du navigateur, le chargement peut être lent ou indisponible. La présence d’un nœud dans une carte ne garantit pas qu’il soit encore joignable aujourd’hui.</p>
 
 ## Les cartes à consulter
 
@@ -50,9 +50,15 @@ MeshMap est une carte communautaire quasi temps réel des nœuds Meshtastic ente
 
 ### Carte collaborative du Projet — uMap OpenStreetMap
 
-La carte uMap est prévue pour le recensement manuel des nœuds normands et des projets de pose. [Ouvrir la carte uMap à créer autour de la Normandie](https://umap.openstreetmap.fr/fr/map/new/#8/49.185294/-0.181274).
+La carte uMap est prévue pour le recensement manuel des nœuds normands et des projets de pose. [Ouvrir la carte collaborative du projet](https://umap.openstreetmap.fr/fr/map/projet-dinterconnexion-normand_1488925).
 
-L’adresse fournie est encore une **adresse de création** (`/map/new/`), pas le lien public d’une carte enregistrée. Après création et enregistrement de la carte, il faudra remplacer ce lien par l’URL publique uMap afin de pouvoir l’intégrer dans la page. Ne publiez pas l’adresse exacte d’un domicile ou d’un site sensible.
+La carte est maintenant enregistrée. Pour l’afficher ci-dessous et inclure ses marqueurs dans les compteurs, son statut uMap doit être **Everybody / Public**. Ne publiez pas l’adresse exacte d’un domicile ou d’un site sensible.
+
+<div class="map-embed">
+  <iframe src="https://umap.openstreetmap.fr/fr/map/projet-dinterconnexion-normand_1488925?scaleControl=true" title="Carte uMap collaborative du Projet d’Interconnexion Normand" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<p class="muted">Si uMap indique que la carte n’est pas publique, ouvrez-la directement et choisissez le statut de visibilité <strong>Everybody / Public</strong> dans ses permissions.</p>
 
 #### Légende des épingles
 
