@@ -1,0 +1,551 @@
+{
+  "generatedAt": "2026-11-23T18:44:34+01:00",
+  "region": "Normandie",
+  "sources": [
+    "MeshQual",
+    "RelayLens"
+  ],
+  "count": 54,
+  "records": [
+    {
+      "source": "MeshQual",
+      "name": "Roger HCN cp",
+      "publicKey": "C0833FBDB56326F99F7990505F8938714A23329A5E62C591145B432659EF7A93",
+      "role": "companion",
+      "coordinates": [
+        0.115001,
+        49.49803
+      ]
+    },
+    {
+      "source": "MeshQual",
+      "name": "FR76LH_F5IHZ_RP400",
+      "publicKey": "0B855DC9A851864F7B70501AA045674CEAF6E25C1795E3251C63BC16F9C5CC9D",
+      "role": "repeater",
+      "coordinates": [
+        0.151179,
+        49.501874
+      ]
+    },
+    {
+      "source": "MeshQual",
+      "name": "50MOON FoxDen Home",
+      "publicKey": "8B0F85AFB60E90740D64B2A93E0149EE99881D2E68E43E63601C77FD92E39D1C",
+      "role": "repeater",
+      "coordinates": [
+        -1.05027,
+        49.2281
+      ]
+    },
+    {
+      "source": "MeshQual",
+      "name": "FR76LH_BUGS_RP0",
+      "publicKey": "DE1F75FD7B4E5D51C7C3CBD7A0006038C5BB2D69EBB0894EFB025BEC9E6E72AF",
+      "role": "repeater",
+      "coordinates": [
+        0.107634,
+        49.51312
+      ]
+    },
+    {
+      "source": "MeshQual",
+      "name": "FR76LH_F6CYK_RP1",
+      "publicKey": "74FCFC512119B8369E7241BE0F70F74205BB20EB3366585845019A802A3BAFAD",
+      "role": "repeater",
+      "coordinates": [
+        0.103463,
+        49.493178
+      ]
+    },
+    {
+      "source": "MeshQual",
+      "name": "FR76-MSA-BERT-ROOM",
+      "publicKey": "CC9A89A4AEFCAFB3265AFF6F7DFFACA0ADF8004F0305EE5A235A68EB3CFD6CF9",
+      "role": "other",
+      "coordinates": [
+        1.06388,
+        49.468681
+      ]
+    },
+    {
+      "source": "MeshQual",
+      "name": "Tigro Lisieux RPT",
+      "publicKey": "8B73018EA390CFE035814A7332B1B1E69E41C521849270ABE57873518402AEF7",
+      "role": "repeater",
+      "coordinates": [
+        0.216286,
+        49.150944
+      ]
+    },
+    {
+      "source": "MeshQual",
+      "name": "FR76LH_F5IHZ_OB1",
+      "publicKey": "0F3BA0F1504072C5E3B11F42F78CA449B9BFDDC0D3319B701355AD79752CA2EF",
+      "role": "repeater",
+      "coordinates": [
+        0.1033,
+        49.5
+      ]
+    },
+    {
+      "source": "MeshQual",
+      "name": "FR76LH_JLF_CO1",
+      "publicKey": "B6CEA083EEDB31827AD0F20F7F3426A57D71D412FD687415776709F6D445B465",
+      "role": "companion",
+      "coordinates": [
+        0.388908,
+        49.756892
+      ]
+    },
+    {
+      "source": "MeshQual",
+      "name": "FR76LH_DOLLE_OB1",
+      "publicKey": "EDB5D549584AA9017736DD45F27470962D9ACCE941C4C0A1BC365F2CC876D059",
+      "role": "repeater",
+      "coordinates": [
+        0.07386,
+        49.51606
+      ]
+    },
+    {
+      "source": "MeshQual",
+      "name": "🇫🇷FR76LH_F6KOH_GW",
+      "publicKey": "EDC63CA0299AE634AB499071D3D54E3C8CCFE5AFB4404FF4A768ED355908DE21",
+      "role": "repeater",
+      "coordinates": [
+        0.16249,
+        49.50822
+      ]
+    },
+    {
+      "source": "MeshQual",
+      "name": "FR76SLEO-R1",
+      "publicKey": "EBEA29217BECF05DBC6EBA15CC2176D0F967CBD0E811AD9B918E583179C765AB",
+      "role": "repeater",
+      "coordinates": [
+        0.3565,
+        49.7433
+      ]
+    },
+    {
+      "source": "MeshQual",
+      "name": "FR76LH_F6CYK_RP2",
+      "publicKey": "A3B7CF110FD9028FD11029DBAAD6A5A13DC37AD4C2A268F209CB9587C1351EF7",
+      "role": "repeater",
+      "coordinates": [
+        0.103299,
+        49.49392
+      ]
+    },
+    {
+      "source": "MeshQual",
+      "name": "FR76LH_F6CYK_CO1",
+      "publicKey": "3AED273B0DE64BEF655EC8EEA3BBA2A1EE73627DDCC84C8CD817AB8A7C8728B1",
+      "role": "companion",
+      "coordinates": [
+        0.103308,
+        49.493782
+      ]
+    },
+    {
+      "source": "MeshQual",
+      "name": "FR76LH_DOLLE_RP1",
+      "publicKey": "C898FAF1BE5C96297B145A3FF5B3685EF3F672506B338DEB796323E216E47D93",
+      "role": "repeater",
+      "coordinates": [
+        0.07479,
+        49.51606
+      ]
+    },
+    {
+      "source": "MeshQual",
+      "name": "🇫🇷FR76LH_F6KOH_RP",
+      "publicKey": "7EA5DE3940DB7A012D2318DAC7EDB495E50EB7FF13D1A08797E302C1AC104308",
+      "role": "repeater",
+      "coordinates": [
+        0.16289,
+        49.50836
+      ]
+    },
+    {
+      "source": "MeshQual",
+      "name": "76LH Zero Xiao",
+      "publicKey": "8E55335DADF184A090300DF971F104748C98F468A512A4176CF277F65DFB312F",
+      "role": "repeater",
+      "coordinates": [
+        0.13605,
+        49.48318
+      ]
+    },
+    {
+      "source": "MeshQual",
+      "name": "🇫🇷FR76EC_F4IKZ_T1",
+      "publicKey": "29114C68496A60F1E25203FE9832B96AB5871F0306F6220B6C1D8D7363B74DBB",
+      "role": "companion",
+      "coordinates": [
+        0.320723,
+        49.653826
+      ]
+    },
+    {
+      "source": "MeshQual",
+      "name": "50MOON NV MOBILE",
+      "publicKey": "D2EEB399C41FC4570078B582120A97ABA5B56130043A890FAC91437D24C6539D",
+      "role": "companion",
+      "coordinates": [
+        -1.050386,
+        49.227936
+      ]
+    },
+    {
+      "source": "MeshQual",
+      "name": "FR76LH_f6deb_RPT",
+      "publicKey": "1B2B3F722D847A029F74E5503065F5D70D151A0AD0C4829242AD9E95A32432A1",
+      "role": "repeater",
+      "coordinates": [
+        0.099901,
+        49.493896
+      ]
+    },
+    {
+      "source": "MeshQual",
+      "name": "FR76LH_F6CYK_OB1",
+      "publicKey": "517B5B0303BBD0D5BCF598CDC95DB67ABA7355C0CD97D870643D19734692D753",
+      "role": "repeater",
+      "coordinates": [
+        0.1033,
+        49.493614
+      ]
+    },
+    {
+      "source": "MeshQual",
+      "name": "FR27_HUEST_RPT",
+      "publicKey": "D682830BEDB8ABBFA8FB4A619978CE2DF5740C7CE2495CD65D7272D1AA2A6DCD",
+      "role": "repeater",
+      "coordinates": [
+        1.20814,
+        49.039112
+      ]
+    },
+    {
+      "source": "MeshQual",
+      "name": "FR76LH_F5IHZ_RP10",
+      "publicKey": "21DB2B3EA5DF571B0EF9D363A411564BA0F9F6379905820B7837982119F9CD22",
+      "role": "repeater",
+      "coordinates": [
+        0.15095,
+        49.50167
+      ]
+    },
+    {
+      "source": "MeshQual",
+      "name": "FR76SLEO-O1",
+      "publicKey": "7C37350821E42E9DBF67B275736F3E58D17B274D450D137B36371D7314003C49",
+      "role": "repeater",
+      "coordinates": [
+        0.3555,
+        49.7435
+      ]
+    },
+    {
+      "source": "MeshQual",
+      "name": "🇫🇷FR76EC_F4IKZ_RP",
+      "publicKey": "F53AE9B3F92B05429055E8C8C49F4A31FB583098CF3DD873501339D12E7A3FBB",
+      "role": "repeater",
+      "coordinates": [
+        0.325318,
+        49.649425
+      ]
+    },
+    {
+      "source": "MeshQual",
+      "name": "FR76LH_RP_TEST",
+      "publicKey": "8F6ED34844E25D971254F642A958298FC52674A347BF49B02B04FCCF3B6534DE",
+      "role": "repeater",
+      "coordinates": [
+        0.118057,
+        49.503349
+      ]
+    },
+    {
+      "source": "MeshQual",
+      "name": "🇫🇷FR76EC_F4IKZ_OB",
+      "publicKey": "E78D9CB148FF65A250C848870847B6F7911B688DF579776670C263757F3824F4",
+      "role": "repeater",
+      "coordinates": [
+        0.325318,
+        49.649358
+      ]
+    },
+    {
+      "source": "MeshQual",
+      "name": "FÉCAMP-1-Timdd",
+      "publicKey": "1400F4170FE929321E9FDA6242B47AA7A678C9AE96D3B8F15D95B3917D24E737",
+      "role": "repeater",
+      "coordinates": [
+        0.360501,
+        49.753353
+      ]
+    },
+    {
+      "source": "MeshQual",
+      "name": "76LH JOP T1000",
+      "publicKey": "71DA478E78391DD51F4851793F6871DF919F8BB2B7B1DF33BFF4F59350DF45E4",
+      "role": "companion",
+      "coordinates": [
+        0.134545,
+        49.484808
+      ]
+    },
+    {
+      "source": "MeshQual",
+      "name": "76LH-Eure-Solar P1",
+      "publicKey": "68441A54575A90A7AC365091AD1A63EE0B025458E8B43D5B57EADCB389A82321",
+      "role": "repeater",
+      "coordinates": [
+        0.13534,
+        49.48425
+      ]
+    },
+    {
+      "source": "MeshQual",
+      "name": "FR76LH_F1HCN_RP2",
+      "publicKey": "897DC2A33C394790D31C33A47C95B8C6A923DE45FFC2FD2DC39E70878B5B7C17",
+      "role": "repeater",
+      "coordinates": [
+        0.11074,
+        49.494746
+      ]
+    },
+    {
+      "source": "MeshQual",
+      "name": "FR76LH_F1HCN_RP1",
+      "publicKey": "63B489CBE298A86C0CC6F2DD7A049696238C2FA6130CA9099FCCBB1C440F64AF",
+      "role": "repeater",
+      "coordinates": [
+        0.1107,
+        49.494888
+      ]
+    },
+    {
+      "source": "MeshQual",
+      "name": "FR76 Répéteur Test",
+      "publicKey": "62791D361A07AEE6676B89199FFAE4130E77F8C4144171149A17584C6D235B3A",
+      "role": "repeater",
+      "coordinates": [
+        0.335911,
+        49.683219
+      ]
+    },
+    {
+      "source": "RelayLens",
+      "name": "F4JJW_Observer_LH",
+      "publicKey": "12D8282396A04590FE8EA67E287B57A9265D8DF682A6483B75D5FA38D2C3EE50",
+      "role": "repeater",
+      "coordinates": [
+        0.103185,
+        49.493781
+      ]
+    },
+    {
+      "source": "RelayLens",
+      "name": "SquidTw0🐸",
+      "publicKey": "2068FB9CDA0011BC2960DEEC16221A1F7D4BDD5496F986A89B1E0455BBBAE3E0",
+      "role": "companion",
+      "coordinates": [
+        1.207538,
+        49.038292
+      ]
+    },
+    {
+      "source": "RelayLens",
+      "name": "🇮🇹IU4VTU",
+      "publicKey": "21869C50D4321E92EF1E432FB7400CB6C6B9F9C8F4880B15AE136C0D8B38AE70",
+      "role": "companion",
+      "coordinates": [
+        0.125428,
+        49.493458
+      ]
+    },
+    {
+      "source": "RelayLens",
+      "name": "🇫🇷FR76EC_F4IKZ_CO",
+      "publicKey": "3BF873F121A20C1DC3F2A77BFF4A8886F1C77620A4FF8D16300BC811992824E3",
+      "role": "companion",
+      "coordinates": [
+        0.320657,
+        49.653839
+      ]
+    },
+    {
+      "source": "RelayLens",
+      "name": "FR76LH yome",
+      "publicKey": "3FF7AA41099C78077C854CAE8D62BD6578F73992CA124CD91AA2D071699A5CBB",
+      "role": "companion",
+      "coordinates": [
+        0.123523,
+        49.497719
+      ]
+    },
+    {
+      "source": "RelayLens",
+      "name": "Victor",
+      "publicKey": "41135CDD1C0735B2BBDC2658366D3AB786849364C79584756EA420E212252A91",
+      "role": "companion",
+      "coordinates": [
+        -0.571818,
+        48.853084
+      ]
+    },
+    {
+      "source": "RelayLens",
+      "name": "76Timdd 🚀 - Mobil",
+      "publicKey": "49A1A5F05F0397C0EDE3C7631B012F8AA6F7FE7836FAD1F8F6C787119BB88EB4",
+      "role": "companion",
+      "coordinates": [
+        0.364145,
+        49.763059
+      ]
+    },
+    {
+      "source": "RelayLens",
+      "name": "FR14-FALAISE 🇨🇵",
+      "publicKey": "4CC1B305E0417F4D33E399A8AAE077B83E1BD7855CB58128F06AE78D7350E049",
+      "role": "repeater",
+      "coordinates": [
+        -0.20503,
+        48.893299
+      ]
+    },
+    {
+      "source": "RelayLens",
+      "name": "FR76LH_BUGS_RP1",
+      "publicKey": "53D5AB6D23FF26EEF513434644B73B42FFE9D2A63F434C03933C21152869F858",
+      "role": "repeater",
+      "coordinates": [
+        0.108653,
+        49.514185
+      ]
+    },
+    {
+      "source": "RelayLens",
+      "name": "FR76LH_F6CYK_CO2",
+      "publicKey": "7AD7C8CDA68625F2E49DDB2569CFA9C08A19D49AEAF7395DC7F9014CB8C5A13F",
+      "role": "companion",
+      "coordinates": [
+        0.103299,
+        49.49392
+      ]
+    },
+    {
+      "source": "RelayLens",
+      "name": "📬 FR76LH_F6CYK_BBS",
+      "publicKey": "7CD78F7E4C301B65335164C7CE6B92605A1C45DC10384EB708C7DF7F7DB4172F",
+      "role": "companion",
+      "coordinates": [
+        0.1033,
+        49.5
+      ]
+    },
+    {
+      "source": "RelayLens",
+      "name": "FR76LH_F5IHZ_CO2",
+      "publicKey": "804F6A66747CF7E283AD4C52254FD6CF21F78AE61B853F1EFB661BC1737A183D",
+      "role": "companion",
+      "coordinates": [
+        0.151108,
+        49.501686
+      ]
+    },
+    {
+      "source": "RelayLens",
+      "name": "76LH Edo L1",
+      "publicKey": "86ADCFECC7827DA63A0311AEE36DD26187ABD5B0C1CADD070277B55E1B13525B",
+      "role": "companion",
+      "coordinates": [
+        0.134319,
+        49.484574
+      ]
+    },
+    {
+      "source": "RelayLens",
+      "name": "FR14-HV3 🇫🇷",
+      "publicKey": "925BA936714FD2DF067D578DA3ABBC7E975898E8248D5C72295407AD56BABFD5",
+      "role": "companion",
+      "coordinates": [
+        -0.287955,
+        48.892002
+      ]
+    },
+    {
+      "source": "RelayLens",
+      "name": "FRLH_F5IHZ_M002",
+      "publicKey": "94EB316EE68C50C3E488A844D27ED78C1F55F555FF5C9892A3BDC8004427EB36",
+      "role": "companion",
+      "coordinates": [
+        0.154863,
+        49.508185
+      ]
+    },
+    {
+      "source": "RelayLens",
+      "name": "FR14 - ON AIR 🇫🇷",
+      "publicKey": "961D886F21386B62F4317CA8F69947D07DF1AFC6619AFFF1815CEA81AACE56CB",
+      "role": "repeater",
+      "coordinates": [
+        -0.410658,
+        48.921349
+      ]
+    },
+    {
+      "source": "RelayLens",
+      "name": "📬 FR76LH_F6CYK_BBS",
+      "publicKey": "A530F0ED1D06550A61F0993EE42747A434A5670F0BC02CAB3384B1DE88791CBC",
+      "role": "companion",
+      "coordinates": [
+        0.1033,
+        49.5
+      ]
+    },
+    {
+      "source": "RelayLens",
+      "name": "76LHBUGS",
+      "publicKey": "DBB3C648D70B1AC6EB49107730631FC71E8A85219D9B089B0652EF2DB9A02954",
+      "role": "companion",
+      "coordinates": [
+        0.108957,
+        49.513504
+      ]
+    },
+    {
+      "source": "RelayLens",
+      "name": "FR76LH_BUGS_RP2",
+      "publicKey": "DE5E0F56BA29B32781A526521C1FD186A4D5EB7ADB9758B0E44FABB83C06B5B3",
+      "role": "repeater",
+      "coordinates": [
+        0.1092,
+        49.513888
+      ]
+    },
+    {
+      "source": "RelayLens",
+      "name": "LH_76_ihz",
+      "publicKey": "E9CE5214F868BB7ADCD7B21E8162A0E0D9C07FD68018FC9A0286F0F5A3D83A81",
+      "role": "companion",
+      "coordinates": [
+        0.181696,
+        49.502499
+      ]
+    },
+    {
+      "source": "RelayLens",
+      "name": "FR76LH_F4JJW_RP1",
+      "publicKey": "EC01C569EBF3D7FBFAFA9239360AB952AA0B8AB83A77ABC7581F5BF7DABC0D56",
+      "role": "repeater",
+      "coordinates": [
+        0.17320824458404016,
+        49.52427327392963
+      ]
+    }
+  ]
+}

@@ -4,6 +4,7 @@
   const meshqualEndpoint = 'https://api.meshqual.pmrs.fr/api/nodes?bbox=-2.5,48.8,2,50.3';
   const relayLensEndpoint = 'https://relaylens.mesh.chaun14.fr/api/map/features?west=-2.5&south=48.8&east=2&north=50.3&zoom=8&max=400';
   const normandyBoundaryEndpoint = 'https://raw.githubusercontent.com/gregoiredavid/france-geojson/master/regions/normandie/region-normandie.geojson';
+  const snapshotEndpoint = new URL('meshcore-normandie-snapshot.json', document.currentScript.src).toString();
   const refreshEveryMs = 5 * 60 * 1000;
   const numberFormat = new Intl.NumberFormat('fr-FR');
   const nodesById = {
@@ -97,6 +98,15 @@
     }));
   }
 
+  function snapshotRecords(collection) {
+    const records = Array.isArray(collection && collection.records) ? collection.records : [];
+    return records.map((record) => makeRecord({
+      name: record.name,
+      publicKey: record.publicKey,
+      role: record.role || 'other'
+    })).map((record) => ({ ...record, source: 'Snapshot MeshQual + RelayLens' }));
+  }
+
   function mergeRecords(meshqualCollection, relayLensCollection, boundary) {
     const merged = [];
     const knownKeys = new Set(merged.flatMap((record) => [record.key, record.nameKey]).filter(Boolean));
@@ -133,7 +143,19 @@
       nodesById.status.textContent = 'Limites de la Normandie indisponibles : compteurs MeshCore non calculés.';
       return;
     }
-    const records = mergeRecords(meshqualCollection, relayLensCollection, boundary);
+    const sourceCount = [meshqualResult, relayLensResult].filter((result) => result.status === 'fulfilled').length;
+    let records = mergeRecords(meshqualCollection, relayLensCollection, boundary);
+    let usingSnapshot = false;
+    if (sourceCount === 0) {
+      try {
+        const snapshotResponse = await fetch(snapshotEndpoint, { cache: 'no-store' });
+        if (!snapshotResponse.ok) throw new Error(`Snapshot HTTP ${snapshotResponse.status}`);
+        records = snapshotRecords(await snapshotResponse.json());
+        usingSnapshot = records.length > 0;
+      } catch (snapshotError) {
+        console.warn('Impossible de charger le snapshot MeshCore normand', snapshotError);
+      }
+    }
     const repeaters = records.filter((record) => record.role === 'repeater' && !record.project).length;
     const companions = records.filter((record) => record.role === 'companion' && !record.project).length;
     setValue('repeaters', repeaters);
@@ -142,8 +164,9 @@
     setText('week', 'n/d');
     setText('month', 'n/d');
     nodesById.updated.textContent = new Date().toLocaleString('fr-FR', { dateStyle: 'short', timeStyle: 'short' });
-    const sourceCount = [meshqualResult, relayLensResult].filter((result) => result.status === 'fulfilled').length;
-    nodesById.status.textContent = `Données MeshCore normandes chargées depuis ${sourceCount} source(s) publique(s). Historique d’ajout non fourni.`;
+    nodesById.status.textContent = usingSnapshot
+      ? `Instantané MeshCore normand chargé : ${records.length} nœuds actuellement référencés. Les APIs live ne permettent pas la lecture depuis GitHub Pages.`
+      : `Données MeshCore normandes chargées depuis ${sourceCount} source(s) publique(s). Historique d’ajout non fourni.`;
   }
 
   update().catch((error) => {
