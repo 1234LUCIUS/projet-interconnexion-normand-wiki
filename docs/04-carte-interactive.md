@@ -11,18 +11,18 @@ Le Projet d’Interconnexion Normand s’appuie désormais sur des cartes offici
 
 ## Compteurs et statistiques actualisés
 
-Les chiffres ci-dessous sont fusionnés à partir de l’API publique de la [carte officielle MeshCore](https://map.meshcore.io/), de [MeshQual](https://meshqual.pmrs.fr/) et de [RelayLens](https://relaylens.mesh.chaun14.fr/companions). Pour MeshCore et les sources complémentaires, seuls les nœuds dont les coordonnées se trouvent dans les cinq départements normands — Calvados (14), Eure (27), Manche (50), Orne (61) et Seine-Maritime (76) — sont retenus. Ils sont actualisés à l’ouverture de la page, puis environ toutes les cinq minutes.
+Les chiffres ci-dessous sont fusionnés à partir des APIs publiques MeshCore exposées par [MeshQual](https://meshqual.pmrs.fr/) et [RelayLens](https://relaylens.mesh.chaun14.fr/companions). Pour ces sources, seuls les nœuds dont les coordonnées se trouvent dans les cinq départements normands — Calvados (14), Eure (27), Manche (50), Orne (61) et Seine-Maritime (76) — sont retenus. Ils sont actualisés à l’ouverture de la page, puis environ toutes les cinq minutes.
 
 <div class="node-stats" aria-live="polite">
   <div class="node-stat node-stat-primary"><strong data-node-stat="repeaters">—</strong><span>répéteurs référencés — sources MeshCore</span></div>
   <div class="node-stat"><strong data-node-stat="companions">—</strong><span>Companions / Clients — sources MeshCore</span></div>
   <div class="node-stat"><strong data-node-stat="total">—</strong><span>nœuds au total — doublons dédupliqués</span></div>
-  <div class="node-stat"><strong data-node-stat="week">—</strong><span>nœuds déployés durant les 7 derniers jours</span></div>
-  <div class="node-stat"><strong data-node-stat="month">—</strong><span>nœuds déployés durant les 30 derniers jours</span></div>
+  <div class="node-stat"><strong data-node-stat="week">—</strong><span>ajouts durant les 7 derniers jours — date indisponible</span></div>
+  <div class="node-stat"><strong data-node-stat="month">—</strong><span>ajouts durant les 30 derniers jours — date indisponible</span></div>
 </div>
 <p class="muted">Dernière actualisation de cette page : <span data-node-stat="updated">—</span>. <span data-node-stat="status">Chargement des données MeshCore…</span></p>
 
-<p class="notice"><strong>Sources et limites :</strong> les compteurs fusionnent les nœuds MeshCore situés en Normandie, les données géolocalisées de <a href="https://meshqual.pmrs.fr/">MeshQual</a> et les données géolocalisées de <a href="https://relaylens.mesh.chaun14.fr/companions">RelayLens</a>. Toutes ces sources sont filtrées avec le <a href="https://raw.githubusercontent.com/gregoiredavid/france-geojson/master/regions/normandie/region-normandie.geojson">contour administratif public de la région Normandie</a>. Un même nœud est dédoublonné par clé publique ou nom public lorsqu’il apparaît dans plusieurs sources. Les statistiques sur 7 et 30 jours utilisent les dates d’insertion MeshCore lorsqu’elles sont disponibles ; MeshQual et RelayLens ne fournissent pas nécessairement cette date historique. La réponse JSON MeshCore est volumineuse, de l’ordre de plusieurs dizaines de mégaoctets : selon la connexion ou les protections du navigateur, le chargement peut être lent ou indisponible. La présence d’un nœud dans une carte ne garantit pas qu’il soit encore joignable aujourd’hui.</p>
+<p class="notice"><strong>Sources et limites :</strong> les compteurs utilisent les APIs publiques de <a href="https://meshqual.pmrs.fr/">MeshQual</a> et <a href="https://relaylens.mesh.chaun14.fr/companions">RelayLens</a>, qui exposent des données MeshCore avec des coordonnées lisibles depuis GitHub Pages. Toutes les sources sont filtrées avec le <a href="https://raw.githubusercontent.com/gregoiredavid/france-geojson/master/regions/normandie/region-normandie.geojson">contour administratif public de la région Normandie</a>. Un même nœud est dédoublonné par clé publique ou nom public lorsqu’il apparaît dans plusieurs sources. Ces APIs ne fournissent pas de date d’insertion historique fiable : les statistiques des 7 et 30 derniers jours affichent donc `n/d` plutôt qu’une estimation trompeuse. L’API officielle de la carte MeshCore reste consultable directement, mais son serveur n’autorise pas les requêtes JavaScript depuis GitHub Pages. La présence d’un nœud dans une carte ne garantit pas qu’il soit encore joignable aujourd’hui.</p>
 
 ## Les cartes à consulter
 
