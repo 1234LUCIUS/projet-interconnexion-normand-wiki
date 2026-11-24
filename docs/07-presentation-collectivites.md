@@ -9,7 +9,9 @@ title: "Présentation du Projet d’Interconnexion Normand"
 
 ![Paysage normand traversé par un réseau radio maillé](assets/illustrations/hero-normandie-mesh.png)
 
-Le **Projet d’Interconnexion Normand** a pour ambition de construire, dans la durée, un réseau radio maillé local complémentaire d’Internet et des réseaux mobiles. Initiative open source et citoyenne, il vise à déployer progressivement des **répéteurs fixes sur des sites autorisés**, puis à les maintenir et à documenter leur couverture avec les habitants, les associations, les collectivités et les propriétaires de sites. Les reconnaissances, simulations et essais de terrain servent à choisir et valider les emplacements : ils préparent un maillage durable et ne sont pas la finalité du projet.
+Le **Projet d’Interconnexion Normand** a pour ambition de connecter les personnes entre elles en toutes circonstances, y compris lorsque l’accès à Internet ou les réseaux mobiles sont interrompus. C’est une initiative open source et citoyenne qui s’appuie sur des communications radio maillées en Normandie. Son objectif est de créer, avec les habitants, les associations, les collectivités et les propriétaires de sites, une infrastructure locale complémentaire pour échanger des messages courts et des informations de situation.
+
+Le projet porte une **vocation d’intérêt général et d’utilité publique au sens de sa finalité collective** : contribuer à la résilience des territoires, au maintien du lien local et à la circulation d’informations utiles lorsque les moyens habituels sont dégradés. Pour donner une continuité concrète à cette ambition, il vise le déploiement progressif de **répéteurs fixes sur des sites autorisés**, leur entretien dans la durée et la documentation de leur couverture avec les habitants, les associations, les collectivités et les propriétaires de sites. Les reconnaissances, simulations et mesures de terrain servent à choisir et valider les emplacements : elles préparent un maillage durable et n’en sont pas la finalité.
 
 Le projet repose sur des appareils LoRa basse consommation qui peuvent communiquer directement entre eux et relayer certains messages de nœud en nœud. Un appareil peut être utilisé par une personne — rôle **Companion** — ou installé sur un point fixe pour étendre la couverture — rôle **Repeater**.
 
@@ -19,7 +21,7 @@ Le projet repose sur des appareils LoRa basse consommation qui peuvent communiqu
 
 ## Une capacité locale à construire dans la durée
 
-Lorsqu’une tempête majeure ou une panne étendue perturbe l’électricité, Internet ou les réseaux mobiles, les habitants peuvent perdre une partie de leurs moyens habituels pour échanger. Des répéteurs fixes, implantés sur des sites adaptés et suivis dans la durée, peuvent offrir un moyen complémentaire de communiquer entre personnes équipées, bénévoles, associations et équipes locales. Le maillage se construit progressivement ; sa disponibilité dépend de la couverture radio, de l’alimentation et de l’état des équipements.
+Lorsqu’une tempête majeure — comme les événements cités par le projet, **Irma ou Austen** — ou une panne étendue perturbe l’électricité, Internet ou les réseaux mobiles, les habitants peuvent perdre une partie de leurs moyens habituels pour échanger. Des répéteurs fixes, implantés sur des sites adaptés et suivis dans la durée, peuvent offrir un moyen complémentaire de communiquer entre personnes équipées, bénévoles, associations et équipes locales. Le maillage se construit progressivement ; sa disponibilité dépend de la couverture radio, de l’alimentation et de l’état des équipements.
 
 Cette ambition ne constitue pas une promesse de fonctionnement dans toutes les circonstances. La portée dépend du relief, des antennes, de l’alimentation, des points hauts, de la météo et de la maintenance. Les messages doivent rester courts, non sensibles et adaptés à un réseau communautaire.
 
