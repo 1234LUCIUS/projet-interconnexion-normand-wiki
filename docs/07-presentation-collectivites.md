@@ -65,14 +65,11 @@ Le Repeater est un nœud fixe installé sur un emplacement autorisé. Il est pla
 
 Un Repeater n’est pas un simple appareil que l’on pose n’importe où. Son installation nécessite une autorisation, une personne responsable, une procédure de maintenance et une évaluation des risques.
 
-### Les logiciels utilisés
+### MeshCore pour les répéteurs permanents
 
-Le projet utilise encore **Meshtastic** et **MeshCore** pendant une phase de transition.
+Pour les installations durables présentées aux collectivités, le projet s’appuie sur **MeshCore**.
 
-- **Meshtastic** reste utile pour les randonnées, les événements, les essais rapides et les appareils déjà déployés.
-- **MeshCore** est la trajectoire privilégiée pour les nouvelles infrastructures durables, les nouveaux Repeaters et le réseau régional normand.
-
-Le projet **bascule de plus en plus vers MeshCore**. Cette évolution est progressive afin de valider les profils radio, documenter les configurations, accompagner les utilisateurs et éviter les migrations précipitées.
+MeshCore est retenu pour les infrastructures durables, les nouveaux Repeaters et le développement du réseau régional normand. Le déploiement progressif permet de valider les profils radio, de documenter les configurations et d’accompagner les utilisateurs tout en maintenant une architecture cohérente.
 
 ## Quels bénéfices pour une collectivité ?
 
@@ -138,7 +135,7 @@ Avant toute installation, clarifiez les engagements qui permettront de maintenir
 
 Comparez plusieurs emplacements avec les outils disponibles, puis réalisez les mesures de terrain nécessaires pour valider le site et l’antenne. La hauteur, la ligne de vue, les obstacles, les parasites et l’alimentation comptent souvent davantage que la puissance annoncée sur une fiche produit. Cette vérification prépare une installation fixe fiable et maintenable.
 
-Le projet peut s’appuyer sur [MeshLab-RF](https://github.com/1234LUCIUS/meshlab-rf/), le [Meshtastic Site Planner](https://site.meshtastic.org/) et les outils de couverture MeshCore lorsque ceux-ci sont adaptés au cas étudié.
+Le projet peut s’appuyer sur les outils de couverture et de simulation MeshCore lorsque ceux-ci sont adaptés au cas étudié.
 
 ### 5. Valider le site, puis installer pour durer
 
