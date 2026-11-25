@@ -132,28 +132,9 @@ Pour le matériel solaire Seeed, consultez aussi la page dédiée au [SenseCAP S
 
 ## Étape 3 — Appliquer la configuration normande
 
-L’exemple suivant est prévu pour un répéteur situé dans le **Calvados**. Chaque équipe doit adapter les scopes à son département et aux départements réellement couverts :
+Les cinq profils reprennent exactement les commandes et leur ordre fournis. Sélectionnez le département du Repeater pour afficher le bloc à saisir dans la console CLI du flasher.
 
-```text
-set radio 869.618,62.5,8,8
-set advert.interval 240
-set flood.advert.interval 24
-set agc.reset.interval 4
-set multi.acks 1
-set dutycycle 10
-set path.hash.mode 1
-set loop.detect minimal
-set flood.max.unscoped 5
-set flood.max.advert 6
-region def eu fr fr-nor fr-14 fr-50 fr-61
-region default fr
-region home fr
-region save
-reboot
-clock sync
-```
-
-Pour un autre département, remplacez ou adaptez les scopes départementaux. Les codes utilisés par le projet sont `fr-14` pour le Calvados, `fr-50` pour la Manche, `fr-61` pour l’Orne, `fr-76` pour la Seine-Maritime et `fr-27` pour l’Eure.
+{% include repeater-map.html %}
 
 Un répéteur ne doit déclarer des départements voisins que s’il reçoit réellement des nœuds ou des répéteurs de ces zones. Ajouter un scope ne crée pas une couverture radio.
 
