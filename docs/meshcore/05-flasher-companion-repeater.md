@@ -1,6 +1,8 @@
 ---
 layout: wiki
 title: "Flasher son appareil MeshCore"
+theme: "Configurer MeshCore"
+theme_url: "/explorer-le-wiki.html#meshcore"
 ---
 
 # Flasher son appareil MeshCore
@@ -92,7 +94,7 @@ Choisissez ensuite le scope du canal selon l’usage : `fr` pour `#fr`,`fr-nor`p
 
 Faites un premier test à quelques mètres d’un autre appareil MeshCore connu. Envoyez un message court et non sensible. Vérifiez que le nœud est visible, que le message est reçu et que le chemin est cohérent.
 
-Puis testez dans un second emplacement. Notez le modèle, le firmware, le profil radio, le scope, l’antenne et le résultat. Pour contribuer à la couverture, consultez le [guide de test radio](../terrain/01-test-radio.md) et les [cartes officielles des nœuds et de la couverture](../04-carte-interactive.md).
+Puis testez dans un second emplacement. Notez le modèle, le firmware, le profil radio, le scope, l’antenne et le résultat. Pour contribuer à la couverture, consultez le [guide de test radio](../terrain/01-test-radio.html) et les [cartes officielles des nœuds et de la couverture](../04-carte-interactive.html).
 
 # Partie 2 — Flasher un Repeater
 
@@ -128,7 +130,7 @@ Pour la configuration par console USB, le [configurateur MeshCore](https://confi
 
 *Cliquez sur « Connect », sélectionnez le port série du répéteur, puis utilisez la console pour appliquer les commandes de configuration. Ne débranchez pas le répéteur pendant l’écriture.*
 
-Pour le matériel solaire Seeed, consultez aussi la page dédiée au [SenseCAP Solar Node P1-Pro](06-sensecap-p1-pro.md). Dans ce wiki, nous partons du principe que le P1-Pro n’est pas pré-flashé ou que son firmware doit être vérifié : suivez donc la procédure complète de flash Repeater avant la configuration.
+Pour le matériel solaire Seeed, consultez aussi la page dédiée au [SenseCAP Solar Node P1-Pro](./06-sensecap-p1-pro.html). Dans ce wiki, nous partons du principe que le P1-Pro n’est pas pré-flashé ou que son firmware doit être vérifié : suivez donc la procédure complète de flash Repeater avant la configuration.
 
 ## Étape 3 — Appliquer la configuration normande
 
@@ -138,7 +140,7 @@ Les cinq profils reprennent exactement les commandes et leur ordre fournis. Sél
 
 Un répéteur ne doit déclarer des départements voisins que s’il reçoit réellement des nœuds ou des répéteurs de ces zones. Ajouter un scope ne crée pas une couverture radio.
 
-La version détaillée et les explications de chaque commande sont dans [Profils MeshCore France / Normandie](03-profils-france-normandie.md) et [Régions et scopes](04-regions-et-scopes.md).
+La version détaillée et les explications de chaque commande sont dans [Profils MeshCore France / Normandie](./03-profils-france-normandie.html) et [Régions et scopes](./04-regions-et-scopes.html).
 
 ## Étape 4 — Nom, position et accès
 

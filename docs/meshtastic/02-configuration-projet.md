@@ -1,6 +1,8 @@
 ---
 layout: wiki
 title: "Meshtastic — configuration du Projet d’Interconnexion Normand"
+theme: "Configurer Meshtastic"
+theme_url: "/explorer-le-wiki.html#meshtastic"
 ---
 
 # Meshtastic — configuration du Projet d’Interconnexion Normand
@@ -11,7 +13,7 @@ Cette page distingue les réglages génériques des décisions propres au projet
 
 Le projet a historiquement annoncé une configuration Meshtastic en `869.525 MHz` avec le preset `LongFast`. Cette configuration est conservée ici comme repère historique pour les appareils Meshtastic déjà déployés, mais la trajectoire du projet privilégie progressivement MeshCore pour les répéteurs permanents et l’infrastructure régionale. Ne transposez pas les paramètres Meshtastic dans un appareil MeshCore.
 
-Si vous débutez aujourd’hui, lisez d’abord [l’état actuel du projet](../06-etat-actuel.md) et [le guide de choix Meshtastic ou MeshCore](../01-choisir-son-reseau.md). Le bon réglage dépend de l’usage et du réseau que vous souhaitez rejoindre.
+Si vous débutez aujourd’hui, lisez d’abord [l’état actuel du projet](../06-etat-actuel.html) et [le guide de choix Meshtastic ou MeshCore](../01-choisir-son-reseau.html). Le bon réglage dépend de l’usage et du réseau que vous souhaitez rejoindre.
 
 ## Profil projet
 

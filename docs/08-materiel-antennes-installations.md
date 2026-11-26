@@ -1,6 +1,8 @@
 ---
 layout: wiki
 title: "Matériel, antennes et installations MeshCore"
+theme: "Matériel et installations"
+theme_url: "/explorer-le-wiki.html#materiel"
 ---
 
 # Matériel, antennes et installations MeshCore
@@ -47,7 +49,7 @@ Un produit annoncé pour Meshtastic n’est pas automatiquement compatible avec 
 
 Pour un premier arrivant, privilégiez un Companion supporté par MeshCore : appareil portable, Bluetooth ou USB, antenne correctement accordée et batterie surveillée. Ne transformez pas votre seul Companion en Repeater : un relais fixe est une infrastructure dédiée, avec une alimentation, un site et un responsable de maintenance.
 
-Consultez [le guide matériel général](02-materiel.md) et [le guide de flash Companion / Repeater](meshcore/05-flasher-companion-repeater.md) avant tout achat ou flash.
+Consultez [le guide matériel général](./02-materiel.html) et [le guide de flash Companion / Repeater](./meshcore/05-flasher-companion-repeater.html) avant tout achat ou flash.
 
 ## Matériel conseillé pour MeshCore et Meshtastic
 

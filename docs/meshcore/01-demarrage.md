@@ -1,6 +1,8 @@
 ---
 layout: wiki
 title: "MeshCore — démarrage rapide"
+theme: "Configurer MeshCore"
+theme_url: "/explorer-le-wiki.html#meshcore"
 ---
 
 # MeshCore — démarrage rapide

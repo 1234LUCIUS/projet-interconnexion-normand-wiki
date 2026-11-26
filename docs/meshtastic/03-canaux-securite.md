@@ -1,6 +1,8 @@
 ---
 layout: wiki
 title: "Meshtastic — canaux et sécurité"
+theme: "Configurer Meshtastic"
+theme_url: "/explorer-le-wiki.html#meshtastic"
 ---
 
 # Meshtastic — canaux et sécurité

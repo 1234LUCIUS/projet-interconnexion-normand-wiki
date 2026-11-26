@@ -1,67 +1,28 @@
 ---
 layout: wiki
 title: "Bienvenue dans le Projet d’Interconnexion Normand"
+description: "Présentation rapide du projet et point de départ pour choisir son réseau, configurer un nœud ou explorer le wiki."
+theme: "Découvrir le projet"
+theme_url: "/explorer-le-wiki.html#decouvrir"
 ---
 
 # Bienvenue dans le Projet d’Interconnexion Normand
 
 ![Companion, Repeater et Room Server dans un réseau MeshCore normand](assets/illustrations/meshcore-roles.webp)
 
-## Le projet en une phrase
+Le Projet d’Interconnexion Normand documente et développe des communications radio LoRa maillées en Normandie. L’objectif est de permettre des échanges locaux complémentaires lorsque l’accès à Internet ou aux réseaux mobiles est dégradé. Le projet ne remplace pas les réseaux professionnels ni les services de secours et ne garantit pas la couverture ou la disponibilité.
 
-Le Projet d’Interconnexion Normand fédère des personnes qui expérimentent et déploient des communications LoRa maillées en Normandie afin de maintenir un lien entre les habitants, même lorsque l’accès à Internet ou les réseaux mobiles sont interrompus. À terme, le projet souhaite coopérer avec les mairies, les collectivités et les services de secours pour contribuer à tenir les habitants informés, dans un cadre autorisé et complémentaire des réseaux professionnels.
+Le wiki rassemble des pages courtes par sujet. Pour trouver rapidement la bonne information, utilisez le [plan du wiki par thème](explorer-le-wiki.html).
 
-Pour les nouveaux déploiements et les nouveaux membres qui souhaitent contribuer à l’infrastructure régionale, **MeshCore est le chemin recommandé**. Meshtastic reste disponible pour la transition, les appareils existants et les usages mobiles ou ponctuels.
+## Par où commencer ?
 
-Pour choisir et télécharger l’application adaptée à votre radio, consultez la page [Applications mobiles](09-applications-mobiles.html), qui présente MeshCore, MeshMapper, Meshtastic et Nelos.
+- Vous hésitez entre les logiciels ? Lisez [Choisir entre MeshCore et Meshtastic](01-choisir-son-reseau.html).
+- Vous avez déjà un appareil ? Suivez le [guide du premier nœud](guide-debutant.html), puis le démarrage correspondant à [MeshCore](meshcore/01-demarrage.html) ou à [Meshtastic](meshtastic/01-demarrage.html).
+- Vous voulez connaître l’orientation du réseau aujourd’hui ? Consultez [l’état actuel du projet](06-etat-actuel.html). Pour les étapes passées, ouvrez [l’historique](05-historique-du-projet.html).
+- Un terme technique vous bloque ? Consultez le [glossaire](glossaire.html). Avant d’émettre ou de publier des informations, lisez les [bonnes pratiques de sécurité et de vie privée](securite-et-bonnes-pratiques.html).
 
-Le réseau est communautaire : chaque nœud peut améliorer la couverture, mais chaque émission partage un spectre radio avec d’autres utilisateurs. La qualité dépend donc autant de la hauteur et de l’antenne que de la discipline collective.
+## Orientation générale
 
-> **Vous débutez ou vous hésitez ?** Posez votre question sur le [Discord officiel du projet](https://discord.gg/HnAfYUSU82) ou par e-mail à [projet.interconnection.normand@gmail.com](mailto:projet.interconnection.normand@gmail.com). La communauté peut vous aider avant le flash ou l’installation.
+Les nouvelles infrastructures durables du projet s’orientent vers MeshCore. Meshtastic reste documenté pour les appareils déjà déployés et pour les usages mobiles ou ponctuels. Les critères de choix sont détaillés dans la page de comparaison, et les décisions en vigueur sont regroupées dans la page sur l’[état actuel](06-etat-actuel.html).
 
-## Migration progressive vers MeshCore
-
-Le Projet d’Interconnexion Normand bascule petit à petit vers **MeshCore**. Cette transition est progressive afin de laisser le temps de tester les répéteurs, accompagner les utilisateurs et documenter les profils radio et les scopes départementaux. Meshtastic reste présent dans le projet pendant cette période et continue d’être documenté pour les appareils déjà déployés ou les usages qui en ont besoin.
-
-Un appareil Meshtastic et un appareil MeshCore ne communiquent pas directement simplement parce qu’ils utilisent tous les deux LoRa. Pour participer à la partie MeshCore du projet, suivez le profil MeshCore France / Normandie et choisissez le firmware Companion ou Repeater adapté. Ne reflashez pas un appareil en production sans sauvegarde et sans vérifier le rôle prévu.
-
-Pour connaître le choix recommandé aujourd’hui, consultez [l’état actuel du projet](06-etat-actuel.md). Pour comprendre l’origine de cette évolution, consultez [l’historique public](05-historique-du-projet.md).
-
-## Vocabulaire minimal
-
-- **Nœud / node :** appareil radio participant au réseau.
-- **LoRa :** modulation radio longue portée et faible débit.
-- **Mesh / maillage :** réseau dans lequel des nœuds relaient des paquets pour atteindre d’autres nœuds.
-- **Companion :** appareil utilisé par une personne, généralement relié à un téléphone.
-- **Repeater / relais :** nœud installé pour étendre la couverture.
-- **Room Server :** service MeshCore pouvant héberger des échanges de type salon.
-- **Preset modem :** ensemble de paramètres radio. Tous les nœuds qui doivent s’entendre doivent utiliser des paramètres compatibles.
-- **Canal :** groupe logique de messages, avec un nom et éventuellement une clé.
-
-## Code de conduite
-
-Le projet est ouvert à tous. Nous privilégions la coopération, la documentation et les essais réversibles. On ne surveille pas les personnes, on ne diffuse pas de données personnelles et on ne présente pas le réseau comme un moyen garanti pour les secours, la sécurité des personnes ou les communications critiques.
-
-Toute donnée de position doit être volontaire, minimisée et adaptée à l’usage. Une position précise peut révéler un domicile, un trajet ou un lieu sensible.
-
-## Avant d’émettre
-
-En France, les bandes dites libres ne nécessitent pas d’autorisation individuelle, mais elles ne garantissent pas l’absence de brouillage et restent soumises à des limites techniques. Le firmware ne remplace pas la vérification de la réglementation nationale. Utilisez le réglage régional prévu pour la France et ne forcez pas une puissance ou un taux d’occupation non autorisé.
-
-## Organisation du wiki
-
-Les pages marquées **À valider localement** décrivent une décision propre au Projet d’Interconnexion Normand. Elles ne doivent pas être inventées à partir de la documentation générique. Un mainteneur doit les compléter avec le nom du canal, le preset, les zones couvertes et la procédure d’adhésion réellement adoptés.
-
-## Contacts du projet
-
-La communauté se retrouve sur le [serveur Discord du Projet d’Interconnexion Normand](https://discord.gg/HnAfYUSU82). Pour une demande générale ou une question liée au projet, vous pouvez également écrire à [projet.interconnection.normand@gmail.com](mailto:projet.interconnection.normand@gmail.com).
-
-## Références officielles
-
-- [Documentation Meshtastic](https://meshtastic.org/docs/)
-- [Configuration initiale Meshtastic](https://meshtastic.org/docs/getting-started/initial-config/)
-- [Configuration LoRa Meshtastic](https://meshtastic.org/docs/configuration/radio/lora/)
-- [Configuration des canaux Meshtastic](https://meshtastic.org/docs/configuration/radio/channels/)
-- [Dépôt officiel MeshCore](https://github.com/meshcore-dev/MeshCore)
-- [Site officiel MeshCore](https://meshcore.io/)
-- [Portail bandes libres de l’Arcep](https://www.arcep.fr/la-regulation/grands-dossiers-reseaux-mobiles/le-guichet-start-up-et-innovation/le-portail-bandes-libres.html)
+Pour poser une question, rejoignez le [Discord du projet](https://discord.gg/HnAfYUSU82) ou écrivez à [projet.interconnection.normand@gmail.com](mailto:projet.interconnection.normand@gmail.com).

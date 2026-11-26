@@ -1,6 +1,8 @@
 ---
 layout: wiki
 title: "Cartes officielles des nœuds et de la couverture"
+theme: "Applications et cartes"
+theme_url: "/explorer-le-wiki.html#outils"
 ---
 
 # Cartes officielles des nœuds et de la couverture

@@ -17,17 +17,7 @@
         <img src="{{ '/assets/logo-projet-interconnexion-normand.png' | relative_url }}" alt="Logo du Projet d’Interconnexion Normand" width="82" height="82">
         <span class="brand-copy"><strong>Projet d’Interconnexion Normand</strong><small>Wiki MeshCore, Meshtastic et radio LoRa en Normandie</small></span>
       </a>
-      <nav class="site-nav" aria-label="Navigation principale">
-        <a href="{{ '/' | relative_url }}">Accueil</a>
-        <a href="{{ '/guide-debutant.html' | relative_url }}">Débuter</a>
-        <a href="{{ '/meshcore/01-demarrage.html' | relative_url }}">MeshCore</a>
-        <a href="{{ '/meshtastic/01-demarrage.html' | relative_url }}">Meshtastic</a>
-        <a href="{{ '/09-applications-mobiles.html' | relative_url }}">Applications</a>
-        <a href="{{ '/blog.html' | relative_url }}">Blog</a>
-        <a href="{{ '/terrain/01-test-radio.html' | relative_url }}">Terrain</a>
-        <a href="{{ '/04-carte-interactive.html' | relative_url }}">Carte</a>
-        <a href="{{ '/contact.html' | relative_url }}">Contact</a>
-      </nav>
+      {% include site-navigation.html %}
       <form class="site-search" data-search-form action="{{ '/recherche.html' | relative_url }}" method="get" role="search">
         <label class="visually-hidden" for="wiki-search-header">Rechercher dans le wiki</label>
         <input id="wiki-search-header" data-search-input type="search" name="q" placeholder="Rechercher dans le wiki" autocomplete="off">
@@ -36,7 +26,7 @@
     </div>
   </header>
   <main class="page-shell">
-    <p class="breadcrumbs"><a href="{{ '/' | relative_url }}">Accueil</a> <span aria-hidden="true">/</span> {{ page.title | escape }}</p>
+    <p class="breadcrumbs"><a href="{{ '/' | relative_url }}">Accueil</a> <span aria-hidden="true">/</span><a href="{{ '/explorer-le-wiki.html' | relative_url }}">Explorer le wiki</a>{% if page.theme %} <span aria-hidden="true">/</span> <a href="{{ page.theme_url | default: '/explorer-le-wiki.html' | relative_url }}">{{ page.theme | escape }}</a>{% endif %}{% unless page.url == '/explorer-le-wiki.html' %} <span aria-hidden="true">/</span> {{ page.title | escape }}{% endunless %}</p>
     <article class="content-card prose">
       {% if page.category %}<p class="article-tag" aria-label="Catégorie">{{ page.category | escape }}</p>{% endif %}
       {% if page.author_github or page.author_name %}<p class="article-author" aria-label="Auteur de la contribution">Contribution de {% if page.author_name %}<strong>{{ page.author_name | escape }}</strong> · {% endif %}{% if page.author_github contains '@' %}<a href="https://github.com/{{ page.author_github | remove: '@' | escape }}">{{ page.author_github | escape }}</a>{% else %}<a href="https://github.com/{{ page.author_github | escape }}">@{{ page.author_github | escape }}</a>{% endif %}</p>{% endif %}
@@ -44,7 +34,7 @@
     </article>
   </main>
   <footer class="site-footer">
-    <div class="site-footer-links"><a href="{{ '/04-carte-interactive.html' | relative_url }}">Cartes du réseau</a> · <a href="{{ '/contact.html' | relative_url }}">Contacter le projet</a> · <a href="https://github.com/1234LUCIUS/projet-interconnexion-normand-wiki">Code source et contributions</a> · Par Van Nieuwenberg Thomas</div>
+    <div class="site-footer-links"><a href="{{ '/explorer-le-wiki.html' | relative_url }}">Plan du wiki</a> · <a href="{{ '/04-carte-interactive.html' | relative_url }}">Cartes du réseau</a> · <a href="{{ '/contact.html' | relative_url }}">Contacter le projet</a> · <a href="https://github.com/1234LUCIUS/projet-interconnexion-normand-wiki">Code source et contributions</a> · Par Van Nieuwenberg Thomas</div>
     <div class="site-socials" aria-label="Réseaux sociaux officiels">
       <strong>Suivez le projet :</strong>
       <a class="social-link social-instagram" href="https://www.instagram.com/projet.interconnexion.normand/">Instagram du projet</a>

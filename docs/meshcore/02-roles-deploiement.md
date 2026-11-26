@@ -1,6 +1,8 @@
 ---
 layout: wiki
 title: "MeshCore — rôles et déploiement"
+theme: "Configurer MeshCore"
+theme_url: "/explorer-le-wiki.html#meshcore"
 ---
 
 # MeshCore — rôles et déploiement

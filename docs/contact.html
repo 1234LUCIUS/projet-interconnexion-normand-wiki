@@ -1,3 +1,6 @@
+---
+layout: null
+---
 <!doctype html>
 <html lang="fr">
 <head>
@@ -21,13 +24,11 @@
         <img src="assets/logo-projet-interconnexion-normand.png" alt="Logo du Projet d’Interconnexion Normand" width="82" height="82">
         <span class="brand-copy"><strong>Projet d’Interconnexion Normand</strong><small>Wiki MeshCore, Meshtastic et radio LoRa en Normandie</small></span>
       </a>
-      <nav class="site-nav" aria-label="Navigation principale">
-        <a href="./">Accueil</a><a href="guide-debutant.html">Débuter</a><a href="meshcore/01-demarrage.html">MeshCore</a><a href="meshtastic/01-demarrage.html">Meshtastic</a><a href="09-applications-mobiles.html">Applications</a><a href="actualites.html">Actualités</a><a href="blog.html">Blog</a><a href="galerie.html">Galerie</a><a href="terrain/01-test-radio.html">Terrain</a><a href="04-carte-interactive.html">Carte</a>
-      </nav>
+      {% include site-navigation.html %}
     </div>
   </header>
   <main class="page-shell">
-    <p class="breadcrumbs"><a href="./">Accueil</a> <span aria-hidden="true">/</span> Contact</p>
+    <p class="breadcrumbs"><a href="{{ '/' | relative_url }}">Accueil</a> <span aria-hidden="true">/</span> <a href="{{ '/explorer-le-wiki.html' | relative_url }}">Explorer le wiki</a> <span aria-hidden="true">/</span> <a href="{{ '/explorer-le-wiki.html#participer' | relative_url }}">Participer et suivre le projet</a> <span aria-hidden="true">/</span> Contact</p>
     <h1>Contacter le projet</h1>
     <p>Une question sur MeshCore, Meshtastic, un Companion, un Repeater, une antenne 868 MHz, la couverture radio ou un partenariat avec une association ou une collectivité ? Utilisez ce formulaire.</p>
     <p class="notice"><strong>Besoin d’une réponse rapide ?</strong> Vous pouvez aussi rejoindre le <a href="https://discord.gg/HnAfYUSU82">serveur Discord officiel</a>.</p>

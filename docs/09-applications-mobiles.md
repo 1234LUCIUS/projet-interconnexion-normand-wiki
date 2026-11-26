@@ -1,6 +1,8 @@
 ---
 layout: wiki
 title: "Applications mobiles"
+theme: "Applications et cartes"
+theme_url: "/explorer-le-wiki.html#outils"
 description: "Choisir et télécharger les applications MeshCore, MeshMapper, Meshtastic et Nelos, avec leurs fonctions et leurs limites."
 ---
 

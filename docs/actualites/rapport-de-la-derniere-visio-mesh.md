@@ -1,6 +1,8 @@
 ---
 layout: wiki
 title: "Rapport de la dernière Visio Mesh"
+theme: "Participer et suivre le projet"
+theme_url: "/explorer-le-wiki.html#participer"
 description: "Bonjour tout le monde , Tout d'abord, je tiens à remercier chaleureusement toutes les personnes présentes hier soir pour cette 3ᵉ édition de la Visio Mesh "
 date: 2026-11-22
 category: "Nouvelle du projet"

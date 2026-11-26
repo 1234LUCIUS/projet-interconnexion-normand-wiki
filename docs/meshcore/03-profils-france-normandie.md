@@ -1,6 +1,8 @@
 ---
 layout: wiki
 title: "MeshCore — profils France / Normandie"
+theme: "Configurer MeshCore"
+theme_url: "/explorer-le-wiki.html#meshcore"
 ---
 
 # MeshCore — profils France / Normandie

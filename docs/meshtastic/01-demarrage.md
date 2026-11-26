@@ -1,6 +1,8 @@
 ---
 layout: wiki
 title: "Meshtastic — démarrage rapide"
+theme: "Configurer Meshtastic"
+theme_url: "/explorer-le-wiki.html#meshtastic"
 ---
 
 # Meshtastic — démarrage rapide
@@ -47,7 +49,7 @@ Vérifiez toujours la valeur proposée par la version du firmware et la régleme
 
 ## 4. Choisir le preset du projet
 
-Un nœud n’entend correctement que les nœuds qui partagent la même région et un preset modem compatible. Le projet doit publier son choix dans [02-configuration-projet.md](02-configuration-projet.md). Si la page indique **À valider localement**, demandez le preset au groupe avant de modifier votre appareil.
+Un nœud n’entend correctement que les nœuds qui partagent la même région et un preset modem compatible. Le projet doit publier son choix dans [02-configuration-projet.md](./02-configuration-projet.html). Si la page indique **À valider localement**, demandez le preset au groupe avant de modifier votre appareil.
 
 Ne changez pas le preset d’un relais en production sans fenêtre de maintenance annoncée.
 

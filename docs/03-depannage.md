@@ -1,6 +1,8 @@
 ---
 layout: wiki
 title: "Dépannage commun"
+theme: "Applications et cartes"
+theme_url: "/explorer-le-wiki.html#outils"
 ---
 
 # Dépannage commun

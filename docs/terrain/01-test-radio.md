@@ -1,6 +1,8 @@
 ---
 layout: wiki
 title: "Tests radio de terrain et wardriving"
+theme: "Terrain et couverture radio"
+theme_url: "/explorer-le-wiki.html#terrain"
 ---
 
 # Tests radio de terrain et wardriving

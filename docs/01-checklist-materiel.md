@@ -1,6 +1,8 @@
 ---
 layout: wiki
 title: "Checklist matériel et préparation"
+theme: "Matériel et installations"
+theme_url: "/explorer-le-wiki.html#materiel"
 ---
 
 # Checklist matériel et préparation

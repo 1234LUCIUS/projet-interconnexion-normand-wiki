@@ -26,23 +26,11 @@ layout: null
         <img src="assets/logo-projet-interconnexion-normand.png" alt="Logo du Projet d’Interconnexion Normand" width="82" height="82">
         <span class="brand-copy"><strong>Projet d’Interconnexion Normand</strong><small>Wiki open source MeshCore et Meshtastic</small></span>
       </a>
-      <nav class="site-nav" aria-label="Navigation principale">
-        <a href="./">Accueil</a>
-        <a href="guide-debutant.html">Débuter</a>
-        <a href="meshcore/01-demarrage.html">MeshCore</a>
-        <a href="meshtastic/01-demarrage.html">Meshtastic</a>
-        <a href="09-applications-mobiles.html">Applications</a>
-        <a href="actualites.html">Actualités</a>
-        <a href="blog.html" aria-current="page">Blog</a>
-        <a href="galerie.html">Galerie</a>
-        <a href="terrain/01-test-radio.html">Terrain</a>
-        <a href="04-carte-interactive.html">Carte</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+      {% include site-navigation.html %}
     </div>
   </header>
   <main class="page-shell">
-    <p class="breadcrumbs"><a href="./">Accueil</a> › Blog</p>
+    <p class="breadcrumbs"><a href="{{ '/' | relative_url }}">Accueil</a> <span aria-hidden="true">/</span> <a href="{{ '/explorer-le-wiki.html' | relative_url }}">Explorer le wiki</a> <span aria-hidden="true">/</span> <a href="{{ '/explorer-le-wiki.html#participer' | relative_url }}">Participer et suivre le projet</a> <span aria-hidden="true">/</span> Blog</p>
     <section class="content-card prose">
       <h1>Blog du Projet d’Interconnexion Normand</h1>
       <p class="lead">Analyses, dossiers, explications et retours d’expérience autour de MeshCore, Meshtastic et des communications radio LoRa en Normandie.</p>

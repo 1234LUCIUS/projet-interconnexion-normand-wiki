@@ -1,6 +1,8 @@
 ---
 layout: wiki
 title: "Choisir entre Meshtastic et MeshCore"
+theme: "Choisir et démarrer"
+theme_url: "/explorer-le-wiki.html#demarrer"
 ---
 
 # Choisir entre Meshtastic et MeshCore
@@ -41,7 +43,7 @@ Pour un événement à mettre en place rapidement sans infrastructure permanente
 
 MeshCore est recommandé pour un répéteur installé durablement sur un site fixe. Le rôle Repeater, les réglages d’advert, les scopes et les outils de maintenance sont adaptés à une infrastructure qui doit fonctionner sans téléphone connecté en permanence.
 
-Le site doit être autorisé, alimenté, accessible pour la maintenance et documenté. La configuration officielle des répéteurs normands est décrite dans [Profils MeshCore France / Normandie](meshcore/03-profils-france-normandie.md).
+Le site doit être autorisé, alimenté, accessible pour la maintenance et documenté. La configuration officielle des répéteurs normands est décrite dans [Profils MeshCore France / Normandie](./meshcore/03-profils-france-normandie.html).
 
 ### Réseau régional
 

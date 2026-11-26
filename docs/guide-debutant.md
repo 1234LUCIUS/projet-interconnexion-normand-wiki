@@ -1,6 +1,8 @@
 ---
 layout: wiki
 title: "Guide débutant : mon premier nœud"
+theme: "Choisir et démarrer"
+theme_url: "/explorer-le-wiki.html#demarrer"
 ---
 
 # Guide débutant : mon premier nœud
@@ -15,7 +17,7 @@ Ce guide est volontairement simple. Si vous ne connaissez pas encore LoRa, MeshC
 
 Pour rejoindre durablement le Projet d’Interconnexion Normand, choisissez **MeshCore**. Prenez un **Companion** si vous voulez communiquer avec votre téléphone. Choisissez un **Repeater** uniquement pour installer un relais fixe, avec un emplacement autorisé et une personne chargée de la maintenance.
 
-Meshtastic reste utile pour les randonnées, les sorties, les événements et les appareils déjà installés. Pour comprendre la différence, lisez [Choisir entre Meshtastic et MeshCore](01-choisir-son-reseau.md).
+Meshtastic reste utile pour les randonnées, les sorties, les événements et les appareils déjà installés. Pour comprendre la différence, lisez [Choisir entre Meshtastic et MeshCore](./01-choisir-son-reseau.html).
 
 ## Ce qu’il vous faut
 
@@ -31,15 +33,15 @@ Pour un Companion, privilégiez une carte compacte avec Bluetooth et batterie. P
 4. **Réglez le profil normand** : `869.618,62.5,8,8`.
 5. **Connectez l’application MeshCore**, choisissez le scope `fr`, puis envoyez un message de test non sensible.
 
-Le profil complet des répéteurs et les scopes départementaux sont expliqués dans [Profils MeshCore France / Normandie](meshcore/03-profils-france-normandie.md).
+Le profil complet des répéteurs et les scopes départementaux sont expliqués dans [Profils MeshCore France / Normandie](./meshcore/03-profils-france-normandie.html).
 
-Pour la procédure détaillée, consultez [Flasher son appareil MeshCore](meshcore/05-flasher-companion-repeater.md). Elle contient une partie dédiée au Companion et une autre au Repeater, avec la préparation, les commandes, les vérifications et le dépannage.
+Pour la procédure détaillée, consultez [Flasher son appareil MeshCore](./meshcore/05-flasher-companion-repeater.html). Elle contient une partie dédiée au Companion et une autre au Repeater, avec la préparation, les commandes, les vérifications et le dépannage.
 
 ## Où commencer ?
 
 Faites votre premier test dans un endroit dégagé, à quelques mètres d’un autre appareil connu. Ensuite, déplacez-vous dans votre quartier ou votre commune. Notez ce qui fonctionne et ce qui ne fonctionne pas. Ne concluez pas qu’un réseau est “absent” après un seul essai.
 
-Pour choisir un point haut, consultez [le guide de couverture](terrain/03-simulateurs-couverture.md) et testez votre idée avec [MeshLab-RF](https://github.com/1234LUCIUS/meshlab-rf/).
+Pour choisir un point haut, consultez [le guide de couverture](./terrain/03-simulateurs-couverture.html) et testez votre idée avec [MeshLab-RF](https://github.com/1234LUCIUS/meshlab-rf/).
 
 ## Si vous êtes bloqué
 

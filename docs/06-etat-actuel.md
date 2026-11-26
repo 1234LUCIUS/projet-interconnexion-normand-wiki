@@ -1,54 +1,32 @@
 ---
 layout: wiki
-title: "État actuel du Projet d’Interconnexion Normand"
+title: "État actuel et décisions du projet"
+description: "Décisions et orientation actuellement retenues par le Projet d’Interconnexion Normand pour MeshCore, Meshtastic et les nouvelles infrastructures."
+theme: "Découvrir le projet"
+theme_url: "/explorer-le-wiki.html#decouvrir"
 ---
 
-# État actuel du Projet d’Interconnexion Normand
+# État actuel et décisions du projet
 
-## En une phrase
+Cette page est la référence pour les décisions en vigueur. Elle décrit la direction actuelle du Projet d’Interconnexion Normand ; elle ne remplace ni le [comparatif des usages](01-choisir-son-reseau.html), ni les guides de configuration propres à chaque logiciel.
 
-Le Projet d’Interconnexion Normand est une initiative communautaire de communication hors réseau en Normandie. Le projet a commencé avec Meshtastic et évolue progressivement vers MeshCore. Pour toute nouvelle infrastructure, le projet encourage désormais clairement l’adoption de MeshCore, tout en conservant Meshtastic pour les usages individuels, mobiles, ponctuels et les appareils déjà déployés.
+## Orientation actuelle
 
-## Ce qui est historique
+Le projet a commencé avec Meshtastic et évolue progressivement vers MeshCore. Pour toute nouvelle infrastructure régionale ou tout nouveau répéteur permanent, l’orientation privilégiée est désormais **MeshCore**. Meshtastic reste documenté pour les appareils déjà en service ainsi que pour les usages individuels, mobiles et ponctuels.
 
-La première phase publique s’est construite autour de Meshtastic, avec une configuration annoncée en `869.525 MHz` et preset `LongFast`. Cette configuration appartient à l’histoire publique du projet. Elle ne doit pas être copiée automatiquement sur un appareil MeshCore ni considérée comme la configuration actuelle des répéteurs MeshCore normands.
+Cette transition est progressive. Un appareil Meshtastic déjà déployé ne doit pas être reflashé uniquement parce que le projet évolue. Avant toute maintenance, sauvegardez sa configuration et vérifiez le matériel, le rôle attendu et le réseau auquel il doit se connecter.
 
-L’évolution vers MeshCore vient des échanges communautaires et des retours présentés lors des Visio Mesh, notamment les expériences rapportées depuis le Havre et le réseau breton. La migration est progressive : elle doit permettre de tester les rôles, les répéteurs, les scopes départementaux et les procédures de maintenance sans abandonner les appareils déjà en service.
+## Décisions pour les nouveaux déploiements
 
-Pour le détail, consulter [l’historique du projet](05-historique-du-projet.md).
+- Pour rejoindre durablement l’infrastructure MeshCore, un nouveau membre peut commencer par un **Companion MeshCore**.
+- Un nouveau **Repeater MeshCore** doit utiliser un appareil dédié, un emplacement autorisé et un responsable de maintenance identifié.
+- Les répéteurs normands suivent les [profils MeshCore France / Normandie](meshcore/03-profils-france-normandie.html). Confirmez le profil applicable auprès de l’équipe avant l’installation.
+- Meshtastic reste le choix possible pour certains groupes mobiles ou événements et pour maintenir les appareils déjà présents. Les critères concrets sont dans [Choisir son réseau](01-choisir-son-reseau.html).
 
-## Quelle technologie utiliser maintenant ?
+## Repères historiques et précautions
 
-### Meshtastic reste adapté pour
+La configuration Meshtastic annoncée lors de la première phase publique — notamment le preset `LongFast` et la fréquence alors indiquée — appartient à l’historique du projet. Ne la recopiez pas automatiquement dans MeshCore ni dans une configuration actuelle de répéteur. Pour le contexte, consultez [l’historique du projet](05-historique-du-projet.html).
 
-Meshtastic reste recommandé pour une randonnée, un voyage, une sortie en groupe, un club, une association locale ou un événement ponctuel. Il est aussi utile pour apprendre, tester un emplacement et utiliser un Companion avec une application mobile.
+MeshCore et Meshtastic utilisent tous deux LoRa, mais leurs réseaux ne sont pas directement interopérables. Les canaux, profils, rôles, chemins et procédures doivent donc rester documentés séparément. Les consignes de protection des données et de conformité radio sont regroupées dans [Sécurité, vie privée et bonnes pratiques](securite-et-bonnes-pratiques.html).
 
-Les appareils Meshtastic existants ne doivent pas être reflashes simplement parce que le projet migre. Gardez-les fonctionnels, documentez leur configuration et vérifiez le réseau qu’ils doivent rejoindre.
-
-### MeshCore devient la référence pour
-
-MeshCore est le choix privilégié pour un répéteur permanent, un réseau régional, plusieurs points hauts ou une infrastructure que le projet doit maintenir et étendre dans la durée.
-
-Un nouveau membre qui souhaite investir dans du matériel ou contribuer à la couverture régionale devrait donc choisir un **Companion MeshCore** pour commencer. Un nouveau Repeater MeshCore doit être réservé à un appareil dédié, un emplacement autorisé et un responsable de maintenance identifié.
-
-Les nouveaux répéteurs normands doivent suivre la [configuration MeshCore France / Normandie](meshcore/03-profils-france-normandie.md), qui utilise le profil EU/UK Narrow, les scopes `fr`, `fr-nor` et départementaux, ainsi que le réglage sur deux octets pour les chemins.
-
-## Parcours recommandé pour un nouvel arrivant
-
-1. Lire [l’historique du projet](05-historique-du-projet.md) et [le guide de choix du réseau](01-choisir-son-reseau.md).
-2. Rejoindre le [Discord du projet](https://discord.gg/HnAfYUSU82) ou écrire à [projet.interconnection.normand@gmail.com](mailto:projet.interconnection.normand@gmail.com) pour vérifier le réseau local.
-3. Choisir un matériel supporté et utiliser le flasher correspondant : [Meshtastic](https://flasher.meshtastic.org/) ou [MeshCore](https://flasher.meshcore.io/).
-4. Pour MeshCore, choisir Companion pour commencer, ou Repeater uniquement pour un appareil dédié et un site autorisé.
-5. Appliquer le profil radio et le scope annoncés par le projet ; ne pas mélanger la configuration Meshtastic historique et la configuration MeshCore.
-6. Faire un test à courte distance, puis un test de terrain avant toute installation permanente.
-7. Consulter les [cartes officielles des nœuds et de la couverture](04-carte-interactive.md), sans publier d’adresse privée ni de secret.
-
-## Règles de transition
-
-Meshtastic et MeshCore utilisent tous les deux LoRa, mais ne sont pas directement interopérables. Un nœud visible dans un environnement n’est donc pas automatiquement joignable depuis l’autre. Les canaux, les clés, les rôles, les chemins, les scopes et les outils de maintenance doivent être documentés séparément.
-
-Un changement de firmware est une opération de maintenance. Sauvegardez la configuration, vérifiez le modèle exact, branchez l’antenne, prévoyez un accès USB et ne reflashez pas un relais distant sans solution de récupération.
-
-## Contacts et décisions
-
-Les décisions relatives aux canaux, aux profils radio, aux scopes et aux répéteurs doivent être confirmées par l’équipe du projet. Les canaux publics ne sont pas des canaux confidentiels. Ne publiez jamais de clé privée, mot de passe, QR code, position exacte d’un domicile ou emplacement sensible.
+Les décisions locales concernant les canaux, les profils, les scopes et les répéteurs doivent être confirmées par l’équipe du projet. En cas de doute, demandez conseil sur le [Discord officiel](https://discord.gg/HnAfYUSU82) avant de modifier un nœud déjà en service.

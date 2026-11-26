@@ -1,6 +1,8 @@
 ---
 layout: wiki
-title: "Présentation du Projet d’Interconnexion Normand"
+title: "Le projet d’Interconnexion Normand pour les collectivités"
+theme: "Collectivités et partenaires"
+theme_url: "/explorer-le-wiki.html#collectivites"
 ---
 
 # Présentation du Projet d’Interconnexion Normand
@@ -185,14 +187,16 @@ Pour commencer, nous pouvons échanger sur :
 6. les règles de sécurité et de confidentialité ;
 7. les critères qui permettront de décider de la suite.
 
+Pour les étapes d’étude, d’accueil et de maintenance d’un site, consultez aussi le [guide pratique pour accueillir un répéteur permanent](collectivites-relais.html).
+
 ## Intéressé ?
 
 Le projet est ouvert aux collectivités, aux associations, aux clubs radio, aux établissements scolaires, aux habitants et aux personnes qui souhaitent contribuer. Une première discussion peut déboucher sur l’accueil d’un répéteur permanent, le renforcement d’un secteur ou un partenariat local de long terme.
 
 - Rejoignez le [Discord officiel du Projet d’Interconnexion Normand](https://discord.gg/HnAfYUSU82).
 - Écrivez à [projet.interconnection.normand@gmail.com](mailto:projet.interconnection.normand@gmail.com).
-- Consultez le [guide débutant](guide-debutant.md) pour comprendre le parcours technique.
-- Consultez les [profils MeshCore France / Normandie](meshcore/03-profils-france-normandie.md) pour les nouveaux déploiements.
-- Consultez la [procédure de déploiement d’un relais](terrain/02-deployer-un-relais.md) avant toute installation fixe.
+- Consultez le [guide débutant](./guide-debutant.html) pour comprendre le parcours technique.
+- Consultez les [profils MeshCore France / Normandie](./meshcore/03-profils-france-normandie.html) pour les nouveaux déploiements.
+- Consultez la [procédure de déploiement d’un relais](./terrain/02-deployer-un-relais.html) avant toute installation fixe.
 
 > **Une infrastructure utile se construit dans la durée : un site autorisé, un répéteur maintenu et un partenaire local engagé renforcent concrètement le maillage normand.**

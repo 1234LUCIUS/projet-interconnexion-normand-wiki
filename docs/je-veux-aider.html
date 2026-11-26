@@ -15,11 +15,11 @@ layout: null
   <header class="site-header">
     <div class="site-header-inner">
       <a class="brand" href="./"><img src="assets/logo-projet-interconnexion-normand.png" alt="Logo du Projet d’Interconnexion Normand" width="82" height="82"><span class="brand-copy"><strong>Projet d’Interconnexion Normand</strong><small>Wiki open source MeshCore et Meshtastic</small></span></a>
-      <nav class="site-nav" aria-label="Navigation principale"><a href="./">Accueil</a><a href="guide-debutant.html">Débuter</a><a href="meshcore/01-demarrage.html">MeshCore</a><a href="meshtastic/01-demarrage.html">Meshtastic</a><a href="actualites.html">Actualités</a><a href="blog.html">Blog</a><a href="07-presentation-collectivites.html">Collectivités</a><a href="galerie.html">Galerie</a><a href="04-carte-interactive.html">Carte</a><a href="contact.html">Contact</a></nav>
+      {% include site-navigation.html %}
     </div>
   </header>
   <main class="page-shell">
-    <p class="breadcrumbs"><a href="./">Accueil</a> › Je veux aider</p>
+    <p class="breadcrumbs"><a href="{{ '/' | relative_url }}">Accueil</a> <span aria-hidden="true">/</span> <a href="{{ '/explorer-le-wiki.html' | relative_url }}">Explorer le wiki</a> <span aria-hidden="true">/</span> <a href="{{ '/explorer-le-wiki.html#participer' | relative_url }}">Participer et suivre le projet</a> <span aria-hidden="true">/</span> Je veux aider</p>
     <section class="content-card prose">
       <h1>Je veux aider le projet</h1>
       <p class="lead">Le Projet d’Interconnexion Normand avance grâce aux personnes qui testent, documentent, expliquent et installent le réseau. Chacun peut contribuer à son niveau.</p>
@@ -43,7 +43,7 @@ layout: null
       <p>Répondre à une question, relire une page, signaler une erreur ou proposer une explication simple est une contribution importante. Les corrections peuvent être proposées sur GitHub ou discutées sur le Discord.</p>
 
       <h2>Proposer un partenariat local</h2>
-      <p>Associations, mairies, collectivités, clubs de randonnée et organisateurs d’événements peuvent proposer un test limité et documenté. Utilisez la <a href="07-presentation-collectivites.html">page dédiée aux collectivités</a> et contactez l’équipe.</p>
+      <p>Associations, mairies, collectivités, clubs de randonnée et organisateurs d’événements peuvent proposer un partenariat autour d’un site permanent autorisé et maintenu dans la durée. Utilisez la <a href="collectivites-relais.html">guide pour accueillir un répéteur permanent</a> et contactez l’équipe.</p>
       <p><a class="cta" href="https://discord.gg/HnAfYUSU82">Rejoindre le Discord</a><a class="cta" href="contact.html">Contacter le projet</a></p>
     </section>
   </main>

@@ -1,6 +1,8 @@
 ---
 layout: wiki
 title: "Déployer un relais"
+theme: "Terrain et couverture radio"
+theme_url: "/explorer-le-wiki.html#terrain"
 ---
 
 # Déployer un relais
@@ -21,7 +23,7 @@ Obtenez l’accord écrit du propriétaire ou de l’exploitant du site. Évalue
 
 Utilisez un matériel compatible avec le rôle choisi, une antenne adaptée et un boîtier approprié. Vérifiez l’étanchéité, le soulagement mécanique du câble et l’absence de contrainte sur les connecteurs. Configurez le nœud sur table, puis testez-le avant de le placer sur site.
 
-Voir aussi le [guide visuel des nœuds, antennes et installations sur points hauts](../08-materiel-antennes-installations.md) avant de choisir le support, l’antenne et le boîtier.
+Voir aussi le [guide visuel des nœuds, antennes et installations sur points hauts](../08-materiel-antennes-installations.html) avant de choisir le support, l’antenne et le boîtier.
 
 ## Mise en service
 

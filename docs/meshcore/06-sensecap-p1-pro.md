@@ -1,6 +1,8 @@
 ---
 layout: wiki
 title: "Seeed Studio SenseCAP Solar Node P1-Pro"
+theme: "Configurer MeshCore"
+theme_url: "/explorer-le-wiki.html#meshcore"
 ---
 
 # Seeed Studio SenseCAP Solar Node P1-Pro
@@ -79,7 +81,7 @@ Le flasher affiche parfois le P1-Pro sous le nom **SenseCAP Solar Node P1**. Il 
 
 Après le flash et la configuration, vérifiez le rôle **Repeater**, la version du firmware, la fréquence, le profil radio, les scopes et les annonces. Faites un test sur table avec un Companion avant toute installation extérieure.
 
-Pour les captures et les explications générales, consultez [Flasher son appareil MeshCore](05-flasher-companion-repeater.md).
+Pour les captures et les explications générales, consultez [Flasher son appareil MeshCore](./05-flasher-companion-repeater.html).
 
 ## Configuration du projet — exemple Calvados
 

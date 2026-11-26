@@ -19,14 +19,12 @@ layout: null
         <img src="assets/logo-projet-interconnexion-normand.png" alt="Logo du Projet d’Interconnexion Normand" width="82" height="82">
         <span class="brand-copy"><strong>Projet d’Interconnexion Normand</strong><small>Wiki open source MeshCore et Meshtastic en Normandie</small></span>
       </a>
-      <nav class="site-nav" aria-label="Navigation principale">
-        <a href="./">Accueil</a><a href="guide-debutant.html">Débuter</a><a href="meshcore/01-demarrage.html">MeshCore</a><a href="meshtastic/01-demarrage.html">Meshtastic</a><a href="actualites.html">Actualités</a><a href="blog.html">Blog</a><a href="je-veux-aider.html">Je veux aider</a><a href="07-presentation-collectivites.html">Collectivités</a><a href="galerie.html">Galerie</a><a href="04-carte-interactive.html">Carte</a><a href="journal-des-versions.html" aria-current="page">Versions</a><a href="contact.html">Contact</a>
-      </nav>
+      {% include site-navigation.html %}
     </div>
   </header>
 
   <main class="page-shell">
-    <p class="breadcrumbs"><a href="./">Accueil</a> › Journal des versions et des changements</p>
+    <p class="breadcrumbs"><a href="{{ '/' | relative_url }}">Accueil</a> <span aria-hidden="true">/</span> <a href="{{ '/explorer-le-wiki.html' | relative_url }}">Explorer le wiki</a> <span aria-hidden="true">/</span> <a href="{{ '/explorer-le-wiki.html#participer' | relative_url }}">Participer et suivre le projet</a> <span aria-hidden="true">/</span> Journal des versions</p>
     <section class="content-card prose">
       <h1>Journal des versions et des changements</h1>
       <p class="lead">Cette page suit l’évolution du wiki, de ses contenus et de ses outils de contribution. Elle permet aux nouveaux arrivants de comprendre ce qui a changé et aux contributeurs de retrouver les modifications dans le dépôt open source.</p>

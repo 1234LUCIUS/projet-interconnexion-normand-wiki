@@ -52,6 +52,7 @@ a:hover { color: var(--green); }
   text-decoration: none;
   font-weight: 650;
 }
+.site-nav a[aria-current="page"] { background: var(--gold); color: var(--green); }
 .site-nav a:hover, .site-nav a:focus-visible { background: var(--gold); color: var(--green); }
 .site-search { display: flex; gap: .5rem; max-width: 620px; margin-top: 1rem; }
 .site-search input, .search-page-form input {
@@ -144,6 +145,9 @@ a:hover { color: var(--green); }
 }
 .home-page .card:hover, .home-page .card:focus-visible { border-color: var(--green-mid); box-shadow: 0 4px 14px #18351d20; }
 .home-page .card h3 { margin: 0 0 .35rem; color: var(--green-link); }
+.pathway { counter-reset: pathway; display: grid; gap: .75rem; padding: 0; list-style: none; }
+.pathway li { position: relative; padding: .9rem 1rem .9rem 3.25rem; border: 1px solid var(--line); border-radius: 12px; background: #fff; }
+.pathway li::before { counter-increment: pathway; content: counter(pathway); position: absolute; left: .9rem; top: .85rem; display: grid; width: 1.7rem; height: 1.7rem; place-items: center; border-radius: 50%; background: var(--gold); color: var(--green); font-weight: 800; }
 .article-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 1rem; margin: 1.25rem 0; }
 .article-card { overflow: hidden; background: var(--paper); border: 1px solid var(--line); border-radius: 14px; box-shadow: 0 2px 8px #18351d12; }
 .article-card img { display: block; width: 100%; height: 190px; object-fit: cover; }

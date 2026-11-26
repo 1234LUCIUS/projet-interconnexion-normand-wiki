@@ -1,6 +1,8 @@
 ---
 layout: wiki
 title: "Installation d'un nouveau répéteur à Vassy, Calvados"
+theme: "Participer et suivre le projet"
+theme_url: "/explorer-le-wiki.html#participer"
 description: "Le 25 octobre, un nouveau répéteur à été installé dans la ville de Vassy, Calvados afin d'agrandir le réseau dans le secteur Vire/ Vassy/ Condé sur Noireau"
 date: 2026-11-21
 category: "Pose de répéteur"

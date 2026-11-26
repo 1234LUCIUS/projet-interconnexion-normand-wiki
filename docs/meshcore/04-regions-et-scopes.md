@@ -1,6 +1,8 @@
 ---
 layout: wiki
 title: "MeshCore : comprendre les régions et les scopes"
+theme: "Configurer MeshCore"
+theme_url: "/explorer-le-wiki.html#meshcore"
 ---
 
 # MeshCore : comprendre les régions et les scopes
@@ -134,4 +136,4 @@ Vous ne savez pas quoi choisir : laissez le scope `fr` sur votre Companion et de
 - [MeshCore — filtrage régional expliqué par le développeur du firmware](https://blog.meshcore.io/2026/01/20/region-filtering)
 - [MeshCore — format officiel des paquets](https://docs.meshcore.io/packet_format/)
 - [MeshCore — format officiel des payloads](https://docs.meshcore.io/payloads/)
-- [Configuration MeshCore France / Normandie du projet](03-profils-france-normandie.md)
+- [Configuration MeshCore France / Normandie du projet](./03-profils-france-normandie.html)

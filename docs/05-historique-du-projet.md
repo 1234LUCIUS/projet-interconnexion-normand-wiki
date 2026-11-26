@@ -1,6 +1,8 @@
 ---
 layout: wiki
 title: "Historique du Projet d’Interconnexion Normand"
+theme: "Découvrir le projet"
+theme_url: "/explorer-le-wiki.html#decouvrir"
 ---
 
 # Historique du Projet d’Interconnexion Normand
@@ -45,7 +47,7 @@ La trajectoire actuelle du projet peut être résumée ainsi :
 4. **Migration progressive vers MeshCore**, avec des profils normands pour les Companions, les Repeaters et les scopes départementaux.
 5. **Coexistence temporaire**, car Meshtastic et MeshCore ne communiquent pas directement simplement parce qu’ils utilisent tous les deux LoRa.
 
-La configuration de référence actuellement documentée pour les répéteurs normands est disponible dans [Profils MeshCore France / Normandie](meshcore/03-profils-france-normandie.md). Elle doit être considérée comme la configuration opérationnelle du projet et non comme une reconstitution de la configuration historique Meshtastic.
+La configuration de référence actuellement documentée pour les répéteurs normands est disponible dans [Profils MeshCore France / Normandie](./meshcore/03-profils-france-normandie.html). Elle doit être considérée comme la configuration opérationnelle du projet et non comme une reconstitution de la configuration historique Meshtastic.
 
 ## Sources publiques
 
