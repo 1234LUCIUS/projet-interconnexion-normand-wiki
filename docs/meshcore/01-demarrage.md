@@ -41,6 +41,12 @@ Consultez le [Web Flasher officiel MeshCore](https://flasher.meshcore.io/) et id
 
 Utilisez le [Web Flasher officiel MeshCore](https://flasher.meshcore.io/). Choisissez le matériel puis le rôle : **Companion**, **Repeater** ou **Room Server**. N’utilisez pas un binaire trouvé dans une conversation sans vérifier sa provenance.
 
+## Configuration d’un Repeater normand
+
+Si vous installez ou réglez un **Repeater MeshCore en Normandie**, utilisez la [carte interactive de configuration par département](./05-flasher-companion-repeater.html#configuration-normande). Dans le guide du flasher, choisissez un département sur la carte ou dans la liste placée sous celle-ci : les commandes correspondantes s’affichent pour la console CLI.
+
+Vérifiez que le profil convient à l’emplacement et au réseau avant de l’appliquer. La page [Profils MeshCore France / Normandie](./03-profils-france-normandie.html) explique les réglages et les précautions. Ce profil de répéteur ne remplace pas les paramètres à utiliser sur un Companion.
+
 ## 3. Connecter un Companion
 
 Après le flash, reliez le nœud à l’application MeshCore par BLE, USB ou Wi-Fi selon le matériel. Les clients officiels et les liens à jour sont référencés dans le [dépôt MeshCore](https://github.com/meshcore-dev/MeshCore).

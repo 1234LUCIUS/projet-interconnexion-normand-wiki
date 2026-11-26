@@ -132,7 +132,7 @@ Pour la configuration par console USB, le [configurateur MeshCore](https://confi
 
 Pour le matériel solaire Seeed, consultez aussi la page dédiée au [SenseCAP Solar Node P1-Pro](./06-sensecap-p1-pro.html). Dans ce wiki, nous partons du principe que le P1-Pro n’est pas pré-flashé ou que son firmware doit être vérifié : suivez donc la procédure complète de flash Repeater avant la configuration.
 
-## Étape 3 — Appliquer la configuration normande
+## Étape 3 — Appliquer la configuration normande {#configuration-normande}
 
 Les cinq profils reprennent exactement les commandes et leur ordre fournis. Sélectionnez le département du Repeater pour afficher le bloc à saisir dans la console CLI du flasher.
 
