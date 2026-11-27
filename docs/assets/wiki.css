@@ -293,6 +293,112 @@ a:hover { color: var(--green); }
 .social-linkedin { background: #0a66c2; }
 .social-linkedin:hover, .social-linkedin:focus-visible { background: #084f96; }
 
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  color: #e5ede3;
+  background: #101712;
+  --green: #18351d;
+  --green-mid: #8fcb9c;
+  --green-link: #8fd39a;
+  --paper: #17221a;
+  --line: #35493a;
+  --muted: #b3c0b3;
+}
+:root[data-theme="dark"] body { color: #e5ede3; background: #101712; }
+:root[data-theme="dark"] a { color: var(--green-link); }
+:root[data-theme="dark"] a:hover { color: #c5edca; }
+:root[data-theme="dark"] .content-card,
+:root[data-theme="dark"] .home-page .card,
+:root[data-theme="dark"] .article-card,
+:root[data-theme="dark"] .gallery-card { background: var(--paper); border-color: var(--line); }
+:root[data-theme="dark"] .prose h1,
+:root[data-theme="dark"] .prose h2,
+:root[data-theme="dark"] .home-page h1,
+:root[data-theme="dark"] .home-page h2,
+:root[data-theme="dark"] .page-shell > h1,
+:root[data-theme="dark"] .article-card h2,
+:root[data-theme="dark"] .content-card > h1 { color: #d9ead9; }
+:root[data-theme="dark"] .prose h3,
+:root[data-theme="dark"] .home-page .card h3 { color: var(--green-link); }
+:root[data-theme="dark"] .site-search input,
+:root[data-theme="dark"] .search-page-form input,
+:root[data-theme="dark"] .form-card input:not([type="hidden"], [type="checkbox"]),
+:root[data-theme="dark"] .form-card select,
+:root[data-theme="dark"] .form-card textarea {
+  color: #e5ede3;
+  background: #111a14;
+  border-color: #526657;
+}
+:root[data-theme="dark"] .site-search input::placeholder,
+:root[data-theme="dark"] .search-page-form input::placeholder,
+:root[data-theme="dark"] .form-card textarea::placeholder { color: #aebcac; }
+:root[data-theme="dark"] .prose blockquote,
+:root[data-theme="dark"] .notice { color: #f3e9cf; background: #2b281d; }
+:root[data-theme="dark"] .prose p:has(> img + img) img { background: #111a14; }
+:root[data-theme="dark"] .prose th { background: #25372a; }
+:root[data-theme="dark"] .prose code { color: #e5ede3; background: #29382c; }
+:root[data-theme="dark"] .prose pre { color: #edf4ec; background: #0b110d; }
+:root[data-theme="dark"] .pathway li,
+:root[data-theme="dark"] .spot-summary,
+:root[data-theme="dark"] .feed-links,
+:root[data-theme="dark"] .search-result,
+:root[data-theme="dark"] .node-stat,
+:root[data-theme="dark"] .map-legend,
+:root[data-theme="dark"] .repeater-map-frame,
+:root[data-theme="dark"] .repeater-profile { color: #e5ede3; background: #1a271d; border-color: var(--line); }
+:root[data-theme="dark"] .article-tag { color: #c1ebc6; background: #203927; border-color: #466c4d; }
+:root[data-theme="dark"] .success-banner { color: #d9efdc; background: #1b3323; border-color: #47724f; }
+:root[data-theme="dark"] .success-banner img { background: #fff; }
+:root[data-theme="dark"] .node-stat-primary { background: #172b3b; border-color: #355d7c; }
+:root[data-theme="dark"] .node-stat-primary strong { color: #8dc8f3; }
+:root[data-theme="dark"] .map-embed { background: #141d17; }
+:root[data-theme="dark"] .repeater-map-link path { fill: #304b37; stroke: #819184; }
+:root[data-theme="dark"] .repeater-map-code { fill: #f0f5ee; stroke: #19231b; }
+:root[data-theme="dark"] .repeater-department-nav a { color: #e5ede3; background: #1a271d; border-color: var(--line); }
+:root[data-theme="dark"] .repeater-department-nav a span { color: #a7d5ad; }
+:root[data-theme="dark"] .repeater-department-nav a:hover,
+:root[data-theme="dark"] .repeater-department-nav a:focus-visible { background: #2b281d; }
+:root[data-theme="dark"] .repeater-configurator:has(.repeater-profile:target) .repeater-department-nav a[href^="#profile-"] { color: #e5ede3; }
+:root[data-theme="dark"] .repeater-configurator:has(#profile-14:target) .repeater-department-nav a[href="#profile-14"],
+:root[data-theme="dark"] .repeater-configurator:has(#profile-27:target) .repeater-department-nav a[href="#profile-27"],
+:root[data-theme="dark"] .repeater-configurator:has(#profile-50:target) .repeater-department-nav a[href="#profile-50"],
+:root[data-theme="dark"] .repeater-configurator:has(#profile-61:target) .repeater-department-nav a[href="#profile-61"],
+:root[data-theme="dark"] .repeater-configurator:has(#profile-76:target) .repeater-department-nav a[href="#profile-76"] { background: #2b281d; border-color: var(--green-mid); }
+:root[data-theme="dark"] .repeater-configurator:has(#profile-14:target) .repeater-department-nav a[href="#profile-14"] span,
+:root[data-theme="dark"] .repeater-configurator:has(#profile-27:target) .repeater-department-nav a[href="#profile-27"] span,
+:root[data-theme="dark"] .repeater-configurator:has(#profile-50:target) .repeater-department-nav a[href="#profile-50"] span,
+:root[data-theme="dark"] .repeater-configurator:has(#profile-61:target) .repeater-department-nav a[href="#profile-61"] span,
+:root[data-theme="dark"] .repeater-configurator:has(#profile-76:target) .repeater-department-nav a[href="#profile-76"] span { color: #d9ead9; }
+:root[data-theme="dark"] .site-socials { color: #d9efdc; background: #1b3323; border-color: #47724f; }
+:root[data-theme="dark"] .site-socials strong { color: #d9efdc; }
+:root[data-theme="dark"] .site-nav .theme-toggle {
+  min-height: 2.45rem;
+  padding: .4rem .75rem;
+  border: 1px solid #b7d9b3;
+  border-radius: 8px;
+  color: #fff;
+  background: transparent;
+  font: inherit;
+  font-weight: 650;
+  cursor: pointer;
+}
+:root[data-theme="dark"] .site-nav .theme-toggle:hover,
+:root[data-theme="dark"] .site-nav .theme-toggle:focus-visible { color: var(--green); background: var(--gold); border-color: var(--gold); }
+.site-nav .theme-toggle {
+  min-height: 2.45rem;
+  padding: .4rem .75rem;
+  border: 1px solid #e3eedf;
+  border-radius: 8px;
+  color: #fff;
+  background: transparent;
+  font: inherit;
+  font-weight: 650;
+  cursor: pointer;
+}
+.site-nav .theme-toggle:hover,
+.site-nav .theme-toggle:focus-visible { color: var(--green); background: var(--gold); border-color: var(--gold); }
+:root[data-theme="dark"] .site-nav a[aria-current="page"] { color: var(--green); }
+
 @media (max-width: 600px) {
   .site-header { padding: 1.1rem 1rem .8rem; }
   .brand img { width: 64px; height: 64px; }

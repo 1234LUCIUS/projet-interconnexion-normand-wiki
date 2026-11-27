@@ -1,0 +1,11 @@
+<script>
+(() => {
+  try {
+    if (localStorage.getItem('pin-wiki-theme') === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (_) {
+    // Le thème clair reste disponible si le stockage local est désactivé.
+  }
+})();
+</script>
