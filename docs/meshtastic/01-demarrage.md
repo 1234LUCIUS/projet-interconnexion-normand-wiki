@@ -1,11 +1,12 @@
 ---
 layout: wiki
-title: "Meshtastic — démarrage rapide"
+title: "Meshtastic : démarrage rapide en Normandie"
+description: "Guide de démarrage Meshtastic : installer le firmware, connecter une radio, régler la région EU 868 et envoyer un premier message."
 theme: "Configurer Meshtastic"
 theme_url: "/explorer-le-wiki.html#meshtastic"
 ---
 
-# Meshtastic — démarrage rapide
+# Meshtastic : démarrage rapide en Normandie
 
 ![Préparer un premier nœud LoRa pour le démarrage Meshtastic](../assets/illustrations/first-node-setup.webp)
 

@@ -1,6 +1,7 @@
 ---
 layout: wiki
 title: "MeshCore — profils France / Normandie"
+description: "Réglages radio et profils régionaux MeshCore en France et en Normandie : fréquence, limites d’émission, scopes et configuration des relais."
 theme: "Configurer MeshCore"
 theme_url: "/explorer-le-wiki.html#meshcore"
 ---

@@ -1,6 +1,7 @@
 ---
 layout: wiki
 title: "Historique du Projet d’Interconnexion Normand"
+description: "Retrouver les étapes et les décisions du Projet d’Interconnexion Normand, de ses premiers essais radio à son orientation MeshCore actuelle."
 theme: "Découvrir le projet"
 theme_url: "/explorer-le-wiki.html#decouvrir"
 ---

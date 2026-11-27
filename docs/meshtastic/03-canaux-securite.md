@@ -1,6 +1,7 @@
 ---
 layout: wiki
 title: "Meshtastic — canaux et sécurité"
+description: "Configurer les canaux Meshtastic et protéger les clés, les données de position et les échanges privés sur un réseau partagé."
 theme: "Configurer Meshtastic"
 theme_url: "/explorer-le-wiki.html#meshtastic"
 ---

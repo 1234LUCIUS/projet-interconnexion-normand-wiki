@@ -1,6 +1,7 @@
 ---
 layout: wiki
 title: "Guide débutant : mon premier nœud"
+description: "Premiers pas sur un réseau LoRa maillé : choisir MeshCore ou Meshtastic, préparer une radio et envoyer un premier message de test."
 theme: "Choisir et démarrer"
 theme_url: "/explorer-le-wiki.html#demarrer"
 ---

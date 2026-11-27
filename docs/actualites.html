@@ -1,18 +1,22 @@
 ---
 layout: null
+title: "Actualités MeshCore et Meshtastic en Normandie"
+description: "Actualités du réseau normand : installations, couverture radio, événements et nouveautés MeshCore et Meshtastic."
+seo:
+  type: "CollectionPage"
 ---
 <!doctype html>
 <html lang="fr">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Actualités | Projet d’Interconnexion Normand wiki</title>
-  <meta name="description" content="Actualités du Projet d’Interconnexion Normand : MeshCore, Meshtastic, couverture radio, spots normands, matériel et vie du réseau open source.">
-  <meta name="robots" content="index,follow"><link rel="canonical" href="https://1234lucius.github.io/projet-interconnexion-normand-wiki/actualites.html">
-  <meta property="og:type" content="website"><meta property="og:locale" content="fr_FR"><meta property="og:site_name" content="Projet d’Interconnexion Normand wiki"><meta property="og:title" content="Actualités du Projet d’Interconnexion Normand"><meta property="og:description" content="Suivez les nouveautés MeshCore, Meshtastic et réseau LoRa en Normandie."><meta property="og:url" content="https://1234lucius.github.io/projet-interconnexion-normand-wiki/actualites.html"><meta property="og:image" content="https://1234lucius.github.io/projet-interconnexion-normand-wiki/assets/illustrations/hero-normandie-mesh.png">
+  <title>{{ page.title | escape }}</title>
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  {% seo title=false %}
+
   <link rel="stylesheet" href="assets/wiki.css">
 </head>
 <body>
-<header class="site-header"><div class="site-header-inner"><a class="brand" href="./"><img src="assets/logo-projet-interconnexion-normand.png" alt="Logo du Projet d’Interconnexion Normand" width="82" height="82"><span class="brand-copy"><strong>Projet d’Interconnexion Normand</strong><small>Wiki open source MeshCore et Meshtastic</small></span></a>{% include site-navigation.html %}</div></header>
+<header class="site-header"><div class="site-header-inner"><a class="brand" href="./"><img src="assets/logo-projet-interconnexion-normand-optimized.webp" alt="Logo du Projet d’Interconnexion Normand" width="82" height="82"><span class="brand-copy"><strong>Projet d’Interconnexion Normand</strong><small>Wiki open source MeshCore et Meshtastic</small></span></a>{% include site-navigation.html %}</div></header>
 <main class="page-shell"><p class="breadcrumbs"><a href="{{ '/' | relative_url }}">Accueil</a> <span aria-hidden="true">/</span> <a href="{{ '/explorer-le-wiki.html' | relative_url }}">Explorer le wiki</a> <span aria-hidden="true">/</span> <a href="{{ '/explorer-le-wiki.html#participer' | relative_url }}">Participer et suivre le projet</a> <span aria-hidden="true">/</span> Actualités</p><section class="content-card prose"><h1>Actualités du projet</h1><p class="lead">Suivez ici la vie du réseau normand : installations, essais de terrain, événements et partenariats. Les changements apportés aux pages et aux guides sont consignés dans le <a href="journal-des-versions.html">Journal des versions</a> ; les dossiers et retours d’expérience sont publiés dans le <a href="blog.html">Blog</a>.</p>
 <p class="notice"><strong>Publication administrée :</strong> les articles sont rédigés et validés par les administrateurs. Vous pouvez <a href="https://github.com/1234LUCIUS/projet-interconnexion-normand-wiki/issues/new?template=proposer-une-actualite.yml">proposer une actualité</a> via une issue publique. Après relecture, l’ajout du label <code>publication-validée</code> déclenche automatiquement la création et la publication de l’article.</p>
 	<p><a class="cta" href="https://github.com/1234LUCIUS/projet-interconnexion-normand-wiki/issues/new?template=proposer-une-actualite.yml">Proposer une actualité</a></p>
@@ -21,7 +25,7 @@ layout: null
 {% assign published_articles = site.pages | where_exp: "page", "page.path contains 'actualites/'" %}
 {% assign has_articles = false %}
 <div class="article-grid">
-{% for article in published_articles %}{% unless article.name == "_modele-article.md" %}{% assign has_articles = true %}<article class="article-card">{% if article.image %}<img src="{{ article.image | relative_url }}" alt="{{ article.image_alt | escape }}">{% endif %}<p class="article-meta">{% if article.date %}<time datetime="{{ article.date | date: '%Y-%m-%d' }}">{{ article.date | date: '%d/%m/%Y' }}</time>{% endif %}</p><p class="article-tag">{{ article.category | default: 'Actualité' }}</p><h2>{{ article.title }}</h2><p>{{ article.description }}</p><a class="button" href="{{ article.url | relative_url }}">Lire l’article</a></article>{% endunless %}{% endfor %}
+{% for article in published_articles %}{% unless article.name == "_modele-article.md" %}{% assign has_articles = true %}{% assign card_src = article.card_image | default: article.image | default: '' %}<article class="article-card">{% if card_src != '' %}{% unless card_src contains '://' %}{% assign card_src = card_src | relative_url %}{% endunless %}<img src="{{ card_src | escape }}" alt="{{ article.card_image_alt | default: article.image_alt | default: article.title | escape }}" loading="lazy" decoding="async">{% endif %}<p class="article-meta">{% if article.date %}<time datetime="{{ article.date | date: '%Y-%m-%d' }}">{{ article.date | date: '%d/%m/%Y' }}</time>{% endif %}</p><p class="article-tag">{{ article.category | default: 'Actualité' | escape }}</p><h2>{{ article.title | escape }}</h2><p>{{ article.description | escape }}</p><a class="button" href="{{ article.url | relative_url | escape }}">Lire l’article</a></article>{% endunless %}{% endfor %}
 </div>
 {% unless has_articles %}<div class="notice"><strong>Aucun article publié pour le moment.</strong><br>Pour créer une actualité, copiez le <a href="https://github.com/1234LUCIUS/projet-interconnexion-normand-wiki/blob/main/docs/actualites/_modele-article.md">modèle Markdown</a>, remplacez son contenu et enregistrez le fichier dans <code>docs/actualites/</code>. La page se mettra à jour automatiquement.</div>{% endunless %}
 <h2>Suivre les prochaines nouvelles</h2><p>Les informations sur les installations, les essais radio, les événements et les partenariats seront ajoutées ici. Pour recevoir les nouvelles directement, rejoignez le <a href="https://discord.gg/HnAfYUSU82">serveur Discord du projet</a>.</p></section></main><footer class="site-footer">

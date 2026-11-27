@@ -1,13 +1,14 @@
 ---
 layout: wiki
-title: "Où installer son nœud ?"
+title: "Couverture LoRa 868 MHz : simulations et Fresnel"
+description: "Simuler une liaison LoRa à 868 MHz, vérifier la ligne de visée et la zone de Fresnel, puis confirmer le choix du site par des tests radio."
 theme: "Terrain et couverture radio"
 theme_url: "/explorer-le-wiki.html#terrain"
 ---
 
-# Où installer son nœud ?
+# Couverture LoRa à 868 MHz : simulations et zone de Fresnel
 
-![Point haut normand avec visibilité dégagée pour une couverture radio maillée](../assets/illustrations/radio-coverage.png)
+![Point haut normand avec visibilité dégagée pour une couverture radio maillée](../assets/illustrations/radio-coverage-optimized.webp)
 
 Un bon emplacement n’est pas forcément le point le plus haut disponible. Il faut combiner hauteur, visibilité radio, accès autorisé, alimentation, sécurité, météo et possibilité de maintenance.
 
@@ -31,7 +32,7 @@ Les exemples ci-dessous sont les trois spots nommés visibles dans la fonction *
 
 ### Spot 1 — Mont Pinçon — 364 m d’altitude
 
-![Couverture MeshCore du mont Pinçon, 364 m d’altitude](../assets/meshcore-coverage/spot-seulline-calvados.webp)
+![Couverture MeshCore du mont Pinçon, 364 m d’altitude](../assets/meshcore-coverage/spot-seulline-calvados.webp) {: loading="lazy" decoding="async"}
 
 La couverture du **mont Pinçon** atteint une altitude de **364 m**. Coordonnées affichées dans MeshCore : **48.999296, -0.692481**. Ce spot est recherché pour sa hauteur et sa capacité potentielle à couvrir plusieurs directions. La couverture affichée reste une simulation : la liaison doit être confirmée par un profil de terrain et un test radio réel.
 
@@ -39,7 +40,7 @@ La couverture du **mont Pinçon** atteint une altitude de **364 m**. Coordonnée
 
 ### Spot 2 — Mont de la Foudre — 276 m d’altitude
 
-![Couverture MeshCore du mont de la Foudre, 276 m d’altitude](../assets/meshcore-coverage/spot-pommeraye-calvados.webp)
+![Couverture MeshCore du mont de la Foudre, 276 m d’altitude](../assets/meshcore-coverage/spot-pommeraye-calvados.webp) {: loading="lazy" decoding="async"}
 
 La couverture du **mont de la Foudre** atteint une altitude de **276 m**. Coordonnées affichées dans MeshCore : **48.911527, -0.409591**. Ce spot est recherché pour sa hauteur et sa vue potentielle vers plusieurs secteurs. La couverture affichée reste une simulation : la liaison doit être confirmée par un profil de terrain et un test radio réel.
 
@@ -47,7 +48,7 @@ La couverture du **mont de la Foudre** atteint une altitude de **276 m**. Coordo
 
 ### Spot 3 — Mont du Père — 271 m d’altitude
 
-![Couverture MeshCore du mont du Père, 271 m d’altitude](../assets/meshcore-coverage/spot-calvados-3.webp)
+![Couverture MeshCore du mont du Père, 271 m d’altitude](../assets/meshcore-coverage/spot-calvados-3.webp) {: loading="lazy" decoding="async"}
 
 La couverture du **mont du Père** atteint une altitude de **271 m**. Coordonnées affichées dans MeshCore : **48.938209, -0.488135**. Ce spot est recherché pour sa position en hauteur et sa capacité potentielle à couvrir plusieurs directions. La présence de vallées rend indispensable une vérification de la ligne de vue et un test radio réel.
 
@@ -74,7 +75,7 @@ La **ligne de visée géométrique** est le segment direct entre les antennes. P
 
 En pratique, on cherche généralement à dégager au moins **60 % du rayon de la première zone de Fresnel** sur l’ensemble du trajet. À 868 MHz, la longueur d’onde est d’environ 34,5 cm. Le rayon varie avec la fréquence et avec les distances de part et d’autre de chaque point : `r₁ = √(λ × d₁ × d₂ / (d₁ + d₂))`, avec les distances en mètres. À titre d’exemple, pour une liaison de 13,6 km, le rayon au milieu du trajet est d’environ **34 m** ; la marge de dégagement de 60 % représente environ **21 m** autour de la ligne directe à cet endroit. C’est un ordre de grandeur géométrique, pas une hauteur d’antenne universelle : le profil réel, le relief et les obstacles comptent tout au long du trajet. Voir aussi la [recommandation ITU-R P.526-16](https://www.itu.int/dms_pubrec/itu-r/rec/p/R-REC-P.526-16-202511-I!!PDF-E.pdf) sur la diffraction et la note [Line of Sight Obstruction de Campbell Scientific](https://s.campbellsci.com/documents/au/technical-papers/line-of-sight-obstruction.pdf).
 
-![Profil topographique estimé d’une liaison radio dans le secteur Vire–Vassy, Calvados, avec la ligne directe et la première zone de Fresnel](../assets/illustrations/fresnel-vire-vassy.png)
+![Profil topographique estimé d’une liaison radio dans le secteur Vire–Vassy, Calvados, avec la ligne directe et la première zone de Fresnel](../assets/illustrations/fresnel-vire-vassy.webp) {: loading="lazy" decoding="async"}
 
 *Exemple de profil Vire–Vassy : environ 13,6 km, avec des antennes indiquées à 6 m et 10 m. Le profil signale que la ligne de visée directe est masquée, mais l’outil affiche une marge calculée de +28,7 dB : une obstruction géométrique n’implique donc pas nécessairement une absence totale de signal. Cette valeur reste une estimation du modèle, ni une mesure radio de terrain ni une garantie de liaison. Les coordonnées précises et l’identifiant du répéteur ont été masqués dans la capture.*
 

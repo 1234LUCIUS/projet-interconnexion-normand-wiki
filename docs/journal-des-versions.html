@@ -1,22 +1,26 @@
 ---
 layout: null
+title: "Journal des versions du wiki MeshCore"
+description: "Historique des versions, améliorations et changements du wiki open source MeshCore et Meshtastic du Projet d’Interconnexion Normand."
+seo:
+  type: "CollectionPage"
 ---
 <!doctype html>
 <html lang="fr">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Journal des versions et des changements | Projet d’Interconnexion Normand</title>
-  <meta name="description" content="Historique des versions, améliorations et changements du wiki open source du Projet d’Interconnexion Normand consacré à MeshCore et Meshtastic en Normandie.">
-  <meta name="robots" content="index,follow">
-  <link rel="canonical" href="https://1234lucius.github.io/projet-interconnexion-normand-wiki/journal-des-versions.html">
+  <title>{{ page.title | escape }}</title>
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  {% seo title=false %}
+
   <link rel="stylesheet" href="assets/wiki.css">
 </head>
 <body>
   <header class="site-header">
     <div class="site-header-inner">
       <a class="brand" href="./">
-        <img src="assets/logo-projet-interconnexion-normand.png" alt="Logo du Projet d’Interconnexion Normand" width="82" height="82">
+        <img src="assets/logo-projet-interconnexion-normand-optimized.webp" alt="Logo du Projet d’Interconnexion Normand" width="82" height="82">
         <span class="brand-copy"><strong>Projet d’Interconnexion Normand</strong><small>Wiki open source MeshCore et Meshtastic en Normandie</small></span>
       </a>
       {% include site-navigation.html %}

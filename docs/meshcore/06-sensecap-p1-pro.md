@@ -1,15 +1,16 @@
 ---
 layout: wiki
 title: "Seeed Studio SenseCAP Solar Node P1-Pro"
+description: "Découvrir le Seeed SenseCAP Solar Node P1-Pro pour MeshCore : matériel, alimentation solaire, installation et intégration au réseau."
 theme: "Configurer MeshCore"
 theme_url: "/explorer-le-wiki.html#meshcore"
 ---
 
 # Seeed Studio SenseCAP Solar Node P1-Pro
 
-![Répéteur solaire MeshCore sur un point haut normand](../assets/illustrations/radio-coverage.png)
+![Répéteur solaire MeshCore sur un point haut normand](../assets/illustrations/radio-coverage-optimized.webp)
 
-![Photo produit du Seeed SenseCAP Solar Node P1-Pro](../assets/meshcore-materiel/sensecap-p1-pro.jpg)
+![Photo produit du Seeed SenseCAP Solar Node P1-Pro](../assets/meshcore-materiel/sensecap-p1-pro.jpg) {: loading="lazy" decoding="async"}
 
 *Photo produit : [Seeed Studio](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-Pro-for-Meshcore-p-6741.html).*
 
@@ -67,7 +68,7 @@ Ne reflashez que si le firmware est absent, corrompu, incorrect ou si une migrat
 11. Redémarrez lorsque le flasher le demande.
 12. Ouvrez la console du flasher ou le [configurateur MeshCore](https://config.meshcore.io/).
 
-![Écran réel du SenseCAP Solar Node P1 en mode Repeater avec MeshCore 1.17.1](../assets/meshcore-flasher/06-sensecap-p1-repeater-v1.17.1.webp)
+![Écran réel du SenseCAP Solar Node P1 en mode Repeater avec MeshCore 1.17.1](../assets/meshcore-flasher/06-sensecap-p1-repeater-v1.17.1.webp) {: loading="lazy" decoding="async"}
 
 *Capture du Web Flasher officiel sur la cible affichée « Seeed Studio SenseCAP Solar Node P1 ». Pour le P1-Pro, sélectionnez cette cible, le rôle « Repeater », puis la version 1.17.1. Contrôlez également les boutons « Enter DFU mode », « Erase Flash » et « Flash! » avant de commencer.*
 
@@ -75,7 +76,7 @@ Le flasher affiche parfois le P1-Pro sous le nom **SenseCAP Solar Node P1**. Il 
 
 > **Un doute avant de flasher ?** Demandez confirmation sur le [Discord officiel du Projet d’Interconnexion Normand](https://discord.gg/HnAfYUSU82) ou par e-mail à [projet.interconnection.normand@gmail.com](mailto:projet.interconnection.normand@gmail.com), en précisant la référence exacte inscrite sur votre appareil.
 
-![Écran de connexion du configurateur USB MeshCore](../assets/meshcore-flasher/05-configurateur-usb.webp)
+![Écran de connexion du configurateur USB MeshCore](../assets/meshcore-flasher/05-configurateur-usb.webp) {: loading="lazy" decoding="async"}
 
 *Après le flash, ouvrez le configurateur USB, cliquez sur « Connect » et choisissez le port série du SenseCAP. La console permet ensuite d’envoyer la configuration du projet.*
 

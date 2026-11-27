@@ -1,6 +1,7 @@
 ---
 layout: wiki
 title: "Cartes officielles des nœuds et de la couverture"
+description: "Consulter les cartes MeshCore et Meshtastic, RelayLens, MeshQual et MeshStats pour suivre les nœuds, répéteurs et observations en Normandie."
 theme: "Applications et cartes"
 theme_url: "/explorer-le-wiki.html#outils"
 ---

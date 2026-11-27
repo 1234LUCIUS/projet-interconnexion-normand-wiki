@@ -1,10 +1,10 @@
 ---
 layout: wiki
-title: "Explorer le wiki par thème"
-description: "Plan thématique du wiki du Projet d’Interconnexion Normand : choisir un réseau, débuter, configurer MeshCore ou Meshtastic, préparer le matériel et mesurer la couverture."
+title: "Explorer les guides MeshCore et Meshtastic"
+description: "Plan du wiki : choisir un réseau LoRa, débuter, configurer MeshCore ou Meshtastic, préparer son matériel et mesurer la couverture radio en Normandie."
 ---
 
-# Explorer le wiki par thème
+# Explorer les guides MeshCore et Meshtastic
 
 Les pages sont regroupées selon la question à laquelle elles répondent. Si vous découvrez le projet, suivez d’abord le parcours court ci-dessous. Sinon, choisissez directement un thème.
 

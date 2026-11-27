@@ -1,11 +1,12 @@
 ---
 layout: wiki
-title: "MeshCore — démarrage rapide"
+title: "MeshCore : démarrage rapide en Normandie"
+description: "Guide de démarrage MeshCore : flasher un Companion ou un Repeater, comprendre le routage et rejoindre le réseau normand."
 theme: "Configurer MeshCore"
 theme_url: "/explorer-le-wiki.html#meshcore"
 ---
 
-# MeshCore — démarrage rapide
+# MeshCore : démarrage rapide en Normandie
 
 ![Préparer un premier nœud LoRa pour le démarrage MeshCore](../assets/illustrations/first-node-setup.webp)
 
@@ -16,7 +17,7 @@ MeshCore est un firmware et un ensemble d’outils open source pour créer des r
 
 Le Projet d’Interconnexion Normand migre progressivement vers MeshCore. Pendant cette transition, certains nœuds peuvent encore fonctionner sous Meshtastic. Vérifiez le logiciel utilisé par le groupe ou le relais que vous souhaitez rejoindre avant de flasher votre appareil.
 
-![Schéma animé du fonctionnement d’un réseau MeshCore](../assets/meshcore-fonctionnement.gif)
+![Schéma animé du fonctionnement d’un réseau MeshCore](../assets/meshcore-fonctionnement.gif) {: loading="lazy" decoding="async"}
 
 ### Lire le schéma en quelques secondes
 

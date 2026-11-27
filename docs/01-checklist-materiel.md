@@ -1,6 +1,7 @@
 ---
 layout: wiki
 title: "Checklist matériel et préparation"
+description: "Checklist pour préparer un nœud LoRa : vérifier le matériel, l’antenne, l’alimentation, le firmware et les réglages avant de rejoindre le réseau normand."
 theme: "Matériel et installations"
 theme_url: "/explorer-le-wiki.html#materiel"
 ---

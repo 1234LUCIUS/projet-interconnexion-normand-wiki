@@ -1,29 +1,26 @@
 ---
 layout: null
+title: "Blog MeshCore et radio LoRa en Normandie"
+description: "Dossiers et retours d’expérience sur les répéteurs MeshCore, Meshtastic et les réseaux radio LoRa en Normandie."
+seo:
+  type: "CollectionPage"
 ---
 <!doctype html>
 <html lang="fr">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Blog | Projet d’Interconnexion Normand wiki</title>
-  <meta name="description" content="Blog du Projet d’Interconnexion Normand : analyses, dossiers et retours d’expérience sur MeshCore, Meshtastic et la radio LoRa en Normandie.">
-  <meta name="robots" content="index,follow">
-  <link rel="canonical" href="https://1234lucius.github.io/projet-interconnexion-normand-wiki/blog.html">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="fr_FR">
-  <meta property="og:site_name" content="Projet d’Interconnexion Normand wiki">
-  <meta property="og:title" content="Blog du Projet d’Interconnexion Normand">
-  <meta property="og:description" content="Analyses, dossiers et retours d’expérience autour des réseaux radio maillés en Normandie.">
-  <meta property="og:url" content="https://1234lucius.github.io/projet-interconnexion-normand-wiki/blog.html">
-  <meta property="og:image" content="https://1234lucius.github.io/projet-interconnexion-normand-wiki/assets/illustrations/hero-normandie-mesh.png">
+  <title>{{ page.title | escape }}</title>
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  {% seo title=false %}
+
   <link rel="stylesheet" href="assets/wiki.css">
 </head>
 <body>
   <header class="site-header">
     <div class="site-header-inner">
       <a class="brand" href="./">
-        <img src="assets/logo-projet-interconnexion-normand.png" alt="Logo du Projet d’Interconnexion Normand" width="82" height="82">
+        <img src="assets/logo-projet-interconnexion-normand-optimized.webp" alt="Logo du Projet d’Interconnexion Normand" width="82" height="82">
         <span class="brand-copy"><strong>Projet d’Interconnexion Normand</strong><small>Wiki open source MeshCore et Meshtastic</small></span>
       </a>
       {% include site-navigation.html %}
@@ -45,13 +42,14 @@ layout: null
         {% for post in published_posts %}
           {% unless post.name == "_modele-billet.md" %}
             {% assign has_posts = true %}
+            {% assign card_src = post.card_image | default: post.image | default: '' %}
             <article class="article-card">
-              {% if post.image %}<img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | escape }}">{% endif %}
+              {% if card_src != '' %}{% unless card_src contains '://' %}{% assign card_src = card_src | relative_url %}{% endunless %}<img src="{{ card_src | escape }}" alt="{{ post.card_image_alt | default: post.image_alt | default: post.title | escape }}" loading="lazy" decoding="async">{% endif %}
               <p class="article-meta">{% if post.date %}<time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%d/%m/%Y' }}</time>{% endif %}</p>
-              <p class="article-tag">{{ post.category | default: 'Billet' }}</p>
-              <h2>{{ post.title }}</h2>
-              <p>{{ post.description }}</p>
-              <a class="button" href="{{ post.url | relative_url }}">Lire le billet</a>
+              <p class="article-tag">{{ post.category | default: 'Billet' | escape }}</p>
+              <h2>{{ post.title | escape }}</h2>
+              <p>{{ post.description | escape }}</p>
+              <a class="button" href="{{ post.url | relative_url | escape }}">Lire le billet</a>
             </article>
           {% endunless %}
         {% endfor %}

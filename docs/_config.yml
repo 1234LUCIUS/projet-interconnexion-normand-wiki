@@ -3,6 +3,22 @@ description: "Guide open source des réseaux radio maillés LoRa, MeshCore et Me
 url: "https://1234lucius.github.io"
 baseurl: "/projet-interconnexion-normand-wiki"
 lang: "fr-FR"
+logo: "/assets/logo-projet-interconnexion-normand-optimized.webp"
+social:
+  name: "Projet d’Interconnexion Normand"
+  links:
+    - "https://github.com/1234LUCIUS/projet-interconnexion-normand-wiki"
+    - "https://www.instagram.com/projet.interconnexion.normand/"
+    - "https://www.linkedin.com/company/projet-d-interconnexion-normand/home/"
+defaults:
+  - scope:
+      path: ""
+    values:
+      image:
+        path: "/assets/social-card-normandie-optimized.jpg"
+        width: 1200
+        height: 675
+        alt: "Illustration du réseau radio maillé du Projet d’Interconnexion Normand"
 markdown: kramdown
 plugins:
   - jekyll-seo-tag

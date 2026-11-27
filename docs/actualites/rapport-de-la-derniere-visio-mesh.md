@@ -3,13 +3,18 @@ layout: wiki
 title: "Rapport de la dernière Visio Mesh"
 theme: "Participer et suivre le projet"
 theme_url: "/explorer-le-wiki.html#participer"
-description: "Bonjour tout le monde , Tout d'abord, je tiens à remercier chaleureusement toutes les personnes présentes hier soir pour cette 3ᵉ édition de la Visio Mesh "
+description: "Compte rendu de la troisième Visio Mesh : retours des réseaux du Havre et du PMRS, évolution MeshCore et avenir du réseau normand."
+seo:
+  type: "NewsArticle"
+author:
+  name: "Thomas Van Nieuwenberg"
+  url: "https://github.com/1234LUCIUS"
 date: 2026-11-22
 category: "Nouvelle du projet"
 author_github: "1234LUCIUS"
 author_name: "Thomas Van Nieuwenberg"
-image: ""
-image_alt: ""
+image: "/assets/social-card-normandie-optimized.jpg"
+image_alt: "Illustration du réseau radio maillé du Projet d’Interconnexion Normand"
 ---
 
 # Rapport de la dernière Visio Mesh
@@ -17,7 +22,7 @@ image_alt: ""
 Bonjour tout le monde ,
 
 Tout d'abord, je tiens à remercier chaleureusement toutes les personnes présentes hier soir pour cette 3ᵉ édition de la Visio Mesh ! 🔥
-<img width="1024" height="1536" alt="3_eme_VisioMesh" src="https://github.com/user-attachments/assets/697851c6-4f6e-4110-8c85-8e5b5be5c4e9" />
+<img width="1024" height="1536" alt="3_eme_VisioMesh" src="https://github.com/user-attachments/assets/697851c6-4f6e-4110-8c85-8e5b5be5c4e9" loading="lazy" decoding="async">
 Pour ceux qui n'ont pas pu être présents, voici un petit compte rendu des échanges.
 
 #🔎 Le thème de la soirée : l'avenir du réseau et son développement
@@ -30,7 +35,7 @@ Les discussions nous ont rapidement amenés à évoquer MeshCore, notamment grâ
 
 Pierre-Antoine nous a présenté la transition réalisée sur le réseau havrais, avec le passage de Meshtastic à MeshCore. Cette évolution a notamment permis d'obtenir des résultats particulièrement intéressants, avec entre autres des contacts établis avec l'Angleterre !
 
-<img width="710" height="734" alt="meshmapper le havre" src="https://github.com/user-attachments/assets/fa0f062e-37cb-43b5-923f-7b8f1951b1b1" />
+<img width="710" height="734" alt="meshmapper le havre" src="https://github.com/user-attachments/assets/fa0f062e-37cb-43b5-923f-7b8f1951b1b1" loading="lazy" decoding="async">
 _Couverture MeshCore du réseau Havrais_
 
 🇫🇷 Erwan (Mr One) – Projet Maillage Radio Secours (PMRS)
@@ -53,7 +58,7 @@ Un grand merci à Pierre-Antoine et Erwan pour leurs interventions, ainsi qu'à 
 
 La suite de l'aventure se construit ensemble. À nous de faire grandir le réseau normand ! 📡🔥
 
-<img width="497" height="327" alt="Les_cas_dusage_MT_MC" src="https://github.com/user-attachments/assets/6057fa11-cdcb-4fae-88e8-04e04c776e74" />
+<img width="497" height="327" alt="Les_cas_dusage_MT_MC" src="https://github.com/user-attachments/assets/6057fa11-cdcb-4fae-88e8-04e04c776e74" loading="lazy" decoding="async">
 _Les cas d'usage Meshtastic et MeshCore_
 
 ## Photos

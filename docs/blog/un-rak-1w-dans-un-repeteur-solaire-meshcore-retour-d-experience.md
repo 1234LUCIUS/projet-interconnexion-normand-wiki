@@ -1,18 +1,23 @@
 ---
 layout: wiki
-title: "Un RAK 1W dans un répéteur solaire MeshCore : retour d'expérience"
+title: "RAK 1W solaire : retour d’expérience MeshCore"
 theme: "Participer et suivre le projet"
 theme_url: "/explorer-le-wiki.html#participer"
-description: "Un RAK WisMesh 1W, un panneau solaire 5 W et trois batteries de 3300 mAh suffisent à faire tourner un répéteur MeshCore autonome, à condition de brider la "
+description: "Retour d’expérience sur un répéteur MeshCore solaire à base de RAK WisMesh 1W, panneau de 5 W et trois batteries de 3 300 mAh."
+seo:
+  type: "BlogPosting"
+author:
+  name: "Superbigou77"
+  url: "https://github.com/Superbigou77"
 date: 2026-11-22
 category: "Retour d’expérience"
 author_github: "Superbigou77"
 author_name: ""
-image: ""
-image_alt: ""
+image: "/assets/social-card-normandie-optimized.jpg"
+image_alt: "Illustration du réseau radio maillé du Projet d’Interconnexion Normand"
 ---
 
-# Un RAK 1W dans un répéteur solaire MeshCore : retour d'expérience
+# RAK 1W solaire : retour d’expérience MeshCore
 
 Un RAK WisMesh 1W, un panneau solaire 5 W et trois batteries de 3300 mAh suffisent à faire tourner un
 répéteur MeshCore autonome, à condition de brider la puissance d'émission pour respecter la limite de 27
@@ -25,12 +30,12 @@ Le répéteur repose sur deux éléments principaux.
 Le module radio : RAK WisMesh High Power Booster Starter Kit, communément appelé « RAK 1W ».
 C'est un pré-assemblage de plusieurs cartes RAK ([fiche produit](https://store.rakwireless.com/products/meshtastic-1w-lora-booster-kit-rak3401), [datasheet RAK13302 VD](https://docs.rakwireless.com/product-categories/wisblock/rak13302/datasheet-vd/)).
 
-<img width="481" height="262" alt="1" src="https://github.com/user-attachments/assets/cec18e2c-bbf5-4c05-8a82-6d42ec4e544e" />
+<img width="481" height="262" alt="1" src="https://github.com/user-attachments/assets/cec18e2c-bbf5-4c05-8a82-6d42ec4e544e" loading="lazy" decoding="async">
 
 Le panneau solaire Keepteen D5-2A ([présentation du fabricant](https://www.keepteen.com/blog-Solar-Lora/How-to-use-D5-Solar-panel-System-to-DIY-a-Lora-Node-Repeater-for-Meshtastic-11929169.html)), associé à trois batteries de 3300 mAh.
 Le panneau fournit 5 W.
 
-<img width="602" height="593" alt="2" src="https://github.com/user-attachments/assets/32ce9f1e-3880-4dcf-8ae4-71be685044fe" />
+<img width="602" height="593" alt="2" src="https://github.com/user-attachments/assets/32ce9f1e-3880-4dcf-8ae4-71be685044fe" loading="lazy" decoding="async">
 
 Ce panneau existe en plusieurs déclinaisons : avec ou sans batteries, avec ou sans module, et avec des
 supports adaptés à différents modules (pièce imprimée en 3D). Il dispose aussi d'une antenne déportée 2,4
@@ -52,7 +57,7 @@ Sa particularité : une puce nRF52840, très économe en énergie, associée à 
 l'émission, un filtre SAW et un amplificateur faible bruit (LNA) à la réception. Le schéma ci-dessous montre la
 chaîne complète, du microcontrôleur à l'antenne.
 
-<img width="485" height="433" alt="3" src="https://github.com/user-attachments/assets/83557d6a-455d-484b-a441-04da9d387338" />
+<img width="485" height="433" alt="3" src="https://github.com/user-attachments/assets/83557d6a-455d-484b-a441-04da9d387338" loading="lazy" decoding="async">
 
 ### Régler la puissance TX
 
@@ -67,7 +72,7 @@ amplification, est de 30 dBm ;
 avec un TX MeshCore à 18 dBm, le calculateur donne 26 dBm de puissance RF et 26,21 dBm ERP (418
 mW), soit 0,79 dB de marge sous la limite de 27 dBm ERP.
 
-<img width="625" height="758" alt="Sans titre" src="https://github.com/user-attachments/assets/b24e01c8-9452-4509-b296-928545cbad30" />
+<img width="625" height="758" alt="Sans titre" src="https://github.com/user-attachments/assets/b24e01c8-9452-4509-b296-928545cbad30" loading="lazy" decoding="async">
 
 Les pertes des connecteurs ne sont volontairement pas prises en compte. Elles sont faibles devant celles du
 câble ou d'un filtre, et les ignorer rend l'estimation légèrement conservatrice, donc plutôt du bon côté de la

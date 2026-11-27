@@ -1,11 +1,12 @@
 ---
 layout: wiki
-title: "Flasher son appareil MeshCore"
+title: "Flasher et configurer un appareil MeshCore"
+description: "Tutoriel pour flasher un appareil MeshCore en Companion, Repeater ou Room Server, puis appliquer les commandes normandes par département."
 theme: "Configurer MeshCore"
 theme_url: "/explorer-le-wiki.html#meshcore"
 ---
 
-# Flasher son appareil MeshCore
+# Flasher et configurer un appareil MeshCore
 
 ![Préparer un nœud LoRa avant de choisir et flasher son firmware](../assets/illustrations/first-node-setup.webp)
 
@@ -22,7 +23,7 @@ Préparez un ordinateur équipé d’un navigateur compatible Web Serial, de pr�
 
 Vérifiez le modèle exact de la carte dans le [Web Flasher officiel MeshCore](https://flasher.meshcore.io/). Une carte qui ressemble à votre modèle peut utiliser une autre puce ou une autre mémoire. Ne sélectionnez pas un modèle “proche”.
 
-![Écran de sélection du matériel dans le Web Flasher MeshCore](../assets/meshcore-flasher/01-choisir-le-materiel.webp)
+![Écran de sélection du matériel dans le Web Flasher MeshCore](../assets/meshcore-flasher/01-choisir-le-materiel.webp) {: loading="lazy" decoding="async"}
 
 *Exemple visuel avec une carte Heltec v4. Votre liste peut être différente : sélectionnez toujours le modèle imprimé sur votre appareil.*
 
@@ -49,7 +50,7 @@ Choisissez **Companion** pour votre premier appareil, pour un nœud porté avec 
 5. Choisissez le firmware **Companion**.
 6. Choisissez BLE si le téléphone doit se connecter en Bluetooth, ou USB Serial si l’appareil sera relié par câble à un ordinateur ou à un client compatible.
 
-![Écran de choix du rôle dans le Web Flasher MeshCore](../assets/meshcore-flasher/02-choisir-le-role.webp)
+![Écran de choix du rôle dans le Web Flasher MeshCore](../assets/meshcore-flasher/02-choisir-le-role.webp) {: loading="lazy" decoding="async"}
 
 *Pour un nœud personnel, choisissez « Companion Bluetooth » ou « Companion USB ». Le bouton « Repeater » est réservé au relais permanent.*
 
@@ -59,7 +60,7 @@ Ne débranchez pas l’appareil pendant l’effacement ou l’écriture du firmw
 
 Après le flash, redémarrez l’appareil si le flasher le demande. Ouvrez l’application MeshCore ou le client Web officiel [app.meshcore.nz](https://app.meshcore.nz/), puis connectez le Companion par BLE ou USB selon le firmware choisi.
 
-![Écran de flash du Companion Bluetooth MeshCore](../assets/meshcore-flasher/03-companion-version-flash.webp)
+![Écran de flash du Companion Bluetooth MeshCore](../assets/meshcore-flasher/03-companion-version-flash.webp) {: loading="lazy" decoding="async"}
 
 *Vérifiez la version affichée, laissez « Erase device » activé uniquement si vous acceptez l’effacement, puis cliquez sur « Flash! ».*
 
@@ -120,13 +121,13 @@ Utilisez un appareil dédié. Ne transformez pas votre seul Companion en Repeate
 6. Attendez la fin complète du flash et ne débranchez pas l’appareil pendant l’opération.
 7. Redémarrez lorsque le flasher le demande.
 
-![Écran de flash du Repeater MeshCore](../assets/meshcore-flasher/04-repeater-version-flash.webp)
+![Écran de flash du Repeater MeshCore](../assets/meshcore-flasher/04-repeater-version-flash.webp) {: loading="lazy" decoding="async"}
 
 *L’écran Repeater affiche le rôle, la version et le bouton « Flash! ». La configuration du relais se fait ensuite via la console ou le configurateur.*
 
 Pour la configuration par console USB, le [configurateur MeshCore](https://config.meshcore.io/) et la fonction console du flasher peuvent être utilisés selon le matériel et la version installée.
 
-![Écran de connexion du configurateur USB MeshCore](../assets/meshcore-flasher/05-configurateur-usb.webp)
+![Écran de connexion du configurateur USB MeshCore](../assets/meshcore-flasher/05-configurateur-usb.webp) {: loading="lazy" decoding="async"}
 
 *Cliquez sur « Connect », sélectionnez le port série du répéteur, puis utilisez la console pour appliquer les commandes de configuration. Ne débranchez pas le répéteur pendant l’écriture.*
 

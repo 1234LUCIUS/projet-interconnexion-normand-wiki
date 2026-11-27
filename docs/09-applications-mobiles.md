@@ -1,12 +1,12 @@
 ---
 layout: wiki
-title: "Applications mobiles"
+title: "Applications MeshCore, Meshtastic, MeshMapper et Nelos"
 theme: "Applications et cartes"
 theme_url: "/explorer-le-wiki.html#outils"
 description: "Choisir et télécharger les applications MeshCore, MeshMapper, Meshtastic et Nelos, avec leurs fonctions et leurs limites."
 ---
 
-# Applications mobiles pour les réseaux LoRa
+# Applications MeshCore, Meshtastic, MeshMapper et Nelos
 
 Une application mobile sert d’interface à une radio LoRa compatible : elle ne transmet pas elle-même sur LoRa et ne remplace pas le firmware installé dans le matériel. **MeshCore et Meshtastic sont deux écosystèmes distincts et ne communiquent pas directement entre eux.** Le téléphone et la radio doivent utiliser le bon couple application–firmware, avec une variante radio et des réglages adaptés à la région.
 

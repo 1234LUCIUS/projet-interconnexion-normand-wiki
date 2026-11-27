@@ -1,6 +1,7 @@
 ---
 layout: wiki
 title: "MeshCore — rôles et déploiement"
+description: "Comprendre les rôles MeshCore Companion, Repeater, Room Server et Observer et choisir le bon appareil pour chaque usage."
 theme: "Configurer MeshCore"
 theme_url: "/explorer-le-wiki.html#meshcore"
 ---
@@ -17,7 +18,7 @@ Bonnes pratiques : batterie surveillée, antenne adaptée, nom court non personn
 
 ## Simulation : advert, message et accusé
 
-![Simulation animée d’un réseau MeshCore avec deux Companions et deux Repeaters](../assets/meshcore-adverts-messages.gif)
+![Simulation animée d’un réseau MeshCore avec deux Companions et deux Repeaters](../assets/meshcore-adverts-messages.gif) {: loading="lazy" decoding="async"}
 
 Cette simulation représente un cas simple avec deux Companions et deux Repeaters :
 

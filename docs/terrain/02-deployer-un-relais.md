@@ -1,11 +1,12 @@
 ---
 layout: wiki
-title: "Déployer un relais"
+title: "Déployer un Repeater MeshCore durablement"
+description: "Installer un répéteur MeshCore durablement : autorisation du site, choix d’antenne, alimentation, essais de couverture et maintenance."
 theme: "Terrain et couverture radio"
 theme_url: "/explorer-le-wiki.html#terrain"
 ---
 
-# Déployer un relais
+# Déployer durablement un Repeater MeshCore
 
 ![Bénévoles inspectant au sol un répéteur solaire autorisé sur un point haut normand](../assets/illustrations/authorized-repeater-installation.webp)
 

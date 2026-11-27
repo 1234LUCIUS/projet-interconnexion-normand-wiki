@@ -1,11 +1,12 @@
 ---
 layout: wiki
-title: "Dépannage commun"
+title: "Dépanner un réseau radio LoRa maillé"
+description: "Dépanner un nœud LoRa en vérifiant alimentation, antenne, firmware, région, preset, canal, connexion et qualité du lien radio."
 theme: "Applications et cartes"
 theme_url: "/explorer-le-wiki.html#outils"
 ---
 
-# Dépannage commun
+# Dépanner un réseau radio LoRa maillé
 
 ## Méthode
 

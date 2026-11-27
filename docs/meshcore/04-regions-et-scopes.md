@@ -1,6 +1,7 @@
 ---
 layout: wiki
 title: "MeshCore : comprendre les régions et les scopes"
+description: "Comprendre les régions et scopes MeshCore, et comment les Repeaters orientent les messages vers les bonnes zones du réseau."
 theme: "Configurer MeshCore"
 theme_url: "/explorer-le-wiki.html#meshcore"
 ---
@@ -22,7 +23,7 @@ La fréquence et la modulation disent **comment la radio parle**. Le canal et la
 
 ## L’analogie du standard téléphonique
 
-![Illustration des régions MeshCore comparées aux lignes d’un standard téléphonique](../assets/illustrations/regions-meshcore-standard-telephonique.png)
+![Illustration des régions MeshCore comparées aux lignes d’un standard téléphonique](../assets/illustrations/regions-meshcore-standard-telephonique.webp)
 
 *Illustration réalisée par Thomas Van Nieuwenberg, initiateur du Projet d’Interconnexion Normand.*
 

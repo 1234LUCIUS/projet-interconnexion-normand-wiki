@@ -1,6 +1,7 @@
 ---
 layout: wiki
 title: "Tests radio de terrain et wardriving"
+description: "Tester une liaison radio LoRa sur le terrain et cartographier le réseau MeshCore avec MeshMapper, sans confondre observation et couverture garantie."
 theme: "Terrain et couverture radio"
 theme_url: "/explorer-le-wiki.html#terrain"
 ---
@@ -35,7 +36,7 @@ Pour comparer deux emplacements, répétez le même parcours dans l’autre sens
 
 MeshMapper est une application de wardriving et de cartographie communautaire du réseau MeshCore. Pour un parcours en ligne, il faut un Companion MeshCore compatible, le téléphone avec le GPS activé et une région MeshMapper disponible. Les régions doivent être configurées sur le service. En mode hors ligne, l’application peut enregistrer localement des observations en Passive ou Trace, mais les pings de canal flood — Send Ping, Active et Hybrid — ne sont pas disponibles. Suivez le [guide de connexion](https://wiki.meshmapper.net/app_connection_guide/) si le Companion n’apparaît pas.
 
-![Capture MeshMapper montrant des observations de couverture du réseau MeshCore autour du Havre](../assets/illustrations/meshmapper-le-havre.png)
+![Capture MeshMapper montrant des observations de couverture du réseau MeshCore autour du Havre](../assets/illustrations/meshmapper-le-havre.webp) {: loading="lazy" decoding="async"}
 
 *Exemple de relevé MeshMapper fourni par le projet, autour du Havre. Les cellules représentent des observations faites pendant les parcours ; elles ne décrivent pas une couverture uniforme et ne garantissent pas qu’une liaison fonctionnera à chaque endroit.*
 

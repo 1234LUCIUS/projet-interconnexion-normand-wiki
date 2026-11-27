@@ -1,13 +1,14 @@
 ---
 layout: wiki
-title: "Quel matériel choisir ?"
+title: "Matériel radio LoRa : que choisir ?"
+description: "Conseils pour choisir une radio LoRa, une antenne 868 MHz et les accessoires adaptés à un Companion ou à un répéteur MeshCore."
 theme: "Matériel et installations"
 theme_url: "/explorer-le-wiki.html#materiel"
 ---
 
-# Quel matériel choisir ?
+# Quel matériel LoRa choisir ?
 
-![Nœuds radio et relais maillés dans le paysage normand](assets/illustrations/hero-normandie-mesh.png)
+![Nœuds radio et relais maillés dans le paysage normand](assets/illustrations/hero-normandie-mesh-optimized.webp)
 
 Le bon premier appareil est celui dont le modèle exact est supporté par le firmware, qui possède une antenne adaptée à la bande utilisée et que vous pouvez récupérer physiquement en cas d’échec de mise à jour. Ne choisissez pas uniquement sur la puissance annoncée.
 

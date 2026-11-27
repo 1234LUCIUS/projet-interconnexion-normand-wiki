@@ -1,11 +1,12 @@
 ---
 layout: wiki
-title: "Meshtastic — configuration du Projet d’Interconnexion Normand"
+title: "Configurer Meshtastic pour le réseau normand"
+description: "Régler Meshtastic selon les paramètres documentés du Projet d’Interconnexion Normand : région, preset, canaux et précautions de sécurité."
 theme: "Configurer Meshtastic"
 theme_url: "/explorer-le-wiki.html#meshtastic"
 ---
 
-# Meshtastic — configuration du Projet d’Interconnexion Normand
+# Configurer Meshtastic pour le réseau normand
 
 Cette page distingue les réglages génériques des décisions propres au projet. Les champs marqués **À valider localement** doivent être confirmés par les mainteneurs avant publication.
 
