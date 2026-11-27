@@ -192,18 +192,36 @@ jobs:
               
 
 
-          image, image_alt = '', ''
-          
+          social_image = '/assets/social-card-normandie-optimized.jpg'
+          default_alt = 'Illustration du réseau radio maillé du Projet d’Interconnexion Normand'
+          image, image_alt = social_image, default_alt
+          card_image, card_image_alt = '', ''
+
           first_image = re.search(r'!\[([^\]]*)\]\(([^)]+)\)', draft)
-          
+
           if first_image:
-          
-              image_alt, image = first_image.group(1).strip(), first_image.group(2).strip()
-              
-          description = re.sub(r'[#>*_`\[\]!()]', ' ', draft)
-          
-          description = re.sub(r'\s+', ' ', description).strip()[:155]
-          
+              card_image_alt = first_image.group(1).strip() or title
+              card_image = first_image.group(2).strip()
+              if not card_image.startswith(('http://', 'https://', '/')):
+                  card_image = '/' + card_image.lstrip('./')
+              image, image_alt = card_image, card_image_alt
+
+          description_source = re.sub(r'!\[[^\]]*\]\([^)]+\)', ' ', draft)
+          description_source = re.sub(r'https?://\S+', ' ', description_source)
+          description = re.sub(r'[#>*_`\[\]!()]', ' ', description_source)
+          description = re.sub(r'\s+', ' ', description).strip()
+          if len(description) < 50:
+              description = f'{description} — Informations du Projet d’Interconnexion Normand sur {title}.'.strip()
+          if len(description) > 155:
+              boundary = description.rfind(' ', 0, 155)
+              if boundary < 50:
+                  boundary = 154
+              description = description[:boundary].rstrip(' ,;:') + '…'
+
+          seo_type = 'BlogPosting' if is_blog else 'NewsArticle'
+          display_author = author_name or f'@{author_github}'
+          author_url = f'https://github.com/{author_github}'
+
           frontmatter = [
           
               '---', 'layout: wiki',
@@ -223,6 +241,13 @@ jobs:
               f'image: {json.dumps(image, ensure_ascii=False)}',
               
               f'image_alt: {json.dumps(image_alt, ensure_ascii=False)}',
+              f'card_image: {json.dumps(card_image, ensure_ascii=False)}',
+              f'card_image_alt: {json.dumps(card_image_alt, ensure_ascii=False)}',
+              'seo:',
+              f'  type: {json.dumps(seo_type, ensure_ascii=False)}',
+              'author:',
+              f'  name: {json.dumps(display_author, ensure_ascii=False)}',
+              f'  url: {json.dumps(author_url, ensure_ascii=False)}',
               
               '---', '', f'# {title}', '', draft, '',
               
@@ -266,7 +291,6 @@ jobs:
           
           git push
           
-
 
 
 
